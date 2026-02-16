@@ -1,0 +1,1526 @@
+{
+  "name": "Set Catalog",
+  "generatedAt": "2026-02-14T23:46:20.887Z",
+  "source": {
+    "setsPage": "https://diablo2.io/sets/",
+    "d2data": [
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/armor.json",
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/weapons.json",
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/misc.json"
+    ]
+  },
+  "entries": [
+    {
+      "kind": "header",
+      "label": "Horazon's Splendor",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Horazon's Countenance",
+      "code": "usk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Demonhead",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Horazon's Dominion",
+      "code": "xpl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Russet Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Horazon's Hold",
+      "code": "xlg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Demonhide Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Horazon's Legacy",
+      "code": "utb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Mirrored Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Horazon's Secrets",
+      "code": "wad",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Occult Codex",
+      "baseType": "grim",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Bane's Garments",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Bane's Wraithskin",
+      "code": "hla",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Hard Leather Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Bane's Authority",
+      "code": "vbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Light Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Bane's Oathmaker",
+      "code": "kri",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Kriss",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Orphan's Call",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Whitstan's Guard",
+      "code": "xml",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Round Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Guillaume's Face",
+      "code": "xhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Winged Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Wilhelm's Pride",
+      "code": "ztb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Battle Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Magnus' Skin",
+      "code": "xvg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Sharkskin Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Heaven's Brethren",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Dangoon's Teaching",
+      "code": "7ma",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Reinforced Mace",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Haemosu's Adamant",
+      "code": "xrs",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Cuirass",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Taebaek's Glory",
+      "code": "uts",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Ward",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Ondal's Almighty",
+      "code": "uhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Spired Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Death's Disguise",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Death's Touch",
+      "code": "wsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Death's Guard",
+      "code": "lbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Sash",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Death's Hand",
+      "code": "lgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Leather Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Naj's Ancient Vestige",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Naj's Circlet",
+      "code": "ci0",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Circlet",
+      "baseType": "circ",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Naj's Light Plate",
+      "code": "ult",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Hellforge Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Naj's Puzzler",
+      "code": "6cs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Elder Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Aldur's Watchtower",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Aldur's Rhythm",
+      "code": "9mt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Jagged Star",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Aldur's Stony Gaze",
+      "code": "dr8",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Hunter's Guise",
+      "baseType": "pelt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Aldur's Deception",
+      "code": "uul",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Shadow Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Aldur's Advance",
+      "code": "xtb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Battle Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Sazabi's Grand Tribute",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Sazabi's Cobalt Redeemer",
+      "code": "7ls",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cryptic Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Sazabi's Ghost Liberator",
+      "code": "upl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Balrog Skin",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sazabi's Mental Sheath",
+      "code": "xhl",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Basinet",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "The Disciple",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Dark Adherent",
+      "code": "uui",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Dusk Shroud",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Credendum",
+      "code": "umc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Mithril Coil",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Laying of Hands",
+      "code": "ulg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Bramble Mitts",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Rite of Passage",
+      "code": "xlb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Demonhide Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Telling of Beads",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "kind": "header",
+      "label": "Tancred's Battlegear",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Tancred's Skull",
+      "code": "bhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Bone Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Tancred's Weird",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Tancred's Hobnails",
+      "code": "lbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Tancred's Spine",
+      "code": "ful",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Full Plate Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Tancred's Crowbill",
+      "code": "mpi",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Military Pick",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Bul-Kathos' Children",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Bul-Kathos' Sacred Charge",
+      "code": "7gd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Colossus Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Bul-Kathos' Tribal Guardian",
+      "code": "7wd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mythical Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Berserker's Arsenal",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Berserker's Hatchet",
+      "code": "2ax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Double Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Berserker's Hauberk",
+      "code": "spl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Splint Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Berserker's Headgear",
+      "code": "hlm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Isenhart's Armory",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Isenhart's Lightbrand",
+      "code": "bsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Broad Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Isenhart's Case",
+      "code": "brs",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Breast Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Isenhart's Horns",
+      "code": "fhl",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Full Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Isenhart's Parry",
+      "code": "gts",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Gothic Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Angelic Raiment",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Angelic Wings",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Angelic Halo",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Angelic Mantle",
+      "code": "rng",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ring Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Cathan's Traps",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Cathan's Visage",
+      "code": "msk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Mask",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Cathan's Rule",
+      "code": "bst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Cathan's Seal",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Cathan's Sigil",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Cathan's Mesh",
+      "code": "chn",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Chain Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Hwanin's Majesty",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Hwanin's Justice",
+      "code": "9vo",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bill",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Hwanin's Refuge",
+      "code": "xcl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Tigulated Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Hwanin's Splendor",
+      "code": "xrn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Grand Crown",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Hwanin's Blessing",
+      "code": "mbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Griswold's Legacy",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Griswold's Redemption",
+      "code": "7ws",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Caduceus",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Griswold's Valor",
+      "code": "urn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Corona",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Griswold's Honor",
+      "code": "paf",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Vortex Shield",
+      "baseType": "ashd",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "M'avina's Battle Hymn",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "M'avina's Caster",
+      "code": "amc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grand Matron Bow",
+      "baseType": "abow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "M'avina's Embrace",
+      "code": "uld",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Kraken Shell",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "M'avina's True Sight",
+      "code": "ci3",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Diadem",
+      "baseType": "circ",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "M'avina's Tenet",
+      "code": "zvb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Sharkskin Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "M'avina's Icy Clutch",
+      "code": "xtg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Battle Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Tal Rasha's Wrappings",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Tal Rasha's Adjudication",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Tal Rasha's Lidless Eye",
+      "code": "oba",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Swirling Crystal",
+      "baseType": "orb",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Tal Rasha's Guardianship",
+      "code": "uth",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Lacquered Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Tal Rasha's Horadric Crest",
+      "code": "xsk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Death Mask",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Tal Rasha's Fine-Spun Cloth",
+      "code": "zmb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Mesh Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Trang-Oul's Avatar",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Trang-Oul's Guise",
+      "code": "uh9",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Bone Visage",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Trang-Oul's Scales",
+      "code": "xul",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Chaos Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Trang-Oul's Girth",
+      "code": "utc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Troll Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Trang-Oul's Claws",
+      "code": "xmg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Heavy Bracers",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Trang-Oul's Wing",
+      "code": "ne9",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Cantor Trophy",
+      "baseType": "head",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Infernal Tools",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Infernal Sign",
+      "code": "tbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Heavy Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Infernal Torch",
+      "code": "gwn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grim Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Infernal Cranium",
+      "code": "cap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Cap",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Iratha's Finery",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Iratha's Coil",
+      "code": "crn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Crown",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Iratha's Cuff",
+      "code": "tgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Light Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Iratha's Cord",
+      "code": "tbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Heavy Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Iratha's Collar",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "kind": "header",
+      "label": "Arctic Gear",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Arctic Mitts",
+      "code": "tgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Light Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Arctic Binding",
+      "code": "vbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Light Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Arctic Furs",
+      "code": "qui",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Quilted Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Arctic Horn",
+      "code": "swb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short War Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Immortal King",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Stone Crusher",
+      "code": "7m7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ogre Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Detail",
+      "code": "zhb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "War Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Will",
+      "code": "ba5",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Avenger Guard",
+      "baseType": "phlm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Soul Cage",
+      "code": "uar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Sacred Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Forge",
+      "code": "xhg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "War Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Immortal King's Pillar",
+      "code": "xhb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "War Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Sigon's Complete Steel",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Shelter",
+      "code": "gth",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Gothic Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Visor",
+      "code": "ghm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Great Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Guard",
+      "code": "tow",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Tower Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Gage",
+      "code": "hgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Sabot",
+      "code": "hbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Greaves",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sigon's Wrap",
+      "code": "hbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Plated Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Civerb's Vestments",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Civerb's Cudgel",
+      "code": "gsc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grand Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Civerb's Ward",
+      "code": "lrg",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Large Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Civerb's Icon",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "kind": "header",
+      "label": "Cow King's Leathers",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Cow King's Horns",
+      "code": "xap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "War Hat",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Cow King's Hide",
+      "code": "stu",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Studded Leather",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Cow King's Hooves",
+      "code": "vbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Heavy Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Natalya's Odium",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Natalya's Mark",
+      "code": "7qr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scissors Suwayyah",
+      "baseType": "h2h2",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Natalya's Shadow",
+      "code": "ucl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Loricated Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Natalya's Totem",
+      "code": "xh9",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Grim Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Natalya's Soul",
+      "code": "xmb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Mesh Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Vidala's Rig",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Vidala's Snare",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Vidala's Ambush",
+      "code": "lea",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Leather Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Vidala's Fetlock",
+      "code": "tbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Light Plated Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Vidala's Barb",
+      "code": "lbb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Battle Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Milabrega's Regalia",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Milabrega's Rod",
+      "code": "wsp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Milabrega's Robe",
+      "code": "aar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ancient Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Milabrega's Diadem",
+      "code": "crn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Crown",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Milabrega's Orb",
+      "code": "kit",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Kite Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Arcanna's Tricks",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Arcanna's Sign",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "set",
+      "label": "Arcanna's Head",
+      "code": "skp",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Skull Cap",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Arcanna's Flesh",
+      "code": "ltp",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Light Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Arcanna's Deathwand",
+      "code": "wst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Sander's Folly",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Sander's Superstition",
+      "code": "bwn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bone Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Sander's Paragon",
+      "code": "cap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Cap",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sander's Taboo",
+      "code": "vgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Heavy Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Sander's Riprap",
+      "code": "vbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Heavy Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Hsarus' Defense",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Hsarus' Iron Stay",
+      "code": "mbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Hsarus' Iron Fist",
+      "code": "buc",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Buckler",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Hsarus' Iron Heel",
+      "code": "mbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Chain Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Cleglaw's Brace",
+      "enabled": false
+    },
+    {
+      "rarity": "set",
+      "label": "Cleglaw's Tooth",
+      "code": "lsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "set",
+      "label": "Cleglaw's Claw",
+      "code": "sml",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Small Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "set",
+      "label": "Cleglaw's Pincers",
+      "code": "mgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Chain Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    }
+  ],
+  "missing": [
+    {
+      "setName": "Angelic Raiment",
+      "itemName": "Angelic Sickle",
+      "baseName": "Sabre"
+    },
+    {
+      "setName": "Griswold's Legacy",
+      "itemName": "Griswold's Heart",
+      "baseName": "Ornate Plate"
+    }
+  ]
+}

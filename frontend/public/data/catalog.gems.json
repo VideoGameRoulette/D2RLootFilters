@@ -1,0 +1,212 @@
+{
+  "name": "Gems Catalog",
+  "generatedAt": "2026-02-15T00:42:54.403Z",
+  "source": {
+    "misc": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/misc.json"
+  },
+  "entries": [
+    {
+      "kind": "header",
+      "label": "Amethyst"
+    },
+    {
+      "code": "gcv",
+      "label": "Chipped Amethyst",
+      "slot": "Other"
+    },
+    {
+      "code": "gfv",
+      "label": "Flawed Amethyst",
+      "slot": "Other"
+    },
+    {
+      "code": "gzv",
+      "label": "Flawless Amethyst",
+      "slot": "Other"
+    },
+    {
+      "code": "gsv",
+      "label": "Amethyst",
+      "slot": "Other"
+    },
+    {
+      "code": "gpv",
+      "label": "Perfect Amethyst",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Topaz"
+    },
+    {
+      "code": "gcy",
+      "label": "Chipped Topaz",
+      "slot": "Other"
+    },
+    {
+      "code": "gfy",
+      "label": "Flawed Topaz",
+      "slot": "Other"
+    },
+    {
+      "code": "gly",
+      "label": "Flawless Topaz",
+      "slot": "Other"
+    },
+    {
+      "code": "gsy",
+      "label": "Topaz",
+      "slot": "Other"
+    },
+    {
+      "code": "gpy",
+      "label": "Perfect Topaz",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Sapphire"
+    },
+    {
+      "code": "gcb",
+      "label": "Chipped Sapphire",
+      "slot": "Other"
+    },
+    {
+      "code": "gfb",
+      "label": "Flawed Sapphire",
+      "slot": "Other"
+    },
+    {
+      "code": "glb",
+      "label": "Flawless Sapphire",
+      "slot": "Other"
+    },
+    {
+      "code": "gsb",
+      "label": "Sapphire",
+      "slot": "Other"
+    },
+    {
+      "code": "gpb",
+      "label": "Perfect Sapphire",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Emerald"
+    },
+    {
+      "code": "gcg",
+      "label": "Chipped Emerald",
+      "slot": "Other"
+    },
+    {
+      "code": "gfg",
+      "label": "Flawed Emerald",
+      "slot": "Other"
+    },
+    {
+      "code": "glg",
+      "label": "Flawless Emerald",
+      "slot": "Other"
+    },
+    {
+      "code": "gsg",
+      "label": "Emerald",
+      "slot": "Other"
+    },
+    {
+      "code": "gpg",
+      "label": "Perfect Emerald",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Ruby"
+    },
+    {
+      "code": "gcr",
+      "label": "Chipped Ruby",
+      "slot": "Other"
+    },
+    {
+      "code": "gfr",
+      "label": "Flawed Ruby",
+      "slot": "Other"
+    },
+    {
+      "code": "glr",
+      "label": "Flawless Ruby",
+      "slot": "Other"
+    },
+    {
+      "code": "gsr",
+      "label": "Ruby",
+      "slot": "Other"
+    },
+    {
+      "code": "gpr",
+      "label": "Perfect Ruby",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Diamond"
+    },
+    {
+      "code": "gcw",
+      "label": "Chipped Diamond",
+      "slot": "Other"
+    },
+    {
+      "code": "gfw",
+      "label": "Flawed Diamond",
+      "slot": "Other"
+    },
+    {
+      "code": "glw",
+      "label": "Flawless Diamond",
+      "slot": "Other"
+    },
+    {
+      "code": "gsw",
+      "label": "Diamond",
+      "slot": "Other"
+    },
+    {
+      "code": "gpw",
+      "label": "Perfect Diamond",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Skull"
+    },
+    {
+      "code": "skc",
+      "label": "Chipped Skull",
+      "slot": "Other"
+    },
+    {
+      "code": "skf",
+      "label": "Flawed Skull",
+      "slot": "Other"
+    },
+    {
+      "code": "skl",
+      "label": "Flawless Skull",
+      "slot": "Other"
+    },
+    {
+      "code": "sku",
+      "label": "Skull",
+      "slot": "Other"
+    },
+    {
+      "code": "skz",
+      "label": "Perfect Skull",
+      "slot": "Other"
+    }
+  ]
+}

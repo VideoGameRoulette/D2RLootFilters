@@ -1,0 +1,27 @@
+# syntax=docker.io/docker/dockerfile:1
+
+FROM node:lts-alpine AS base
+RUN corepack enable && corepack prepare yarn@stable --activate
+
+# Install dependencies only when needed
+FROM base AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+
+RUN mkdir /code
+WORKDIR /code
+
+# Install dependencies based on the preferred package manager
+# Yarn 4 uses PnP by default; force node_modules so COPY can use it
+COPY package.json yarn.lock ./
+RUN printf '%s\n' 'nodeLinker: node-modules' > .yarnrc.yml
+RUN yarn install
+
+# Dev runner image, copy all the installed modules run next
+# No need to copy code as we mount it as a volume for hot reloading
+FROM base AS runner
+RUN mkdir /code
+WORKDIR /code
+COPY --from=deps /code/node_modules ./node_modules
+ENV HOSTNAME=0.0.0.0
+CMD sh -c 'mkdir -p public/data && (test -f public/data/catalog.sets.json || echo "{\"name\":\"Set Catalog\",\"entries\":[]}" > public/data/catalog.sets.json) && (test -f public/data/catalog.uniques.json || echo "{\"name\":\"Unique Catalog\",\"entries\":[]}" > public/data/catalog.uniques.json) && (test -f public/data/catalog.bases.json || echo "{\"name\":\"Bases Catalog\",\"entries\":[]}" > public/data/catalog.bases.json) && (test -f public/data/catalog.gems.json || echo "{\"name\":\"Gems Catalog\",\"entries\":[]}" > public/data/catalog.gems.json) && (test -f public/data/catalog.potions.json || echo "{\"name\":\"Potions Catalog\",\"entries\":[]}" > public/data/catalog.potions.json) && (test -f public/data/catalog.quest.json || echo "{\"name\":\"Quest Catalog\",\"entries\":[]}" > public/data/catalog.quest.json) && yarn dev -p 3000'

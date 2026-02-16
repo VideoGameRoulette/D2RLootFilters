@@ -1,0 +1,145 @@
+{
+  "name": "Potions Catalog",
+  "generatedAt": "2026-02-15T01:31:48.659Z",
+  "source": {
+    "misc": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/misc.json"
+  },
+  "entries": [
+    {
+      "kind": "header",
+      "label": "Health Potions"
+    },
+    {
+      "code": "hp1",
+      "label": "Minor Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hp2",
+      "label": "Light Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hp3",
+      "label": "Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hpo",
+      "label": "Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hp4",
+      "label": "Greater Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hp5",
+      "label": "Super Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "hpf",
+      "label": "Full Healing Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "rps",
+      "label": "Small Red Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "rpl",
+      "label": "Large Red Potion",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Mana Potions"
+    },
+    {
+      "code": "mp1",
+      "label": "Minor Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mp2",
+      "label": "Light Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mp3",
+      "label": "Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mpo",
+      "label": "Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mp4",
+      "label": "Greater Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mp5",
+      "label": "Super Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "mpf",
+      "label": "Full Mana Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "bps",
+      "label": "Small Blue Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "bpl",
+      "label": "Large Blue Potion",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Rejuvenation Potions"
+    },
+    {
+      "code": "rvl",
+      "label": "Full Rejuvenation Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "rvs",
+      "label": "Rejuvenation Potion",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Misc Potions"
+    },
+    {
+      "code": "yps",
+      "label": "Antidote Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "xyz",
+      "label": "Potion of Life",
+      "slot": "Other"
+    },
+    {
+      "code": "vps",
+      "label": "Stamina Potion",
+      "slot": "Other"
+    },
+    {
+      "code": "wms",
+      "label": "Thawing Potion",
+      "slot": "Other"
+    }
+  ]
+}

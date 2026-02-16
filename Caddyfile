@@ -1,0 +1,6 @@
+:3000
+
+reverse_proxy frontend:3000 {
+    header_up Host {http.reverse_proxy.upstream.host}
+    flush_interval -1
+}

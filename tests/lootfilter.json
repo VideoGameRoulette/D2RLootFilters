@@ -1,0 +1,5151 @@
+{
+    "name": "Sets and Uniques",
+    "rules": [
+        {
+            "name": "All",
+            "enabled": true,
+            "ruleType": "hide",
+            "filterEtherealSocketed": true,
+            "equipmentRarity": [
+                "rare",
+                "lowQuality",
+                "magic",
+                "unique",
+                "set",
+                "hiQuality",
+                "normal"
+            ],
+            "equipmentQuality": [
+                "normal",
+                "exceptional",
+                "elite"
+            ],
+            "equipmentCategory": [
+                "acce",
+                "armo",
+                "weap"
+            ],
+            "itemCategory": [
+                "misc"
+            ]
+        },
+        {
+            "name": "HS Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "usk",
+                "xpl",
+                "xlg",
+                "utb",
+                "wad"
+            ]
+        },
+        {
+            "name": "Horazon s Countenance Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "usk"
+            ]
+        },
+        {
+            "name": "Horazon s Dominion Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xpl"
+            ]
+        },
+        {
+            "name": "Horazon s Hold Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xlg"
+            ]
+        },
+        {
+            "name": "Horazon s Legacy Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "utb"
+            ]
+        },
+        {
+            "name": "Horazon s Secrets Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wad"
+            ]
+        },
+        {
+            "name": "BG Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "vbl"
+            ]
+        },
+        {
+            "name": "OC Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xml",
+                "xhm",
+                "ztb",
+                "xvg"
+            ]
+        },
+        {
+            "name": "Whitstan s Guard Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xml"
+            ]
+        },
+        {
+            "name": "Guillaume s Face Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xhm"
+            ]
+        },
+        {
+            "name": "Wilhelm s Pride Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ztb"
+            ]
+        },
+        {
+            "name": "Magnus Skin Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xvg"
+            ]
+        },
+        {
+            "name": "HB Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7ma",
+                "xrs",
+                "uts",
+                "uhm"
+            ]
+        },
+        {
+            "name": "Dangoon s Teaching Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7ma"
+            ]
+        },
+        {
+            "name": "Haemosu s Adamant Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xrs"
+            ]
+        },
+        {
+            "name": "Taebaek s Glory Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uts"
+            ]
+        },
+        {
+            "name": "Ondal s Almighty Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uhm"
+            ]
+        },
+        {
+            "name": "DD Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wsd",
+                "lbl",
+                "lgl"
+            ]
+        },
+        {
+            "name": "Death s Touch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wsd"
+            ]
+        },
+        {
+            "name": "Death s Guard Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lbl"
+            ]
+        },
+        {
+            "name": "Death s Hand Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lgl"
+            ]
+        },
+        {
+            "name": "NAV Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ci0",
+                "ult",
+                "6cs"
+            ]
+        },
+        {
+            "name": "Naj s Circlet Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ci0"
+            ]
+        },
+        {
+            "name": "Naj s Light Plate Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ult"
+            ]
+        },
+        {
+            "name": "Naj s Puzzler Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6cs"
+            ]
+        },
+        {
+            "name": "AW Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "9mt",
+                "dr8",
+                "uul",
+                "xtb"
+            ]
+        },
+        {
+            "name": "Aldur s Rhythm Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9mt"
+            ]
+        },
+        {
+            "name": "Aldur s Stony Gaze Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "dr8"
+            ]
+        },
+        {
+            "name": "Aldur s Deception Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uul"
+            ]
+        },
+        {
+            "name": "Aldur s Advance Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xtb"
+            ]
+        },
+        {
+            "name": "SGT Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7ls",
+                "upl",
+                "xhl"
+            ]
+        },
+        {
+            "name": "Sazabi s Cobalt Redeemer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ls"
+            ]
+        },
+        {
+            "name": "Sazabi s Ghost Liberator Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "upl"
+            ]
+        },
+        {
+            "name": "Sazabi s Mental Sheath Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xhl"
+            ]
+        },
+        {
+            "name": "D Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uui",
+                "umc",
+                "ulg",
+                "xlb",
+                "amu"
+            ]
+        },
+        {
+            "name": "Dark Adherent Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uui"
+            ]
+        },
+        {
+            "name": "Credendum Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "umc"
+            ]
+        },
+        {
+            "name": "Laying of Hands Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ulg"
+            ]
+        },
+        {
+            "name": "Rite of Passage Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xlb"
+            ]
+        },
+        {
+            "name": "Telling of Beads Amulet",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "amu"
+            ]
+        },
+        {
+            "name": "TB Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "bhm",
+                "amu",
+                "lbt",
+                "ful",
+                "mpi"
+            ]
+        },
+        {
+            "name": "Tancred s Skull Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bhm"
+            ]
+        },
+        {
+            "name": "Tancred s Hobnails Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lbt"
+            ]
+        },
+        {
+            "name": "Tancred s Spine Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ful"
+            ]
+        },
+        {
+            "name": "Tancred s Crowbill Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mpi"
+            ]
+        },
+        {
+            "name": "BC Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7gd",
+                "7wd"
+            ]
+        },
+        {
+            "name": "Bul Kathos Sacred Charge Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gd"
+            ]
+        },
+        {
+            "name": "BC Bul Kathos Tribal Guardian",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7wd"
+            ]
+        },
+        {
+            "name": "BA Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "2ax",
+                "spl",
+                "hlm"
+            ]
+        },
+        {
+            "name": "Berserker s Hatchet Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "2ax"
+            ]
+        },
+        {
+            "name": "Berserker s Hauberk Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "spl"
+            ]
+        },
+        {
+            "name": "Berserker s Headgear Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hlm"
+            ]
+        },
+        {
+            "name": "IA Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "bsd",
+                "brs",
+                "fhl",
+                "gts"
+            ]
+        },
+        {
+            "name": "Isenhart s Lightbrand Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bsd"
+            ]
+        },
+        {
+            "name": "Isenhart s Case Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "brs"
+            ]
+        },
+        {
+            "name": "Isenhart s Horns Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "fhl"
+            ]
+        },
+        {
+            "name": "Isenhart s Parry Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gts"
+            ]
+        },
+        {
+            "name": "AR Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amu",
+                "rin",
+                "rng"
+            ]
+        },
+        {
+            "name": "Angelic Halo Ring",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "rin"
+            ]
+        },
+        {
+            "name": "Angelic Mantle Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "rng"
+            ]
+        },
+        {
+            "name": "CT Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "msk",
+                "bst",
+                "rin",
+                "amu",
+                "chn"
+            ]
+        },
+        {
+            "name": "Cathan s Visage Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "msk"
+            ]
+        },
+        {
+            "name": "Cathan s Rule Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bst"
+            ]
+        },
+        {
+            "name": "Cathan s Mesh Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "chn"
+            ]
+        },
+        {
+            "name": "HM Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "9vo",
+                "xcl",
+                "xrn",
+                "mbl"
+            ]
+        },
+        {
+            "name": "Hwanin s Justice Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9vo"
+            ]
+        },
+        {
+            "name": "Hwanin s Refuge Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xcl"
+            ]
+        },
+        {
+            "name": "Hwanin s Splendor Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xrn"
+            ]
+        },
+        {
+            "name": "Hwanin s Blessing Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mbl"
+            ]
+        },
+        {
+            "name": "GL Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7ws",
+                "urn",
+                "paf"
+            ]
+        },
+        {
+            "name": "Griswold s Redemption Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ws"
+            ]
+        },
+        {
+            "name": "Griswold s Valor Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "urn"
+            ]
+        },
+        {
+            "name": "Griswold s Honor Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "paf"
+            ]
+        },
+        {
+            "name": "MBH Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amc",
+                "uld",
+                "ci3",
+                "zvb",
+                "xtg"
+            ]
+        },
+        {
+            "name": "M avina s Caster Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amc"
+            ]
+        },
+        {
+            "name": "M avina s Embrace Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uld"
+            ]
+        },
+        {
+            "name": "M avina s True Sight Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ci3"
+            ]
+        },
+        {
+            "name": "M avina s Tenet Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "zvb"
+            ]
+        },
+        {
+            "name": "M avina s Icy Clutch Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xtg"
+            ]
+        },
+        {
+            "name": "TRW Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amu",
+                "oba",
+                "uth",
+                "xsk",
+                "zmb"
+            ]
+        },
+        {
+            "name": "Tal Rasha s Lidless Eye Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "oba"
+            ]
+        },
+        {
+            "name": "Tal Rasha s Guardianship Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uth"
+            ]
+        },
+        {
+            "name": "TRW Horadric Crest Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xsk"
+            ]
+        },
+        {
+            "name": "TRW Fine Spun Cloth Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "zmb"
+            ]
+        },
+        {
+            "name": "TA Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uh9",
+                "xul",
+                "utc",
+                "xmg",
+                "ne9"
+            ]
+        },
+        {
+            "name": "Trang Oul s Guise Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uh9"
+            ]
+        },
+        {
+            "name": "Trang Oul s Scales Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xul"
+            ]
+        },
+        {
+            "name": "Trang Oul s Girth Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "utc"
+            ]
+        },
+        {
+            "name": "Trang Oul s Claws Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xmg"
+            ]
+        },
+        {
+            "name": "Trang Oul s Wing Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ne9"
+            ]
+        },
+        {
+            "name": "IT Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "tbl",
+                "gwn",
+                "cap"
+            ]
+        },
+        {
+            "name": "Infernal Sign Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "tbl"
+            ]
+        },
+        {
+            "name": "Infernal Torch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gwn"
+            ]
+        },
+        {
+            "name": "Infernal Cranium Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cap"
+            ]
+        },
+        {
+            "name": "IF Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "crn",
+                "tgl",
+                "tbl",
+                "amu"
+            ]
+        },
+        {
+            "name": "Iratha s Coil Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "crn"
+            ]
+        },
+        {
+            "name": "Iratha s Cuff Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "tgl"
+            ]
+        },
+        {
+            "name": "AG Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "tgl",
+                "vbl",
+                "qui",
+                "swb"
+            ]
+        },
+        {
+            "name": "Arctic Furs Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "qui"
+            ]
+        },
+        {
+            "name": "Arctic Horn Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "swb"
+            ]
+        },
+        {
+            "name": "IK Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7m7",
+                "zhb",
+                "ba5",
+                "uar",
+                "xhg",
+                "xhb"
+            ]
+        },
+        {
+            "name": "IK Stone Crusher Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7m7"
+            ]
+        },
+        {
+            "name": "Immortal King s Detail Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "zhb"
+            ]
+        },
+        {
+            "name": "Immortal King s Will Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ba5"
+            ]
+        },
+        {
+            "name": "IK Soul Cage Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uar"
+            ]
+        },
+        {
+            "name": "Immortal King s Forge Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xhg"
+            ]
+        },
+        {
+            "name": "Immortal King s Pillar Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xhb"
+            ]
+        },
+        {
+            "name": "SCS Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "gth",
+                "ghm",
+                "tow",
+                "hgl",
+                "hbt",
+                "hbl"
+            ]
+        },
+        {
+            "name": "Sigon s Shelter Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gth"
+            ]
+        },
+        {
+            "name": "Sigon s Visor Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ghm"
+            ]
+        },
+        {
+            "name": "Sigon s Guard Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "tow"
+            ]
+        },
+        {
+            "name": "Sigon s Gage Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hgl"
+            ]
+        },
+        {
+            "name": "Sigon s Sabot Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hbt"
+            ]
+        },
+        {
+            "name": "Sigon s Wrap Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hbl"
+            ]
+        },
+        {
+            "name": "CV Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "gsc",
+                "lrg",
+                "amu"
+            ]
+        },
+        {
+            "name": "Civerb s Cudgel Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gsc"
+            ]
+        },
+        {
+            "name": "Civerb s Ward Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lrg"
+            ]
+        },
+        {
+            "name": "CKL Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xap",
+                "stu",
+                "vbt"
+            ]
+        },
+        {
+            "name": "Cow King s Horns Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xap"
+            ]
+        },
+        {
+            "name": "Cow King s Hide Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "stu"
+            ]
+        },
+        {
+            "name": "Cow King s Hooves Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "vbt"
+            ]
+        },
+        {
+            "name": "NO Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7qr",
+                "ucl",
+                "xh9",
+                "xmb"
+            ]
+        },
+        {
+            "name": "Natalya s Mark Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7qr"
+            ]
+        },
+        {
+            "name": "Natalya s Shadow Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ucl"
+            ]
+        },
+        {
+            "name": "Natalya s Totem Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xh9"
+            ]
+        },
+        {
+            "name": "Natalya s Soul Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xmb"
+            ]
+        },
+        {
+            "name": "VR Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amu",
+                "lea",
+                "tbt",
+                "lbb"
+            ]
+        },
+        {
+            "name": "Vidala s Ambush Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lea"
+            ]
+        },
+        {
+            "name": "Vidala s Fetlock Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "tbt"
+            ]
+        },
+        {
+            "name": "Vidala s Barb Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lbb"
+            ]
+        },
+        {
+            "name": "MR Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wsp",
+                "aar",
+                "crn",
+                "kit"
+            ]
+        },
+        {
+            "name": "Milabrega s Rod Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wsp"
+            ]
+        },
+        {
+            "name": "Milabrega s Robe Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "aar"
+            ]
+        },
+        {
+            "name": "Milabrega s Orb Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "kit"
+            ]
+        },
+        {
+            "name": "AT Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "amu",
+                "skp",
+                "ltp",
+                "wst"
+            ]
+        },
+        {
+            "name": "Arcanna s Head Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "skp"
+            ]
+        },
+        {
+            "name": "Arcanna s Flesh Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ltp"
+            ]
+        },
+        {
+            "name": "Arcanna s Deathwand Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wst"
+            ]
+        },
+        {
+            "name": "SF Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "bwn",
+                "cap",
+                "vgl",
+                "vbt"
+            ]
+        },
+        {
+            "name": "Sander s Superstition Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bwn"
+            ]
+        },
+        {
+            "name": "Sander s Taboo Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "vgl"
+            ]
+        },
+        {
+            "name": "HD Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "mbl",
+                "buc",
+                "mbt"
+            ]
+        },
+        {
+            "name": "Hsarus Iron Fist Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "buc"
+            ]
+        },
+        {
+            "name": "Hsarus Iron Heel Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mbt"
+            ]
+        },
+        {
+            "name": "CB Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "lsd",
+                "sml",
+                "mgl"
+            ]
+        },
+        {
+            "name": "Cleglaw s Tooth Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lsd"
+            ]
+        },
+        {
+            "name": "Cleglaw s Claw Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "sml"
+            ]
+        },
+        {
+            "name": "Cleglaw s Pincers Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mgl"
+            ]
+        },
+        {
+            "name": "U Rockstopper Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xkp"
+            ]
+        },
+        {
+            "name": "U Stealskull Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xlm"
+            ]
+        },
+        {
+            "name": "U Harlequin Crest Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uap"
+            ]
+        },
+        {
+            "name": "U Arreat s Face Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "baa"
+            ]
+        },
+        {
+            "name": "U Jalal s Mane Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "dra"
+            ]
+        },
+        {
+            "name": "U Steelshade Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ulm"
+            ]
+        },
+        {
+            "name": "U Cerebus Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "drb"
+            ]
+        },
+        {
+            "name": "U Demonhorn s Edge Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bad"
+            ]
+        },
+        {
+            "name": "U Spiritkeeper Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "drd"
+            ]
+        },
+        {
+            "name": "U Ravenlore Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "dre"
+            ]
+        },
+        {
+            "name": "U Wolfhowl Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bac"
+            ]
+        },
+        {
+            "name": "U Kira s Guardian Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ci2"
+            ]
+        },
+        {
+            "name": "U Halaberd s Reign Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bae"
+            ]
+        },
+        {
+            "name": "U The Centurion Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hla"
+            ]
+        },
+        {
+            "name": "U Hawkmail Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "scl"
+            ]
+        },
+        {
+            "name": "U Boneflesh Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "plt"
+            ]
+        },
+        {
+            "name": "U Rockfleece Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "fld"
+            ]
+        },
+        {
+            "name": "U The Spirit Shroud Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xui"
+            ]
+        },
+        {
+            "name": "U Skin of the Vipermagi Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xea"
+            ]
+        },
+        {
+            "name": "U Skin of the Flayerd One",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xla"
+            ]
+        },
+        {
+            "name": "U Ironpelt Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xtu"
+            ]
+        },
+        {
+            "name": "U Spiritforge Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xng"
+            ]
+        },
+        {
+            "name": "U Shaftstop Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xhn"
+            ]
+        },
+        {
+            "name": "U Guardian Angel Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xlt"
+            ]
+        },
+        {
+            "name": "U Toothrow Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xld"
+            ]
+        },
+        {
+            "name": "U Atma s Wail Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xth"
+            ]
+        },
+        {
+            "name": "U Corpsemourn Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xar"
+            ]
+        },
+        {
+            "name": "U Que Hegan s Wisdon Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xtp"
+            ]
+        },
+        {
+            "name": "U The Gladiator s Bane Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "utu"
+            ]
+        },
+        {
+            "name": "U Ars Al Diablolos Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "waf"
+            ]
+        },
+        {
+            "name": "U Ars Tor Baalos Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wae"
+            ]
+        },
+        {
+            "name": "U Ars Dul Mephistos Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wac"
+            ]
+        },
+        {
+            "name": "U Measured Wrath Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wa6"
+            ]
+        },
+        {
+            "name": "U The Gnasher Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hax"
+            ]
+        },
+        {
+            "name": "U Deathspade Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "axe"
+            ]
+        },
+        {
+            "name": "U Rakescar Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wax"
+            ]
+        },
+        {
+            "name": "U Fechmars Axe Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lax"
+            ]
+        },
+        {
+            "name": "U Goreshovel Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bax"
+            ]
+        },
+        {
+            "name": "U The Chieftan Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "btx"
+            ]
+        },
+        {
+            "name": "U Brainhew Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gax"
+            ]
+        },
+        {
+            "name": "U The Humongous Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gix"
+            ]
+        },
+        {
+            "name": "U Iros Torch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wnd"
+            ]
+        },
+        {
+            "name": "U Maelstromwrath Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ywn"
+            ]
+        },
+        {
+            "name": "U Felloak Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "clb"
+            ]
+        },
+        {
+            "name": "U Knell Striker Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "scp"
+            ]
+        },
+        {
+            "name": "U Stoutnail Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "spc"
+            ]
+        },
+        {
+            "name": "U Crushflange Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mac"
+            ]
+        },
+        {
+            "name": "U Bloodrise Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mst"
+            ]
+        },
+        {
+            "name": "U The Generals Tan Do Li Ga",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "fla"
+            ]
+        },
+        {
+            "name": "U Ironstone Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "whm"
+            ]
+        },
+        {
+            "name": "U Bonesob Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mau"
+            ]
+        },
+        {
+            "name": "U Steeldriver Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gma"
+            ]
+        },
+        {
+            "name": "U Rixots Keen Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ssd"
+            ]
+        },
+        {
+            "name": "U Blood Crescent Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "scm"
+            ]
+        },
+        {
+            "name": "U Krintizs Skewer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "sbr"
+            ]
+        },
+        {
+            "name": "U Gleamscythe Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "flc"
+            ]
+        },
+        {
+            "name": "U Azurewrath Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "crs"
+            ]
+        },
+        {
+            "name": "U Shadowfang Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "2hs"
+            ]
+        },
+        {
+            "name": "U Soulflay Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "clm"
+            ]
+        },
+        {
+            "name": "U Kinemils Awl Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gis"
+            ]
+        },
+        {
+            "name": "U Blacktongue Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bsw"
+            ]
+        },
+        {
+            "name": "U Ripsaw Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "flb"
+            ]
+        },
+        {
+            "name": "U The Patriarch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "gsd"
+            ]
+        },
+        {
+            "name": "U Gull Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "dgr"
+            ]
+        },
+        {
+            "name": "U The Diggler Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "dir"
+            ]
+        },
+        {
+            "name": "U The Jade Tan Do Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "kri"
+            ]
+        },
+        {
+            "name": "U Irices Shard Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bld"
+            ]
+        },
+        {
+            "name": "U The Dragon Chang Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "spr"
+            ]
+        },
+        {
+            "name": "U Razortine Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "tri"
+            ]
+        },
+        {
+            "name": "U Bloodthief Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "brn"
+            ]
+        },
+        {
+            "name": "U Lance of Yaggai Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "spt"
+            ]
+        },
+        {
+            "name": "U The Tannr Gorerod Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "pik"
+            ]
+        },
+        {
+            "name": "U Dimoaks Hew Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bar"
+            ]
+        },
+        {
+            "name": "U Steelgoad Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "vou"
+            ]
+        },
+        {
+            "name": "U Soul Harvest Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "scy"
+            ]
+        },
+        {
+            "name": "U The Battlebranch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "pax"
+            ]
+        },
+        {
+            "name": "U Woestave Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hal"
+            ]
+        },
+        {
+            "name": "U The Grim Reaper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "wsc"
+            ]
+        },
+        {
+            "name": "U Bane Ash Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "sst"
+            ]
+        },
+        {
+            "name": "U Serpent Lord Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lst"
+            ]
+        },
+        {
+            "name": "U Lazarus Spire Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cst"
+            ]
+        },
+        {
+            "name": "U Pluckeye Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "sbw"
+            ]
+        },
+        {
+            "name": "U Witherstring Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hbw"
+            ]
+        },
+        {
+            "name": "U Rimeraven Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lbw"
+            ]
+        },
+        {
+            "name": "U Piercerib Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cbw"
+            ]
+        },
+        {
+            "name": "U Pullspite Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "sbb"
+            ]
+        },
+        {
+            "name": "U Blastbark Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lwb"
+            ]
+        },
+        {
+            "name": "U Leadcrow Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "lxb"
+            ]
+        },
+        {
+            "name": "U Ichorsting Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "mxb"
+            ]
+        },
+        {
+            "name": "U Hellcast Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hxb"
+            ]
+        },
+        {
+            "name": "U Doomspittle Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "rxb"
+            ]
+        },
+        {
+            "name": "U Staff of Kings Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "msf"
+            ]
+        },
+        {
+            "name": "U Horadric Staff Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hst"
+            ]
+        },
+        {
+            "name": "U Hell Forge Hammer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "hfh"
+            ]
+        },
+        {
+            "name": "U KhalimFlail Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "qf1"
+            ]
+        },
+        {
+            "name": "U SuperKhalimFlail Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "qf2"
+            ]
+        },
+        {
+            "name": "U Coldkill Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ha"
+            ]
+        },
+        {
+            "name": "U Butcher s Pupil Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ax"
+            ]
+        },
+        {
+            "name": "U Islestrike Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "92a"
+            ]
+        },
+        {
+            "name": "U Pompe s Wrath Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9mp"
+            ]
+        },
+        {
+            "name": "U Guardian Naga Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9wa"
+            ]
+        },
+        {
+            "name": "U Warlord s Trust Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9la"
+            ]
+        },
+        {
+            "name": "U Spellsteel Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ba"
+            ]
+        },
+        {
+            "name": "U Stormrider Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9bt"
+            ]
+        },
+        {
+            "name": "U Boneslayer Blade Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ga"
+            ]
+        },
+        {
+            "name": "U The Minataur Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9gi"
+            ]
+        },
+        {
+            "name": "U Suicide Branch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9wn"
+            ]
+        },
+        {
+            "name": "U Carin Shard Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9yw"
+            ]
+        },
+        {
+            "name": "U Arm of King Leoric Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9bw"
+            ]
+        },
+        {
+            "name": "U Blackhand Key Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9gw"
+            ]
+        },
+        {
+            "name": "U Dark Clan Crusher Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9cl"
+            ]
+        },
+        {
+            "name": "U Zakarum s Hand Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9sc"
+            ]
+        },
+        {
+            "name": "U The Fetid Sprinkler Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9qs"
+            ]
+        },
+        {
+            "name": "U Hand of Blessed Light Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ws"
+            ]
+        },
+        {
+            "name": "U Fleshrender Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9sp"
+            ]
+        },
+        {
+            "name": "U Sureshrill Frost Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ma"
+            ]
+        },
+        {
+            "name": "U Baezil s Vortex Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9fl"
+            ]
+        },
+        {
+            "name": "U Earthshaker Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9wh"
+            ]
+        },
+        {
+            "name": "U Bloodtree Stump Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9m9"
+            ]
+        },
+        {
+            "name": "U The Gavel of Pain Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9gm"
+            ]
+        },
+        {
+            "name": "U Bloodletter Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ss"
+            ]
+        },
+        {
+            "name": "U Coldsteel Eye Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9sm"
+            ]
+        },
+        {
+            "name": "U Hexfire Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9sb"
+            ]
+        },
+        {
+            "name": "U Blade of Ali Baba Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9fc"
+            ]
+        },
+        {
+            "name": "U Ginther s Rift Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9cr"
+            ]
+        },
+        {
+            "name": "U Headstriker Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9bs"
+            ]
+        },
+        {
+            "name": "U Plague Bearer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ls"
+            ]
+        },
+        {
+            "name": "U The Atlantian Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9wd"
+            ]
+        },
+        {
+            "name": "U Crainte Vomir Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "92h"
+            ]
+        },
+        {
+            "name": "U Bing Sz Wang Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9cm"
+            ]
+        },
+        {
+            "name": "U The Vile Husk Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9gs"
+            ]
+        },
+        {
+            "name": "U Cloudcrack Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9b9"
+            ]
+        },
+        {
+            "name": "U Todesfaelle Flamme Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9fb"
+            ]
+        },
+        {
+            "name": "U Swordguard Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9gd"
+            ]
+        },
+        {
+            "name": "U Spineripper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9dg"
+            ]
+        },
+        {
+            "name": "U Heart Carver Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9di"
+            ]
+        },
+        {
+            "name": "U Blackbog s Sharp Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9kr"
+            ]
+        },
+        {
+            "name": "U Stormspike Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9bl"
+            ]
+        },
+        {
+            "name": "U The Impaler Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9sr"
+            ]
+        },
+        {
+            "name": "U Kelpie Snare Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9tr"
+            ]
+        },
+        {
+            "name": "U Soulfeast Tine Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9br"
+            ]
+        },
+        {
+            "name": "U Hone Sundan Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9st"
+            ]
+        },
+        {
+            "name": "U Spire of Honor Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9p9"
+            ]
+        },
+        {
+            "name": "U The Meat Scraper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9b7"
+            ]
+        },
+        {
+            "name": "U Athena s Wrath Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9s8"
+            ]
+        },
+        {
+            "name": "U Pierre Tombale Couant Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9pa"
+            ]
+        },
+        {
+            "name": "U Husoldal Evo Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9h9"
+            ]
+        },
+        {
+            "name": "U Grim s Burning Dead Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9wc"
+            ]
+        },
+        {
+            "name": "U Razorswitch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8ss"
+            ]
+        },
+        {
+            "name": "U Ribcracker Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8ls"
+            ]
+        },
+        {
+            "name": "U Chromatic Ire Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8cs"
+            ]
+        },
+        {
+            "name": "U Warpspear Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8bs"
+            ]
+        },
+        {
+            "name": "U Skullcollector Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8ws"
+            ]
+        },
+        {
+            "name": "U Skystrike Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8sb"
+            ]
+        },
+        {
+            "name": "U Riphook Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8hb"
+            ]
+        },
+        {
+            "name": "U Kuko Shakaku Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8lb"
+            ]
+        },
+        {
+            "name": "U Endlesshail Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8cb"
+            ]
+        },
+        {
+            "name": "U Whichwild String Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8s8"
+            ]
+        },
+        {
+            "name": "U Cliffkiller Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8l8"
+            ]
+        },
+        {
+            "name": "U Magewrath Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8sw"
+            ]
+        },
+        {
+            "name": "U Godstrike Arch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8lw"
+            ]
+        },
+        {
+            "name": "U Langer Briser Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8lx"
+            ]
+        },
+        {
+            "name": "U Pus Spiter Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8mx"
+            ]
+        },
+        {
+            "name": "U Buriza Do Kyanon Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8hx"
+            ]
+        },
+        {
+            "name": "U Demon Machine Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "8rx"
+            ]
+        },
+        {
+            "name": "U Hellslayer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7bt"
+            ]
+        },
+        {
+            "name": "U Messerschmidt s Reaver Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ga"
+            ]
+        },
+        {
+            "name": "U Baranar s Star Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7mt"
+            ]
+        },
+        {
+            "name": "U Schaefer s Hammer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7wh"
+            ]
+        },
+        {
+            "name": "U The Cranium Basher Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gm"
+            ]
+        },
+        {
+            "name": "U Lightsabre Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7cr"
+            ]
+        },
+        {
+            "name": "U Doombringer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7b7"
+            ]
+        },
+        {
+            "name": "U Wizardspike Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7dg"
+            ]
+        },
+        {
+            "name": "U Stormspire Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7wc"
+            ]
+        },
+        {
+            "name": "U Eaglehorn Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6l7"
+            ]
+        },
+        {
+            "name": "U Windforce Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6lw"
+            ]
+        },
+        {
+            "name": "U Titan s Revenge Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ama"
+            ]
+        },
+        {
+            "name": "U Lycander s Aim Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "am7"
+            ]
+        },
+        {
+            "name": "U Lycander s Flank Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "am9"
+            ]
+        },
+        {
+            "name": "U Cutthroat1 Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9tw"
+            ]
+        },
+        {
+            "name": "U The Scalper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9ta"
+            ]
+        },
+        {
+            "name": "U Bloodmoon Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7sb"
+            ]
+        },
+        {
+            "name": "U Djinnslayer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7sm"
+            ]
+        },
+        {
+            "name": "U Deathbit Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "9tk"
+            ]
+        },
+        {
+            "name": "U Warshrike Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7bk"
+            ]
+        },
+        {
+            "name": "U Gutsiphon Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6rx"
+            ]
+        },
+        {
+            "name": "U Razoredge Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ha"
+            ]
+        },
+        {
+            "name": "U Demonlimb Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7sp"
+            ]
+        },
+        {
+            "name": "U Tomb Reaver Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7pa"
+            ]
+        },
+        {
+            "name": "U Deaths s Web Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gw"
+            ]
+        },
+        {
+            "name": "U Fleshripper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7kr"
+            ]
+        },
+        {
+            "name": "U Horizon s Tornado Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7fl"
+            ]
+        },
+        {
+            "name": "U Jadetalon Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7wb"
+            ]
+        },
+        {
+            "name": "U Runemaster Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "72a"
+            ]
+        },
+        {
+            "name": "U Deathcleaver Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7wa"
+            ]
+        },
+        {
+            "name": "U Executioner s Justice Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gi"
+            ]
+        },
+        {
+            "name": "U Stoneraven Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "amd"
+            ]
+        },
+        {
+            "name": "U Gargoyle s Bite Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ts"
+            ]
+        },
+        {
+            "name": "U Lacerator Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7b8"
+            ]
+        },
+        {
+            "name": "U Mang Song s Lesson Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6ws"
+            ]
+        },
+        {
+            "name": "U Viperfork Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7br"
+            ]
+        },
+        {
+            "name": "U Ethereal Edge Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ba"
+            ]
+        },
+        {
+            "name": "U The Reaper s Toll Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7s8"
+            ]
+        },
+        {
+            "name": "U Hellrack Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6hx"
+            ]
+        },
+        {
+            "name": "U Widowmaker Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "6sw"
+            ]
+        },
+        {
+            "name": "U Bloodraven s Charge Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "amb"
+            ]
+        },
+        {
+            "name": "U Ghostflame Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7bl"
+            ]
+        },
+        {
+            "name": "U Shadowkiller Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7cs"
+            ]
+        },
+        {
+            "name": "U Gimmershred Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ta"
+            ]
+        },
+        {
+            "name": "U Thunderstroke Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "amf"
+            ]
+        },
+        {
+            "name": "U Demon s Arch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7s7"
+            ]
+        },
+        {
+            "name": "U Steelpillar Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7p7"
+            ]
+        },
+        {
+            "name": "U Boneshade Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7bw"
+            ]
+        },
+        {
+            "name": "U Flamebellow Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gs"
+            ]
+        },
+        {
+            "name": "U Fathom Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "obf"
+            ]
+        },
+        {
+            "name": "U Eschuta s temper Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "obc"
+            ]
+        },
+        {
+            "name": "U Firelizard s Talons Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7lw"
+            ]
+        },
+        {
+            "name": "U Heaven s Light Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7sc"
+            ]
+        },
+        {
+            "name": "U Arioc s Needle Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7sr"
+            ]
+        },
+        {
+            "name": "U Cranebeak Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7mp"
+            ]
+        },
+        {
+            "name": "U Nord s Tenderizer Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7cl"
+            ]
+        },
+        {
+            "name": "U Wraithflight Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7gl"
+            ]
+        },
+        {
+            "name": "U Bonehew Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7o7"
+            ]
+        },
+        {
+            "name": "U Dreadfang Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "72h"
+            ]
+        },
+        {
+            "name": "U Bloodpact Shard Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7di"
+            ]
+        },
+        {
+            "name": "U Wall of the Eyeless Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "bsh"
+            ]
+        },
+        {
+            "name": "U Swordback Hold Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "spk"
+            ]
+        },
+        {
+            "name": "U Visceratuant Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xuc"
+            ]
+        },
+        {
+            "name": "U Stormchaser Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xrg"
+            ]
+        },
+        {
+            "name": "U Tiamat s Rebuke Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xit"
+            ]
+        },
+        {
+            "name": "U Kerke s Sanctuary Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xow"
+            ]
+        },
+        {
+            "name": "U Radimant s Sphere Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xts"
+            ]
+        },
+        {
+            "name": "U Lidless Wall Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xsh"
+            ]
+        },
+        {
+            "name": "U Lance Guard Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xpk"
+            ]
+        },
+        {
+            "name": "U Blackoak Shield Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uml"
+            ]
+        },
+        {
+            "name": "U Stormshield Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uit"
+            ]
+        },
+        {
+            "name": "U Homunculus Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "nea"
+            ]
+        },
+        {
+            "name": "U Herald of Zakarum Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "pa9"
+            ]
+        },
+        {
+            "name": "U Alma Negra Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "pac"
+            ]
+        },
+        {
+            "name": "U Darkforge Spawn Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "nef"
+            ]
+        },
+        {
+            "name": "U Boneflame Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "nee"
+            ]
+        },
+        {
+            "name": "U Dragonscale Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "pae"
+            ]
+        },
+        {
+            "name": "U Medusa s Gaze Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uow"
+            ]
+        },
+        {
+            "name": "U Spike Thorn Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "upk"
+            ]
+        },
+        {
+            "name": "U Headhunter s Glory Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ush"
+            ]
+        },
+        {
+            "name": "U Souldrain Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "umg"
+            ]
+        },
+        {
+            "name": "U Dracul s Grasp Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uvg"
+            ]
+        },
+        {
+            "name": "U Steelrend Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uhg"
+            ]
+        },
+        {
+            "name": "U String of Ears Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "zlb"
+            ]
+        },
+        {
+            "name": "U Arachnid Mesh Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "ulc"
+            ]
+        },
+        {
+            "name": "U Nosferatu s Coil Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uvc"
+            ]
+        },
+        {
+            "name": "U Waterwalk Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "xvb"
+            ]
+        },
+        {
+            "name": "U Shadowdancer Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uhb"
+            ]
+        },
+        {
+            "name": "U Sandstorm Trek Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uvb"
+            ]
+        },
+        {
+            "name": "U Marrowwalk Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "umb"
+            ]
+        },
+        {
+            "name": "U Amulet of the Viper Amulet",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "vip"
+            ]
+        },
+        {
+            "name": "U Gheed s Fortune Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cm3"
+            ]
+        },
+        {
+            "name": "U Annihilus Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cm1"
+            ]
+        },
+        {
+            "name": "U Rainbow Facet Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "jew"
+            ]
+        },
+        {
+            "name": "U Hellfire Torch Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cm2"
+            ]
+        },
+        {
+            "name": "U Defender s Bile Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cjw"
+            ]
+        },
+        {
+            "name": "U Crafted Cold Rupture Other",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "cs2"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4305 @@
+{
+  "name": "Unique Catalog",
+  "generatedAt": "2026-02-14T23:51:39.319Z",
+  "source": {
+    "uniqueitems": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/uniqueitems.json",
+    "d2data": [
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/armor.json",
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/weapons.json",
+      "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/misc.json"
+    ]
+  },
+  "entries": [
+    {
+      "kind": "header",
+      "label": "Unique Helms",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "War Bonnet",
+      "code": "cap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Cap",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Tarnhelm",
+      "code": "skp",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Skull Cap",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Coif of Glory",
+      "code": "hlm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Duskdeep",
+      "code": "fhl",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Full Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wormskull",
+      "code": "bhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Bone Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Howltusk",
+      "code": "ghm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Great Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Undead Crown",
+      "code": "crn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Crown",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Face of Horror",
+      "code": "msk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Mask",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Peasent Crown",
+      "code": "xap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "War Hat",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rockstopper",
+      "code": "xkp",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Sallet",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stealskull",
+      "code": "xlm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Casque",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Darksight Helm",
+      "code": "xhl",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Basinet",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Valkiry Wing",
+      "code": "xhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Winged Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crown of Thieves",
+      "code": "xrn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Grand Crown",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blackhorn's Face",
+      "code": "xsk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Death Mask",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Vampiregaze",
+      "code": "xh9",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Grim Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Harlequin Crest",
+      "code": "uap",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Shako",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Veil of Steel",
+      "code": "uhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Spired Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Arreat's Face",
+      "code": "baa",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Slayer Guard",
+      "baseType": "phlm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Jalal's Mane",
+      "code": "dra",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Totemic Mask",
+      "baseType": "pelt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steelshade",
+      "code": "ulm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Armet",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cerebus",
+      "code": "drb",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Blood Spirit",
+      "baseType": "pelt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Demonhorn's Edge",
+      "code": "bad",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Destroyer Helm",
+      "baseType": "phlm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spiritkeeper",
+      "code": "drd",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Earth Spirit",
+      "baseType": "pelt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Griffon's Eye",
+      "code": "ci3",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Diadem",
+      "baseType": "circ",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Nightwing's Veil",
+      "code": "uhm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Spired Helm",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crown of Ages",
+      "code": "urn",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Corona",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Andariel's Visage",
+      "code": "usk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Demonhead",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Darkfear",
+      "code": "ulm",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Armet",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ravenlore",
+      "code": "dre",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Sky Spirit",
+      "baseType": "pelt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wolfhowl",
+      "code": "bac",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Fury Visor",
+      "baseType": "phlm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Kira's Guardian",
+      "code": "ci2",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Tiara",
+      "baseType": "circ",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Halaberd's Reign",
+      "code": "bae",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Conqueror Crown",
+      "baseType": "phlm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Giantskull",
+      "code": "uh9",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Bone Visage",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Unique Warlock Helm",
+      "code": "xsk",
+      "enabled": false,
+      "slot": "Helm",
+      "baseName": "Death Mask",
+      "baseType": "helm",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Armors",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Greyform",
+      "code": "qui",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Quilted Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blinkbats Form",
+      "code": "lea",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Leather Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Centurion",
+      "code": "hla",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Hard Leather Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Twitchthroe",
+      "code": "stu",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Studded Leather",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Darkglow",
+      "code": "rng",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ring Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hawkmail",
+      "code": "scl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Scale Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Sparking Mail",
+      "code": "chn",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Chain Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Venomsward",
+      "code": "brs",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Breast Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Iceblink",
+      "code": "spl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Splint Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Boneflesh",
+      "code": "plt",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Plate Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rockfleece",
+      "code": "fld",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Field Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rattlecage",
+      "code": "gth",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Gothic Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Goldskin",
+      "code": "ful",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Full Plate Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Victors Silk",
+      "code": "aar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ancient Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Heavenly Garb",
+      "code": "ltp",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Light Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Spirit Shroud",
+      "code": "xui",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ghost Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Skin of the Vipermagi",
+      "code": "xea",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Serpentskin Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Skin of the Flayerd One",
+      "code": "xla",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Demonhide Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ironpelt",
+      "code": "xtu",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Trellised Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spiritforge",
+      "code": "xng",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Linked Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crow Caw",
+      "code": "xcl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Tigulated Mail",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Shaftstop",
+      "code": "xhn",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Mesh Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Duriel's Shell",
+      "code": "xrs",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Cuirass",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Skullder's Ire",
+      "code": "xpl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Russet Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Guardian Angel",
+      "code": "xlt",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Templar Coat",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Toothrow",
+      "code": "xld",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Sharktooth Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Atma's Wail",
+      "code": "xth",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Embossed Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Black Hades",
+      "code": "xul",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Chaos Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Corpsemourn",
+      "code": "xar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Ornate Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Que-Hegan's Wisdon",
+      "code": "xtp",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Mage Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Gladiator's Bane",
+      "code": "utu",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Wire Fleece",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Arkaine's Valor",
+      "code": "upl",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Balrog Skin",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Tyrael's Might",
+      "code": "uar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Sacred Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Leviathan",
+      "code": "uld",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Kraken Shell",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steel Carapice",
+      "code": "uul",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Shadow Plate",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ormus' Robes",
+      "code": "uui",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Dusk Shroud",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Templar's Might",
+      "code": "uar",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Sacred Armor",
+      "baseType": "tors",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ars Al'Diablolos",
+      "code": "waf",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Blasphemous Grimoire",
+      "baseType": "grim",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ars Tor'Baalos",
+      "code": "wae",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Blasphemous Compendium",
+      "baseType": "grim",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ars Dul'Mephistos",
+      "code": "wac",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Occult Tome",
+      "baseType": "grim",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Measured Wrath",
+      "code": "wa6",
+      "enabled": false,
+      "slot": "Armor",
+      "baseName": "Burnt Text",
+      "baseType": "grim",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Weapons",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "The Gnasher",
+      "code": "hax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hand Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Deathspade",
+      "code": "axe",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bladebone",
+      "code": "2ax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Double Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Mindrend",
+      "code": "mpi",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Military Pick",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rakescar",
+      "code": "wax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Fechmars Axe",
+      "code": "lax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Large Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Goreshovel",
+      "code": "bax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Broad Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Chieftan",
+      "code": "btx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Brainhew",
+      "code": "gax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Great Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Humongous",
+      "code": "gix",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Giant Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Iros Torch",
+      "code": "wnd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Maelstromwrath",
+      "code": "ywn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Yew Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gravenspine",
+      "code": "bwn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bone Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Umes Lament",
+      "code": "gwn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grim Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Felloak",
+      "code": "clb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Club",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Knell Striker",
+      "code": "scp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rusthandle",
+      "code": "gsc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grand Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormeye",
+      "code": "wsp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stoutnail",
+      "code": "spc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Spiked Club",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crushflange",
+      "code": "mac",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mace",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodrise",
+      "code": "mst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Morning Star",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Generals Tan Do Li Ga",
+      "code": "fla",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Flail",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ironstone",
+      "code": "whm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Hammer",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bonesob",
+      "code": "mau",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steeldriver",
+      "code": "gma",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Great Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rixots Keen",
+      "code": "ssd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blood Crescent",
+      "code": "scm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scimitar",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Krintizs Skewer",
+      "code": "sbr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Saber",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gleamscythe",
+      "code": "flc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Falchion",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Azurewrath",
+      "code": "crs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Crystal Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Griswolds Edge",
+      "code": "bsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Broad Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellplague",
+      "code": "lsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Culwens Point",
+      "code": "wsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Shadowfang",
+      "code": "2hs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Two-Handed Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Soulflay",
+      "code": "clm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Claymore",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Kinemils Awl",
+      "code": "gis",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Giant Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blacktongue",
+      "code": "bsw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bastard Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ripsaw",
+      "code": "flb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Flamberge",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Patriarch",
+      "code": "gsd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Great Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gull",
+      "code": "dgr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Dagger",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Diggler",
+      "code": "dir",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Dirk",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Jade Tan Do",
+      "code": "kri",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Kriss",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Irices Shard",
+      "code": "bld",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Blade",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Dragon Chang",
+      "code": "spr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Spear",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Razortine",
+      "code": "tri",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Trident",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodthief",
+      "code": "brn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Brandistock",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lance of Yaggai",
+      "code": "spt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Spetum",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Tannr Gorerod",
+      "code": "pik",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Pike",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dimoaks Hew",
+      "code": "bar",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bardiche",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steelgoad",
+      "code": "vou",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Voulge",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Soul Harvest",
+      "code": "scy",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scythe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Battlebranch",
+      "code": "pax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Poleaxe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Woestave",
+      "code": "hal",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Halberd",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Grim Reaper",
+      "code": "wsc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Scythe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bane Ash",
+      "code": "sst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Serpent Lord",
+      "code": "lst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lazarus Spire",
+      "code": "cst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gnarled Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Salamander",
+      "code": "bst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Iron Jang Bong",
+      "code": "wst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Pluckeye",
+      "code": "sbw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Witherstring",
+      "code": "hbw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hunter's Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rimeraven",
+      "code": "lbw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Piercerib",
+      "code": "cbw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Composite Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Pullspite",
+      "code": "sbb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short Battle Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wizendraw",
+      "code": "lbb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Battle Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellclap",
+      "code": "swb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short War Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blastbark",
+      "code": "lwb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long War Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Leadcrow",
+      "code": "lxb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Light Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ichorsting",
+      "code": "mxb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellcast",
+      "code": "hxb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Heavy Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Doomspittle",
+      "code": "rxb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Repeating Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Staff of Kings",
+      "code": "msf",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Staff of Kings",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Horadric Staff",
+      "code": "hst",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Horadric Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hell Forge Hammer",
+      "code": "hfh",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hellforge Hammer",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "KhalimFlail",
+      "code": "qf1",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Khalim's Flail",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "SuperKhalimFlail",
+      "code": "qf2",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Khalim's Will",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Coldkill",
+      "code": "9ha",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hatchet",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Butcher's Pupil",
+      "code": "9ax",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cleaver",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Islestrike",
+      "code": "92a",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Twin Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Pompe's Wrath",
+      "code": "9mp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Crowbill",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Guardian Naga",
+      "code": "9wa",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Naga",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Warlord's Trust",
+      "code": "9la",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Military Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spellsteel",
+      "code": "9ba",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bearded Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormrider",
+      "code": "9bt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tabar",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Boneslayer Blade",
+      "code": "9ga",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gothic Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Minataur",
+      "code": "9gi",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ancient Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Suicide Branch",
+      "code": "9wn",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Burnt Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Carin Shard",
+      "code": "9yw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Petrified Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Arm of King Leoric",
+      "code": "9bw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tomb Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blackhand Key",
+      "code": "9gw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grave Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dark Clan Crusher",
+      "code": "9cl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cudgel",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Zakarum's Hand",
+      "code": "9sc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Rune Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Fetid Sprinkler",
+      "code": "9qs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Holy Water Sprinkler",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hand of Blessed Light",
+      "code": "9ws",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Divine Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Fleshrender",
+      "code": "9sp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Barbed Club",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Sureshrill Frost",
+      "code": "9ma",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Flanged Mace",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Moonfall",
+      "code": "9mt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Jagged Star",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Baezil's Vortex",
+      "code": "9fl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Knout",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Earthshaker",
+      "code": "9wh",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Hammer",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodtree Stump",
+      "code": "9m9",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Club",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Gavel of Pain",
+      "code": "9gm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Martel de Fer",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodletter",
+      "code": "9ss",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gladius",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Coldsteel Eye",
+      "code": "9sm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cutlass",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hexfire",
+      "code": "9sb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Shamshir",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blade of Ali Baba",
+      "code": "9fc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tulwar",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ginther's Rift",
+      "code": "9cr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Dimensional Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Headstriker",
+      "code": "9bs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Plague Bearer",
+      "code": "9ls",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Rune Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Atlantian",
+      "code": "9wd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ancient Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crainte Vomir",
+      "code": "92h",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Espandon",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bing Sz Wang",
+      "code": "9cm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Dacian Falx",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Vile Husk",
+      "code": "9gs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tusk Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cloudcrack",
+      "code": "9b9",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gothic Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Todesfaelle Flamme",
+      "code": "9fb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Zweihander",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Swordguard",
+      "code": "9gd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Executioner Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spineripper",
+      "code": "9dg",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Poignard",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Heart Carver",
+      "code": "9di",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Rondel",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blackbog's Sharp",
+      "code": "9kr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cinquedeas",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormspike",
+      "code": "9bl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Stilleto",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Impaler",
+      "code": "9sr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Spear",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Kelpie Snare",
+      "code": "9tr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Fuscina",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Soulfeast Tine",
+      "code": "9br",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Fork",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hone Sundan",
+      "code": "9st",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Yari",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spire of Honor",
+      "code": "9p9",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Lance",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Meat Scraper",
+      "code": "9b7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Lochaber Axe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blackleach Blade",
+      "code": "9vo",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bill",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Athena's Wrath",
+      "code": "9s8",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Scythe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Pierre Tombale Couant",
+      "code": "9pa",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Partizan",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Husoldal Evo",
+      "code": "9h9",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bec-de-Corbin",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Grim's Burning Dead",
+      "code": "9wc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Grim Scythe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Razorswitch",
+      "code": "8ss",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Jo Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ribcracker",
+      "code": "8ls",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Quarterstaff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Chromatic Ire",
+      "code": "8cs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cedar Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Warpspear",
+      "code": "8bs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gothic Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Skullcollector",
+      "code": "8ws",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Rune Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Skystrike",
+      "code": "8sb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Edge Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Riphook",
+      "code": "8hb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Razor Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Kuko Shakaku",
+      "code": "8lb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cedar Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Endlesshail",
+      "code": "8cb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Double Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Whichwild String",
+      "code": "8s8",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Short Siege Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cliffkiller",
+      "code": "8l8",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Long Siege Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Magewrath",
+      "code": "8sw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Rune Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Godstrike Arch",
+      "code": "8lw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Gothic Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Langer Briser",
+      "code": "8lx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Arbalest",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Pus Spiter",
+      "code": "8mx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Siege Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Buriza-Do Kyanon",
+      "code": "8hx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ballista",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Demon Machine",
+      "code": "8rx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Chu-Ko-Nu",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellslayer",
+      "code": "7bt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Decapitator",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Messerschmidt's Reaver",
+      "code": "7ga",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Champion Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Baranar's Star",
+      "code": "7mt",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Devil Star",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Schaefer's Hammer",
+      "code": "7wh",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Legendary Mallet",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Cranium Basher",
+      "code": "7gm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Thunder Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lightsabre",
+      "code": "7cr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Phase Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Doombringer",
+      "code": "7b7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Champion Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Grandfather",
+      "code": "7gd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Colossus Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wizardspike",
+      "code": "7dg",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Bone Knife",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormspire",
+      "code": "7wc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Giant Thresher",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Eaglehorn",
+      "code": "6l7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Crusader Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Windforce",
+      "code": "6lw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hydra Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Titan's Revenge",
+      "code": "ama",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ceremonial Javelin",
+      "baseType": "ajav",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lycander's Aim",
+      "code": "am7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ceremonial Bow",
+      "baseType": "abow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lycander's Flank",
+      "code": "am9",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ceremonial Pike",
+      "baseType": "aspe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Oculus",
+      "code": "oba",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Swirling Crystal",
+      "baseType": "orb",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cutthroat1",
+      "code": "9tw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Greater Talons",
+      "baseType": "h2h2",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Scalper",
+      "code": "9ta",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Francisca",
+      "baseType": "taxe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodmoon",
+      "code": "7sb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Elegant Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Djinnslayer",
+      "code": "7sm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ataghan",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Deathbit",
+      "code": "9tk",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Dart",
+      "baseType": "tkni",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Warshrike",
+      "code": "7bk",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Winged Knife",
+      "baseType": "tkni",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gutsiphon",
+      "code": "6rx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Demon Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Razoredge",
+      "code": "7ha",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tomahawk",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Demonlimb",
+      "code": "7sp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Tyrant Club",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Tomb Reaver",
+      "code": "7pa",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cryptic Axe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Deaths's Web",
+      "code": "7gw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Unearthed Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Azurewrath",
+      "code": "7cr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Phase Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Fleshripper",
+      "code": "7kr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Fanged Knife",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Horizon's Tornado",
+      "code": "7fl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scourge",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stone Crusher",
+      "code": "7wh",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Legendary Mallet",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Jadetalon",
+      "code": "7wb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Wrist Sword",
+      "baseType": "h2h2",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Runemaster",
+      "code": "72a",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ettin Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Deathcleaver",
+      "code": "7wa",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Berserker Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Executioner's Justice",
+      "code": "7gi",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Glorious Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stoneraven",
+      "code": "amd",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Matriarchal Spear",
+      "baseType": "aspe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gargoyle's Bite",
+      "code": "7ts",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Winged Harpoon",
+      "baseType": "jave",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lacerator",
+      "code": "7b8",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Winged Axe",
+      "baseType": "taxe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Mang Song's Lesson",
+      "code": "6ws",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Archon Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Viperfork",
+      "code": "7br",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mancatcher",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ethereal Edge",
+      "code": "7ba",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Silver-edged Axe",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Reaper's Toll",
+      "code": "7s8",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Thresher",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellrack",
+      "code": "6hx",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Colossus Crossbow",
+      "baseType": "xbow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Widowmaker",
+      "code": "6sw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ward Bow",
+      "baseType": "bow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodraven's Charge",
+      "code": "amb",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Matriarchal Bow",
+      "baseType": "abow",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ghostflame",
+      "code": "7bl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Legend Spike",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Shadowkiller",
+      "code": "7cs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Battle Cestus",
+      "baseType": "h2h2",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gimmershred",
+      "code": "7ta",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Flying Axe",
+      "baseType": "taxe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Windhammer",
+      "code": "7m7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ogre Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Thunderstroke",
+      "code": "amf",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Matriarchal Javelin",
+      "baseType": "ajav",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Demon's Arch",
+      "code": "7s7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Balrog Spear",
+      "baseType": "jave",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steelpillar",
+      "code": "7p7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Pike",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Boneshade",
+      "code": "7bw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Lich Wand",
+      "baseType": "wand",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Flamebellow",
+      "code": "7gs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Balrog Blade",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Fathom",
+      "code": "obf",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Dimensional Shard",
+      "baseType": "orb",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormlash",
+      "code": "7fl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Scourge",
+      "baseType": "mace",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Frostwind",
+      "code": "7ls",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Cryptic Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Eschuta's temper",
+      "code": "obc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Eldritch Orb",
+      "baseType": "orb",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Firelizard's Talons",
+      "code": "7lw",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Feral Claws",
+      "baseType": "h2h2",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Heaven's Light",
+      "code": "7sc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mighty Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ironward",
+      "code": "7ws",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Caduceus",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Arioc's Needle",
+      "code": "7sr",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Hyperion Spear",
+      "baseType": "spea",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cranebeak",
+      "code": "7mp",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "War Spike",
+      "baseType": "axe",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Nord's Tenderizer",
+      "code": "7cl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Truncheon",
+      "baseType": "club",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Earthshifter",
+      "code": "7gm",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Thunder Maul",
+      "baseType": "hamm",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wraithflight",
+      "code": "7gl",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ghost Glaive",
+      "baseType": "jave",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bonehew",
+      "code": "7o7",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Ogre Axe",
+      "baseType": "pole",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ondal's Wisdom",
+      "code": "6cs",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Elder Staff",
+      "baseType": "staf",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Reedeemer",
+      "code": "7sc",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mighty Scepter",
+      "baseType": "scep",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dreadfang",
+      "code": "72h",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Legend Sword",
+      "baseType": "swor",
+      "source": "weapons"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodpact Shard",
+      "code": "7di",
+      "enabled": false,
+      "slot": "Weapon",
+      "baseName": "Mithral Point",
+      "baseType": "knif",
+      "source": "weapons"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Shields",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Pelta Lunata",
+      "code": "buc",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Buckler",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Umbral Disk",
+      "code": "sml",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Small Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormguild",
+      "code": "lrg",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Large Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wall of the Eyeless",
+      "code": "bsh",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Bone Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Swordback Hold",
+      "code": "spk",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Spiked Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steelclash",
+      "code": "kit",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Kite Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bverrit Keep",
+      "code": "tow",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Tower Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Ward",
+      "code": "gts",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Gothic Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Visceratuant",
+      "code": "xuc",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Defender",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Mosers Blessed Circle",
+      "code": "xml",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Round Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormchaser",
+      "code": "xrg",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Scutum",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Tiamat's Rebuke",
+      "code": "xit",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Dragon Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Kerke's Sanctuary",
+      "code": "xow",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Pavise",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Radimant's Sphere",
+      "code": "xts",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Ancient Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lidless Wall",
+      "code": "xsh",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Grim Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lance Guard",
+      "code": "xpk",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Barbed Shield",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Blackoak Shield",
+      "code": "uml",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Luna",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Stormshield",
+      "code": "uit",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Monarch",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Homunculus",
+      "code": "nea",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Heirophant Trophy",
+      "baseType": "head",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Herald of Zakarum",
+      "code": "pa9",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Gilded Shield",
+      "baseType": "ashd",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Alma Negra",
+      "code": "pac",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Sacred Rondache",
+      "baseType": "ashd",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Darkforge Spawn",
+      "code": "nef",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Bloodlord Skull",
+      "baseType": "head",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Boneflame",
+      "code": "nee",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Succubus Skull",
+      "baseType": "head",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dragonscale",
+      "code": "pae",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Zakarum Shield",
+      "baseType": "ashd",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Medusa's Gaze",
+      "code": "uow",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Aegis",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spirit Ward",
+      "code": "uts",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Ward",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Spike Thorn",
+      "code": "upk",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Blade Barrier",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Headhunter's Glory",
+      "code": "ush",
+      "enabled": false,
+      "slot": "Shield",
+      "baseName": "Troll Nest",
+      "baseType": "shie",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Glovess",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "The Hand of Broc",
+      "code": "lgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Leather Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bloodfist",
+      "code": "vgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Heavy Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Chance Guards",
+      "code": "mgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Chain Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Magefist",
+      "code": "tgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Light Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Frostburn",
+      "code": "hgl",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Venom Grip",
+      "code": "xlg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Demonhide Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gravepalm",
+      "code": "xvg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Sharkskin Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Ghoulhide",
+      "code": "xmg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Heavy Bracers",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Lavagout",
+      "code": "xtg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Battle Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellmouth",
+      "code": "xhg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "War Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Souldrain",
+      "code": "umg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Vambraces",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dracul's Grasp",
+      "code": "uvg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Vampirebone Gloves",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Steelrend",
+      "code": "uhg",
+      "enabled": false,
+      "slot": "Gloves",
+      "baseName": "Ogre Gauntlets",
+      "baseType": "glov",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Belts",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Lenyms Cord",
+      "code": "lbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Sash",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Snakecord",
+      "code": "vbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Light Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Nightsmoke",
+      "code": "mbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Goldwrap",
+      "code": "tbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Heavy Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bladebuckle",
+      "code": "hbl",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Plated Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "String of Ears",
+      "code": "zlb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Demonhide Sash",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Razortail",
+      "code": "zvb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Sharkskin Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gloomstrap",
+      "code": "zmb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Mesh Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Snowclash",
+      "code": "ztb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Battle Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Thudergod's Vigor",
+      "code": "zhb",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "War Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Arachnid Mesh",
+      "code": "ulc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Spiderweb Sash",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Nosferatu's Coil",
+      "code": "uvc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Vampirefang Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Verdugo's Hearty Cord",
+      "code": "umc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Mithril Coil",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gheed's Wager",
+      "code": "utc",
+      "enabled": false,
+      "slot": "Belt",
+      "baseName": "Troll Belt",
+      "baseType": "belt",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Bootss",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Hotspur",
+      "code": "lbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gorefoot",
+      "code": "vbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Heavy Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Treads of Cthon",
+      "code": "mbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Chain Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Goblin Toe",
+      "code": "tbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Light Plated Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Tearhaunch",
+      "code": "hbt",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Greaves",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Infernostride",
+      "code": "xlb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Demonhide Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Waterwalk",
+      "code": "xvb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Sharkskin Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Silkweave",
+      "code": "xmb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Mesh Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wartraveler",
+      "code": "xtb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Battle Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Gorerider",
+      "code": "xhb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "War Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Shadowdancer",
+      "code": "uhb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Myrmidon Greaves",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Sandstorm Trek",
+      "code": "uvb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Scarabshell Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Marrowwalk",
+      "code": "umb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Boneweave Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wraithstep",
+      "code": "utb",
+      "enabled": false,
+      "slot": "Boots",
+      "baseName": "Mirrored Boots",
+      "baseType": "boot",
+      "source": "armor"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Rings",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Nagelring",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Manald Heal",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Stone of Jordan",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Constricting Ring",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bul Katho's Wedding Band",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Dwarf Star",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Raven Frost",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Nature's Peace",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Wisp",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Carrion Wind",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Sling",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Opalvein",
+      "code": "rin",
+      "enabled": false,
+      "slot": "Ring",
+      "baseName": "Ring",
+      "baseType": "ring",
+      "source": "misc"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Amulets",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Nokozan Relic",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Eye of Etlich",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Mahim-Oak Curio",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Amulet of the Viper",
+      "code": "vip",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet of the Viper",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Cat's Eye",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "The Rising Sun",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crescent Moon",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Mara's Kaleidoscope",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Atma's Scarab",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Highlord's Wrath",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Saracen's Chance",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Seraph's Hymn",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Metalgrid",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Entropy Locket",
+      "code": "amu",
+      "enabled": false,
+      "slot": "Amulet",
+      "baseName": "Amulet",
+      "baseType": "amul",
+      "source": "misc"
+    },
+    {
+      "kind": "header",
+      "label": "Unique Others",
+      "enabled": false
+    },
+    {
+      "rarity": "unique",
+      "label": "Gheed's Fortune",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Annihilus",
+      "code": "cm1",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Small Charm",
+      "baseType": "scha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rainbow Facet",
+      "code": "jew",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Jewel",
+      "baseType": "jewl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Hellfire Torch",
+      "code": "cm2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Large Charm",
+      "baseType": "mcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Cold Rupture",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Flame Rift",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crack of the Heavens",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Rotting Fissure",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Bone Break",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Black Cleft",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Defender's Bile",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Guardian's Thunder",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Protector's Frost",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Defender's Fire",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Protector's Stone",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Guardian's Light",
+      "code": "cjw",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Colossal Jewel",
+      "baseType": "cjwl",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Cold Rupture",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Cold Rupture",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Flame Rift",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Crack of the Heavens",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Rotting Fissure",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Bone Break",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "PreCrafted Black Cleft",
+      "code": "cm3",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Grand Charm",
+      "baseType": "lcha",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Flame Rift",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Crack of the Heavens",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Rotting Fissure",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Bone Break",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
+      "label": "Crafted Black Cleft",
+      "code": "cs2",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    }
+  ],
+  "missing": []
+}

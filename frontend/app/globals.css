@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Diablo 2 item text colors (internal RGB) */
+:root {
+  --d2-normal: rgb(255, 255, 255);
+  --d2-grey: rgb(105, 105, 105);
+  --d2-magic: rgb(105, 105, 255);
+  --d2-rare: rgb(255, 255, 100);
+  --d2-set: rgb(0, 128, 0);
+  --d2-unique: rgb(199, 179, 119);
+  --d2-crafted: rgb(255, 168, 0);
+  --d2-gold: rgb(218, 165, 32);
+  --d2-quest: rgb(255, 77, 77);
+
+  --bg: #0f0f12;
+  --surface: #18181c;
+  --border: #2a2a30;
+  --text: #e4e4e7;
+  --muted: #71717a;
+  --accent: #a78bfa;
+  --accent-hover: #c4b5fd;
+  --success: #34d399;
+  --set: var(--d2-set);
+  --unique: var(--d2-unique);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* D2 item colors – explicit classes so Tailwind doesn't purge */
+.text-d2-set { color: var(--d2-set); }
+.text-d2-unique { color: var(--d2-unique); }
+.border-d2-set { border-color: rgba(0, 128, 0, 0.5); }
+.border-d2-unique { border-color: rgba(199, 179, 119, 0.5); }
+.bg-d2-unique { background-color: var(--d2-unique); }
+.ring-d2-unique { --tw-ring-color: var(--d2-unique); }
+.text-d2-crafted { color: var(--d2-crafted); }
+.border-d2-crafted { border-color: rgba(255, 168, 0, 0.5); }
+.text-d2-magic { color: var(--d2-magic); }
+.border-d2-magic { border-color: rgba(105, 105, 255, 0.5); }
+.text-d2-rare { color: var(--d2-rare); }
+.border-d2-rare { border-color: rgba(255, 255, 100, 0.5); }
+.text-d2-normal { color: var(--d2-normal); }
+.border-d2-normal { border-color: rgba(255, 255, 255, 0.4); }
+.text-d2-quest { color: var(--d2-quest); }
+.text-d2-gold { color: var(--d2-gold); }
+.ring-d2-gold { --tw-ring-color: var(--d2-gold); }
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+}

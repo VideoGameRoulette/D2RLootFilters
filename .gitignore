@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# build / output
+.next
+out
+build
+dist
+frontend/.next
+
+# env
+.env
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+*.log
+
+# IDE
+.idea
+.vscode

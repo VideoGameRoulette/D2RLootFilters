@@ -1,0 +1,422 @@
+{
+    "name": "Sets",
+    "rules": [
+        {
+            "name": "All",
+            "enabled": true,
+            "ruleType": "hide",
+            "filterEtherealSocketed": true,
+            "equipmentRarity": [
+                "rare",
+                "lowQuality",
+                "set",
+                "unique",
+                "magic",
+                "hiQuality",
+                "normal"
+            ],
+            "equipmentQuality": [
+                "normal",
+                "exceptional",
+                "elite"
+            ],
+            "equipmentCategory": [
+                "acce",
+                "weap",
+                "armo"
+            ],
+            "itemCategory": [
+                "misc"
+            ]
+        },
+        {
+            "name": "HS Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "utb",
+                "usk",
+                "xlg",
+                "wad",
+                "xpl"
+            ]
+        },
+        {
+            "name": "Horazon s Countenance Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "usk"
+            ]
+        },
+        {
+            "name": "Horazon s Dominion Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xpl"
+            ]
+        },
+        {
+            "name": "Horazon s Hold Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xlg"
+            ]
+        },
+        {
+            "name": "Horazon s Legacy Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "utb"
+            ]
+        },
+        {
+            "name": "Horazon s Secrets Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wad"
+            ]
+        },
+        {
+            "name": "BG Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "vbl"
+            ]
+        },
+        {
+            "name": "Bane s Authority Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "vbl"
+            ]
+        },
+        {
+            "name": "OC Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ztb",
+                "xvg",
+                "xml",
+                "xhm"
+            ]
+        },
+        {
+            "name": "Whitstan s Guard Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xml"
+            ]
+        },
+        {
+            "name": "Guillaume s Face Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xhm"
+            ]
+        },
+        {
+            "name": "Wilhelm s Pride Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ztb"
+            ]
+        },
+        {
+            "name": "Magnus Skin Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xvg"
+            ]
+        },
+        {
+            "name": "HB Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uts",
+                "7ma",
+                "xrs",
+                "uhm"
+            ]
+        },
+        {
+            "name": "Dangoon s Teaching Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "7ma"
+            ]
+        },
+        {
+            "name": "Haemosu s Adamant Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xrs"
+            ]
+        },
+        {
+            "name": "Taebaek s Glory Shld",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uts"
+            ]
+        },
+        {
+            "name": "Ondal s Almighty Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uhm"
+            ]
+        },
+        {
+            "name": "DD Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wsd",
+                "lgl",
+                "lbl"
+            ]
+        },
+        {
+            "name": "Death s Touch Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "wsd"
+            ]
+        },
+        {
+            "name": "Death s Guard Belt",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "lbl"
+            ]
+        },
+        {
+            "name": "Death s Hand Glov",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "lgl"
+            ]
+        },
+        {
+            "name": "NAV Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ci0",
+                "ult",
+                "6cs"
+            ]
+        },
+        {
+            "name": "Naj s Circlet Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ci0"
+            ]
+        },
+        {
+            "name": "Naj s Light Plate Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ult"
+            ]
+        },
+        {
+            "name": "Naj s Puzzler Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "6cs"
+            ]
+        },
+        {
+            "name": "AW Set Set",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "dr8",
+                "9mt",
+                "xtb",
+                "uul"
+            ]
+        },
+        {
+            "name": "Aldur s Rhythm Weap",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "9mt"
+            ]
+        },
+        {
+            "name": "Aldur s Stony Gaze Helm",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "dr8"
+            ]
+        },
+        {
+            "name": "Aldur s Deception Armor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "uul"
+            ]
+        },
+        {
+            "name": "Aldur s Advance Boot",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xtb"
+            ]
+        }
+    ]
+}
