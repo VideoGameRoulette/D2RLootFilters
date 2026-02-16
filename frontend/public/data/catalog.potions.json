@@ -25,11 +25,6 @@
       "slot": "Other"
     },
     {
-      "code": "hpo",
-      "label": "Healing Potion",
-      "slot": "Other"
-    },
-    {
       "code": "hp4",
       "label": "Greater Healing Potion",
       "slot": "Other"
@@ -55,11 +50,6 @@
     },
     {
       "code": "mp3",
-      "label": "Mana Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "mpo",
       "label": "Mana Potion",
       "slot": "Other"
     },

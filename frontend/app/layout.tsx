@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const basePath =
+  (typeof process.env.NEXT_PUBLIC_BASE_PATH === "string" && process.env.NEXT_PUBLIC_BASE_PATH) ||
+  "";
+
 export const metadata: Metadata = {
   title: "D2R Loot Filter Builder",
   description: "Select sets and uniques to build a Diablo 2 Resurrected loot filter. Export JSON for in-game import.",
+  icons: {
+    icon: `${basePath}/favicon.ico`,
+  },
 };
 
 export default function RootLayout({

@@ -3,6 +3,12 @@
 import { useMemo, useState } from "react";
 import type { SelectableItem } from "@/lib/types";
 
+const ITEM_IMAGE_SIZE = "w-12 h-12";
+const ITEM_IMAGE_INNER = "w-11 h-11";
+
+/** Item codes whose downloaded image is wrong. Show placeholder instead. (Antidote yps uses custom yps.png.) */
+const ITEM_IMAGE_PLACEHOLDER_CODES = new Set<string>([]);
+
 interface CatalogSectionProps {
   title: string;
   items: SelectableItem[];
@@ -22,6 +28,8 @@ interface CatalogSectionProps {
   sortBySlotThenLabel?: boolean;
   /** If true, fill available height (for tab panel). */
   fillPanel?: boolean;
+  /** Base path for item images (e.g. "/item-images" or "/D2RLootFilters/item-images"). Image URL: {itemImageBasePath}/{code}.png */
+  itemImageBasePath?: string;
 }
 
 export function CatalogSection({
@@ -38,6 +46,7 @@ export function CatalogSection({
   sortAlphabetically = true,
   sortBySlotThenLabel = false,
   fillPanel = false,
+  itemImageBasePath,
 }: CatalogSectionProps) {
   const [search, setSearch] = useState("");
 
@@ -123,22 +132,70 @@ export function CatalogSection({
           filtered.map((item) => {
             const isSelected = item.codes.every((c) => selectedCodes.has(c));
             const id = `${title}-${item.code}`;
+            const imageCode = item.imageCode ?? item.codes[0];
+            const showImageSlot = Boolean(itemImageBasePath && imageCode);
+            const usePlaceholder = showImageSlot && ITEM_IMAGE_PLACEHOLDER_CODES.has(imageCode);
             return (
-              <li key={item.code} className="flex items-center gap-2 py-1.5 px-2 rounded hover:bg-zinc-800/50">
+              <li key={item.code} className="flex items-center gap-3 py-2 px-2 rounded hover:bg-zinc-800/50">
                 <input
                   id={id}
                   type="checkbox"
                   checked={isSelected}
                   onChange={() => onToggle(item.codes)}
-                  className="rounded border-zinc-600 bg-zinc-800 text-violet-500 focus:ring-violet-500"
+                  className="flex-shrink-0 rounded border-zinc-600 bg-zinc-800 text-violet-500 focus:ring-violet-500 w-4 h-4"
                 />
+                {showImageSlot && !usePlaceholder ? (
+                  <span className={`flex-shrink-0 ${ITEM_IMAGE_SIZE} flex items-center justify-center bg-zinc-800/80 rounded overflow-hidden`}>
+                    <img
+                      src={`${itemImageBasePath}/${imageCode}.png`}
+                      alt=""
+                      className={`${ITEM_IMAGE_INNER} object-contain`}
+                      data-fallback-base={item.imageCode && item.codes[0] && item.imageCode !== item.codes[0] ? item.codes[0] : undefined}
+                      data-base-path={itemImageBasePath}
+                      onError={(e) => {
+                        const img = e.currentTarget;
+                        const fallback = img.getAttribute("data-fallback-base");
+                        const basePath = img.getAttribute("data-base-path");
+                        if (fallback && basePath && !img.src.includes(`/${fallback}.png`)) {
+                          img.src = `${basePath}/${fallback}.png`;
+                          return;
+                        }
+                        img.style.display = "none";
+                        const placeholder = img.nextElementSibling;
+                        if (placeholder) (placeholder as HTMLElement).style.display = "flex";
+                      }}
+                    />
+                    <span
+                      className="hidden w-full h-full items-center justify-center bg-zinc-700/80 text-zinc-500 text-sm"
+                      aria-hidden
+                    >
+                      ?
+                    </span>
+                  </span>
+                ) : showImageSlot && usePlaceholder ? (
+                  <span
+                    className={`flex-shrink-0 ${ITEM_IMAGE_SIZE} flex items-center justify-center bg-zinc-700/80 rounded text-zinc-500 text-sm`}
+                    aria-hidden
+                    title="Image not available (wrong asset)"
+                  >
+                    ?
+                  </span>
+                ) : itemImageBasePath ? (
+                  <span
+                    className={`flex-shrink-0 ${ITEM_IMAGE_SIZE} flex items-center justify-center bg-zinc-700/80 rounded text-zinc-500 text-sm`}
+                    aria-hidden
+                    title="No image"
+                  >
+                    ?
+                  </span>
+                ) : null}
                 <label
                   htmlFor={id}
-                  className={`flex-1 text-sm cursor-pointer select-none truncate ${itemColorClass}`}
+                  className={`flex-1 text-lg cursor-pointer select-none truncate min-w-0 ${itemColorClass}`}
                   title={item.setLabel ? `${item.setLabel} – ${item.label}` : item.label}
                 >
                   {item.setLabel && (
-                    <span className="text-zinc-500 text-xs block truncate">
+                    <span className="text-zinc-500 text-base block truncate">
                       {item.setLabel}
                     </span>
                   )}
@@ -146,7 +203,7 @@ export function CatalogSection({
                     {item.label}
                   </span>
                   {(item.quality ?? item.slot) && (
-                    <span className="opacity-70 ml-1">
+                    <span className="opacity-70 ml-1 text-base">
                       ({item.quality ? item.quality.charAt(0).toUpperCase() + item.quality.slice(1) : item.slot})
                     </span>
                   )}

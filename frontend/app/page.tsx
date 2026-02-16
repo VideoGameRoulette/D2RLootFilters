@@ -24,6 +24,8 @@ import type { BasesCatalog, EquipmentQuality, GemsCatalog, PotionsCatalog, Quest
 
 const QUALITIES: EquipmentQuality[] = ["normal", "exceptional", "elite"];
 
+const MAX_RULES = 32;
+
 const TAB_ORDER = [
   "normal",
   "socketedEthereal",
@@ -38,6 +40,14 @@ const TAB_ORDER = [
   "misc",
   "gold",
 ] as const;
+
+/** Group potions into 4 rules (Health, Mana, Rejuvenation, Status) to save rule count. */
+const POTION_GROUPS: { name: string; codes: string[] }[] = [
+  { name: "Health Potions", codes: ["hp1", "hp2", "hp3", "hp4", "hp5"] },
+  { name: "Mana Potions", codes: ["mp1", "mp2", "mp3", "mp4", "mp5"] },
+  { name: "Rejuvenation Potions", codes: ["rvl", "rvs"] },
+  { name: "Status Potions", codes: ["yps", "vps", "wms"] },
+];
 
 export default function Home() {
   const [setsCatalog, setSetsCatalog] = useState<Catalog | null>(null);
@@ -451,20 +461,52 @@ export default function Home() {
 
   const miscItemRules = useMemo(() => {
     const out: { name: string; codes: string[] }[] = [];
-    const add = (items: SelectableItem[], selected: Set<string>) => {
-      for (const item of items) {
-        const codes = item.codes.filter((c) => selected.has(c));
-        if (codes.length > 0) out.push({ name: item.label, codes });
-      }
-    };
-    add(potionItems, selectedPotionCodes);
-    add(miscOtherItems, selectedMiscOtherCodes);
+    for (const group of POTION_GROUPS) {
+      const codes = group.codes.filter((c) => selectedPotionCodes.has(c));
+      if (codes.length > 0) out.push({ name: group.name, codes });
+    }
+    for (const item of miscOtherItems) {
+      const codes = item.codes.filter((c) => selectedMiscOtherCodes.has(c));
+      if (codes.length > 0) out.push({ name: item.label, codes });
+    }
     return out;
   }, [
-    potionItems,
     miscOtherItems,
     selectedPotionCodes,
     selectedMiscOtherCodes,
+  ]);
+
+  const ruleCount = useMemo(() => {
+    const profile = profileName.replace(/\s/g, "") || "LootFilter";
+    const filter = buildFilterFromSelection(
+      profile,
+      Array.from(selectedSetCodes),
+      Array.from(selectedUniqueCodes),
+      Array.from(selectedRuneCodes),
+      Array.from(selectedNormalBaseCodes),
+      Array.from(selectedMagicBaseCodes),
+      Array.from(selectedRareBaseCodes),
+      Array.from(selectedQuestCodes),
+      Array.from(selectedGemCodes),
+      miscItemRules,
+      Array.from(selectedSocketedEtherealBaseCodes),
+      goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
+    );
+    return filter.rules.length;
+  }, [
+    profileName,
+    selectedSetCodes,
+    selectedUniqueCodes,
+    selectedRuneCodes,
+    selectedNormalBaseCodes,
+    selectedMagicBaseCodes,
+    selectedRareBaseCodes,
+    selectedQuestCodes,
+    selectedGemCodes,
+    miscItemRules,
+    selectedSocketedEtherealBaseCodes,
+    goldFilterEnabled,
+    goldFilterThreshold,
   ]);
 
   const getExportJson = useCallback(() => {
@@ -613,7 +655,7 @@ export default function Home() {
     selectedPotionCodes.size +
     selectedQuestCodes.size +
     selectedMiscOtherCodes.size;
-  const canExport = totalSelected > 0 || goldFilterEnabled;
+  const canExport = (totalSelected > 0 || goldFilterEnabled) && ruleCount <= MAX_RULES;
 
   if (loading) {
     return (
@@ -643,9 +685,16 @@ export default function Home() {
         <header className="flex-shrink-0 border-b border-zinc-700/60 bg-zinc-900/70">
           <div className="px-4 md:px-6 lg:px-8 py-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
-                D2R Loot Filter Builder
-              </h1>
+              <div className="flex items-center gap-3">
+                <img
+                  src={`${dataBase}/imgs/logo.png`}
+                  alt=""
+                  className="h-32 w-auto object-contain"
+                />
+                <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                  D2R Loot Filter Builder
+                </h1>
+              </div>
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-xs text-zinc-500 font-medium mr-1">
                   Game v3.1.91636 · Updated 2026-02-14
@@ -705,6 +754,16 @@ export default function Home() {
                   className="bg-zinc-800/80 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent max-w-[200px]"
                 />
               </label>
+              <span
+                className={`text-sm font-medium tabular-nums ${
+                  ruleCount > MAX_RULES
+                    ? "text-amber-400"
+                    : "text-zinc-400"
+                }`}
+                title={ruleCount > MAX_RULES ? `Game allows max ${MAX_RULES} rules. Reduce selections to export.` : undefined}
+              >
+                Rules: {ruleCount} / {MAX_RULES}
+              </span>
               <div className="text-xs text-zinc-500 border-l border-zinc-600/80 pl-4 hidden sm:block">
                 Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
               </div>
@@ -836,6 +895,7 @@ export default function Home() {
                   itemColorClass="text-d2-normal"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -866,6 +926,7 @@ export default function Home() {
                   itemColorClass="text-d2-normal"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -896,6 +957,7 @@ export default function Home() {
                   itemColorClass="text-d2-magic"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -926,6 +988,7 @@ export default function Home() {
                   itemColorClass="text-d2-rare"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -942,6 +1005,7 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortBySlotThenLabel
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "sets" && (
@@ -956,6 +1020,7 @@ export default function Home() {
                 itemColorClass="text-d2-set"
                 noContainer
                 fillPanel
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "runes" && (
@@ -971,6 +1036,7 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "gems" && (
@@ -986,6 +1052,7 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "potions" && (
@@ -1001,6 +1068,7 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "quest" && (
@@ -1016,6 +1084,7 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "misc" && (
@@ -1030,6 +1099,7 @@ export default function Home() {
                 itemColorClass="text-zinc-400"
                 noContainer
                 fillPanel
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "gold" && (

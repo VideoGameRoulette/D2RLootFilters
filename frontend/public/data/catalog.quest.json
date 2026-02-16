@@ -224,36 +224,7 @@
     },
     {
       "kind": "header",
-      "label": "General (Identify / Town Portal)"
-    },
-    {
-      "code": "isc",
-      "label": "Scroll of Identify",
-      "slot": "Other"
-    },
-    {
-      "code": "tsc",
-      "label": "Scroll of Town Portal",
-      "slot": "Other"
-    },
-    {
-      "code": "ibk",
-      "label": "Tome of Identify",
-      "slot": "Other"
-    },
-    {
-      "code": "tbk",
-      "label": "Tome of Town Portal",
-      "slot": "Other"
-    },
-    {
-      "kind": "header",
       "label": "Endgame & Crafted"
-    },
-    {
-      "code": "cs2",
-      "label": "Crafted Sunder Charm",
-      "slot": "Other"
     },
     {
       "code": "tes",
