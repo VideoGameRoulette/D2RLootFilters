@@ -253,30 +253,33 @@
     },
     {
       "code": "ua1",
-      "label": "Uber Ancient Summon Material Act 1",
+      "label": "Talic's Anguish (Act 1)",
       "slot": "Other"
     },
     {
       "code": "ua2",
-      "label": "Uber Ancient Summon Material Act 2",
+      "label": "Korlic's Pain (Act 2)",
       "slot": "Other"
     },
     {
       "code": "ua3",
-      "label": "Uber Ancient Summon Material Act 3",
+      "label": "Madawc's Ire (Act 3)",
       "slot": "Other"
     },
     {
       "code": "ua4",
-      "label": "Uber Ancient Summon Material Act 4",
+      "label": "Bul-Kathos' Nightmare (Act 4)",
       "slot": "Other"
     },
     {
       "code": "ua5",
-      "label": "Uber Ancient Summon Material Act 5",
+      "label": "Worusk's End (Act 5)",
       "slot": "Other"
     },
-    
+    {
+      "kind": "header",
+      "label": "Unknown"
+    },
     {
       "code": "um1",
       "label": "Uber Ancient Upgrade Material Fire",
@@ -306,10 +309,6 @@
       "code": "um6",
       "label": "Uber Ancient Upgrade Material Magic",
       "slot": "Other"
-    },
-    {
-      "kind": "header",
-      "label": "Unknown"
     },
     {
       "code": "qll",

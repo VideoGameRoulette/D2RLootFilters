@@ -39,6 +39,7 @@ export function catalogToSelectableItems(
       const slot = "slot" in entry ? entry.slot : undefined;
       const baseName = "baseName" in entry ? entry.baseName : undefined;
       const imageCode = "imageCode" in entry ? entry.imageCode : undefined;
+      const maxrollId = "maxrollId" in entry ? entry.maxrollId : undefined;
       items.push({
         code: `${baseCode}|${label}`,
         codes: [baseCode],
@@ -47,6 +48,7 @@ export function catalogToSelectableItems(
         slot,
         setLabel: baseName,
         imageCode,
+        maxrollId,
       });
     }
     return items;
@@ -68,10 +70,11 @@ export function catalogToSelectableItems(
     const label = displayLabel(rawLabel, rarity);
     const slot = "slot" in entry ? entry.slot : undefined;
     const setLabel = currentHeader || undefined;
+    const maxrollId = "maxrollId" in entry ? entry.maxrollId : undefined;
 
     if (slot === "Set" || codes.length > 1) continue;
 
-    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel });
+    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel, maxrollId });
   }
 
   return items;

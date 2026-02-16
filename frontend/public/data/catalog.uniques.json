@@ -35,7 +35,8 @@
       "slot": "Helm",
       "baseName": "Skull Cap",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique072"
     },
     {
       "rarity": "unique",
@@ -46,7 +47,8 @@
       "slot": "Helm",
       "baseName": "Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique073"
     },
     {
       "rarity": "unique",
@@ -57,7 +59,8 @@
       "slot": "Helm",
       "baseName": "Full Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique074"
     },
     {
       "rarity": "unique",
@@ -68,7 +71,8 @@
       "slot": "Helm",
       "baseName": "Bone Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique075"
     },
     {
       "rarity": "unique",
@@ -79,7 +83,8 @@
       "slot": "Helm",
       "baseName": "Great Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique076"
     },
     {
       "rarity": "unique",
@@ -90,7 +95,8 @@
       "slot": "Helm",
       "baseName": "Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique077"
     },
     {
       "rarity": "unique",
@@ -101,7 +107,8 @@
       "slot": "Helm",
       "baseName": "Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique078"
     },
     {
       "rarity": "unique",
@@ -112,7 +119,8 @@
       "slot": "Helm",
       "baseName": "War Hat",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique201"
     },
     {
       "rarity": "unique",
@@ -123,7 +131,8 @@
       "slot": "Helm",
       "baseName": "Sallet",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique202"
     },
     {
       "rarity": "unique",
@@ -134,7 +143,8 @@
       "slot": "Helm",
       "baseName": "Casque",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique203"
     },
     {
       "rarity": "unique",
@@ -145,7 +155,8 @@
       "slot": "Helm",
       "baseName": "Basinet",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique204"
     },
     {
       "rarity": "unique",
@@ -167,7 +178,8 @@
       "slot": "Helm",
       "baseName": "Grand Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique206"
     },
     {
       "rarity": "unique",
@@ -178,7 +190,8 @@
       "slot": "Helm",
       "baseName": "Death Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique207"
     },
     {
       "rarity": "unique",
@@ -200,7 +213,8 @@
       "slot": "Helm",
       "baseName": "Shako",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique248"
     },
     {
       "rarity": "unique",
@@ -211,7 +225,8 @@
       "slot": "Helm",
       "baseName": "Spired Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique249"
     },
     {
       "rarity": "unique",
@@ -222,7 +237,8 @@
       "slot": "Helm",
       "baseName": "Slayer Guard",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique279"
     },
     {
       "rarity": "unique",
@@ -233,7 +249,8 @@
       "slot": "Helm",
       "baseName": "Totemic Mask",
       "baseType": "pelt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique287"
     },
     {
       "rarity": "unique",
@@ -266,7 +283,8 @@
       "slot": "Helm",
       "baseName": "Destroyer Helm",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique325"
     },
     {
       "rarity": "unique",
@@ -288,7 +306,8 @@
       "slot": "Helm",
       "baseName": "Diadem",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique336"
     },
     {
       "rarity": "unique",
@@ -299,7 +318,8 @@
       "slot": "Helm",
       "baseName": "Spired Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique343"
     },
     {
       "rarity": "unique",
@@ -310,7 +330,8 @@
       "slot": "Helm",
       "baseName": "Corona",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique344"
     },
     {
       "rarity": "unique",
@@ -321,7 +342,8 @@
       "slot": "Helm",
       "baseName": "Demonhead",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique345"
     },
     {
       "rarity": "unique",
@@ -343,7 +365,8 @@
       "slot": "Helm",
       "baseName": "Sky Spirit",
       "baseType": "pelt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique350"
     },
     {
       "rarity": "unique",
@@ -354,7 +377,8 @@
       "slot": "Helm",
       "baseName": "Fury Visor",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique355"
     },
     {
       "rarity": "unique",
@@ -365,7 +389,8 @@
       "slot": "Helm",
       "baseName": "Tiara",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique357"
     },
     {
       "rarity": "unique",
@@ -376,7 +401,8 @@
       "slot": "Helm",
       "baseName": "Conqueror Crown",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique361"
     },
     {
       "rarity": "unique",
@@ -414,7 +440,8 @@
       "slot": "Armor",
       "baseName": "Quilted Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique079"
     },
     {
       "rarity": "unique",
@@ -436,7 +463,8 @@
       "slot": "Armor",
       "baseName": "Hard Leather Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique081"
     },
     {
       "rarity": "unique",
@@ -447,7 +475,8 @@
       "slot": "Armor",
       "baseName": "Studded Leather",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique082"
     },
     {
       "rarity": "unique",
@@ -458,7 +487,8 @@
       "slot": "Armor",
       "baseName": "Ring Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique083"
     },
     {
       "rarity": "unique",
@@ -469,7 +499,8 @@
       "slot": "Armor",
       "baseName": "Scale Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique084"
     },
     {
       "rarity": "unique",
@@ -480,7 +511,8 @@
       "slot": "Armor",
       "baseName": "Chain Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique085"
     },
     {
       "rarity": "unique",
@@ -502,7 +534,8 @@
       "slot": "Armor",
       "baseName": "Splint Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique087"
     },
     {
       "rarity": "unique",
@@ -513,7 +546,8 @@
       "slot": "Armor",
       "baseName": "Plate Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique088"
     },
     {
       "rarity": "unique",
@@ -524,7 +558,8 @@
       "slot": "Armor",
       "baseName": "Field Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique089"
     },
     {
       "rarity": "unique",
@@ -535,7 +570,8 @@
       "slot": "Armor",
       "baseName": "Gothic Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique090"
     },
     {
       "rarity": "unique",
@@ -546,7 +582,8 @@
       "slot": "Armor",
       "baseName": "Full Plate Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique091"
     },
     {
       "rarity": "unique",
@@ -568,7 +605,8 @@
       "slot": "Armor",
       "baseName": "Light Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique093"
     },
     {
       "rarity": "unique",
@@ -579,7 +617,8 @@
       "slot": "Armor",
       "baseName": "Ghost Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique209"
     },
     {
       "rarity": "unique",
@@ -590,7 +629,8 @@
       "slot": "Armor",
       "baseName": "Serpentskin Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique210"
     },
     {
       "rarity": "unique",
@@ -634,7 +674,8 @@
       "slot": "Armor",
       "baseName": "Tigulated Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique214"
     },
     {
       "rarity": "unique",
@@ -645,7 +686,8 @@
       "slot": "Armor",
       "baseName": "Mesh Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique215"
     },
     {
       "rarity": "unique",
@@ -656,7 +698,8 @@
       "slot": "Armor",
       "baseName": "Cuirass",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique216"
     },
     {
       "rarity": "unique",
@@ -667,7 +710,8 @@
       "slot": "Armor",
       "baseName": "Russet Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique217"
     },
     {
       "rarity": "unique",
@@ -678,7 +722,8 @@
       "slot": "Armor",
       "baseName": "Templar Coat",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique218"
     },
     {
       "rarity": "unique",
@@ -689,7 +734,8 @@
       "slot": "Armor",
       "baseName": "Sharktooth Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique219"
     },
     {
       "rarity": "unique",
@@ -700,7 +746,8 @@
       "slot": "Armor",
       "baseName": "Embossed Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique220"
     },
     {
       "rarity": "unique",
@@ -711,7 +758,8 @@
       "slot": "Armor",
       "baseName": "Chaos Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique221"
     },
     {
       "rarity": "unique",
@@ -722,7 +770,8 @@
       "slot": "Armor",
       "baseName": "Ornate Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique222"
     },
     {
       "rarity": "unique",
@@ -744,7 +793,8 @@
       "slot": "Armor",
       "baseName": "Wire Fleece",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique250"
     },
     {
       "rarity": "unique",
@@ -755,7 +805,8 @@
       "slot": "Armor",
       "baseName": "Balrog Skin",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique251"
     },
     {
       "rarity": "unique",
@@ -766,7 +817,8 @@
       "slot": "Armor",
       "baseName": "Sacred Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique311"
     },
     {
       "rarity": "unique",
@@ -777,7 +829,8 @@
       "slot": "Armor",
       "baseName": "Kraken Shell",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique317"
     },
     {
       "rarity": "unique",
@@ -799,7 +852,8 @@
       "slot": "Armor",
       "baseName": "Dusk Shroud",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique358"
     },
     {
       "rarity": "unique",
@@ -810,7 +864,8 @@
       "slot": "Armor",
       "baseName": "Sacred Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique366"
     },
     {
       "rarity": "unique",
@@ -870,7 +925,8 @@
       "slot": "Weapon",
       "baseName": "Hand Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique000"
     },
     {
       "rarity": "unique",
@@ -881,7 +937,8 @@
       "slot": "Weapon",
       "baseName": "Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique001"
     },
     {
       "rarity": "unique",
@@ -892,7 +949,8 @@
       "slot": "Weapon",
       "baseName": "Double Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique002"
     },
     {
       "rarity": "unique",
@@ -914,7 +972,8 @@
       "slot": "Weapon",
       "baseName": "War Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique004"
     },
     {
       "rarity": "unique",
@@ -936,7 +995,8 @@
       "slot": "Weapon",
       "baseName": "Broad Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique006"
     },
     {
       "rarity": "unique",
@@ -958,7 +1018,8 @@
       "slot": "Weapon",
       "baseName": "Great Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique008"
     },
     {
       "rarity": "unique",
@@ -1002,7 +1063,8 @@
       "slot": "Weapon",
       "baseName": "Bone Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique012"
     },
     {
       "rarity": "unique",
@@ -1024,7 +1086,8 @@
       "slot": "Weapon",
       "baseName": "Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique014"
     },
     {
       "rarity": "unique",
@@ -1035,7 +1098,8 @@
       "slot": "Weapon",
       "baseName": "Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique015"
     },
     {
       "rarity": "unique",
@@ -1046,7 +1110,8 @@
       "slot": "Weapon",
       "baseName": "Grand Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique016"
     },
     {
       "rarity": "unique",
@@ -1057,7 +1122,8 @@
       "slot": "Weapon",
       "baseName": "War Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique017"
     },
     {
       "rarity": "unique",
@@ -1068,7 +1134,8 @@
       "slot": "Weapon",
       "baseName": "Spiked Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique018"
     },
     {
       "rarity": "unique",
@@ -1079,7 +1146,8 @@
       "slot": "Weapon",
       "baseName": "Mace",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique019"
     },
     {
       "rarity": "unique",
@@ -1090,7 +1158,8 @@
       "slot": "Weapon",
       "baseName": "Morning Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique020"
     },
     {
       "rarity": "unique",
@@ -1112,7 +1181,8 @@
       "slot": "Weapon",
       "baseName": "War Hammer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique022"
     },
     {
       "rarity": "unique",
@@ -1134,7 +1204,8 @@
       "slot": "Weapon",
       "baseName": "Great Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique024"
     },
     {
       "rarity": "unique",
@@ -1178,7 +1249,8 @@
       "slot": "Weapon",
       "baseName": "Falchion",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique028"
     },
     {
       "rarity": "unique",
@@ -1189,7 +1261,8 @@
       "slot": "Weapon",
       "baseName": "Crystal Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique301"
     },
     {
       "rarity": "unique",
@@ -1211,7 +1284,8 @@
       "slot": "Weapon",
       "baseName": "Long Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique031"
     },
     {
       "rarity": "unique",
@@ -1233,7 +1307,8 @@
       "slot": "Weapon",
       "baseName": "Two-Handed Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique033"
     },
     {
       "rarity": "unique",
@@ -1244,7 +1319,8 @@
       "slot": "Weapon",
       "baseName": "Claymore",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique034"
     },
     {
       "rarity": "unique",
@@ -1266,7 +1342,8 @@
       "slot": "Weapon",
       "baseName": "Bastard Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique036"
     },
     {
       "rarity": "unique",
@@ -1277,7 +1354,8 @@
       "slot": "Weapon",
       "baseName": "Flamberge",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique037"
     },
     {
       "rarity": "unique",
@@ -1288,7 +1366,8 @@
       "slot": "Weapon",
       "baseName": "Great Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique038"
     },
     {
       "rarity": "unique",
@@ -1299,7 +1378,8 @@
       "slot": "Weapon",
       "baseName": "Dagger",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique039"
     },
     {
       "rarity": "unique",
@@ -1310,7 +1390,8 @@
       "slot": "Weapon",
       "baseName": "Dirk",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique040"
     },
     {
       "rarity": "unique",
@@ -1321,7 +1402,8 @@
       "slot": "Weapon",
       "baseName": "Kriss",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique041"
     },
     {
       "rarity": "unique",
@@ -1343,7 +1425,8 @@
       "slot": "Weapon",
       "baseName": "Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique043"
     },
     {
       "rarity": "unique",
@@ -1354,7 +1437,8 @@
       "slot": "Weapon",
       "baseName": "Trident",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique044"
     },
     {
       "rarity": "unique",
@@ -1365,7 +1449,8 @@
       "slot": "Weapon",
       "baseName": "Brandistock",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique045"
     },
     {
       "rarity": "unique",
@@ -1376,7 +1461,8 @@
       "slot": "Weapon",
       "baseName": "Spetum",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique046"
     },
     {
       "rarity": "unique",
@@ -1387,7 +1473,8 @@
       "slot": "Weapon",
       "baseName": "Pike",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique047"
     },
     {
       "rarity": "unique",
@@ -1409,7 +1496,8 @@
       "slot": "Weapon",
       "baseName": "Voulge",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique049"
     },
     {
       "rarity": "unique",
@@ -1420,7 +1508,8 @@
       "slot": "Weapon",
       "baseName": "Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique050"
     },
     {
       "rarity": "unique",
@@ -1431,7 +1520,8 @@
       "slot": "Weapon",
       "baseName": "Poleaxe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique051"
     },
     {
       "rarity": "unique",
@@ -1442,7 +1532,8 @@
       "slot": "Weapon",
       "baseName": "Halberd",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique052"
     },
     {
       "rarity": "unique",
@@ -1453,7 +1544,8 @@
       "slot": "Weapon",
       "baseName": "War Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique053"
     },
     {
       "rarity": "unique",
@@ -1464,7 +1556,8 @@
       "slot": "Weapon",
       "baseName": "Short Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique054"
     },
     {
       "rarity": "unique",
@@ -1475,7 +1568,8 @@
       "slot": "Weapon",
       "baseName": "Long Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique055"
     },
     {
       "rarity": "unique",
@@ -1497,7 +1591,8 @@
       "slot": "Weapon",
       "baseName": "Battle Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique057"
     },
     {
       "rarity": "unique",
@@ -1508,7 +1603,8 @@
       "slot": "Weapon",
       "baseName": "War Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique058"
     },
     {
       "rarity": "unique",
@@ -1519,7 +1615,8 @@
       "slot": "Weapon",
       "baseName": "Short Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique059"
     },
     {
       "rarity": "unique",
@@ -1530,7 +1627,8 @@
       "slot": "Weapon",
       "baseName": "Hunter's Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique060"
     },
     {
       "rarity": "unique",
@@ -1574,7 +1672,8 @@
       "slot": "Weapon",
       "baseName": "Long Battle Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique064"
     },
     {
       "rarity": "unique",
@@ -1585,7 +1684,8 @@
       "slot": "Weapon",
       "baseName": "Short War Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique065"
     },
     {
       "rarity": "unique",
@@ -1596,7 +1696,8 @@
       "slot": "Weapon",
       "baseName": "Long War Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique066"
     },
     {
       "rarity": "unique",
@@ -1607,7 +1708,8 @@
       "slot": "Weapon",
       "baseName": "Light Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique067"
     },
     {
       "rarity": "unique",
@@ -1618,7 +1720,8 @@
       "slot": "Weapon",
       "baseName": "Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique068"
     },
     {
       "rarity": "unique",
@@ -1629,7 +1732,8 @@
       "slot": "Weapon",
       "baseName": "Heavy Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique069"
     },
     {
       "rarity": "unique",
@@ -1706,7 +1810,8 @@
       "slot": "Weapon",
       "baseName": "Hatchet",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique129"
     },
     {
       "rarity": "unique",
@@ -1717,7 +1822,8 @@
       "slot": "Weapon",
       "baseName": "Cleaver",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique130"
     },
     {
       "rarity": "unique",
@@ -1728,7 +1834,8 @@
       "slot": "Weapon",
       "baseName": "Twin Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique131"
     },
     {
       "rarity": "unique",
@@ -1750,7 +1857,8 @@
       "slot": "Weapon",
       "baseName": "Naga",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique133"
     },
     {
       "rarity": "unique",
@@ -1761,7 +1869,8 @@
       "slot": "Weapon",
       "baseName": "Military Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique134"
     },
     {
       "rarity": "unique",
@@ -1772,7 +1881,8 @@
       "slot": "Weapon",
       "baseName": "Bearded Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique135"
     },
     {
       "rarity": "unique",
@@ -1783,7 +1893,8 @@
       "slot": "Weapon",
       "baseName": "Tabar",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique136"
     },
     {
       "rarity": "unique",
@@ -1794,7 +1905,8 @@
       "slot": "Weapon",
       "baseName": "Gothic Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique137"
     },
     {
       "rarity": "unique",
@@ -1816,7 +1928,8 @@
       "slot": "Weapon",
       "baseName": "Burnt Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique139"
     },
     {
       "rarity": "unique",
@@ -1827,7 +1940,8 @@
       "slot": "Weapon",
       "baseName": "Petrified Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique140"
     },
     {
       "rarity": "unique",
@@ -1838,7 +1952,8 @@
       "slot": "Weapon",
       "baseName": "Tomb Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique141"
     },
     {
       "rarity": "unique",
@@ -1849,7 +1964,8 @@
       "slot": "Weapon",
       "baseName": "Grave Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique142"
     },
     {
       "rarity": "unique",
@@ -1860,7 +1976,8 @@
       "slot": "Weapon",
       "baseName": "Cudgel",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique143"
     },
     {
       "rarity": "unique",
@@ -1871,7 +1988,8 @@
       "slot": "Weapon",
       "baseName": "Rune Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique144"
     },
     {
       "rarity": "unique",
@@ -1882,7 +2000,8 @@
       "slot": "Weapon",
       "baseName": "Holy Water Sprinkler",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique145"
     },
     {
       "rarity": "unique",
@@ -1893,7 +2012,8 @@
       "slot": "Weapon",
       "baseName": "Divine Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique146"
     },
     {
       "rarity": "unique",
@@ -1904,7 +2024,8 @@
       "slot": "Weapon",
       "baseName": "Barbed Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique147"
     },
     {
       "rarity": "unique",
@@ -1915,7 +2036,8 @@
       "slot": "Weapon",
       "baseName": "Flanged Mace",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique148"
     },
     {
       "rarity": "unique",
@@ -1926,7 +2048,8 @@
       "slot": "Weapon",
       "baseName": "Jagged Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique149"
     },
     {
       "rarity": "unique",
@@ -1937,7 +2060,8 @@
       "slot": "Weapon",
       "baseName": "Knout",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique150"
     },
     {
       "rarity": "unique",
@@ -1948,7 +2072,8 @@
       "slot": "Weapon",
       "baseName": "Battle Hammer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique151"
     },
     {
       "rarity": "unique",
@@ -1959,7 +2084,8 @@
       "slot": "Weapon",
       "baseName": "War Club",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique152"
     },
     {
       "rarity": "unique",
@@ -1970,7 +2096,8 @@
       "slot": "Weapon",
       "baseName": "Martel de Fer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique153"
     },
     {
       "rarity": "unique",
@@ -1981,7 +2108,8 @@
       "slot": "Weapon",
       "baseName": "Gladius",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique154"
     },
     {
       "rarity": "unique",
@@ -1992,7 +2120,8 @@
       "slot": "Weapon",
       "baseName": "Cutlass",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique155"
     },
     {
       "rarity": "unique",
@@ -2003,7 +2132,8 @@
       "slot": "Weapon",
       "baseName": "Shamshir",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique156"
     },
     {
       "rarity": "unique",
@@ -2014,7 +2144,8 @@
       "slot": "Weapon",
       "baseName": "Tulwar",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique157"
     },
     {
       "rarity": "unique",
@@ -2025,7 +2156,8 @@
       "slot": "Weapon",
       "baseName": "Dimensional Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique158"
     },
     {
       "rarity": "unique",
@@ -2036,7 +2168,8 @@
       "slot": "Weapon",
       "baseName": "Battle Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique159"
     },
     {
       "rarity": "unique",
@@ -2047,7 +2180,8 @@
       "slot": "Weapon",
       "baseName": "Rune Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique160"
     },
     {
       "rarity": "unique",
@@ -2069,7 +2203,8 @@
       "slot": "Weapon",
       "baseName": "Espandon",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique162"
     },
     {
       "rarity": "unique",
@@ -2080,7 +2215,8 @@
       "slot": "Weapon",
       "baseName": "Dacian Falx",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique163"
     },
     {
       "rarity": "unique",
@@ -2091,7 +2227,8 @@
       "slot": "Weapon",
       "baseName": "Tusk Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique164"
     },
     {
       "rarity": "unique",
@@ -2102,7 +2239,8 @@
       "slot": "Weapon",
       "baseName": "Gothic Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique165"
     },
     {
       "rarity": "unique",
@@ -2113,7 +2251,8 @@
       "slot": "Weapon",
       "baseName": "Zweihander",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique166"
     },
     {
       "rarity": "unique",
@@ -2124,7 +2263,8 @@
       "slot": "Weapon",
       "baseName": "Executioner Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique167"
     },
     {
       "rarity": "unique",
@@ -2135,7 +2275,8 @@
       "slot": "Weapon",
       "baseName": "Poignard",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique168"
     },
     {
       "rarity": "unique",
@@ -2146,7 +2287,8 @@
       "slot": "Weapon",
       "baseName": "Rondel",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique169"
     },
     {
       "rarity": "unique",
@@ -2157,7 +2299,8 @@
       "slot": "Weapon",
       "baseName": "Cinquedeas",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique170"
     },
     {
       "rarity": "unique",
@@ -2168,7 +2311,8 @@
       "slot": "Weapon",
       "baseName": "Stilleto",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique171"
     },
     {
       "rarity": "unique",
@@ -2179,7 +2323,8 @@
       "slot": "Weapon",
       "baseName": "War Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique172"
     },
     {
       "rarity": "unique",
@@ -2190,7 +2335,8 @@
       "slot": "Weapon",
       "baseName": "Fuscina",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique173"
     },
     {
       "rarity": "unique",
@@ -2201,7 +2347,8 @@
       "slot": "Weapon",
       "baseName": "War Fork",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique174"
     },
     {
       "rarity": "unique",
@@ -2212,7 +2359,8 @@
       "slot": "Weapon",
       "baseName": "Yari",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique175"
     },
     {
       "rarity": "unique",
@@ -2223,7 +2371,8 @@
       "slot": "Weapon",
       "baseName": "Lance",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique176"
     },
     {
       "rarity": "unique",
@@ -2234,7 +2383,8 @@
       "slot": "Weapon",
       "baseName": "Lochaber Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique177"
     },
     {
       "rarity": "unique",
@@ -2245,7 +2395,8 @@
       "slot": "Weapon",
       "baseName": "Bill",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique178"
     },
     {
       "rarity": "unique",
@@ -2256,7 +2407,8 @@
       "slot": "Weapon",
       "baseName": "Battle Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique179"
     },
     {
       "rarity": "unique",
@@ -2267,7 +2419,8 @@
       "slot": "Weapon",
       "baseName": "Partizan",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique180"
     },
     {
       "rarity": "unique",
@@ -2278,7 +2431,8 @@
       "slot": "Weapon",
       "baseName": "Bec-de-Corbin",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique181"
     },
     {
       "rarity": "unique",
@@ -2289,7 +2443,8 @@
       "slot": "Weapon",
       "baseName": "Grim Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique182"
     },
     {
       "rarity": "unique",
@@ -2300,7 +2455,8 @@
       "slot": "Weapon",
       "baseName": "Jo Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique183"
     },
     {
       "rarity": "unique",
@@ -2311,7 +2467,8 @@
       "slot": "Weapon",
       "baseName": "Quarterstaff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique184"
     },
     {
       "rarity": "unique",
@@ -2322,7 +2479,8 @@
       "slot": "Weapon",
       "baseName": "Cedar Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique185"
     },
     {
       "rarity": "unique",
@@ -2333,7 +2491,8 @@
       "slot": "Weapon",
       "baseName": "Gothic Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique186"
     },
     {
       "rarity": "unique",
@@ -2355,7 +2514,8 @@
       "slot": "Weapon",
       "baseName": "Edge Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique188"
     },
     {
       "rarity": "unique",
@@ -2366,7 +2526,8 @@
       "slot": "Weapon",
       "baseName": "Razor Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique189"
     },
     {
       "rarity": "unique",
@@ -2377,7 +2538,8 @@
       "slot": "Weapon",
       "baseName": "Cedar Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique190"
     },
     {
       "rarity": "unique",
@@ -2388,7 +2550,8 @@
       "slot": "Weapon",
       "baseName": "Double Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique191"
     },
     {
       "rarity": "unique",
@@ -2410,7 +2573,8 @@
       "slot": "Weapon",
       "baseName": "Long Siege Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique193"
     },
     {
       "rarity": "unique",
@@ -2421,7 +2585,8 @@
       "slot": "Weapon",
       "baseName": "Rune Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique194"
     },
     {
       "rarity": "unique",
@@ -2443,7 +2608,8 @@
       "slot": "Weapon",
       "baseName": "Arbalest",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique196"
     },
     {
       "rarity": "unique",
@@ -2465,7 +2631,8 @@
       "slot": "Weapon",
       "baseName": "Ballista",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique198"
     },
     {
       "rarity": "unique",
@@ -2476,7 +2643,8 @@
       "slot": "Weapon",
       "baseName": "Chu-Ko-Nu",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique199"
     },
     {
       "rarity": "unique",
@@ -2487,7 +2655,8 @@
       "slot": "Weapon",
       "baseName": "Decapitator",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique254"
     },
     {
       "rarity": "unique",
@@ -2498,7 +2667,8 @@
       "slot": "Weapon",
       "baseName": "Champion Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique255"
     },
     {
       "rarity": "unique",
@@ -2509,7 +2679,8 @@
       "slot": "Weapon",
       "baseName": "Devil Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique256"
     },
     {
       "rarity": "unique",
@@ -2520,7 +2691,8 @@
       "slot": "Weapon",
       "baseName": "Legendary Mallet",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique257"
     },
     {
       "rarity": "unique",
@@ -2531,7 +2703,8 @@
       "slot": "Weapon",
       "baseName": "Thunder Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique258"
     },
     {
       "rarity": "unique",
@@ -2542,7 +2715,8 @@
       "slot": "Weapon",
       "baseName": "Phase Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique259"
     },
     {
       "rarity": "unique",
@@ -2553,7 +2727,8 @@
       "slot": "Weapon",
       "baseName": "Champion Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique260"
     },
     {
       "rarity": "unique",
@@ -2564,7 +2739,8 @@
       "slot": "Weapon",
       "baseName": "Colossus Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique261"
     },
     {
       "rarity": "unique",
@@ -2575,7 +2751,8 @@
       "slot": "Weapon",
       "baseName": "Bone Knife",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique262"
     },
     {
       "rarity": "unique",
@@ -2586,7 +2763,8 @@
       "slot": "Weapon",
       "baseName": "Giant Thresher",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique264"
     },
     {
       "rarity": "unique",
@@ -2597,7 +2775,8 @@
       "slot": "Weapon",
       "baseName": "Crusader Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique265"
     },
     {
       "rarity": "unique",
@@ -2608,7 +2787,8 @@
       "slot": "Weapon",
       "baseName": "Hydra Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique266"
     },
     {
       "rarity": "unique",
@@ -2619,7 +2799,8 @@
       "slot": "Weapon",
       "baseName": "Ceremonial Javelin",
       "baseType": "ajav",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique281"
     },
     {
       "rarity": "unique",
@@ -2630,7 +2811,8 @@
       "slot": "Weapon",
       "baseName": "Ceremonial Bow",
       "baseType": "abow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique282"
     },
     {
       "rarity": "unique",
@@ -2641,7 +2823,8 @@
       "slot": "Weapon",
       "baseName": "Ceremonial Pike",
       "baseType": "aspe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique283"
     },
     {
       "rarity": "unique",
@@ -2652,7 +2835,8 @@
       "slot": "Weapon",
       "baseName": "Swirling Crystal",
       "baseType": "orb",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique284"
     },
     {
       "rarity": "unique",
@@ -2674,7 +2858,8 @@
       "slot": "Weapon",
       "baseName": "Francisca",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique288"
     },
     {
       "rarity": "unique",
@@ -2685,7 +2870,8 @@
       "slot": "Weapon",
       "baseName": "Elegant Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique289"
     },
     {
       "rarity": "unique",
@@ -2707,7 +2893,8 @@
       "slot": "Weapon",
       "baseName": "Battle Dart",
       "baseType": "tkni",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique291"
     },
     {
       "rarity": "unique",
@@ -2718,7 +2905,8 @@
       "slot": "Weapon",
       "baseName": "Winged Knife",
       "baseType": "tkni",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique292"
     },
     {
       "rarity": "unique",
@@ -2762,7 +2950,8 @@
       "slot": "Weapon",
       "baseName": "Cryptic Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique298"
     },
     {
       "rarity": "unique",
@@ -2784,7 +2973,8 @@
       "slot": "Weapon",
       "baseName": "Phase Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique301"
     },
     {
       "rarity": "unique",
@@ -2795,7 +2985,8 @@
       "slot": "Weapon",
       "baseName": "Fanged Knife",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique304"
     },
     {
       "rarity": "unique",
@@ -2806,7 +2997,8 @@
       "slot": "Weapon",
       "baseName": "Scourge",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique306"
     },
     {
       "rarity": "unique",
@@ -2817,7 +3009,8 @@
       "slot": "Weapon",
       "baseName": "Legendary Mallet",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique307"
     },
     {
       "rarity": "unique",
@@ -2861,7 +3054,8 @@
       "slot": "Weapon",
       "baseName": "Glorious Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique315"
     },
     {
       "rarity": "unique",
@@ -2872,7 +3066,8 @@
       "slot": "Weapon",
       "baseName": "Matriarchal Spear",
       "baseType": "aspe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique316"
     },
     {
       "rarity": "unique",
@@ -2883,7 +3078,8 @@
       "slot": "Weapon",
       "baseName": "Winged Harpoon",
       "baseType": "jave",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique320"
     },
     {
       "rarity": "unique",
@@ -2894,7 +3090,8 @@
       "slot": "Weapon",
       "baseName": "Winged Axe",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique321"
     },
     {
       "rarity": "unique",
@@ -2905,7 +3102,8 @@
       "slot": "Weapon",
       "baseName": "Archon Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique322"
     },
     {
       "rarity": "unique",
@@ -2916,7 +3114,8 @@
       "slot": "Weapon",
       "baseName": "Mancatcher",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique323"
     },
     {
       "rarity": "unique",
@@ -2927,7 +3126,8 @@
       "slot": "Weapon",
       "baseName": "Silver-edged Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique324"
     },
     {
       "rarity": "unique",
@@ -2938,7 +3138,8 @@
       "slot": "Weapon",
       "baseName": "Thresher",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique326"
     },
     {
       "rarity": "unique",
@@ -2949,7 +3150,8 @@
       "slot": "Weapon",
       "baseName": "Colossus Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique328"
     },
     {
       "rarity": "unique",
@@ -2960,7 +3162,8 @@
       "slot": "Weapon",
       "baseName": "Ward Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique331"
     },
     {
       "rarity": "unique",
@@ -2982,7 +3185,8 @@
       "slot": "Weapon",
       "baseName": "Legend Spike",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique333"
     },
     {
       "rarity": "unique",
@@ -3004,7 +3208,8 @@
       "slot": "Weapon",
       "baseName": "Flying Axe",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique335"
     },
     {
       "rarity": "unique",
@@ -3015,7 +3220,8 @@
       "slot": "Weapon",
       "baseName": "Ogre Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique337"
     },
     {
       "rarity": "unique",
@@ -3026,7 +3232,8 @@
       "slot": "Weapon",
       "baseName": "Matriarchal Javelin",
       "baseType": "ajav",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique338"
     },
     {
       "rarity": "unique",
@@ -3037,7 +3244,8 @@
       "slot": "Weapon",
       "baseName": "Balrog Spear",
       "baseType": "jave",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique340"
     },
     {
       "rarity": "unique",
@@ -3059,7 +3267,8 @@
       "slot": "Weapon",
       "baseName": "Lich Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique351"
     },
     {
       "rarity": "unique",
@@ -3070,7 +3279,8 @@
       "slot": "Weapon",
       "baseName": "Balrog Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique353"
     },
     {
       "rarity": "unique",
@@ -3092,7 +3302,8 @@
       "slot": "Weapon",
       "baseName": "Scourge",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique360"
     },
     {
       "rarity": "unique",
@@ -3103,7 +3314,8 @@
       "slot": "Weapon",
       "baseName": "Cryptic Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique365"
     },
     {
       "rarity": "unique",
@@ -3114,7 +3326,8 @@
       "slot": "Weapon",
       "baseName": "Eldritch Orb",
       "baseType": "orb",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique367"
     },
     {
       "rarity": "unique",
@@ -3125,7 +3338,8 @@
       "slot": "Weapon",
       "baseName": "Feral Claws",
       "baseType": "h2h2",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique368"
     },
     {
       "rarity": "unique",
@@ -3136,7 +3350,8 @@
       "slot": "Weapon",
       "baseName": "Mighty Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique371"
     },
     {
       "rarity": "unique",
@@ -3158,7 +3373,8 @@
       "slot": "Weapon",
       "baseName": "Hyperion Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique382"
     },
     {
       "rarity": "unique",
@@ -3169,7 +3385,8 @@
       "slot": "Weapon",
       "baseName": "War Spike",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique383"
     },
     {
       "rarity": "unique",
@@ -3180,7 +3397,8 @@
       "slot": "Weapon",
       "baseName": "Truncheon",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique384"
     },
     {
       "rarity": "unique",
@@ -3213,7 +3431,8 @@
       "slot": "Weapon",
       "baseName": "Ogre Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique387"
     },
     {
       "rarity": "unique",
@@ -3224,7 +3443,8 @@
       "slot": "Weapon",
       "baseName": "Elder Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique388"
     },
     {
       "rarity": "unique",
@@ -3273,7 +3493,8 @@
       "slot": "Shield",
       "baseName": "Buckler",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique094"
     },
     {
       "rarity": "unique",
@@ -3284,7 +3505,8 @@
       "slot": "Shield",
       "baseName": "Small Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique095"
     },
     {
       "rarity": "unique",
@@ -3295,7 +3517,8 @@
       "slot": "Shield",
       "baseName": "Large Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique096"
     },
     {
       "rarity": "unique",
@@ -3306,7 +3529,8 @@
       "slot": "Shield",
       "baseName": "Bone Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique097"
     },
     {
       "rarity": "unique",
@@ -3317,7 +3541,8 @@
       "slot": "Shield",
       "baseName": "Spiked Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique098"
     },
     {
       "rarity": "unique",
@@ -3328,7 +3553,8 @@
       "slot": "Shield",
       "baseName": "Kite Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique099"
     },
     {
       "rarity": "unique",
@@ -3339,7 +3565,8 @@
       "slot": "Shield",
       "baseName": "Tower Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique100"
     },
     {
       "rarity": "unique",
@@ -3350,7 +3577,8 @@
       "slot": "Shield",
       "baseName": "Gothic Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique101"
     },
     {
       "rarity": "unique",
@@ -3361,7 +3589,8 @@
       "slot": "Shield",
       "baseName": "Defender",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique224"
     },
     {
       "rarity": "unique",
@@ -3383,7 +3612,8 @@
       "slot": "Shield",
       "baseName": "Scutum",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique226"
     },
     {
       "rarity": "unique",
@@ -3394,7 +3624,8 @@
       "slot": "Shield",
       "baseName": "Dragon Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique227"
     },
     {
       "rarity": "unique",
@@ -3427,7 +3658,8 @@
       "slot": "Shield",
       "baseName": "Grim Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique230"
     },
     {
       "rarity": "unique",
@@ -3438,7 +3670,8 @@
       "slot": "Shield",
       "baseName": "Barbed Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique231"
     },
     {
       "rarity": "unique",
@@ -3449,7 +3682,8 @@
       "slot": "Shield",
       "baseName": "Luna",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique252"
     },
     {
       "rarity": "unique",
@@ -3460,7 +3694,8 @@
       "slot": "Shield",
       "baseName": "Monarch",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique253"
     },
     {
       "rarity": "unique",
@@ -3471,7 +3706,8 @@
       "slot": "Shield",
       "baseName": "Heirophant Trophy",
       "baseType": "head",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique280"
     },
     {
       "rarity": "unique",
@@ -3482,7 +3718,8 @@
       "slot": "Shield",
       "baseName": "Gilded Shield",
       "baseType": "ashd",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique285"
     },
     {
       "rarity": "unique",
@@ -3515,7 +3752,8 @@
       "slot": "Shield",
       "baseName": "Succubus Skull",
       "baseType": "head",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique341"
     },
     {
       "rarity": "unique",
@@ -3526,7 +3764,8 @@
       "slot": "Shield",
       "baseName": "Zakarum Shield",
       "baseType": "ashd",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique347"
     },
     {
       "rarity": "unique",
@@ -3537,7 +3776,8 @@
       "slot": "Shield",
       "baseName": "Aegis",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique349"
     },
     {
       "rarity": "unique",
@@ -3548,7 +3788,8 @@
       "slot": "Shield",
       "baseName": "Ward",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique356"
     },
     {
       "rarity": "unique",
@@ -3559,7 +3800,8 @@
       "slot": "Shield",
       "baseName": "Blade Barrier",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique363"
     },
     {
       "rarity": "unique",
@@ -3586,7 +3828,8 @@
       "slot": "Gloves",
       "baseName": "Leather Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique102"
     },
     {
       "rarity": "unique",
@@ -3597,7 +3840,8 @@
       "slot": "Gloves",
       "baseName": "Heavy Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique103"
     },
     {
       "rarity": "unique",
@@ -3608,7 +3852,8 @@
       "slot": "Gloves",
       "baseName": "Chain Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique104"
     },
     {
       "rarity": "unique",
@@ -3619,7 +3864,8 @@
       "slot": "Gloves",
       "baseName": "Light Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique105"
     },
     {
       "rarity": "unique",
@@ -3630,7 +3876,8 @@
       "slot": "Gloves",
       "baseName": "Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique106"
     },
     {
       "rarity": "unique",
@@ -3641,7 +3888,8 @@
       "slot": "Gloves",
       "baseName": "Demonhide Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique232"
     },
     {
       "rarity": "unique",
@@ -3652,7 +3900,8 @@
       "slot": "Gloves",
       "baseName": "Sharkskin Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique233"
     },
     {
       "rarity": "unique",
@@ -3663,7 +3912,8 @@
       "slot": "Gloves",
       "baseName": "Heavy Bracers",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique234"
     },
     {
       "rarity": "unique",
@@ -3685,7 +3935,8 @@
       "slot": "Gloves",
       "baseName": "War Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique236"
     },
     {
       "rarity": "unique",
@@ -3707,7 +3958,8 @@
       "slot": "Gloves",
       "baseName": "Vampirebone Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique364"
     },
     {
       "rarity": "unique",
@@ -3718,7 +3970,8 @@
       "slot": "Gloves",
       "baseName": "Ogre Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique391"
     },
     {
       "kind": "header",
@@ -3745,7 +3998,8 @@
       "slot": "Belt",
       "baseName": "Light Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique113"
     },
     {
       "rarity": "unique",
@@ -3756,7 +4010,8 @@
       "slot": "Belt",
       "baseName": "Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique114"
     },
     {
       "rarity": "unique",
@@ -3767,7 +4022,8 @@
       "slot": "Belt",
       "baseName": "Heavy Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique115"
     },
     {
       "rarity": "unique",
@@ -3778,7 +4034,8 @@
       "slot": "Belt",
       "baseName": "Plated Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique116"
     },
     {
       "rarity": "unique",
@@ -3789,7 +4046,8 @@
       "slot": "Belt",
       "baseName": "Demonhide Sash",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique242"
     },
     {
       "rarity": "unique",
@@ -3800,7 +4058,8 @@
       "slot": "Belt",
       "baseName": "Sharkskin Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique243"
     },
     {
       "rarity": "unique",
@@ -3822,7 +4081,8 @@
       "slot": "Belt",
       "baseName": "Battle Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique245"
     },
     {
       "rarity": "unique",
@@ -3844,7 +4104,8 @@
       "slot": "Belt",
       "baseName": "Spiderweb Sash",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique373"
     },
     {
       "rarity": "unique",
@@ -3855,7 +4116,8 @@
       "slot": "Belt",
       "baseName": "Vampirefang Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique374"
     },
     {
       "rarity": "unique",
@@ -3893,7 +4155,8 @@
       "slot": "Boots",
       "baseName": "Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique107"
     },
     {
       "rarity": "unique",
@@ -3904,7 +4167,8 @@
       "slot": "Boots",
       "baseName": "Heavy Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique108"
     },
     {
       "rarity": "unique",
@@ -3915,7 +4179,8 @@
       "slot": "Boots",
       "baseName": "Chain Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique109"
     },
     {
       "rarity": "unique",
@@ -3926,7 +4191,8 @@
       "slot": "Boots",
       "baseName": "Light Plated Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique110"
     },
     {
       "rarity": "unique",
@@ -3937,7 +4203,8 @@
       "slot": "Boots",
       "baseName": "Greaves",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique111"
     },
     {
       "rarity": "unique",
@@ -3948,7 +4215,8 @@
       "slot": "Boots",
       "baseName": "Demonhide Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique237"
     },
     {
       "rarity": "unique",
@@ -3959,7 +4227,8 @@
       "slot": "Boots",
       "baseName": "Sharkskin Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique238"
     },
     {
       "rarity": "unique",
@@ -3970,7 +4239,8 @@
       "slot": "Boots",
       "baseName": "Mesh Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique239"
     },
     {
       "rarity": "unique",
@@ -4014,7 +4284,8 @@
       "slot": "Boots",
       "baseName": "Scarabshell Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique369"
     },
     {
       "rarity": "unique",
@@ -4025,7 +4296,8 @@
       "slot": "Boots",
       "baseName": "Boneweave Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique370"
     },
     {
       "rarity": "unique",
@@ -4052,7 +4324,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique120"
     },
     {
       "rarity": "unique",
@@ -4063,7 +4336,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique121"
     },
     {
       "rarity": "unique",
@@ -4074,7 +4348,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique122"
     },
     {
       "rarity": "unique",
@@ -4107,7 +4382,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique274"
     },
     {
       "rarity": "unique",
@@ -4118,7 +4394,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique275"
     },
     {
       "rarity": "unique",
@@ -4129,7 +4406,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique300"
     },
     {
       "rarity": "unique",
@@ -4151,7 +4429,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique378"
     },
     {
       "rarity": "unique",
@@ -4189,7 +4468,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique117"
     },
     {
       "rarity": "unique",
@@ -4200,7 +4480,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique118"
     },
     {
       "rarity": "unique",
@@ -4211,7 +4492,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique119"
     },
     {
       "rarity": "unique",
@@ -4255,7 +4537,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique271"
     },
     {
       "rarity": "unique",
@@ -4266,7 +4549,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique272"
     },
     {
       "rarity": "unique",
@@ -4288,7 +4572,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique276"
     },
     {
       "rarity": "unique",
@@ -4321,7 +4606,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique375"
     },
     {
       "rarity": "unique",
@@ -4348,7 +4634,8 @@
       "slot": "Other",
       "baseName": "Grand Charm",
       "baseType": "lcha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique359"
     },
     {
       "rarity": "unique",
@@ -4359,7 +4646,8 @@
       "slot": "Other",
       "baseName": "Small Charm",
       "baseType": "scha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique381"
     },
     {
       "rarity": "unique",
@@ -4370,7 +4658,8 @@
       "slot": "Other",
       "baseName": "Jewel",
       "baseType": "jewl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique392"
     },
     {
       "rarity": "unique",
@@ -4381,7 +4670,8 @@
       "slot": "Other",
       "baseName": "Large Charm",
       "baseType": "mcha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique400"
     },
     {
       "rarity": "unique",

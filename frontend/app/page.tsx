@@ -885,6 +885,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="normal"
                   title="Normal"
                   items={baseItemsNormalFiltered}
                   selectedCodes={selectedNormalBaseCodes}
@@ -916,6 +917,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="socketedEthereal"
                   title="Socketed / Ethereal"
                   items={baseItemsNormalFiltered}
                   selectedCodes={selectedSocketedEtherealBaseCodes}
@@ -947,6 +949,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="magic"
                   title="Magic"
                   items={baseItemsFiltered}
                   selectedCodes={selectedMagicBaseCodes}
@@ -978,6 +981,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="rare"
                   title="Rare"
                   items={baseItemsRareFiltered}
                   selectedCodes={selectedRareBaseCodes}
@@ -994,6 +998,7 @@ export default function Home() {
             )}
             {activeTab === "unique" && (
               <CatalogSection
+                key="unique"
                 title="Unique"
                 items={uniqueItems}
                 selectedCodes={selectedUniqueCodes}
@@ -1006,10 +1011,12 @@ export default function Home() {
                 fillPanel
                 sortBySlotThenLabel
                 itemImageBasePath={`${dataBase}/item-images`}
+                maxrollImageBasePath={`${dataBase}/item-unique`}
               />
             )}
             {activeTab === "sets" && (
               <CatalogSection
+                key="sets"
                 title="Sets"
                 items={setItems}
                 selectedCodes={selectedSetCodes}
@@ -1021,10 +1028,12 @@ export default function Home() {
                 noContainer
                 fillPanel
                 itemImageBasePath={`${dataBase}/item-images`}
+                maxrollImageBasePath={`${dataBase}/item-set`}
               />
             )}
             {activeTab === "runes" && (
               <CatalogSection
+                key="runes"
                 title="Runes"
                 items={runeItems}
                 selectedCodes={selectedRuneCodes}
@@ -1041,6 +1050,7 @@ export default function Home() {
             )}
             {activeTab === "gems" && (
               <CatalogSection
+                key="gems"
                 title="Gems"
                 items={gemItems}
                 selectedCodes={selectedGemCodes}
@@ -1057,6 +1067,7 @@ export default function Home() {
             )}
             {activeTab === "potions" && (
               <CatalogSection
+                key="potions"
                 title="Potions"
                 items={potionItems}
                 selectedCodes={selectedPotionCodes}
@@ -1073,6 +1084,7 @@ export default function Home() {
             )}
             {activeTab === "quest" && (
               <CatalogSection
+                key="quest"
                 title="Quest"
                 items={questItems}
                 selectedCodes={selectedQuestCodes}
@@ -1089,6 +1101,7 @@ export default function Home() {
             )}
             {activeTab === "misc" && (
               <CatalogSection
+                key="misc"
                 title="Misc"
                 items={miscOtherItems}
                 selectedCodes={selectedMiscOtherCodes}

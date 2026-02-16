@@ -28,8 +28,10 @@ interface CatalogSectionProps {
   sortBySlotThenLabel?: boolean;
   /** If true, fill available height (for tab panel). */
   fillPanel?: boolean;
-  /** Base path for item images (e.g. "/item-images" or "/D2RLootFilters/item-images"). Image URL: {itemImageBasePath}/{code}.png */
+  /** Base path for item images (e.g. "/item-images"). Image URL: {itemImageBasePath}/{code}.png */
   itemImageBasePath?: string;
+  /** Base path for Maxroll images (e.g. "/item-unique" or "/item-set"). When set and item has maxrollId, use {maxrollImageBasePath}/{maxrollId}.webp. */
+  maxrollImageBasePath?: string;
 }
 
 export function CatalogSection({
@@ -47,6 +49,7 @@ export function CatalogSection({
   sortBySlotThenLabel = false,
   fillPanel = false,
   itemImageBasePath,
+  maxrollImageBasePath,
 }: CatalogSectionProps) {
   const [search, setSearch] = useState("");
 
@@ -133,8 +136,13 @@ export function CatalogSection({
             const isSelected = item.codes.every((c) => selectedCodes.has(c));
             const id = `${title}-${item.code}`;
             const imageCode = item.imageCode ?? item.codes[0];
-            const showImageSlot = Boolean(itemImageBasePath && imageCode);
-            const usePlaceholder = showImageSlot && ITEM_IMAGE_PLACEHOLDER_CODES.has(imageCode);
+            const useMaxroll = Boolean(maxrollImageBasePath && item.maxrollId);
+            const fallbackPngPath = itemImageBasePath && imageCode ? `${itemImageBasePath}/${imageCode}.png` : undefined;
+            const showImageSlot = useMaxroll || Boolean(fallbackPngPath);
+            const usePlaceholder = showImageSlot && !useMaxroll && ITEM_IMAGE_PLACEHOLDER_CODES.has(imageCode);
+            const imgSrc = useMaxroll
+              ? `${maxrollImageBasePath}/${item.maxrollId}.webp`
+              : fallbackPngPath;
             return (
               <li key={item.code} className="flex items-center gap-3 py-2 px-2 rounded hover:bg-zinc-800/50">
                 <input
@@ -144,10 +152,10 @@ export function CatalogSection({
                   onChange={() => onToggle(item.codes)}
                   className="flex-shrink-0 rounded border-zinc-600 bg-zinc-800 text-violet-500 focus:ring-violet-500 w-4 h-4"
                 />
-                {showImageSlot && !usePlaceholder ? (
+                {showImageSlot && !usePlaceholder && imgSrc ? (
                   <span className={`flex-shrink-0 ${ITEM_IMAGE_SIZE} flex items-center justify-center bg-zinc-800/80 rounded overflow-hidden`}>
                     <img
-                      src={`${itemImageBasePath}/${imageCode}.png`}
+                      src={imgSrc}
                       alt=""
                       className={`${ITEM_IMAGE_INNER} object-contain`}
                       data-fallback-base={item.imageCode && item.codes[0] && item.imageCode !== item.codes[0] ? item.codes[0] : undefined}

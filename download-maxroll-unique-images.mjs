@@ -4,7 +4,7 @@
  * - set000.webp .. set126.webp
  * - unique000.webp .. unique406.webp
  *
- * Saves to frontend/public/item-unique/ with the same filenames.
+ * Saves set*.webp to frontend/public/item-set/, unique*.webp to frontend/public/item-unique/.
  *
  * Usage: node download-maxroll-unique-images.mjs
  */
@@ -16,12 +16,13 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://assets-ng.maxroll.gg/d2planner/images/uniques";
-const OUT_DIR = path.join(__dirname, "frontend", "public", "item-unique");
+const ITEM_UNIQUE_DIR = path.join(__dirname, "frontend", "public", "item-unique");
+const ITEM_SET_DIR = path.join(__dirname, "frontend", "public", "item-set");
 const DELAY_MS = 80;
 
-async function downloadOne(filename) {
+async function downloadOne(filename, outDir) {
   const url = `${BASE_URL}/${filename}`;
-  const filepath = path.join(OUT_DIR, filename);
+  const filepath = path.join(outDir, filename);
   try {
     const res = await fetch(url, {
       headers: {
@@ -41,26 +42,28 @@ async function downloadOne(filename) {
 }
 
 async function main() {
-  await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.mkdir(ITEM_UNIQUE_DIR, { recursive: true });
+  await fs.mkdir(ITEM_SET_DIR, { recursive: true });
 
   const files = [];
   for (let i = 0; i <= 126; i++) {
-    files.push(`set${String(i).padStart(3, "0")}.webp`);
+    files.push({ name: `set${String(i).padStart(3, "0")}.webp`, dir: ITEM_SET_DIR });
   }
   for (let i = 0; i <= 406; i++) {
-    files.push(`unique${String(i).padStart(3, "0")}.webp`);
+    files.push({ name: `unique${String(i).padStart(3, "0")}.webp`, dir: ITEM_UNIQUE_DIR });
   }
 
-  console.log("Downloading", files.length, "images to", OUT_DIR);
+  console.log("Downloading", files.length, "images (sets -> item-set, uniques -> item-unique)");
 
   const results = [];
   for (let i = 0; i < files.length; i++) {
-    const r = await downloadOne(files[i]);
+    const { name, dir } = files[i];
+    const r = await downloadOne(name, dir);
     results.push(r);
     if (r.ok) {
-      process.stdout.write(`\r[${i + 1}/${files.length}] ${files[i]}     `);
+      process.stdout.write(`\r[${i + 1}/${files.length}] ${name}     `);
     } else {
-      console.log("\n", files[i], r.status || r.error);
+      console.log("\n", name, r.status || r.error);
     }
     if (i < files.length - 1) {
       await new Promise((resolve) => setTimeout(resolve, DELAY_MS));
@@ -69,7 +72,7 @@ async function main() {
 
   const failed = results.filter((x) => !x.ok);
   if (failed.length) {
-    const reportPath = path.join(OUT_DIR, "_failed.txt");
+    const reportPath = path.join(ITEM_UNIQUE_DIR, "_failed.txt");
     await fs.writeFile(
       reportPath,
       failed.map((f) => f.filename).join("\n"),

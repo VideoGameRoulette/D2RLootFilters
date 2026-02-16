@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "copy-catalogs": "node copy-catalogs.mjs"
+    "copy-catalogs": "node copy-catalogs.mjs",
+    "convert-quest-images": "node convert-quest-webp-to-png.mjs",
+    "rename-rune-webp": "node rename-rune-webp.mjs"
   },
   "dependencies": {
     "next": "^14.2.0",
@@ -23,6 +25,7 @@
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.2.0",
     "postcss": "^8.4.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.0.0"
   }
