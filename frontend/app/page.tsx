@@ -268,7 +268,7 @@ export default function Home() {
     [potionsCatalog]
   );
   const endgameCodeSet = useMemo(
-    () => new Set(ENDGAME_CODES),
+    () => new Set<string>(ENDGAME_CODES),
     []
   );
   const fullQuestItems = useMemo(
