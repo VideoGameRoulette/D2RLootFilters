@@ -29,6 +29,8 @@ const MAX_RULES = 32;
 const TAB_ORDER = [
   "normal",
   "socketedEthereal",
+  "normalSuperior",
+  "socketedEtherealSuperior",
   "magic",
   "rare",
   "unique",
@@ -37,6 +39,7 @@ const TAB_ORDER = [
   "gems",
   "potions",
   "quest",
+  "endgame",
   "misc",
   "gold",
 ] as const;
@@ -48,6 +51,13 @@ const POTION_GROUPS: { name: string; codes: string[] }[] = [
   { name: "Rejuvenation Potions", codes: ["rvl", "rvs"] },
   { name: "Status Potions", codes: ["yps", "vps", "wms"] },
 ];
+
+/** Quest catalog codes that belong to Endgame (tokens, essences, keys, organs, etc.). */
+const ENDGAME_CODES = [
+  "tes", "ceh", "bet", "fed", "toa", // Essence / Token of Absolution
+  "xa1", "xa2", "xa3", "xa4", "xa5", // Terrorize Tokens (Worldstone Shards)
+  "pk1", "pk2", "pk3", "mbr", "dhn", "bey", "std", "ua1", "ua2", "ua3", "ua4", "ua5", // Uber Materials
+] as const;
 
 export default function Home() {
   const [setsCatalog, setSetsCatalog] = useState<Catalog | null>(null);
@@ -71,6 +81,10 @@ export default function Home() {
   >(new Set());
   const [selectedSocketedEtherealBaseCodes, setSelectedSocketedEtherealBaseCodes] =
     useState<Set<string>>(new Set());
+  const [selectedNormalSuperiorBaseCodes, setSelectedNormalSuperiorBaseCodes] =
+    useState<Set<string>>(new Set());
+  const [selectedSocketedEtherealSuperiorBaseCodes, setSelectedSocketedEtherealSuperiorBaseCodes] =
+    useState<Set<string>>(new Set());
   const [selectedMagicBaseCodes, setSelectedMagicBaseCodes] = useState<
     Set<string>
   >(new Set());
@@ -84,6 +98,9 @@ export default function Home() {
     new Set()
   );
   const [selectedQuestCodes, setSelectedQuestCodes] = useState<Set<string>>(
+    new Set()
+  );
+  const [selectedEndgameCodes, setSelectedEndgameCodes] = useState<Set<string>>(
     new Set()
   );
   const [selectedMiscOtherCodes, setSelectedMiscOtherCodes] = useState<
@@ -250,9 +267,21 @@ export default function Home() {
     () => potionsToSelectableItems(potionsCatalog),
     [potionsCatalog]
   );
-  const questItems = useMemo(
+  const endgameCodeSet = useMemo(
+    () => new Set(ENDGAME_CODES),
+    []
+  );
+  const fullQuestItems = useMemo(
     () => questToSelectableItems(questCatalog),
     [questCatalog]
+  );
+  const questItems = useMemo(
+    () => fullQuestItems.filter((i) => !endgameCodeSet.has(i.code)),
+    [fullQuestItems, endgameCodeSet]
+  );
+  const endgameItems = useMemo(
+    () => fullQuestItems.filter((i) => endgameCodeSet.has(i.code)),
+    [fullQuestItems, endgameCodeSet]
   );
 
   const gemCodeSet = useMemo(
@@ -353,6 +382,24 @@ export default function Home() {
       return next;
     });
   }, []);
+  const toggleNormalSuperiorBase = useCallback((codes: string[]) => {
+    setSelectedNormalSuperiorBaseCodes((prev) => {
+      const next = new Set(prev);
+      const allSelected = codes.every((c) => next.has(c));
+      if (allSelected) codes.forEach((c) => next.delete(c));
+      else codes.forEach((c) => next.add(c));
+      return next;
+    });
+  }, []);
+  const toggleSocketedEtherealSuperiorBase = useCallback((codes: string[]) => {
+    setSelectedSocketedEtherealSuperiorBaseCodes((prev) => {
+      const next = new Set(prev);
+      const allSelected = codes.every((c) => next.has(c));
+      if (allSelected) codes.forEach((c) => next.delete(c));
+      else codes.forEach((c) => next.add(c));
+      return next;
+    });
+  }, []);
   const toggleMagicBase = useCallback((codes: string[]) => {
     setSelectedMagicBaseCodes((prev) => {
       const next = new Set(prev);
@@ -380,6 +427,14 @@ export default function Home() {
       new Set(baseItemsNormalFiltered.flatMap((i) => i.codes))
     );
   }, [baseItemsNormalFiltered]);
+  const selectAllNormalSuperiorBases = useCallback(() => {
+    setSelectedNormalSuperiorBaseCodes(new Set(baseItemsNormalFiltered.flatMap((i) => i.codes)));
+  }, [baseItemsNormalFiltered]);
+  const selectAllSocketedEtherealSuperiorBases = useCallback(() => {
+    setSelectedSocketedEtherealSuperiorBaseCodes(
+      new Set(baseItemsNormalFiltered.flatMap((i) => i.codes))
+    );
+  }, [baseItemsNormalFiltered]);
   const selectAllMagicBases = useCallback(() => {
     setSelectedMagicBaseCodes(new Set(baseItemsFiltered.flatMap((i) => i.codes)));
   }, [baseItemsFiltered]);
@@ -392,8 +447,64 @@ export default function Home() {
     () => setSelectedSocketedEtherealBaseCodes(new Set()),
     []
   );
+  const clearAllNormalSuperiorBases = useCallback(
+    () => setSelectedNormalSuperiorBaseCodes(new Set()),
+    []
+  );
+  const clearAllSocketedEtherealSuperiorBases = useCallback(
+    () => setSelectedSocketedEtherealSuperiorBaseCodes(new Set()),
+    []
+  );
   const clearAllMagicBases = useCallback(() => setSelectedMagicBaseCodes(new Set()), []);
   const clearAllRareBases = useCallback(() => setSelectedRareBaseCodes(new Set()), []);
+
+  const validCodesForItems = useCallback((codes: string[], itemList: { codes: string[] }[]) => {
+    const codeSet = new Set(itemList.flatMap((i) => i.codes));
+    return codes.filter((c) => codeSet.has(c));
+  }, []);
+
+  const pasteNormalBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsNormalFiltered);
+      if (valid.length > 0) setSelectedNormalBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsNormalFiltered, validCodesForItems]
+  );
+  const pasteSocketedEtherealBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsNormalFiltered);
+      if (valid.length > 0) setSelectedSocketedEtherealBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsNormalFiltered, validCodesForItems]
+  );
+  const pasteNormalSuperiorBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsNormalFiltered);
+      if (valid.length > 0) setSelectedNormalSuperiorBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsNormalFiltered, validCodesForItems]
+  );
+  const pasteSocketedEtherealSuperiorBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsNormalFiltered);
+      if (valid.length > 0) setSelectedSocketedEtherealSuperiorBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsNormalFiltered, validCodesForItems]
+  );
+  const pasteMagicBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsFiltered);
+      if (valid.length > 0) setSelectedMagicBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsFiltered, validCodesForItems]
+  );
+  const pasteRareBases = useCallback(
+    (codes: string[]) => {
+      const valid = validCodesForItems(codes, baseItemsRareFiltered);
+      if (valid.length > 0) setSelectedRareBaseCodes((prev) => new Set([...prev, ...valid]));
+    },
+    [baseItemsRareFiltered, validCodesForItems]
+  );
 
   const toggleGem = useCallback((codes: string[]) => {
     setSelectedGemCodes((prev) => {
@@ -439,6 +550,21 @@ export default function Home() {
     [questItems]
   );
   const clearAllQuest = useCallback(() => setSelectedQuestCodes(new Set()), []);
+
+  const toggleEndgame = useCallback((codes: string[]) => {
+    setSelectedEndgameCodes((prev) => {
+      const next = new Set(prev);
+      const allSelected = codes.every((c) => next.has(c));
+      if (allSelected) codes.forEach((c) => next.delete(c));
+      else codes.forEach((c) => next.add(c));
+      return next;
+    });
+  }, []);
+  const selectAllEndgame = useCallback(
+    () => setSelectedEndgameCodes(new Set(endgameItems.flatMap((i) => i.codes))),
+    [endgameItems]
+  );
+  const clearAllEndgame = useCallback(() => setSelectedEndgameCodes(new Set()), []);
 
   const toggleMiscOther = useCallback((codes: string[]) => {
     setSelectedMiscOtherCodes((prev) => {
@@ -490,6 +616,9 @@ export default function Home() {
       Array.from(selectedGemCodes),
       miscItemRules,
       Array.from(selectedSocketedEtherealBaseCodes),
+      Array.from(selectedNormalSuperiorBaseCodes),
+      Array.from(selectedSocketedEtherealSuperiorBaseCodes),
+      Array.from(selectedEndgameCodes),
       goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
     );
     return filter.rules.length;
@@ -505,6 +634,9 @@ export default function Home() {
     selectedGemCodes,
     miscItemRules,
     selectedSocketedEtherealBaseCodes,
+    selectedNormalSuperiorBaseCodes,
+    selectedSocketedEtherealSuperiorBaseCodes,
+    selectedEndgameCodes,
     goldFilterEnabled,
     goldFilterThreshold,
   ]);
@@ -523,6 +655,9 @@ export default function Home() {
       Array.from(selectedGemCodes),
       miscItemRules,
       Array.from(selectedSocketedEtherealBaseCodes),
+      Array.from(selectedNormalSuperiorBaseCodes),
+      Array.from(selectedSocketedEtherealSuperiorBaseCodes),
+      Array.from(selectedEndgameCodes),
       goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
     );
     return serializeFilter(filter, false);
@@ -538,6 +673,9 @@ export default function Home() {
     selectedGemCodes,
     miscItemRules,
     selectedSocketedEtherealBaseCodes,
+    selectedNormalSuperiorBaseCodes,
+    selectedSocketedEtherealSuperiorBaseCodes,
+    selectedEndgameCodes,
     goldFilterEnabled,
     goldFilterThreshold,
   ]);
@@ -577,6 +715,8 @@ export default function Home() {
           const filter = parseLoadedFilter(text);
           const normal: string[] = [];
           const socketedEthereal: string[] = [];
+          const normalSuperior: string[] = [];
+          const socketedEtherealSuperior: string[] = [];
           const magic: string[] = [];
           const rare: string[] = [];
           const unique: string[] = [];
@@ -585,17 +725,61 @@ export default function Home() {
           const gems: string[] = [];
           const potions: string[] = [];
           const quest: string[] = [];
+          const endgame: string[] = [];
           const miscOther: string[] = [];
           let goldEnabled = false;
           let goldThreshold = 5000;
+
+          // Game category (equipmentCategory) -> base codes when rule has no equipmentItemCode ("all rings", etc.)
+          const GAME_CATEGORY_BASE_CODES: Record<string, string[]> = {
+            rings: ["rin"],
+            amule: ["amu"],
+            charm: ["cm1", "cm2", "cm3"],
+            jewel: ["jew", "cjw"],
+          };
+
+          // Game itemCategory -> Endgame panel codes (tokens, essences, keys, organs, etc.)
+          const ITEM_CATEGORY_ENDGAME_CODES: Record<string, string[]> = {
+            absol: ["tes", "ceh", "bet", "fed", "toa"], // Essence / Token of Absolution
+            terrt: ["xa1", "xa2", "xa3", "xa4", "xa5"], // Terrorize Tokens (Worldstone Shards)
+            uberm: ["pk1", "pk2", "pk3", "mbr", "dhn", "bey", "std", "ua1", "ua2", "ua3", "ua4", "ua5"], // Keys, organs, Standard of Heroes, Ancients' items
+          };
 
           for (const rule of filter.rules) {
             const eq = rule.equipmentItemCode;
             const ic = rule.itemCode;
             const rar = rule.equipmentRarity;
+            const itemCat = rule.itemCategory;
+            const eqCat = rule.equipmentCategory;
+
+            // In-game: itemCategory ["gems"] or ["runes"] means "all gems" / "all runes" (no itemCode list)
+            if (itemCat?.includes("runes")) runes.push(...runeCodeSet);
+            if (itemCat?.includes("gems")) gems.push(...gemCodeSet);
+            // itemCategory absol / terrt / uberm -> select all matching Endgame items
+            if (itemCat?.includes("absol")) endgame.push(...ITEM_CATEGORY_ENDGAME_CODES.absol);
+            if (itemCat?.includes("terrt")) endgame.push(...ITEM_CATEGORY_ENDGAME_CODES.terrt);
+            if (itemCat?.includes("uberm")) endgame.push(...ITEM_CATEGORY_ENDGAME_CODES.uberm);
+
+            // Category-only rule: equipmentRarity + equipmentCategory but no equipmentItemCode = "all in category"
+            if (rar?.length && eqCat?.length && !eq?.length) {
+              for (const cat of eqCat) {
+                const codes = GAME_CATEGORY_BASE_CODES[cat];
+                if (!codes) continue;
+                if (rar.includes("normal") && !rule.filterEtherealSocketed) normal.push(...codes);
+                if (rar.includes("normal") && rule.filterEtherealSocketed) socketedEthereal.push(...codes);
+                if (rar.includes("hiQuality") && !rule.filterEtherealSocketed) normalSuperior.push(...codes);
+                if (rar.includes("hiQuality") && rule.filterEtherealSocketed) socketedEtherealSuperior.push(...codes);
+                if (rar.includes("magic")) magic.push(...codes);
+                if (rar.includes("rare")) rare.push(...codes);
+                if (rar.includes("unique")) unique.push(...codes);
+                if (rar.includes("set")) set.push(...codes);
+              }
+            }
 
             if (rar?.includes("normal") && !rule.filterEtherealSocketed && eq) normal.push(...eq);
-            else if (rar?.includes("normal") && rule.filterEtherealSocketed && eq) socketedEthereal.push(...eq);
+            else if (rule.filterEtherealSocketed && eq && (!rar?.length || rar.includes("normal"))) socketedEthereal.push(...eq);
+            else if (rar?.includes("hiQuality") && !rule.filterEtherealSocketed && eq) normalSuperior.push(...eq);
+            else if (rar?.includes("hiQuality") && rule.filterEtherealSocketed && eq) socketedEtherealSuperior.push(...eq);
             else if (rar?.includes("magic") && eq) magic.push(...eq);
             else if (rar?.includes("rare") && eq) rare.push(...eq);
             else if (rar?.includes("unique") && eq) unique.push(...eq);
@@ -607,6 +791,7 @@ export default function Home() {
                 for (const c of ic) {
                   if (gemCodeSet.has(c)) gems.push(c);
                   else if (potionCodeSet.has(c)) potions.push(c);
+                  else if (endgameCodeSet.has(c)) endgame.push(c);
                   else if (questCodeSet.has(c)) quest.push(c);
                   else miscOther.push(c);
                 }
@@ -621,6 +806,8 @@ export default function Home() {
           setProfileName(filter.name);
           setSelectedNormalBaseCodes(new Set(normal));
           setSelectedSocketedEtherealBaseCodes(new Set(socketedEthereal));
+          setSelectedNormalSuperiorBaseCodes(new Set(normalSuperior));
+          setSelectedSocketedEtherealSuperiorBaseCodes(new Set(socketedEtherealSuperior));
           setSelectedMagicBaseCodes(new Set(magic));
           setSelectedRareBaseCodes(new Set(rare));
           setSelectedUniqueCodes(new Set(unique));
@@ -629,6 +816,7 @@ export default function Home() {
           setSelectedGemCodes(new Set(gems));
           setSelectedPotionCodes(new Set(potions));
           setSelectedQuestCodes(new Set(quest));
+          setSelectedEndgameCodes(new Set(endgame));
           setSelectedMiscOtherCodes(new Set(miscOther));
           setGoldFilterEnabled(goldEnabled);
           setGoldFilterThreshold(goldThreshold);
@@ -640,7 +828,7 @@ export default function Home() {
       reader.onerror = () => setLoadError("Failed to read file");
       reader.readAsText(file, "utf-8");
     },
-    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet]
+    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet, endgameCodeSet]
   );
 
   const totalSelected =
@@ -649,11 +837,14 @@ export default function Home() {
     selectedRuneCodes.size +
     selectedNormalBaseCodes.size +
     selectedSocketedEtherealBaseCodes.size +
+    selectedNormalSuperiorBaseCodes.size +
+    selectedSocketedEtherealSuperiorBaseCodes.size +
     selectedMagicBaseCodes.size +
     selectedRareBaseCodes.size +
     selectedGemCodes.size +
     selectedPotionCodes.size +
     selectedQuestCodes.size +
+    selectedEndgameCodes.size +
     selectedMiscOtherCodes.size;
   const canExport = (totalSelected > 0 || goldFilterEnabled) && ruleCount <= MAX_RULES;
 
@@ -765,7 +956,7 @@ export default function Home() {
                 Rules: {ruleCount} / {MAX_RULES}
               </span>
               <div className="text-xs text-zinc-500 border-l border-zinc-600/80 pl-4 hidden sm:block">
-                Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+                Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Normal Superior {selectedNormalSuperiorBaseCodes.size} · Socketed / Ethereal Superior {selectedSocketedEtherealSuperiorBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Endgame {selectedEndgameCodes.size} · Misc {selectedMiscOtherCodes.size}
               </div>
             </div>
           </div>
@@ -773,7 +964,7 @@ export default function Home() {
 
         <div className="flex-shrink-0 px-4 md:px-6 lg:px-8 py-3 bg-zinc-900/30 border-b border-zinc-800/50 sm:hidden">
           <div className="text-xs text-zinc-500">
-            Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+            Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Normal Superior {selectedNormalSuperiorBaseCodes.size} · Socketed / Ethereal Superior {selectedSocketedEtherealSuperiorBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Endgame {selectedEndgameCodes.size} · Misc {selectedMiscOtherCodes.size}
           </div>
         </div>
 
@@ -792,6 +983,20 @@ export default function Home() {
                 label: "Socketed / Ethereal",
                 count: baseItemsNormal.length,
                 selectedCount: selectedSocketedEtherealBaseCodes.size,
+                accentClass: "text-d2-normal",
+              },
+              {
+                id: "normalSuperior",
+                label: "Normal Superior",
+                count: baseItemsNormal.length,
+                selectedCount: selectedNormalSuperiorBaseCodes.size,
+                accentClass: "text-d2-normal",
+              },
+              {
+                id: "socketedEtherealSuperior",
+                label: "Socketed / Ethereal Superior",
+                count: baseItemsNormal.length,
+                selectedCount: selectedSocketedEtherealSuperiorBaseCodes.size,
                 accentClass: "text-d2-normal",
               },
               {
@@ -851,6 +1056,13 @@ export default function Home() {
                 accentClass: "text-d2-quest",
               },
               {
+                id: "endgame",
+                label: "Endgame",
+                count: endgameItems.length,
+                selectedCount: selectedEndgameCodes.size,
+                accentClass: "text-d2-crafted",
+              },
+              {
                 id: "misc",
                 label: "Misc",
                 count: miscOtherItems.length,
@@ -892,6 +1104,7 @@ export default function Home() {
                   onToggle={toggleNormalBase}
                   onSelectAll={selectAllNormalBases}
                   onClearAll={clearAllNormalBases}
+                  onPaste={pasteNormalBases}
                   accentClass="text-d2-normal"
                   itemColorClass="text-d2-normal"
                   noContainer
@@ -924,6 +1137,73 @@ export default function Home() {
                   onToggle={toggleSocketedEtherealBase}
                   onSelectAll={selectAllSocketedEtherealBases}
                   onClearAll={clearAllSocketedEtherealBases}
+                  onPaste={pasteSocketedEtherealBases}
+                  accentClass="text-d2-normal"
+                  itemColorClass="text-d2-normal"
+                  noContainer
+                  fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
+                />
+              </>
+            )}
+            {activeTab === "normalSuperior" && (
+              <>
+                <div className="flex flex-wrap items-center gap-4 mb-3 flex-shrink-0">
+                  <span className="text-sm text-zinc-400">Filter by tier:</span>
+                  {QUALITIES.map((q) => (
+                    <label key={q} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={baseQualityFilter.has(q)}
+                        onChange={() => toggleBaseQuality(q)}
+                        className="w-4 h-4 rounded border-zinc-600 bg-zinc-800 text-zinc-300 focus:ring-zinc-500 focus:ring-offset-zinc-900"
+                      />
+                      <span className="text-sm text-zinc-300 capitalize">{q}</span>
+                    </label>
+                  ))}
+                </div>
+                <CatalogSection
+                  key="normalSuperior"
+                  title="Normal Superior"
+                  items={baseItemsNormalFiltered}
+                  selectedCodes={selectedNormalSuperiorBaseCodes}
+                  onToggle={toggleNormalSuperiorBase}
+                  onSelectAll={selectAllNormalSuperiorBases}
+                  onClearAll={clearAllNormalSuperiorBases}
+                  onPaste={pasteNormalSuperiorBases}
+                  accentClass="text-d2-normal"
+                  itemColorClass="text-d2-normal"
+                  noContainer
+                  fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
+                />
+              </>
+            )}
+            {activeTab === "socketedEtherealSuperior" && (
+              <>
+                <div className="flex flex-wrap items-center gap-4 mb-3 flex-shrink-0">
+                  <span className="text-sm text-zinc-400">Filter by tier:</span>
+                  {QUALITIES.map((q) => (
+                    <label key={q} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={baseQualityFilter.has(q)}
+                        onChange={() => toggleBaseQuality(q)}
+                        className="w-4 h-4 rounded border-zinc-600 bg-zinc-800 text-zinc-300 focus:ring-zinc-500 focus:ring-offset-zinc-900"
+                      />
+                      <span className="text-sm text-zinc-300 capitalize">{q}</span>
+                    </label>
+                  ))}
+                </div>
+                <CatalogSection
+                  key="socketedEtherealSuperior"
+                  title="Socketed / Ethereal Superior"
+                  items={baseItemsNormalFiltered}
+                  selectedCodes={selectedSocketedEtherealSuperiorBaseCodes}
+                  onToggle={toggleSocketedEtherealSuperiorBase}
+                  onSelectAll={selectAllSocketedEtherealSuperiorBases}
+                  onClearAll={clearAllSocketedEtherealSuperiorBases}
+                  onPaste={pasteSocketedEtherealSuperiorBases}
                   accentClass="text-d2-normal"
                   itemColorClass="text-d2-normal"
                   noContainer
@@ -956,6 +1236,7 @@ export default function Home() {
                   onToggle={toggleMagicBase}
                   onSelectAll={selectAllMagicBases}
                   onClearAll={clearAllMagicBases}
+                  onPaste={pasteMagicBases}
                   accentClass="text-d2-magic"
                   itemColorClass="text-d2-magic"
                   noContainer
@@ -988,6 +1269,7 @@ export default function Home() {
                   onToggle={toggleRareBase}
                   onSelectAll={selectAllRareBases}
                   onClearAll={clearAllRareBases}
+                  onPaste={pasteRareBases}
                   accentClass="text-d2-rare"
                   itemColorClass="text-d2-rare"
                   noContainer
@@ -1093,6 +1375,23 @@ export default function Home() {
                 onClearAll={clearAllQuest}
                 accentClass="text-d2-quest"
                 itemColorClass="text-d2-quest"
+                noContainer
+                fillPanel
+                sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
+              />
+            )}
+            {activeTab === "endgame" && (
+              <CatalogSection
+                key="endgame"
+                title="Endgame"
+                items={endgameItems}
+                selectedCodes={selectedEndgameCodes}
+                onToggle={toggleEndgame}
+                onSelectAll={selectAllEndgame}
+                onClearAll={clearAllEndgame}
+                accentClass="text-d2-crafted"
+                itemColorClass="text-d2-crafted"
                 noContainer
                 fillPanel
                 sortAlphabetically={false}

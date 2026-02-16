@@ -10,7 +10,9 @@
     "lint": "next lint",
     "copy-catalogs": "node copy-catalogs.mjs",
     "convert-quest-images": "node convert-quest-webp-to-png.mjs",
-    "rename-rune-webp": "node rename-rune-webp.mjs"
+    "rename-rune-webp": "node rename-rune-webp.mjs",
+    "rename-gem-webp": "node rename-gem-webp.mjs",
+    "rename-potion-webp": "node rename-potion-webp.mjs"
   },
   "dependencies": {
     "next": "^14.2.0",

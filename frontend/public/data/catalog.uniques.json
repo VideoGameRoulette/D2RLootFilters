@@ -4677,67 +4677,73 @@
       "rarity": "unique",
       "label": "Defender's Bile",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw1",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique420"
     },
     {
       "rarity": "unique",
       "label": "Guardian's Thunder",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw2",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique421"
     },
     {
       "rarity": "unique",
       "label": "Protector's Frost",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw3",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique422"
     },
     {
       "rarity": "unique",
       "label": "Defender's Fire",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw4",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique423"
     },
     {
       "rarity": "unique",
       "label": "Protector's Stone",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw5",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique424"
     },
     {
       "rarity": "unique",
       "label": "Guardian's Light",
       "code": "cjw",
-      "imageCode": "gswe",
+      "imageCode": "cjw6",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
       "baseType": "cjwl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique425"
     },
     {
       "rarity": "unique",

@@ -70,11 +70,12 @@ export function catalogToSelectableItems(
     const label = displayLabel(rawLabel, rarity);
     const slot = "slot" in entry ? entry.slot : undefined;
     const setLabel = currentHeader || undefined;
+    const baseName = "baseName" in entry ? entry.baseName : undefined;
     const maxrollId = "maxrollId" in entry ? entry.maxrollId : undefined;
 
     if (slot === "Set" || codes.length > 1) continue;
 
-    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel, maxrollId });
+    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel, baseName, maxrollId });
   }
 
   return items;

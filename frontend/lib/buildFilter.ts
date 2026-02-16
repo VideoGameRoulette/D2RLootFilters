@@ -42,9 +42,28 @@ export interface MiscItemRule {
   codes: string[];
 }
 
+/** Game itemCategory -> rule name and codes for Endgame panel (absol, terrt, uberm). */
+const ENDGAME_CATEGORIES: Record<
+  string,
+  { name: string; codes: string[] }
+> = {
+  absol: {
+    name: "Essence / Token of Absolution",
+    codes: ["tes", "ceh", "bet", "fed", "toa"],
+  },
+  terrt: {
+    name: "Terrorize Tokens",
+    codes: ["xa1", "xa2", "xa3", "xa4", "xa5"],
+  },
+  uberm: {
+    name: "Uber Materials",
+    codes: ["pk1", "pk2", "pk3", "mbr", "dhn", "bey", "std", "ua1", "ua2", "ua3", "ua4", "ua5"],
+  },
+};
+
 /**
  * Build D2R loot filter JSON from selected codes per category.
- * Order: normal, socketedEthereal, magic, rare, unique, sets, runes, quest, gems, misc (per-label), gold.
+ * Order: normal, socketedEthereal, normalSuperior, socketedEtherealSuperior, magic, rare, unique, sets, runes, quest, endgame, gems, misc (per-label), gold.
  */
 export function buildFilterFromSelection(
   profileNameInput: string,
@@ -58,6 +77,9 @@ export function buildFilterFromSelection(
   gemCodes: string[] = [],
   miscItemRules: MiscItemRule[] = [],
   socketedEtherealCodes: string[] = [],
+  normalSuperiorCodes: string[] = [],
+  socketedEtherealSuperiorCodes: string[] = [],
+  endgameCodes: string[] = [],
   goldFilter?: { enabled: boolean; threshold: number }
 ): LootFilter {
   const rules: FilterRule[] = [buildHideRule()];
@@ -80,6 +102,26 @@ export function buildFilterFromSelection(
       filterEtherealSocketed: true,
       equipmentRarity: ["normal"],
       equipmentItemCode: [...socketedEtherealCodes],
+    });
+  }
+  if (normalSuperiorCodes.length > 0) {
+    rules.push({
+      name: gameSafeName("Superior Items(White)"),
+      enabled: true,
+      ruleType: "show",
+      filterEtherealSocketed: false,
+      equipmentRarity: ["hiQuality"],
+      equipmentItemCode: [...normalSuperiorCodes],
+    });
+  }
+  if (socketedEtherealSuperiorCodes.length > 0) {
+    rules.push({
+      name: gameSafeName("Socketed Ethereal Superior"),
+      enabled: true,
+      ruleType: "show",
+      filterEtherealSocketed: true,
+      equipmentRarity: ["hiQuality"],
+      equipmentItemCode: [...socketedEtherealSuperiorCodes],
     });
   }
   if (magicCodes.length > 0) {
@@ -139,6 +181,18 @@ export function buildFilterFromSelection(
       filterEtherealSocketed: false,
       itemCode: [...questCodes],
     });
+  }
+  for (const [category, { name, codes }] of Object.entries(ENDGAME_CATEGORIES)) {
+    const selected = codes.filter((c) => endgameCodes.includes(c));
+    if (selected.length > 0) {
+      rules.push({
+        name: gameSafeName(name),
+        enabled: true,
+        ruleType: "show",
+        filterEtherealSocketed: false,
+        itemCategory: [category],
+      });
+    }
   }
   if (gemCodes.length > 0) {
     rules.push({

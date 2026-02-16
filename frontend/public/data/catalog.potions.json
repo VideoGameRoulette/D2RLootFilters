@@ -95,6 +95,16 @@
       "code": "wms",
       "label": "Thawing Potion",
       "slot": "Other"
+    },
+    {
+      "code": "opl",
+      "label": "Fulminating Potion",
+      "slot": "Throwable Weapon"
+    },
+    {
+      "code": "gpl",
+      "label": "Strangling Gas Potion",
+      "slot": "Throwable Weapon"
     }
   ]
 }
