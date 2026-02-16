@@ -55,6 +55,11 @@ export function parseLoadedFilter(jsonString: string): LootFilter {
         (x): x is string => typeof x === "string"
       );
     }
+    if (Array.isArray(rule.equipmentCategory)) {
+      sanitized.equipmentCategory = rule.equipmentCategory.filter(
+        (x): x is string => typeof x === "string"
+      );
+    }
     if (Array.isArray(rule.equipmentItemCode)) {
       sanitized.equipmentItemCode = rule.equipmentItemCode.filter(
         (x): x is string => typeof x === "string"
@@ -62,6 +67,11 @@ export function parseLoadedFilter(jsonString: string): LootFilter {
     }
     if (Array.isArray(rule.itemCode)) {
       sanitized.itemCode = rule.itemCode.filter(
+        (x): x is string => typeof x === "string"
+      );
+    }
+    if (Array.isArray(rule.itemCategory)) {
+      sanitized.itemCategory = rule.itemCategory.filter(
         (x): x is string => typeof x === "string"
       );
     }

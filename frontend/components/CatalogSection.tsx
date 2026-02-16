@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import type { SelectableItem } from "@/lib/types";
 
 const ITEM_IMAGE_SIZE = "w-12 h-12";
@@ -9,6 +9,14 @@ const ITEM_IMAGE_INNER = "w-11 h-11";
 /** Item codes whose downloaded image is wrong. Show placeholder instead. (Antidote yps uses custom yps.png.) */
 const ITEM_IMAGE_PLACEHOLDER_CODES = new Set<string>([]);
 
+/** Parse clipboard text into a list of item codes (comma, newline, or whitespace separated). */
+function parseCodesFromClipboard(text: string): string[] {
+  return text
+    .split(/[\s,\n]+/)
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean);
+}
+
 interface CatalogSectionProps {
   title: string;
   items: SelectableItem[];
@@ -16,6 +24,8 @@ interface CatalogSectionProps {
   onToggle: (codes: string[]) => void;
   onSelectAll: () => void;
   onClearAll: () => void;
+  /** When set, show Copy/Paste buttons. Paste calls this with parsed codes from clipboard. */
+  onPaste?: (codes: string[]) => void;
   accentClass: string;
   borderClass?: string;
   /** Class for item label text (e.g. text-d2-set, text-d2-unique) */
@@ -41,6 +51,7 @@ export function CatalogSection({
   onToggle,
   onSelectAll,
   onClearAll,
+  onPaste,
   accentClass,
   borderClass = "border-transparent",
   itemColorClass,
@@ -53,17 +64,34 @@ export function CatalogSection({
 }: CatalogSectionProps) {
   const [search, setSearch] = useState("");
 
+  const handleCopy = useCallback(async () => {
+    const text = Array.from(selectedCodes).sort().join("\n");
+    await navigator.clipboard.writeText(text);
+  }, [selectedCodes]);
+
+  const handlePaste = useCallback(async () => {
+    if (!onPaste) return;
+    try {
+      const text = await navigator.clipboard.readText();
+      const codes = parseCodesFromClipboard(text);
+      if (codes.length > 0) onPaste(codes);
+    } catch {
+      // clipboard read denied or failed
+    }
+  }, [onPaste]);
+
   const filtered = useMemo(() => {
     let result = items;
     if (search.trim()) {
       const q = search.toLowerCase().trim();
-      result = items.filter(
-        (i) =>
-          i.label.toLowerCase().includes(q) ||
-          i.codes.some((c) => c.toLowerCase().includes(q)) ||
-          (i.setLabel?.toLowerCase().includes(q) ?? false) ||
-          (i.slot?.toLowerCase().includes(q) ?? false)
-      );
+      const words = q.split(/\s+/).filter(Boolean);
+      result = items.filter((i) => {
+        const searchable = [i.label, i.setLabel, i.baseName, i.slot, ...i.codes]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+        return words.every((word) => searchable.includes(word));
+      });
     }
     if (sortBySlotThenLabel) {
       const SLOT_ORDER = ["Helm", "Armor", "Weapon", "Shield", "Gloves", "Belt", "Boots", "Ring", "Amulet", "Other"];
@@ -109,7 +137,7 @@ export function CatalogSection({
           onChange={(e) => setSearch(e.target.value)}
           className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-3 py-2 text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm"
         />
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-2 flex-wrap">
           <button
             type="button"
             onClick={onSelectAll}
@@ -117,6 +145,24 @@ export function CatalogSection({
           >
             Select all
           </button>
+          {onPaste && (
+            <>
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="text-sm text-zinc-400 hover:text-white focus:outline-none"
+              >
+                Copy
+              </button>
+              <button
+                type="button"
+                onClick={handlePaste}
+                className="text-sm text-zinc-400 hover:text-white focus:outline-none"
+              >
+                Paste
+              </button>
+            </>
+          )}
           <button
             type="button"
             onClick={onClearAll}

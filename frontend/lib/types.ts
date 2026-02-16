@@ -86,6 +86,8 @@ export interface SelectableItem {
   slot?: string;
   /** For sets: parent set name. For uniques: base item name (shown as top line). */
   setLabel?: string;
+  /** For sets: base item name (e.g. "Demonhead"); used for search. */
+  baseName?: string;
   /** Base equipment quality (for filtering Normal/Exceptional/Elite). */
   quality?: EquipmentQuality;
   /** Image asset code (e.g. unique invfile); when set, used instead of codes[0] for item image. */
