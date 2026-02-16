@@ -45,11 +45,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache-dependency-path: frontend/yarn.lock
+          # No cache here: setup-node would run system Yarn (1.x) before Corepack is enabled
 
       - name: Enable Corepack
         run: corepack enable
+
+      - name: Restore dependency cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            frontend/node_modules
+            frontend/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('frontend/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
