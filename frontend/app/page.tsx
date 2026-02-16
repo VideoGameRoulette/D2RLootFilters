@@ -639,33 +639,86 @@ export default function Home() {
 
   return (
     <main className="h-screen overflow-hidden flex flex-col">
-      <div className="flex-1 flex flex-col min-h-0 overflow-hidden p-4 md:p-6 lg:p-8 w-full">
-        <header className="mb-6 flex-shrink-0">
-          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-            D2R Loot Filter Builder - Last Update: 2026-02-14 - Game Version: v3.1.91636
-          </h1>
-          <p className="text-zinc-400 mt-1">
-            Select normal, magic, rare, unique, sets, runes, and misc. Export a single JSON filter for in-game Import from Clipboard.
-          </p>
+      <div className="flex-1 flex flex-col min-h-0 overflow-hidden w-full">
+        <header className="flex-shrink-0 border-b border-zinc-700/60 bg-zinc-900/70">
+          <div className="px-4 md:px-6 lg:px-8 py-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                D2R Loot Filter Builder
+              </h1>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs text-zinc-500 font-medium mr-1">
+                  Game v3.1.91636 · Updated 2026-02-14
+                </span>
+                <input
+                  type="file"
+                  accept=".json"
+                  ref={fileInputRef}
+                  onChange={handleLoadFilter}
+                  className="hidden"
+                  aria-hidden
+                />
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  title="Load filter"
+                  className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleExportJson}
+                  disabled={!canExport}
+                  title="Export JSON"
+                  className="p-2 rounded-lg bg-d2-unique text-zinc-900 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-d2-unique focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCopyToClipboard}
+                  disabled={!canExport}
+                  title="Copy to clipboard — Then in game: Import from Clipboard"
+                  className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+                {loadError && (
+                  <span className="text-xs text-red-400" role="alert">
+                    {loadError}
+                  </span>
+                )}
+                {copyFeedback && (
+                  <span className="text-xs text-emerald-400">Copied!</span>
+                )}
+              </div>
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-4 gap-y-3">
+              <label className="flex items-center gap-2">
+                <span className="text-zinc-500 text-sm">Profile name</span>
+                <input
+                  type="text"
+                  value={profileName}
+                  onChange={(e) => setProfileName(e.target.value)}
+                  placeholder="MyFilter (no spaces)"
+                  className="bg-zinc-800/80 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent max-w-[200px]"
+                />
+              </label>
+              <div className="text-xs text-zinc-500 border-l border-zinc-600/80 pl-4 hidden sm:block">
+                Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+              </div>
+            </div>
+          </div>
         </header>
 
-        <div className="mb-4 flex flex-wrap items-center gap-4 flex-shrink-0">
-          <label className="flex items-center gap-2">
-            <span className="text-zinc-400 text-sm">Profile name (no spaces):</span>
-            <input
-              type="text"
-              value={profileName}
-              onChange={(e) => setProfileName(e.target.value)}
-              placeholder="MyFilter"
-              className="bg-zinc-800 border border-zinc-600 rounded px-3 py-2 text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 max-w-[200px]"
-            />
-          </label>
-          <div className="text-sm text-zinc-500">
-            Selected: N {selectedNormalBaseCodes.size} · S/E {selectedSocketedEtherealBaseCodes.size} · M {selectedMagicBaseCodes.size} · R {selectedRareBaseCodes.size} · U {selectedUniqueCodes.size} · S {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · G {selectedGemCodes.size} · Pot {selectedPotionCodes.size} · Q {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+        <div className="flex-shrink-0 px-4 md:px-6 lg:px-8 py-3 bg-zinc-900/30 border-b border-zinc-800/50 sm:hidden">
+          <div className="text-xs text-zinc-500">
+            Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col min-h-0 overflow-hidden mb-6">
+        <div className="flex-1 flex flex-col min-h-0 overflow-hidden px-4 md:px-6 lg:px-8 py-4">
           <CatalogTabs
             tabs={[
               {
@@ -1017,51 +1070,6 @@ export default function Home() {
               </div>
             )}
           </CatalogTabs>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-4 flex-shrink-0 pt-2">
-          <input
-            type="file"
-            accept=".json"
-            ref={fileInputRef}
-            onChange={handleLoadFilter}
-            className="hidden"
-            aria-hidden
-          />
-          <button
-            type="button"
-            onClick={() => fileInputRef.current?.click()}
-            className="px-5 py-2.5 rounded-lg font-medium bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
-          >
-            Load filter
-          </button>
-          <button
-            onClick={handleExportJson}
-            disabled={!canExport}
-            className="px-5 py-2.5 rounded-lg font-medium bg-d2-unique text-zinc-900 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-d2-unique focus:ring-offset-2 focus:ring-offset-zinc-900"
-          >
-            Export JSON
-          </button>
-          <button
-            onClick={handleCopyToClipboard}
-            disabled={!canExport}
-            className="px-5 py-2.5 rounded-lg font-medium bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
-          >
-            Copy to clipboard
-          </button>
-          {loadError && (
-            <span className="text-sm text-red-400" role="alert">
-              {loadError}
-            </span>
-          )}
-          {copyFeedback && (
-            <span className="text-sm text-emerald-400">Copied!</span>
-          )}
-          {canExport && !copyFeedback && (
-            <span className="text-sm text-zinc-500">
-              Then in game: Import from Clipboard
-            </span>
-          )}
         </div>
       </div>
     </main>

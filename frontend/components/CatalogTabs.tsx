@@ -26,9 +26,9 @@ export function CatalogTabs({
 }: CatalogTabsProps) {
   return (
     <div className="flex flex-col flex-1 min-h-0 overflow-hidden">
-      <div className="flex-shrink-0 border-b border-zinc-700/50 overflow-x-auto">
+      <div className="flex-shrink-0 border-b border-zinc-700/50 overflow-x-auto overflow-y-hidden">
         <nav
-          className="flex gap-0.5 min-w-max"
+          className="flex gap-0.5 min-w-max items-center py-0.5"
           role="tablist"
           aria-label="Item categories"
         >
@@ -44,7 +44,7 @@ export function CatalogTabs({
                 id={`tab-${tab.id}`}
                 onClick={() => onTabChange(tab.id)}
                 className={`
-                  px-4 py-3 text-sm font-medium whitespace-nowrap
+                  px-3 py-2 text-sm font-medium whitespace-nowrap
                   border-b-2 -mb-px transition-colors
                   focus:outline-none
                   ${
@@ -69,7 +69,7 @@ export function CatalogTabs({
         role="tabpanel"
         id={`panel-${activeTabId}`}
         aria-labelledby={`tab-${activeTabId}`}
-        className="flex-1 min-h-0 overflow-hidden mt-4 flex flex-col"
+        className="flex-1 min-h-0 overflow-hidden mt-2 flex flex-col"
       >
         {children}
       </div>
