@@ -429,27 +429,13 @@ export default function Home() {
 
   const miscCodesMerged = useMemo(
     () => [
-      ...selectedGemCodes,
-      ...selectedPotionCodes,
-      ...selectedQuestCodes,
-      ...selectedMiscOtherCodes,
+      ...Array.from(selectedGemCodes),
+      ...Array.from(selectedPotionCodes),
+      ...Array.from(selectedQuestCodes),
+      ...Array.from(selectedMiscOtherCodes),
     ],
     [selectedGemCodes, selectedPotionCodes, selectedQuestCodes, selectedMiscOtherCodes]
   );
-
-  const exportDeps = [
-    profileName,
-    selectedSetCodes,
-    selectedUniqueCodes,
-    selectedRuneCodes,
-    selectedNormalBaseCodes,
-    selectedMagicBaseCodes,
-    selectedRareBaseCodes,
-    miscCodesMerged,
-    selectedSocketedEtherealBaseCodes,
-    goldFilterEnabled,
-    goldFilterThreshold,
-  ] as const;
 
   const getExportJson = useCallback(() => {
     const profile = profileName.replace(/\s/g, "") || "LootFilter";
@@ -466,7 +452,19 @@ export default function Home() {
       goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
     );
     return serializeFilter(filter, false);
-  }, exportDeps);
+  }, [
+    profileName,
+    selectedSetCodes,
+    selectedUniqueCodes,
+    selectedRuneCodes,
+    selectedNormalBaseCodes,
+    selectedMagicBaseCodes,
+    selectedRareBaseCodes,
+    miscCodesMerged,
+    selectedSocketedEtherealBaseCodes,
+    goldFilterEnabled,
+    goldFilterThreshold,
+  ]);
 
   const handleExportJson = useCallback(() => {
     const profile = profileName.replace(/\s/g, "") || "LootFilter";
