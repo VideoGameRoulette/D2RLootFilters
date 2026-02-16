@@ -42,7 +42,7 @@ export function catalogToSelectableItems(
       if (!byCode.has(code)) byCode.set(code, []);
       byCode.get(code)!.push({ label, slot, baseName });
     }
-    for (const [code, entries] of byCode) {
+    for (const [code, entries] of Array.from(byCode.entries())) {
       const slot = entries[0]?.slot;
       const baseName = entries[0]?.baseName;
       const label =
