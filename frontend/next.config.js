@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.GITHUB_ACTIONS ? "/D2RLootFilters" : "";
 const nextConfig = {
   reactStrictMode: true,
-  // GitHub Pages: static export + basePath for project site (e.g. /D2RLootFilters/)
+  // Expose basePath to client so fetch("/data/...") works on GitHub Pages
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   ...(process.env.GITHUB_ACTIONS && {
     output: "export",
-    basePath: "/D2RLootFilters",
-    assetPrefix: "/D2RLootFilters/",
+    basePath,
+    assetPrefix: `${basePath}/`,
   }),
   ...(!process.env.GITHUB_ACTIONS && { output: "standalone" }),
 };

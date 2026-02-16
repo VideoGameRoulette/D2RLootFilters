@@ -88,24 +88,26 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const dataBase = typeof process.env.NEXT_PUBLIC_BASE_PATH === "string" ? process.env.NEXT_PUBLIC_BASE_PATH : "";
+
   useEffect(() => {
     Promise.all([
-      fetch("/data/catalog.sets.json").then((r) =>
+      fetch(`${dataBase}/data/catalog.sets.json`).then((r) =>
         r.ok ? r.json() : Promise.reject(new Error("Sets catalog not found"))
       ),
-      fetch("/data/catalog.uniques.json").then((r) =>
+      fetch(`${dataBase}/data/catalog.uniques.json`).then((r) =>
         r.ok ? r.json() : Promise.reject(new Error("Uniques catalog not found"))
       ),
-      fetch("/data/catalog.bases.json")
+      fetch(`${dataBase}/data/catalog.bases.json`)
         .then((r) => (r.ok ? r.json() : null))
         .catch(() => null),
-      fetch("/data/catalog.gems.json")
+      fetch(`${dataBase}/data/catalog.gems.json`)
         .then((r) => (r.ok ? r.json() : null))
         .catch(() => null),
-      fetch("/data/catalog.potions.json")
+      fetch(`${dataBase}/data/catalog.potions.json`)
         .then((r) => (r.ok ? r.json() : null))
         .catch(() => null),
-      fetch("/data/catalog.quest.json")
+      fetch(`${dataBase}/data/catalog.quest.json`)
         .then((r) => (r.ok ? r.json() : null))
         .catch(() => null),
     ])
