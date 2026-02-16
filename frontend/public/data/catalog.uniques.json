@@ -1,6 +1,6 @@
 {
   "name": "Unique Catalog",
-  "generatedAt": "2026-02-14T23:51:39.319Z",
+  "generatedAt": "2026-02-16T10:01:21.522Z",
   "source": {
     "uniqueitems": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/uniqueitems.json",
     "d2data": [
@@ -19,6 +19,7 @@
       "rarity": "unique",
       "label": "War Bonnet",
       "code": "cap",
+      "imageCode": "capu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Cap",
@@ -29,116 +30,139 @@
       "rarity": "unique",
       "label": "Tarnhelm",
       "code": "skp",
+      "imageCode": "skp",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Skull Cap",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique072"
     },
     {
       "rarity": "unique",
       "label": "Coif of Glory",
       "code": "hlm",
+      "imageCode": "hlmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique073"
     },
     {
       "rarity": "unique",
       "label": "Duskdeep",
       "code": "fhl",
+      "imageCode": "fhlu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Full Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique074"
     },
     {
       "rarity": "unique",
       "label": "Wormskull",
       "code": "bhm",
+      "imageCode": "bhmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Bone Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique075"
     },
     {
       "rarity": "unique",
       "label": "Howltusk",
       "code": "ghm",
+      "imageCode": "ghm",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Great Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique076"
     },
     {
       "rarity": "unique",
       "label": "Undead Crown",
       "code": "crn",
+      "imageCode": "crn",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique077"
     },
     {
       "rarity": "unique",
       "label": "The Face of Horror",
       "code": "msk",
+      "imageCode": "msk",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique078"
     },
     {
       "rarity": "unique",
       "label": "Peasent Crown",
       "code": "xap",
+      "imageCode": "xap",
       "enabled": false,
       "slot": "Helm",
       "baseName": "War Hat",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique201"
     },
     {
       "rarity": "unique",
       "label": "Rockstopper",
       "code": "xkp",
+      "imageCode": "xkpu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Sallet",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique202"
     },
     {
       "rarity": "unique",
       "label": "Stealskull",
       "code": "xlm",
+      "imageCode": "hlmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Casque",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique203"
     },
     {
       "rarity": "unique",
       "label": "Darksight Helm",
       "code": "xhl",
+      "imageCode": "fhlu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Basinet",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique204"
     },
     {
       "rarity": "unique",
       "label": "Valkiry Wing",
       "code": "xhm",
+      "imageCode": "xhm",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Winged Helm",
@@ -149,26 +173,31 @@
       "rarity": "unique",
       "label": "Crown of Thieves",
       "code": "xrn",
+      "imageCode": "xrnu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Grand Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique206"
     },
     {
       "rarity": "unique",
       "label": "Blackhorn's Face",
       "code": "xsk",
+      "imageCode": "xsk",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Death Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique207"
     },
     {
       "rarity": "unique",
       "label": "Vampiregaze",
       "code": "xh9",
+      "imageCode": "bhmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Grim Helm",
@@ -179,46 +208,55 @@
       "rarity": "unique",
       "label": "Harlequin Crest",
       "code": "uap",
+      "imageCode": "uap",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Shako",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique248"
     },
     {
       "rarity": "unique",
       "label": "Veil of Steel",
       "code": "uhm",
+      "imageCode": "uhm",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Spired Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique249"
     },
     {
       "rarity": "unique",
       "label": "Arreat's Face",
       "code": "baa",
+      "imageCode": "baa",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Slayer Guard",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique279"
     },
     {
       "rarity": "unique",
       "label": "Jalal's Mane",
       "code": "dra",
+      "imageCode": "dra",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Totemic Mask",
       "baseType": "pelt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique287"
     },
     {
       "rarity": "unique",
       "label": "Steelshade",
       "code": "ulm",
+      "imageCode": "hlmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Armet",
@@ -229,6 +267,7 @@
       "rarity": "unique",
       "label": "Cerebus",
       "code": "drb",
+      "imageCode": "drb",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Blood Spirit",
@@ -239,16 +278,19 @@
       "rarity": "unique",
       "label": "Demonhorn's Edge",
       "code": "bad",
+      "imageCode": "bad",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Destroyer Helm",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique325"
     },
     {
       "rarity": "unique",
       "label": "Spiritkeeper",
       "code": "drd",
+      "imageCode": "drd",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Earth Spirit",
@@ -259,46 +301,55 @@
       "rarity": "unique",
       "label": "Griffon's Eye",
       "code": "ci3",
+      "imageCode": "ci3",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Diadem",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique336"
     },
     {
       "rarity": "unique",
       "label": "Nightwing's Veil",
       "code": "uhm",
+      "imageCode": "uhm",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Spired Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique343"
     },
     {
       "rarity": "unique",
       "label": "Crown of Ages",
       "code": "urn",
+      "imageCode": "urn",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Corona",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique344"
     },
     {
       "rarity": "unique",
       "label": "Andariel's Visage",
       "code": "usk",
+      "imageCode": "usk",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Demonhead",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique345"
     },
     {
       "rarity": "unique",
       "label": "Darkfear",
       "code": "ulm",
+      "imageCode": "hlmu",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Armet",
@@ -309,46 +360,55 @@
       "rarity": "unique",
       "label": "Ravenlore",
       "code": "dre",
+      "imageCode": "dre",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Sky Spirit",
       "baseType": "pelt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique350"
     },
     {
       "rarity": "unique",
       "label": "Wolfhowl",
       "code": "bac",
+      "imageCode": "bac",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Fury Visor",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique355"
     },
     {
       "rarity": "unique",
       "label": "Kira's Guardian",
       "code": "ci2",
+      "imageCode": "ci2",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Tiara",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique357"
     },
     {
       "rarity": "unique",
       "label": "Halaberd's Reign",
       "code": "bae",
+      "imageCode": "bae",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Conqueror Crown",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique361"
     },
     {
       "rarity": "unique",
       "label": "Giantskull",
       "code": "uh9",
+      "imageCode": "bhm",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Bone Visage",
@@ -357,8 +417,9 @@
     },
     {
       "rarity": "unique",
-      "label": "Unique Warlock Helm",
+      "label": "Hellwarden's Will",
       "code": "xsk",
+      "imageCode": "xsk",
       "enabled": false,
       "slot": "Helm",
       "baseName": "Death Mask",
@@ -374,16 +435,19 @@
       "rarity": "unique",
       "label": "Greyform",
       "code": "qui",
+      "imageCode": "qui",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Quilted Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique079"
     },
     {
       "rarity": "unique",
       "label": "Blinkbats Form",
       "code": "lea",
+      "imageCode": "lea",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Leather Armor",
@@ -394,56 +458,67 @@
       "rarity": "unique",
       "label": "The Centurion",
       "code": "hla",
+      "imageCode": "hla",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Hard Leather Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique081"
     },
     {
       "rarity": "unique",
       "label": "Twitchthroe",
       "code": "stu",
+      "imageCode": "stu",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Studded Leather",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique082"
     },
     {
       "rarity": "unique",
       "label": "Darkglow",
       "code": "rng",
+      "imageCode": "rng",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Ring Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique083"
     },
     {
       "rarity": "unique",
       "label": "Hawkmail",
       "code": "scl",
+      "imageCode": "scl",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Scale Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique084"
     },
     {
       "rarity": "unique",
       "label": "Sparking Mail",
       "code": "chn",
+      "imageCode": "chn",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Chain Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique085"
     },
     {
       "rarity": "unique",
       "label": "Venomsward",
       "code": "brs",
+      "imageCode": "brs",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Breast Plate",
@@ -454,56 +529,67 @@
       "rarity": "unique",
       "label": "Iceblink",
       "code": "spl",
+      "imageCode": "spl",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Splint Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique087"
     },
     {
       "rarity": "unique",
       "label": "Boneflesh",
       "code": "plt",
+      "imageCode": "plt",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Plate Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique088"
     },
     {
       "rarity": "unique",
       "label": "Rockfleece",
       "code": "fld",
+      "imageCode": "fld",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Field Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique089"
     },
     {
       "rarity": "unique",
       "label": "Rattlecage",
       "code": "gth",
+      "imageCode": "gth",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Gothic Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique090"
     },
     {
       "rarity": "unique",
       "label": "Goldskin",
       "code": "ful",
+      "imageCode": "fulu",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Full Plate Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique091"
     },
     {
       "rarity": "unique",
       "label": "Victors Silk",
       "code": "aar",
+      "imageCode": "aaru",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Ancient Armor",
@@ -514,36 +600,43 @@
       "rarity": "unique",
       "label": "Heavenly Garb",
       "code": "ltp",
+      "imageCode": "ltp",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Light Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique093"
     },
     {
       "rarity": "unique",
       "label": "The Spirit Shroud",
       "code": "xui",
+      "imageCode": "xui",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Ghost Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique209"
     },
     {
       "rarity": "unique",
       "label": "Skin of the Vipermagi",
       "code": "xea",
+      "imageCode": "xea",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Serpentskin Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique210"
     },
     {
       "rarity": "unique",
       "label": "Skin of the Flayerd One",
       "code": "xla",
+      "imageCode": "xla",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Demonhide Armor",
@@ -554,6 +647,7 @@
       "rarity": "unique",
       "label": "Ironpelt",
       "code": "xtu",
+      "imageCode": "xtuu",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Trellised Armor",
@@ -564,6 +658,7 @@
       "rarity": "unique",
       "label": "Spiritforge",
       "code": "xng",
+      "imageCode": "xng",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Linked Mail",
@@ -574,96 +669,115 @@
       "rarity": "unique",
       "label": "Crow Caw",
       "code": "xcl",
+      "imageCode": "xcl",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Tigulated Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique214"
     },
     {
       "rarity": "unique",
       "label": "Shaftstop",
       "code": "xhn",
+      "imageCode": "xhn",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Mesh Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique215"
     },
     {
       "rarity": "unique",
       "label": "Duriel's Shell",
       "code": "xrs",
+      "imageCode": "xrs",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Cuirass",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique216"
     },
     {
       "rarity": "unique",
       "label": "Skullder's Ire",
       "code": "xpl",
+      "imageCode": "xpl",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Russet Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique217"
     },
     {
       "rarity": "unique",
       "label": "Guardian Angel",
       "code": "xlt",
+      "imageCode": "xlt",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Templar Coat",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique218"
     },
     {
       "rarity": "unique",
       "label": "Toothrow",
       "code": "xld",
+      "imageCode": "xld",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Sharktooth Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique219"
     },
     {
       "rarity": "unique",
       "label": "Atma's Wail",
       "code": "xth",
+      "imageCode": "xth",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Embossed Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique220"
     },
     {
       "rarity": "unique",
       "label": "Black Hades",
       "code": "xul",
+      "imageCode": "xul",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Chaos Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique221"
     },
     {
       "rarity": "unique",
       "label": "Corpsemourn",
       "code": "xar",
+      "imageCode": "xaru",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Ornate Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique222"
     },
     {
       "rarity": "unique",
       "label": "Que-Hegan's Wisdon",
       "code": "xtp",
+      "imageCode": "xtp",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Mage Plate",
@@ -674,46 +788,55 @@
       "rarity": "unique",
       "label": "The Gladiator's Bane",
       "code": "utu",
+      "imageCode": "utu",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Wire Fleece",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique250"
     },
     {
       "rarity": "unique",
       "label": "Arkaine's Valor",
       "code": "upl",
+      "imageCode": "upl",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Balrog Skin",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique251"
     },
     {
       "rarity": "unique",
       "label": "Tyrael's Might",
       "code": "uar",
+      "imageCode": "aaru",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Sacred Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique311"
     },
     {
       "rarity": "unique",
       "label": "Leviathan",
       "code": "uld",
+      "imageCode": "uld",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Kraken Shell",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique317"
     },
     {
       "rarity": "unique",
       "label": "Steel Carapice",
       "code": "uul",
+      "imageCode": "uul",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Shadow Plate",
@@ -724,26 +847,31 @@
       "rarity": "unique",
       "label": "Ormus' Robes",
       "code": "uui",
+      "imageCode": "uui",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Dusk Shroud",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique358"
     },
     {
       "rarity": "unique",
       "label": "Templar's Might",
       "code": "uar",
+      "imageCode": "aaru",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Sacred Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique366"
     },
     {
       "rarity": "unique",
       "label": "Ars Al'Diablolos",
       "code": "waf",
+      "imageCode": "waf",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Blasphemous Grimoire",
@@ -754,6 +882,7 @@
       "rarity": "unique",
       "label": "Ars Tor'Baalos",
       "code": "wae",
+      "imageCode": "wae",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Blasphemous Compendium",
@@ -764,6 +893,7 @@
       "rarity": "unique",
       "label": "Ars Dul'Mephistos",
       "code": "wac",
+      "imageCode": "wac",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Occult Tome",
@@ -774,6 +904,7 @@
       "rarity": "unique",
       "label": "Measured Wrath",
       "code": "wa6",
+      "imageCode": "wa6",
       "enabled": false,
       "slot": "Armor",
       "baseName": "Burnt Text",
@@ -789,36 +920,43 @@
       "rarity": "unique",
       "label": "The Gnasher",
       "code": "hax",
+      "imageCode": "haxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hand Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique000"
     },
     {
       "rarity": "unique",
       "label": "Deathspade",
       "code": "axe",
+      "imageCode": "axeu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique001"
     },
     {
       "rarity": "unique",
       "label": "Bladebone",
       "code": "2ax",
+      "imageCode": "2ax",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Double Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique002"
     },
     {
       "rarity": "unique",
       "label": "Mindrend",
       "code": "mpi",
+      "imageCode": "mpiu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Military Pick",
@@ -829,16 +967,19 @@
       "rarity": "unique",
       "label": "Rakescar",
       "code": "wax",
+      "imageCode": "wax",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique004"
     },
     {
       "rarity": "unique",
       "label": "Fechmars Axe",
       "code": "lax",
+      "imageCode": "lax",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Large Axe",
@@ -849,16 +990,19 @@
       "rarity": "unique",
       "label": "Goreshovel",
       "code": "bax",
+      "imageCode": "bax",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Broad Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique006"
     },
     {
       "rarity": "unique",
       "label": "The Chieftan",
       "code": "btx",
+      "imageCode": "btxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Axe",
@@ -869,16 +1013,19 @@
       "rarity": "unique",
       "label": "Brainhew",
       "code": "gax",
+      "imageCode": "gaxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Great Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique008"
     },
     {
       "rarity": "unique",
       "label": "The Humongous",
       "code": "gix",
+      "imageCode": "gix",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Giant Axe",
@@ -889,6 +1036,7 @@
       "rarity": "unique",
       "label": "Iros Torch",
       "code": "wnd",
+      "imageCode": "wndu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Wand",
@@ -899,6 +1047,7 @@
       "rarity": "unique",
       "label": "Maelstromwrath",
       "code": "ywn",
+      "imageCode": "ywn",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Yew Wand",
@@ -909,16 +1058,19 @@
       "rarity": "unique",
       "label": "Gravenspine",
       "code": "bwn",
+      "imageCode": "bwnu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bone Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique012"
     },
     {
       "rarity": "unique",
       "label": "Umes Lament",
       "code": "gwn",
+      "imageCode": "gwn",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Grim Wand",
@@ -929,76 +1081,91 @@
       "rarity": "unique",
       "label": "Felloak",
       "code": "clb",
+      "imageCode": "clbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique014"
     },
     {
       "rarity": "unique",
       "label": "Knell Striker",
       "code": "scp",
+      "imageCode": "scp",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique015"
     },
     {
       "rarity": "unique",
       "label": "Rusthandle",
       "code": "gsc",
+      "imageCode": "gsc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Grand Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique016"
     },
     {
       "rarity": "unique",
       "label": "Stormeye",
       "code": "wsp",
+      "imageCode": "wsp",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique017"
     },
     {
       "rarity": "unique",
       "label": "Stoutnail",
       "code": "spc",
+      "imageCode": "spcu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Spiked Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique018"
     },
     {
       "rarity": "unique",
       "label": "Crushflange",
       "code": "mac",
+      "imageCode": "mac",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Mace",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique019"
     },
     {
       "rarity": "unique",
       "label": "Bloodrise",
       "code": "mst",
+      "imageCode": "mstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Morning Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique020"
     },
     {
       "rarity": "unique",
       "label": "The Generals Tan Do Li Ga",
       "code": "fla",
+      "imageCode": "fla",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Flail",
@@ -1009,16 +1176,19 @@
       "rarity": "unique",
       "label": "Ironstone",
       "code": "whm",
+      "imageCode": "whm",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Hammer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique022"
     },
     {
       "rarity": "unique",
       "label": "Bonesob",
       "code": "mau",
+      "imageCode": "mauu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Maul",
@@ -1029,16 +1199,19 @@
       "rarity": "unique",
       "label": "Steeldriver",
       "code": "gma",
+      "imageCode": "gma",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Great Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique024"
     },
     {
       "rarity": "unique",
       "label": "Rixots Keen",
       "code": "ssd",
+      "imageCode": "ssd",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short Sword",
@@ -1049,6 +1222,7 @@
       "rarity": "unique",
       "label": "Blood Crescent",
       "code": "scm",
+      "imageCode": "scmu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Scimitar",
@@ -1059,6 +1233,7 @@
       "rarity": "unique",
       "label": "Krintizs Skewer",
       "code": "sbr",
+      "imageCode": "9sbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Saber",
@@ -1069,26 +1244,31 @@
       "rarity": "unique",
       "label": "Gleamscythe",
       "code": "flc",
+      "imageCode": "flcu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Falchion",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique028"
     },
     {
       "rarity": "unique",
       "label": "Azurewrath",
       "code": "crs",
+      "imageCode": "crsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Crystal Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique301"
     },
     {
       "rarity": "unique",
       "label": "Griswolds Edge",
       "code": "bsd",
+      "imageCode": "bsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Broad Sword",
@@ -1099,16 +1279,19 @@
       "rarity": "unique",
       "label": "Hellplague",
       "code": "lsd",
+      "imageCode": "lsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique031"
     },
     {
       "rarity": "unique",
       "label": "Culwens Point",
       "code": "wsd",
+      "imageCode": "wsd",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Sword",
@@ -1119,26 +1302,31 @@
       "rarity": "unique",
       "label": "Shadowfang",
       "code": "2hs",
+      "imageCode": "2hsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Two-Handed Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique033"
     },
     {
       "rarity": "unique",
       "label": "Soulflay",
       "code": "clm",
+      "imageCode": "clm",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Claymore",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique034"
     },
     {
       "rarity": "unique",
       "label": "Kinemils Awl",
       "code": "gis",
+      "imageCode": "gisu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Giant Sword",
@@ -1149,66 +1337,79 @@
       "rarity": "unique",
       "label": "Blacktongue",
       "code": "bsw",
+      "imageCode": "bswu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bastard Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique036"
     },
     {
       "rarity": "unique",
       "label": "Ripsaw",
       "code": "flb",
+      "imageCode": "flb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Flamberge",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique037"
     },
     {
       "rarity": "unique",
       "label": "The Patriarch",
       "code": "gsd",
+      "imageCode": "gsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Great Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique038"
     },
     {
       "rarity": "unique",
       "label": "Gull",
       "code": "dgr",
+      "imageCode": "dgr",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Dagger",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique039"
     },
     {
       "rarity": "unique",
       "label": "The Diggler",
       "code": "dir",
+      "imageCode": "dir",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Dirk",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique040"
     },
     {
       "rarity": "unique",
       "label": "The Jade Tan Do",
       "code": "kri",
+      "imageCode": "krsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Kriss",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique041"
     },
     {
       "rarity": "unique",
       "label": "Irices Shard",
       "code": "bld",
+      "imageCode": "bld",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Blade",
@@ -1219,56 +1420,67 @@
       "rarity": "unique",
       "label": "The Dragon Chang",
       "code": "spr",
+      "imageCode": "spr",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique043"
     },
     {
       "rarity": "unique",
       "label": "Razortine",
       "code": "tri",
+      "imageCode": "triu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Trident",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique044"
     },
     {
       "rarity": "unique",
       "label": "Bloodthief",
       "code": "brn",
+      "imageCode": "brn",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Brandistock",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique045"
     },
     {
       "rarity": "unique",
       "label": "Lance of Yaggai",
       "code": "spt",
+      "imageCode": "spt",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Spetum",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique046"
     },
     {
       "rarity": "unique",
       "label": "The Tannr Gorerod",
       "code": "pik",
+      "imageCode": "pik",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Pike",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique047"
     },
     {
       "rarity": "unique",
       "label": "Dimoaks Hew",
       "code": "bar",
+      "imageCode": "bar",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bardiche",
@@ -1279,76 +1491,91 @@
       "rarity": "unique",
       "label": "Steelgoad",
       "code": "vou",
+      "imageCode": "vou",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Voulge",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique049"
     },
     {
       "rarity": "unique",
       "label": "Soul Harvest",
       "code": "scy",
+      "imageCode": "scyu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique050"
     },
     {
       "rarity": "unique",
       "label": "The Battlebranch",
       "code": "pax",
+      "imageCode": "pax",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Poleaxe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique051"
     },
     {
       "rarity": "unique",
       "label": "Woestave",
       "code": "hal",
+      "imageCode": "hal",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Halberd",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique052"
     },
     {
       "rarity": "unique",
       "label": "The Grim Reaper",
       "code": "wsc",
+      "imageCode": "wsc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique053"
     },
     {
       "rarity": "unique",
       "label": "Bane Ash",
       "code": "sst",
+      "imageCode": "sst",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique054"
     },
     {
       "rarity": "unique",
       "label": "Serpent Lord",
       "code": "lst",
+      "imageCode": "lst",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique055"
     },
     {
       "rarity": "unique",
       "label": "Lazarus Spire",
       "code": "cst",
+      "imageCode": "cstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gnarled Staff",
@@ -1359,46 +1586,55 @@
       "rarity": "unique",
       "label": "The Salamander",
       "code": "bst",
+      "imageCode": "bst",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique057"
     },
     {
       "rarity": "unique",
       "label": "The Iron Jang Bong",
       "code": "wst",
+      "imageCode": "wst",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique058"
     },
     {
       "rarity": "unique",
       "label": "Pluckeye",
       "code": "sbw",
+      "imageCode": "sbw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique059"
     },
     {
       "rarity": "unique",
       "label": "Witherstring",
       "code": "hbw",
+      "imageCode": "hbw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hunter's Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique060"
     },
     {
       "rarity": "unique",
       "label": "Rimeraven",
       "code": "lbw",
+      "imageCode": "lbw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long Bow",
@@ -1409,6 +1645,7 @@
       "rarity": "unique",
       "label": "Piercerib",
       "code": "cbw",
+      "imageCode": "cbwu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Composite Bow",
@@ -1419,6 +1656,7 @@
       "rarity": "unique",
       "label": "Pullspite",
       "code": "sbb",
+      "imageCode": "sbbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short Battle Bow",
@@ -1429,66 +1667,79 @@
       "rarity": "unique",
       "label": "Wizendraw",
       "code": "lbb",
+      "imageCode": "lbb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long Battle Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique064"
     },
     {
       "rarity": "unique",
       "label": "Hellclap",
       "code": "swb",
+      "imageCode": "swbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short War Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique065"
     },
     {
       "rarity": "unique",
       "label": "Blastbark",
       "code": "lwb",
+      "imageCode": "lwb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long War Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique066"
     },
     {
       "rarity": "unique",
       "label": "Leadcrow",
       "code": "lxb",
+      "imageCode": "lxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Light Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique067"
     },
     {
       "rarity": "unique",
       "label": "Ichorsting",
       "code": "mxb",
+      "imageCode": "mxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique068"
     },
     {
       "rarity": "unique",
       "label": "Hellcast",
       "code": "hxb",
+      "imageCode": "hxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Heavy Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique069"
     },
     {
       "rarity": "unique",
       "label": "Doomspittle",
       "code": "rxb",
+      "imageCode": "rxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Repeating Crossbow",
@@ -1499,6 +1750,7 @@
       "rarity": "unique",
       "label": "Staff of Kings",
       "code": "msf",
+      "imageCode": "msf",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Staff of Kings",
@@ -1509,6 +1761,7 @@
       "rarity": "unique",
       "label": "Horadric Staff",
       "code": "hst",
+      "imageCode": "hst",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Horadric Staff",
@@ -1519,6 +1772,7 @@
       "rarity": "unique",
       "label": "Hell Forge Hammer",
       "code": "hfh",
+      "imageCode": "hfh",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hellforge Hammer",
@@ -1529,6 +1783,7 @@
       "rarity": "unique",
       "label": "KhalimFlail",
       "code": "qf1",
+      "imageCode": "qf1",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Khalim's Flail",
@@ -1539,6 +1794,7 @@
       "rarity": "unique",
       "label": "SuperKhalimFlail",
       "code": "qf2",
+      "imageCode": "qf2",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Khalim's Will",
@@ -1549,36 +1805,43 @@
       "rarity": "unique",
       "label": "Coldkill",
       "code": "9ha",
+      "imageCode": "haxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hatchet",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique129"
     },
     {
       "rarity": "unique",
       "label": "Butcher's Pupil",
       "code": "9ax",
+      "imageCode": "axeu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cleaver",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique130"
     },
     {
       "rarity": "unique",
       "label": "Islestrike",
       "code": "92a",
+      "imageCode": "92a",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Twin Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique131"
     },
     {
       "rarity": "unique",
       "label": "Pompe's Wrath",
       "code": "9mp",
+      "imageCode": "mpiu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Crowbill",
@@ -1589,56 +1852,67 @@
       "rarity": "unique",
       "label": "Guardian Naga",
       "code": "9wa",
+      "imageCode": "9wa",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Naga",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique133"
     },
     {
       "rarity": "unique",
       "label": "Warlord's Trust",
       "code": "9la",
+      "imageCode": "9la",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Military Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique134"
     },
     {
       "rarity": "unique",
       "label": "Spellsteel",
       "code": "9ba",
+      "imageCode": "9ba",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bearded Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique135"
     },
     {
       "rarity": "unique",
       "label": "Stormrider",
       "code": "9bt",
+      "imageCode": "9btu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tabar",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique136"
     },
     {
       "rarity": "unique",
       "label": "Boneslayer Blade",
       "code": "9ga",
+      "imageCode": "gaxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gothic Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique137"
     },
     {
       "rarity": "unique",
       "label": "The Minataur",
       "code": "9gi",
+      "imageCode": "9giu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ancient Axe",
@@ -1649,226 +1923,271 @@
       "rarity": "unique",
       "label": "Suicide Branch",
       "code": "9wn",
+      "imageCode": "9wn",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Burnt Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique139"
     },
     {
       "rarity": "unique",
       "label": "Carin Shard",
       "code": "9yw",
+      "imageCode": "9yw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Petrified Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique140"
     },
     {
       "rarity": "unique",
       "label": "Arm of King Leoric",
       "code": "9bw",
+      "imageCode": "bwnu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tomb Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique141"
     },
     {
       "rarity": "unique",
       "label": "Blackhand Key",
       "code": "9gw",
+      "imageCode": "9gwu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Grave Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique142"
     },
     {
       "rarity": "unique",
       "label": "Dark Clan Crusher",
       "code": "9cl",
+      "imageCode": "clbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cudgel",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique143"
     },
     {
       "rarity": "unique",
       "label": "Zakarum's Hand",
       "code": "9sc",
+      "imageCode": "9sc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Rune Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique144"
     },
     {
       "rarity": "unique",
       "label": "The Fetid Sprinkler",
       "code": "9qs",
+      "imageCode": "9qs",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Holy Water Sprinkler",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique145"
     },
     {
       "rarity": "unique",
       "label": "Hand of Blessed Light",
       "code": "9ws",
+      "imageCode": "9ws",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Divine Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique146"
     },
     {
       "rarity": "unique",
       "label": "Fleshrender",
       "code": "9sp",
+      "imageCode": "spcu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Barbed Club",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique147"
     },
     {
       "rarity": "unique",
       "label": "Sureshrill Frost",
       "code": "9ma",
+      "imageCode": "9ma",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Flanged Mace",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique148"
     },
     {
       "rarity": "unique",
       "label": "Moonfall",
       "code": "9mt",
+      "imageCode": "mstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Jagged Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique149"
     },
     {
       "rarity": "unique",
       "label": "Baezil's Vortex",
       "code": "9fl",
+      "imageCode": "9fl",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Knout",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique150"
     },
     {
       "rarity": "unique",
       "label": "Earthshaker",
       "code": "9wh",
+      "imageCode": "9wh",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Hammer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique151"
     },
     {
       "rarity": "unique",
       "label": "Bloodtree Stump",
       "code": "9m9",
+      "imageCode": "9m9",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Club",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique152"
     },
     {
       "rarity": "unique",
       "label": "The Gavel of Pain",
       "code": "9gm",
+      "imageCode": "9gmu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Martel de Fer",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique153"
     },
     {
       "rarity": "unique",
       "label": "Bloodletter",
       "code": "9ss",
+      "imageCode": "9ss",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gladius",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique154"
     },
     {
       "rarity": "unique",
       "label": "Coldsteel Eye",
       "code": "9sm",
+      "imageCode": "scmu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cutlass",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique155"
     },
     {
       "rarity": "unique",
       "label": "Hexfire",
       "code": "9sb",
+      "imageCode": "sbru",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Shamshir",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique156"
     },
     {
       "rarity": "unique",
       "label": "Blade of Ali Baba",
       "code": "9fc",
+      "imageCode": "9fc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tulwar",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique157"
     },
     {
       "rarity": "unique",
       "label": "Ginther's Rift",
       "code": "9cr",
+      "imageCode": "9cru",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Dimensional Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique158"
     },
     {
       "rarity": "unique",
       "label": "Headstriker",
       "code": "9bs",
+      "imageCode": "9bs",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique159"
     },
     {
       "rarity": "unique",
       "label": "Plague Bearer",
       "code": "9ls",
+      "imageCode": "9lsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Rune Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique160"
     },
     {
       "rarity": "unique",
       "label": "The Atlantian",
       "code": "9wd",
+      "imageCode": "9wd",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ancient Sword",
@@ -1879,256 +2198,307 @@
       "rarity": "unique",
       "label": "Crainte Vomir",
       "code": "92h",
+      "imageCode": "2hsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Espandon",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique162"
     },
     {
       "rarity": "unique",
       "label": "Bing Sz Wang",
       "code": "9cm",
+      "imageCode": "9cm",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Dacian Falx",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique163"
     },
     {
       "rarity": "unique",
       "label": "The Vile Husk",
       "code": "9gs",
+      "imageCode": "gisu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tusk Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique164"
     },
     {
       "rarity": "unique",
       "label": "Cloudcrack",
       "code": "9b9",
+      "imageCode": "bswu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gothic Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique165"
     },
     {
       "rarity": "unique",
       "label": "Todesfaelle Flamme",
       "code": "9fb",
+      "imageCode": "9fbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Zweihander",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique166"
     },
     {
       "rarity": "unique",
       "label": "Swordguard",
       "code": "9gd",
+      "imageCode": "gsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Executioner Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique167"
     },
     {
       "rarity": "unique",
       "label": "Spineripper",
       "code": "9dg",
+      "imageCode": "9dg",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Poignard",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique168"
     },
     {
       "rarity": "unique",
       "label": "Heart Carver",
       "code": "9di",
+      "imageCode": "9di",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Rondel",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique169"
     },
     {
       "rarity": "unique",
       "label": "Blackbog's Sharp",
       "code": "9kr",
+      "imageCode": "krsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cinquedeas",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique170"
     },
     {
       "rarity": "unique",
       "label": "Stormspike",
       "code": "9bl",
+      "imageCode": "9blu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Stilleto",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique171"
     },
     {
       "rarity": "unique",
       "label": "The Impaler",
       "code": "9sr",
+      "imageCode": "9sr",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique172"
     },
     {
       "rarity": "unique",
       "label": "Kelpie Snare",
       "code": "9tr",
+      "imageCode": "triu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Fuscina",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique173"
     },
     {
       "rarity": "unique",
       "label": "Soulfeast Tine",
       "code": "9br",
+      "imageCode": "9bru",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Fork",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique174"
     },
     {
       "rarity": "unique",
       "label": "Hone Sundan",
       "code": "9st",
+      "imageCode": "9st",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Yari",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique175"
     },
     {
       "rarity": "unique",
       "label": "Spire of Honor",
       "code": "9p9",
+      "imageCode": "9p9",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Lance",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique176"
     },
     {
       "rarity": "unique",
       "label": "The Meat Scraper",
       "code": "9b7",
+      "imageCode": "9b7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Lochaber Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique177"
     },
     {
       "rarity": "unique",
       "label": "Blackleach Blade",
       "code": "9vo",
+      "imageCode": "9vo",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bill",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique178"
     },
     {
       "rarity": "unique",
       "label": "Athena's Wrath",
       "code": "9s8",
+      "imageCode": "9s8u",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique179"
     },
     {
       "rarity": "unique",
       "label": "Pierre Tombale Couant",
       "code": "9pa",
+      "imageCode": "9pa",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Partizan",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique180"
     },
     {
       "rarity": "unique",
       "label": "Husoldal Evo",
       "code": "9h9",
+      "imageCode": "9h9",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bec-de-Corbin",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique181"
     },
     {
       "rarity": "unique",
       "label": "Grim's Burning Dead",
       "code": "9wc",
+      "imageCode": "9wc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Grim Scythe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique182"
     },
     {
       "rarity": "unique",
       "label": "Razorswitch",
       "code": "8ss",
+      "imageCode": "8ss",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Jo Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique183"
     },
     {
       "rarity": "unique",
       "label": "Ribcracker",
       "code": "8ls",
+      "imageCode": "8ls",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Quarterstaff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique184"
     },
     {
       "rarity": "unique",
       "label": "Chromatic Ire",
       "code": "8cs",
+      "imageCode": "cstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cedar Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique185"
     },
     {
       "rarity": "unique",
       "label": "Warpspear",
       "code": "8bs",
+      "imageCode": "8bs",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gothic Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique186"
     },
     {
       "rarity": "unique",
       "label": "Skullcollector",
       "code": "8ws",
+      "imageCode": "8wsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Rune Staff",
@@ -2139,46 +2509,55 @@
       "rarity": "unique",
       "label": "Skystrike",
       "code": "8sb",
+      "imageCode": "8sb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Edge Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique188"
     },
     {
       "rarity": "unique",
       "label": "Riphook",
       "code": "8hb",
+      "imageCode": "8hb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Razor Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique189"
     },
     {
       "rarity": "unique",
       "label": "Kuko Shakaku",
       "code": "8lb",
+      "imageCode": "8lbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cedar Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique190"
     },
     {
       "rarity": "unique",
       "label": "Endlesshail",
       "code": "8cb",
+      "imageCode": "cbwu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Double Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique191"
     },
     {
       "rarity": "unique",
       "label": "Whichwild String",
       "code": "8s8",
+      "imageCode": "8s8u",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Short Siege Bow",
@@ -2189,26 +2568,31 @@
       "rarity": "unique",
       "label": "Cliffkiller",
       "code": "8l8",
+      "imageCode": "8l8",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Long Siege Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique193"
     },
     {
       "rarity": "unique",
       "label": "Magewrath",
       "code": "8sw",
+      "imageCode": "swbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Rune Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique194"
     },
     {
       "rarity": "unique",
       "label": "Godstrike Arch",
       "code": "8lw",
+      "imageCode": "8lw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Gothic Bow",
@@ -2219,16 +2603,19 @@
       "rarity": "unique",
       "label": "Langer Briser",
       "code": "8lx",
+      "imageCode": "8lxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Arbalest",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique196"
     },
     {
       "rarity": "unique",
       "label": "Pus Spiter",
       "code": "8mx",
+      "imageCode": "8mxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Siege Crossbow",
@@ -2239,186 +2626,223 @@
       "rarity": "unique",
       "label": "Buriza-Do Kyanon",
       "code": "8hx",
+      "imageCode": "hxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ballista",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique198"
     },
     {
       "rarity": "unique",
       "label": "Demon Machine",
       "code": "8rx",
+      "imageCode": "rxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Chu-Ko-Nu",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique199"
     },
     {
       "rarity": "unique",
       "label": "Hellslayer",
       "code": "7bt",
+      "imageCode": "btxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Decapitator",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique254"
     },
     {
       "rarity": "unique",
       "label": "Messerschmidt's Reaver",
       "code": "7ga",
+      "imageCode": "gaxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Champion Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique255"
     },
     {
       "rarity": "unique",
       "label": "Baranar's Star",
       "code": "7mt",
+      "imageCode": "mstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Devil Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique256"
     },
     {
       "rarity": "unique",
       "label": "Schaefer's Hammer",
       "code": "7wh",
+      "imageCode": "7wh",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Legendary Mallet",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique257"
     },
     {
       "rarity": "unique",
       "label": "The Cranium Basher",
       "code": "7gm",
+      "imageCode": "7gm",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Thunder Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique258"
     },
     {
       "rarity": "unique",
       "label": "Lightsabre",
       "code": "7cr",
+      "imageCode": "crsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Phase Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique259"
     },
     {
       "rarity": "unique",
       "label": "Doombringer",
       "code": "7b7",
+      "imageCode": "bswu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Champion Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique260"
     },
     {
       "rarity": "unique",
       "label": "The Grandfather",
       "code": "7gd",
+      "imageCode": "gsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Colossus Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique261"
     },
     {
       "rarity": "unique",
       "label": "Wizardspike",
       "code": "7dg",
+      "imageCode": "7dg",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Bone Knife",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique262"
     },
     {
       "rarity": "unique",
       "label": "Stormspire",
       "code": "7wc",
+      "imageCode": "7wc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Giant Thresher",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique264"
     },
     {
       "rarity": "unique",
       "label": "Eaglehorn",
       "code": "6l7",
+      "imageCode": "6l7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Crusader Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique265"
     },
     {
       "rarity": "unique",
       "label": "Windforce",
       "code": "6lw",
+      "imageCode": "6lw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hydra Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique266"
     },
     {
       "rarity": "unique",
       "label": "Titan's Revenge",
       "code": "ama",
+      "imageCode": "ama",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ceremonial Javelin",
       "baseType": "ajav",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique281"
     },
     {
       "rarity": "unique",
       "label": "Lycander's Aim",
       "code": "am7",
+      "imageCode": "am7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ceremonial Bow",
       "baseType": "abow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique282"
     },
     {
       "rarity": "unique",
       "label": "Lycander's Flank",
       "code": "am9",
+      "imageCode": "am9",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ceremonial Pike",
       "baseType": "aspe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique283"
     },
     {
       "rarity": "unique",
       "label": "The Oculus",
       "code": "oba",
+      "imageCode": "oba",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Swirling Crystal",
       "baseType": "orb",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique284"
     },
     {
       "rarity": "unique",
       "label": "Cutthroat1",
       "code": "9tw",
+      "imageCode": "9tw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Greater Talons",
@@ -2429,26 +2853,31 @@
       "rarity": "unique",
       "label": "The Scalper",
       "code": "9ta",
+      "imageCode": "9ta",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Francisca",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique288"
     },
     {
       "rarity": "unique",
       "label": "Bloodmoon",
       "code": "7sb",
+      "imageCode": "sbru",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Elegant Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique289"
     },
     {
       "rarity": "unique",
       "label": "Djinnslayer",
       "code": "7sm",
+      "imageCode": "scmu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ataghan",
@@ -2459,26 +2888,31 @@
       "rarity": "unique",
       "label": "Deathbit",
       "code": "9tk",
+      "imageCode": "9tk",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Dart",
       "baseType": "tkni",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique291"
     },
     {
       "rarity": "unique",
       "label": "Warshrike",
       "code": "7bk",
+      "imageCode": "tk3",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Winged Knife",
       "baseType": "tkni",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique292"
     },
     {
       "rarity": "unique",
       "label": "Gutsiphon",
       "code": "6rx",
+      "imageCode": "rxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Demon Crossbow",
@@ -2489,6 +2923,7 @@
       "rarity": "unique",
       "label": "Razoredge",
       "code": "7ha",
+      "imageCode": "haxu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tomahawk",
@@ -2499,6 +2934,7 @@
       "rarity": "unique",
       "label": "Demonlimb",
       "code": "7sp",
+      "imageCode": "spcu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Tyrant Club",
@@ -2509,16 +2945,19 @@
       "rarity": "unique",
       "label": "Tomb Reaver",
       "code": "7pa",
+      "imageCode": "7pa",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cryptic Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique298"
     },
     {
       "rarity": "unique",
       "label": "Deaths's Web",
       "code": "7gw",
+      "imageCode": "7gw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Unearthed Wand",
@@ -2529,46 +2968,55 @@
       "rarity": "unique",
       "label": "Azurewrath",
       "code": "7cr",
+      "imageCode": "crs",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Phase Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique301"
     },
     {
       "rarity": "unique",
       "label": "Fleshripper",
       "code": "7kr",
+      "imageCode": "krsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Fanged Knife",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique304"
     },
     {
       "rarity": "unique",
       "label": "Horizon's Tornado",
       "code": "7fl",
+      "imageCode": "7fl",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Scourge",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique306"
     },
     {
       "rarity": "unique",
       "label": "Stone Crusher",
       "code": "7wh",
+      "imageCode": "7wh",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Legendary Mallet",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique307"
     },
     {
       "rarity": "unique",
       "label": "Jadetalon",
       "code": "7wb",
+      "imageCode": "7wb",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Wrist Sword",
@@ -2579,6 +3027,7 @@
       "rarity": "unique",
       "label": "Runemaster",
       "code": "72a",
+      "imageCode": "72a",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ettin Axe",
@@ -2589,6 +3038,7 @@
       "rarity": "unique",
       "label": "Deathcleaver",
       "code": "7wa",
+      "imageCode": "7wa",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Berserker Axe",
@@ -2599,106 +3049,127 @@
       "rarity": "unique",
       "label": "Executioner's Justice",
       "code": "7gi",
+      "imageCode": "7gi",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Glorious Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique315"
     },
     {
       "rarity": "unique",
       "label": "Stoneraven",
       "code": "amd",
+      "imageCode": "amd",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Matriarchal Spear",
       "baseType": "aspe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique316"
     },
     {
       "rarity": "unique",
       "label": "Gargoyle's Bite",
       "code": "7ts",
+      "imageCode": "7ts",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Winged Harpoon",
       "baseType": "jave",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique320"
     },
     {
       "rarity": "unique",
       "label": "Lacerator",
       "code": "7b8",
+      "imageCode": "7b8",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Winged Axe",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique321"
     },
     {
       "rarity": "unique",
       "label": "Mang Song's Lesson",
       "code": "6ws",
+      "imageCode": "8wsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Archon Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique322"
     },
     {
       "rarity": "unique",
       "label": "Viperfork",
       "code": "7br",
+      "imageCode": "7br",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Mancatcher",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique323"
     },
     {
       "rarity": "unique",
       "label": "Ethereal Edge",
       "code": "7ba",
+      "imageCode": "7ba",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Silver-edged Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique324"
     },
     {
       "rarity": "unique",
       "label": "The Reaper's Toll",
       "code": "7s8",
+      "imageCode": "scy",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Thresher",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique326"
     },
     {
       "rarity": "unique",
       "label": "Hellrack",
       "code": "6hx",
+      "imageCode": "hxbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Colossus Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique328"
     },
     {
       "rarity": "unique",
       "label": "Widowmaker",
       "code": "6sw",
+      "imageCode": "swbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ward Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique331"
     },
     {
       "rarity": "unique",
       "label": "Bloodraven's Charge",
       "code": "amb",
+      "imageCode": "swbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Matriarchal Bow",
@@ -2709,16 +3180,19 @@
       "rarity": "unique",
       "label": "Ghostflame",
       "code": "7bl",
+      "imageCode": "7bl",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Legend Spike",
       "baseType": "knif",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique333"
     },
     {
       "rarity": "unique",
       "label": "Shadowkiller",
       "code": "7cs",
+      "imageCode": "axfu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Battle Cestus",
@@ -2729,46 +3203,55 @@
       "rarity": "unique",
       "label": "Gimmershred",
       "code": "7ta",
+      "imageCode": "7ta",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Flying Axe",
       "baseType": "taxe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique335"
     },
     {
       "rarity": "unique",
       "label": "Windhammer",
       "code": "7m7",
+      "imageCode": "mau",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ogre Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique337"
     },
     {
       "rarity": "unique",
       "label": "Thunderstroke",
       "code": "amf",
+      "imageCode": "amf",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Matriarchal Javelin",
       "baseType": "ajav",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique338"
     },
     {
       "rarity": "unique",
       "label": "Demon's Arch",
       "code": "7s7",
+      "imageCode": "7s7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Balrog Spear",
       "baseType": "jave",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique340"
     },
     {
       "rarity": "unique",
       "label": "Steelpillar",
       "code": "7p7",
+      "imageCode": "7p7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Pike",
@@ -2779,26 +3262,31 @@
       "rarity": "unique",
       "label": "Boneshade",
       "code": "7bw",
+      "imageCode": "bwnu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Lich Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique351"
     },
     {
       "rarity": "unique",
       "label": "Flamebellow",
       "code": "7gs",
+      "imageCode": "gisu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Balrog Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique353"
     },
     {
       "rarity": "unique",
       "label": "Fathom",
       "code": "obf",
+      "imageCode": "obf",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Dimensional Shard",
@@ -2809,56 +3297,67 @@
       "rarity": "unique",
       "label": "Stormlash",
       "code": "7fl",
+      "imageCode": "7fl",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Scourge",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique360"
     },
     {
       "rarity": "unique",
       "label": "Frostwind",
       "code": "7ls",
+      "imageCode": "lsdu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Cryptic Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique365"
     },
     {
       "rarity": "unique",
       "label": "Eschuta's temper",
       "code": "obc",
+      "imageCode": "obc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Eldritch Orb",
       "baseType": "orb",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique367"
     },
     {
       "rarity": "unique",
       "label": "Firelizard's Talons",
       "code": "7lw",
+      "imageCode": "7lw",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Feral Claws",
       "baseType": "h2h2",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique368"
     },
     {
       "rarity": "unique",
       "label": "Heaven's Light",
       "code": "7sc",
+      "imageCode": "7sc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Mighty Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique371"
     },
     {
       "rarity": "unique",
       "label": "Ironward",
       "code": "7ws",
+      "imageCode": "7ws",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Caduceus",
@@ -2869,36 +3368,43 @@
       "rarity": "unique",
       "label": "Arioc's Needle",
       "code": "7sr",
+      "imageCode": "7sr",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Hyperion Spear",
       "baseType": "spea",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique382"
     },
     {
       "rarity": "unique",
       "label": "Cranebeak",
       "code": "7mp",
+      "imageCode": "mpiu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "War Spike",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique383"
     },
     {
       "rarity": "unique",
       "label": "Nord's Tenderizer",
       "code": "7cl",
+      "imageCode": "clbu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Truncheon",
       "baseType": "club",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique384"
     },
     {
       "rarity": "unique",
       "label": "Earthshifter",
       "code": "7gm",
+      "imageCode": "7gm",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Thunder Maul",
@@ -2909,6 +3415,7 @@
       "rarity": "unique",
       "label": "Wraithflight",
       "code": "7gl",
+      "imageCode": "7gl",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ghost Glaive",
@@ -2919,26 +3426,31 @@
       "rarity": "unique",
       "label": "Bonehew",
       "code": "7o7",
+      "imageCode": "7o7",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Ogre Axe",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique387"
     },
     {
       "rarity": "unique",
       "label": "Ondal's Wisdom",
       "code": "6cs",
+      "imageCode": "cstu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Elder Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "unique388"
     },
     {
       "rarity": "unique",
       "label": "The Reedeemer",
       "code": "7sc",
+      "imageCode": "7sc",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Mighty Scepter",
@@ -2949,6 +3461,7 @@
       "rarity": "unique",
       "label": "Dreadfang",
       "code": "72h",
+      "imageCode": "2hsu",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Legend Sword",
@@ -2959,6 +3472,7 @@
       "rarity": "unique",
       "label": "Bloodpact Shard",
       "code": "7di",
+      "imageCode": "7di",
       "enabled": false,
       "slot": "Weapon",
       "baseName": "Mithral Point",
@@ -2974,96 +3488,115 @@
       "rarity": "unique",
       "label": "Pelta Lunata",
       "code": "buc",
+      "imageCode": "bucu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Buckler",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique094"
     },
     {
       "rarity": "unique",
       "label": "Umbral Disk",
       "code": "sml",
+      "imageCode": "smlu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Small Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique095"
     },
     {
       "rarity": "unique",
       "label": "Stormguild",
       "code": "lrg",
+      "imageCode": "lrgu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Large Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique096"
     },
     {
       "rarity": "unique",
       "label": "Wall of the Eyeless",
       "code": "bsh",
+      "imageCode": "bshu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Bone Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique097"
     },
     {
       "rarity": "unique",
       "label": "Swordback Hold",
       "code": "spk",
+      "imageCode": "spku",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Spiked Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique098"
     },
     {
       "rarity": "unique",
       "label": "Steelclash",
       "code": "kit",
+      "imageCode": "kitu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Kite Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique099"
     },
     {
       "rarity": "unique",
       "label": "Bverrit Keep",
       "code": "tow",
+      "imageCode": "towu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Tower Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique100"
     },
     {
       "rarity": "unique",
       "label": "The Ward",
       "code": "gts",
+      "imageCode": "gtsu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Gothic Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique101"
     },
     {
       "rarity": "unique",
       "label": "Visceratuant",
       "code": "xuc",
+      "imageCode": "bucu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Defender",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique224"
     },
     {
       "rarity": "unique",
       "label": "Mosers Blessed Circle",
       "code": "xml",
+      "imageCode": "xmlu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Round Shield",
@@ -3074,26 +3607,31 @@
       "rarity": "unique",
       "label": "Stormchaser",
       "code": "xrg",
+      "imageCode": "xrgu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Scutum",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique226"
     },
     {
       "rarity": "unique",
       "label": "Tiamat's Rebuke",
       "code": "xit",
+      "imageCode": "kitu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Dragon Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique227"
     },
     {
       "rarity": "unique",
       "label": "Kerke's Sanctuary",
       "code": "xow",
+      "imageCode": "towu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Pavise",
@@ -3104,6 +3642,7 @@
       "rarity": "unique",
       "label": "Radimant's Sphere",
       "code": "xts",
+      "imageCode": "gtsu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Ancient Shield",
@@ -3114,66 +3653,79 @@
       "rarity": "unique",
       "label": "Lidless Wall",
       "code": "xsh",
+      "imageCode": "xshu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Grim Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique230"
     },
     {
       "rarity": "unique",
       "label": "Lance Guard",
       "code": "xpk",
+      "imageCode": "xpku",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Barbed Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique231"
     },
     {
       "rarity": "unique",
       "label": "Blackoak Shield",
       "code": "uml",
+      "imageCode": "smlu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Luna",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique252"
     },
     {
       "rarity": "unique",
       "label": "Stormshield",
       "code": "uit",
+      "imageCode": "kitu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Monarch",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique253"
     },
     {
       "rarity": "unique",
       "label": "Homunculus",
       "code": "nea",
+      "imageCode": "nea",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Heirophant Trophy",
       "baseType": "head",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique280"
     },
     {
       "rarity": "unique",
       "label": "Herald of Zakarum",
       "code": "pa9",
+      "imageCode": "pa9",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Gilded Shield",
       "baseType": "ashd",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique285"
     },
     {
       "rarity": "unique",
       "label": "Alma Negra",
       "code": "pac",
+      "imageCode": "pac",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Sacred Rondache",
@@ -3184,6 +3736,7 @@
       "rarity": "unique",
       "label": "Darkforge Spawn",
       "code": "nef",
+      "imageCode": "nef",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Bloodlord Skull",
@@ -3194,56 +3747,67 @@
       "rarity": "unique",
       "label": "Boneflame",
       "code": "nee",
+      "imageCode": "nee",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Succubus Skull",
       "baseType": "head",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique341"
     },
     {
       "rarity": "unique",
       "label": "Dragonscale",
       "code": "pae",
+      "imageCode": "pae",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Zakarum Shield",
       "baseType": "ashd",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique347"
     },
     {
       "rarity": "unique",
       "label": "Medusa's Gaze",
       "code": "uow",
+      "imageCode": "towu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Aegis",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique349"
     },
     {
       "rarity": "unique",
       "label": "Spirit Ward",
       "code": "uts",
+      "imageCode": "gtsu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Ward",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique356"
     },
     {
       "rarity": "unique",
       "label": "Spike Thorn",
       "code": "upk",
+      "imageCode": "spku",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Blade Barrier",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique363"
     },
     {
       "rarity": "unique",
       "label": "Headhunter's Glory",
       "code": "ush",
+      "imageCode": "bshu",
       "enabled": false,
       "slot": "Shield",
       "baseName": "Troll Nest",
@@ -3259,86 +3823,103 @@
       "rarity": "unique",
       "label": "The Hand of Broc",
       "code": "lgl",
+      "imageCode": "lgl",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Leather Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique102"
     },
     {
       "rarity": "unique",
       "label": "Bloodfist",
       "code": "vgl",
+      "imageCode": "vgl",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Heavy Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique103"
     },
     {
       "rarity": "unique",
       "label": "Chance Guards",
       "code": "mgl",
+      "imageCode": "mgl",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Chain Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique104"
     },
     {
       "rarity": "unique",
       "label": "Magefist",
       "code": "tgl",
+      "imageCode": "tgl",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Light Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique105"
     },
     {
       "rarity": "unique",
       "label": "Frostburn",
       "code": "hgl",
+      "imageCode": "hgl",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique106"
     },
     {
       "rarity": "unique",
       "label": "Venom Grip",
       "code": "xlg",
+      "imageCode": "xlg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Demonhide Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique232"
     },
     {
       "rarity": "unique",
       "label": "Gravepalm",
       "code": "xvg",
+      "imageCode": "xvg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Sharkskin Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique233"
     },
     {
       "rarity": "unique",
       "label": "Ghoulhide",
       "code": "xmg",
+      "imageCode": "xmg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Heavy Bracers",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique234"
     },
     {
       "rarity": "unique",
       "label": "Lavagout",
       "code": "xtg",
+      "imageCode": "xtg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Battle Gauntlets",
@@ -3349,16 +3930,19 @@
       "rarity": "unique",
       "label": "Hellmouth",
       "code": "xhg",
+      "imageCode": "xhg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "War Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique236"
     },
     {
       "rarity": "unique",
       "label": "Souldrain",
       "code": "umg",
+      "imageCode": "umg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Vambraces",
@@ -3369,21 +3953,25 @@
       "rarity": "unique",
       "label": "Dracul's Grasp",
       "code": "uvg",
+      "imageCode": "uvg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Vampirebone Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique364"
     },
     {
       "rarity": "unique",
       "label": "Steelrend",
       "code": "uhg",
+      "imageCode": "uhg",
       "enabled": false,
       "slot": "Gloves",
       "baseName": "Ogre Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique391"
     },
     {
       "kind": "header",
@@ -3394,6 +3982,7 @@
       "rarity": "unique",
       "label": "Lenyms Cord",
       "code": "lbl",
+      "imageCode": "lbl",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Sash",
@@ -3404,66 +3993,79 @@
       "rarity": "unique",
       "label": "Snakecord",
       "code": "vbl",
+      "imageCode": "vbl",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Light Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique113"
     },
     {
       "rarity": "unique",
       "label": "Nightsmoke",
       "code": "mbl",
+      "imageCode": "mbl",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique114"
     },
     {
       "rarity": "unique",
       "label": "Goldwrap",
       "code": "tbl",
+      "imageCode": "tbl",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Heavy Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique115"
     },
     {
       "rarity": "unique",
       "label": "Bladebuckle",
       "code": "hbl",
+      "imageCode": "hbl",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Plated Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique116"
     },
     {
       "rarity": "unique",
       "label": "String of Ears",
       "code": "zlb",
+      "imageCode": "zlb",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Demonhide Sash",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique242"
     },
     {
       "rarity": "unique",
       "label": "Razortail",
       "code": "zvb",
+      "imageCode": "zvb",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Sharkskin Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique243"
     },
     {
       "rarity": "unique",
       "label": "Gloomstrap",
       "code": "zmb",
+      "imageCode": "zmb",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Mesh Belt",
@@ -3474,16 +4076,19 @@
       "rarity": "unique",
       "label": "Snowclash",
       "code": "ztb",
+      "imageCode": "ztb",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Battle Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique245"
     },
     {
       "rarity": "unique",
       "label": "Thudergod's Vigor",
       "code": "zhb",
+      "imageCode": "zhb",
       "enabled": false,
       "slot": "Belt",
       "baseName": "War Belt",
@@ -3494,26 +4099,31 @@
       "rarity": "unique",
       "label": "Arachnid Mesh",
       "code": "ulc",
+      "imageCode": "ulc",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Spiderweb Sash",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique373"
     },
     {
       "rarity": "unique",
       "label": "Nosferatu's Coil",
       "code": "uvc",
+      "imageCode": "uvc",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Vampirefang Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique374"
     },
     {
       "rarity": "unique",
       "label": "Verdugo's Hearty Cord",
       "code": "umc",
+      "imageCode": "umc",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Mithril Coil",
@@ -3524,6 +4134,7 @@
       "rarity": "unique",
       "label": "Gheed's Wager",
       "code": "utc",
+      "imageCode": "utc",
       "enabled": false,
       "slot": "Belt",
       "baseName": "Troll Belt",
@@ -3539,86 +4150,103 @@
       "rarity": "unique",
       "label": "Hotspur",
       "code": "lbt",
+      "imageCode": "lbt",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique107"
     },
     {
       "rarity": "unique",
       "label": "Gorefoot",
       "code": "vbt",
+      "imageCode": "vbt",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Heavy Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique108"
     },
     {
       "rarity": "unique",
       "label": "Treads of Cthon",
       "code": "mbt",
+      "imageCode": "mbt",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Chain Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique109"
     },
     {
       "rarity": "unique",
       "label": "Goblin Toe",
       "code": "tbt",
+      "imageCode": "tbt",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Light Plated Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique110"
     },
     {
       "rarity": "unique",
       "label": "Tearhaunch",
       "code": "hbt",
+      "imageCode": "hbt",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Greaves",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique111"
     },
     {
       "rarity": "unique",
       "label": "Infernostride",
       "code": "xlb",
+      "imageCode": "xlb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Demonhide Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique237"
     },
     {
       "rarity": "unique",
       "label": "Waterwalk",
       "code": "xvb",
+      "imageCode": "xvb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Sharkskin Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique238"
     },
     {
       "rarity": "unique",
       "label": "Silkweave",
       "code": "xmb",
+      "imageCode": "xmb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Mesh Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique239"
     },
     {
       "rarity": "unique",
       "label": "Wartraveler",
       "code": "xtb",
+      "imageCode": "xtb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Battle Boots",
@@ -3629,6 +4257,7 @@
       "rarity": "unique",
       "label": "Gorerider",
       "code": "xhb",
+      "imageCode": "xhb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "War Boots",
@@ -3639,6 +4268,7 @@
       "rarity": "unique",
       "label": "Shadowdancer",
       "code": "uhb",
+      "imageCode": "uhb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Myrmidon Greaves",
@@ -3649,26 +4279,31 @@
       "rarity": "unique",
       "label": "Sandstorm Trek",
       "code": "uvb",
+      "imageCode": "uvb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Scarabshell Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique369"
     },
     {
       "rarity": "unique",
       "label": "Marrowwalk",
       "code": "umb",
+      "imageCode": "umb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Boneweave Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "unique370"
     },
     {
       "rarity": "unique",
       "label": "Wraithstep",
       "code": "utb",
+      "imageCode": "utb",
       "enabled": false,
       "slot": "Boots",
       "baseName": "Mirrored Boots",
@@ -3684,36 +4319,43 @@
       "rarity": "unique",
       "label": "Nagelring",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique120"
     },
     {
       "rarity": "unique",
       "label": "Manald Heal",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique121"
     },
     {
       "rarity": "unique",
       "label": "The Stone of Jordan",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique122"
     },
     {
       "rarity": "unique",
       "label": "Constricting Ring",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
@@ -3724,6 +4366,7 @@
       "rarity": "unique",
       "label": "Bul Katho's Wedding Band",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
@@ -3734,36 +4377,43 @@
       "rarity": "unique",
       "label": "Dwarf Star",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique274"
     },
     {
       "rarity": "unique",
       "label": "Raven Frost",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique275"
     },
     {
       "rarity": "unique",
       "label": "Nature's Peace",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique300"
     },
     {
       "rarity": "unique",
       "label": "Wisp",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
@@ -3774,16 +4424,19 @@
       "rarity": "unique",
       "label": "Carrion Wind",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique378"
     },
     {
       "rarity": "unique",
       "label": "Sling",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
@@ -3794,6 +4447,7 @@
       "rarity": "unique",
       "label": "Opalvein",
       "code": "rin",
+      "imageCode": "rin",
       "enabled": false,
       "slot": "Ring",
       "baseName": "Ring",
@@ -3809,36 +4463,43 @@
       "rarity": "unique",
       "label": "Nokozan Relic",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique117"
     },
     {
       "rarity": "unique",
       "label": "The Eye of Etlich",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique118"
     },
     {
       "rarity": "unique",
       "label": "The Mahim-Oak Curio",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique119"
     },
     {
       "rarity": "unique",
       "label": "Amulet of the Viper",
       "code": "vip",
+      "imageCode": "vip",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet of the Viper",
@@ -3849,6 +4510,7 @@
       "rarity": "unique",
       "label": "The Cat's Eye",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3859,6 +4521,7 @@
       "rarity": "unique",
       "label": "The Rising Sun",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3869,26 +4532,31 @@
       "rarity": "unique",
       "label": "Crescent Moon",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique271"
     },
     {
       "rarity": "unique",
       "label": "Mara's Kaleidoscope",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique272"
     },
     {
       "rarity": "unique",
       "label": "Atma's Scarab",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3899,16 +4567,19 @@
       "rarity": "unique",
       "label": "Highlord's Wrath",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique276"
     },
     {
       "rarity": "unique",
       "label": "Saracen's Chance",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3919,6 +4590,7 @@
       "rarity": "unique",
       "label": "Seraph's Hymn",
       "code": "amu",
+      "imageCode": "amu2",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3929,16 +4601,19 @@
       "rarity": "unique",
       "label": "Metalgrid",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique375"
     },
     {
       "rarity": "unique",
       "label": "Entropy Locket",
       "code": "amu",
+      "imageCode": "amu",
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
@@ -3954,176 +4629,55 @@
       "rarity": "unique",
       "label": "Gheed's Fortune",
       "code": "cm3",
+      "imageCode": "cm3",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
       "baseType": "lcha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique359"
     },
     {
       "rarity": "unique",
       "label": "Annihilus",
       "code": "cm1",
+      "imageCode": "mss",
       "enabled": false,
       "slot": "Other",
       "baseName": "Small Charm",
       "baseType": "scha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique381"
     },
     {
       "rarity": "unique",
       "label": "Rainbow Facet",
       "code": "jew",
+      "imageCode": "jew",
       "enabled": false,
       "slot": "Other",
       "baseName": "Jewel",
       "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rainbow Facet",
-      "code": "jew",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Jewel",
-      "baseType": "jewl",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique392"
     },
     {
       "rarity": "unique",
       "label": "Hellfire Torch",
       "code": "cm2",
+      "imageCode": "trch",
       "enabled": false,
       "slot": "Other",
       "baseName": "Large Charm",
       "baseType": "mcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Cold Rupture",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Flame Rift",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Crack of the Heavens",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Rotting Fissure",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Bone Break",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Black Cleft",
-      "code": "cm3",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Grand Charm",
-      "baseType": "lcha",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "unique400"
     },
     {
       "rarity": "unique",
       "label": "Defender's Bile",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4134,6 +4688,7 @@
       "rarity": "unique",
       "label": "Guardian's Thunder",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4144,6 +4699,7 @@
       "rarity": "unique",
       "label": "Protector's Frost",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4154,6 +4710,7 @@
       "rarity": "unique",
       "label": "Defender's Fire",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4164,6 +4721,7 @@
       "rarity": "unique",
       "label": "Protector's Stone",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4174,6 +4732,7 @@
       "rarity": "unique",
       "label": "Guardian's Light",
       "code": "cjw",
+      "imageCode": "gswe",
       "enabled": false,
       "slot": "Other",
       "baseName": "Colossal Jewel",
@@ -4184,6 +4743,7 @@
       "rarity": "unique",
       "label": "PreCrafted Cold Rupture",
       "code": "cm3",
+      "imageCode": "cm3c",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4192,18 +4752,9 @@
     },
     {
       "rarity": "unique",
-      "label": "Crafted Cold Rupture",
-      "code": "cs2",
-      "enabled": false,
-      "slot": "Other",
-      "baseName": "Crafted Sunder Charm",
-      "baseType": "csch",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
       "label": "PreCrafted Flame Rift",
       "code": "cm3",
+      "imageCode": "cm3r",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4214,6 +4765,7 @@
       "rarity": "unique",
       "label": "PreCrafted Crack of the Heavens",
       "code": "cm3",
+      "imageCode": "cm3y",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4224,6 +4776,7 @@
       "rarity": "unique",
       "label": "PreCrafted Rotting Fissure",
       "code": "cm3",
+      "imageCode": "cm3g",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4234,6 +4787,7 @@
       "rarity": "unique",
       "label": "PreCrafted Bone Break",
       "code": "cm3",
+      "imageCode": "cm3w",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4244,6 +4798,7 @@
       "rarity": "unique",
       "label": "PreCrafted Black Cleft",
       "code": "cm3",
+      "imageCode": "cm3b",
       "enabled": false,
       "slot": "Other",
       "baseName": "Grand Charm",
@@ -4252,8 +4807,20 @@
     },
     {
       "rarity": "unique",
+      "label": "Crafted Cold Rupture",
+      "code": "cs2",
+      "imageCode": "cm3c",
+      "enabled": false,
+      "slot": "Other",
+      "baseName": "Crafted Sunder Charm",
+      "baseType": "csch",
+      "source": "misc"
+    },
+    {
+      "rarity": "unique",
       "label": "Crafted Flame Rift",
       "code": "cs2",
+      "imageCode": "cm3r",
       "enabled": false,
       "slot": "Other",
       "baseName": "Crafted Sunder Charm",
@@ -4264,6 +4831,7 @@
       "rarity": "unique",
       "label": "Crafted Crack of the Heavens",
       "code": "cs2",
+      "imageCode": "cm3y",
       "enabled": false,
       "slot": "Other",
       "baseName": "Crafted Sunder Charm",
@@ -4274,6 +4842,7 @@
       "rarity": "unique",
       "label": "Crafted Rotting Fissure",
       "code": "cs2",
+      "imageCode": "cm3g",
       "enabled": false,
       "slot": "Other",
       "baseName": "Crafted Sunder Charm",
@@ -4284,6 +4853,7 @@
       "rarity": "unique",
       "label": "Crafted Bone Break",
       "code": "cs2",
+      "imageCode": "cm3w",
       "enabled": false,
       "slot": "Other",
       "baseName": "Crafted Sunder Charm",
@@ -4294,6 +4864,7 @@
       "rarity": "unique",
       "label": "Crafted Black Cleft",
       "code": "cs2",
+      "imageCode": "cm3b",
       "enabled": false,
       "slot": "Other",
       "baseName": "Crafted Sunder Charm",

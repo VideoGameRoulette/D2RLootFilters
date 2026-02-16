@@ -113,7 +113,8 @@
       "slot": "Shield",
       "baseName": "Round Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set107"
     },
     {
       "rarity": "set",
@@ -123,7 +124,8 @@
       "slot": "Helm",
       "baseName": "Winged Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set104"
     },
     {
       "rarity": "set",
@@ -133,7 +135,8 @@
       "slot": "Belt",
       "baseName": "Battle Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set105"
     },
     {
       "rarity": "set",
@@ -143,7 +146,8 @@
       "slot": "Gloves",
       "baseName": "Sharkskin Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set106"
     },
     {
       "kind": "header",
@@ -158,7 +162,8 @@
       "slot": "Weapon",
       "baseName": "Reinforced Mace",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set100"
     },
     {
       "rarity": "set",
@@ -168,7 +173,8 @@
       "slot": "Armor",
       "baseName": "Cuirass",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set102"
     },
     {
       "rarity": "set",
@@ -178,7 +184,8 @@
       "slot": "Shield",
       "baseName": "Ward",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set101"
     },
     {
       "rarity": "set",
@@ -188,7 +195,8 @@
       "slot": "Helm",
       "baseName": "Spired Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set103"
     },
     {
       "kind": "header",
@@ -203,7 +211,8 @@
       "slot": "Weapon",
       "baseName": "War Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set049"
     },
     {
       "rarity": "set",
@@ -213,7 +222,8 @@
       "slot": "Belt",
       "baseName": "Sash",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set048"
     },
     {
       "rarity": "set",
@@ -223,7 +233,8 @@
       "slot": "Gloves",
       "baseName": "Leather Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set047"
     },
     {
       "kind": "header",
@@ -238,7 +249,8 @@
       "slot": "Helm",
       "baseName": "Circlet",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set122"
     },
     {
       "rarity": "set",
@@ -248,7 +260,8 @@
       "slot": "Armor",
       "baseName": "Hellforge Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set121"
     },
     {
       "rarity": "set",
@@ -258,7 +271,8 @@
       "slot": "Weapon",
       "baseName": "Elder Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set120"
     },
     {
       "kind": "header",
@@ -273,7 +287,8 @@
       "slot": "Weapon",
       "baseName": "Jagged Star",
       "baseType": "mace",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set068"
     },
     {
       "rarity": "set",
@@ -283,7 +298,8 @@
       "slot": "Helm",
       "baseName": "Hunter's Guise",
       "baseType": "pelt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set066"
     },
     {
       "rarity": "set",
@@ -293,7 +309,8 @@
       "slot": "Armor",
       "baseName": "Shadow Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set067"
     },
     {
       "rarity": "set",
@@ -303,7 +320,8 @@
       "slot": "Boots",
       "baseName": "Battle Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set069"
     },
     {
       "kind": "header",
@@ -318,7 +336,8 @@
       "slot": "Weapon",
       "baseName": "Cryptic Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set112"
     },
     {
       "rarity": "set",
@@ -328,7 +347,8 @@
       "slot": "Armor",
       "baseName": "Balrog Skin",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set113"
     },
     {
       "rarity": "set",
@@ -338,7 +358,8 @@
       "slot": "Helm",
       "baseName": "Basinet",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set114"
     },
     {
       "kind": "header",
@@ -353,7 +374,8 @@
       "slot": "Armor",
       "baseName": "Dusk Shroud",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set098"
     },
     {
       "rarity": "set",
@@ -363,7 +385,8 @@
       "slot": "Belt",
       "baseName": "Mithril Coil",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set099"
     },
     {
       "rarity": "set",
@@ -373,7 +396,8 @@
       "slot": "Gloves",
       "baseName": "Bramble Mitts",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set096"
     },
     {
       "rarity": "set",
@@ -383,7 +407,8 @@
       "slot": "Boots",
       "baseName": "Demonhide Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set097"
     },
     {
       "rarity": "set",
@@ -393,7 +418,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set095"
     },
     {
       "kind": "header",
@@ -408,7 +434,8 @@
       "slot": "Helm",
       "baseName": "Bone Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set034"
     },
     {
       "rarity": "set",
@@ -418,7 +445,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set033"
     },
     {
       "rarity": "set",
@@ -428,7 +456,8 @@
       "slot": "Boots",
       "baseName": "Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set032"
     },
     {
       "rarity": "set",
@@ -438,7 +467,8 @@
       "slot": "Armor",
       "baseName": "Full Plate Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set031"
     },
     {
       "rarity": "set",
@@ -448,7 +478,8 @@
       "slot": "Weapon",
       "baseName": "Military Pick",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set030"
     },
     {
       "kind": "header",
@@ -463,7 +494,8 @@
       "slot": "Weapon",
       "baseName": "Colossus Blade",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set115"
     },
     {
       "rarity": "set",
@@ -473,7 +505,8 @@
       "slot": "Weapon",
       "baseName": "Mythical Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set116"
     },
     {
       "kind": "header",
@@ -488,7 +521,8 @@
       "slot": "Weapon",
       "baseName": "Double Axe",
       "baseType": "axe",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set046"
     },
     {
       "rarity": "set",
@@ -498,7 +532,8 @@
       "slot": "Armor",
       "baseName": "Splint Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set045"
     },
     {
       "rarity": "set",
@@ -508,7 +543,8 @@
       "slot": "Helm",
       "baseName": "Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set044"
     },
     {
       "kind": "header",
@@ -523,7 +559,8 @@
       "slot": "Weapon",
       "baseName": "Broad Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set013"
     },
     {
       "rarity": "set",
@@ -533,7 +570,8 @@
       "slot": "Armor",
       "baseName": "Breast Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set015"
     },
     {
       "rarity": "set",
@@ -543,7 +581,8 @@
       "slot": "Helm",
       "baseName": "Full Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set016"
     },
     {
       "rarity": "set",
@@ -553,7 +592,8 @@
       "slot": "Shield",
       "baseName": "Gothic Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set014"
     },
     {
       "kind": "header",
@@ -568,7 +608,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set053"
     },
     {
       "rarity": "set",
@@ -578,7 +619,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set053"
     },
     {
       "rarity": "set",
@@ -588,7 +630,8 @@
       "slot": "Armor",
       "baseName": "Ring Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set051"
     },
     {
       "kind": "header",
@@ -603,7 +646,8 @@
       "slot": "Helm",
       "baseName": "Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set027"
     },
     {
       "rarity": "set",
@@ -613,7 +657,8 @@
       "slot": "Weapon",
       "baseName": "Battle Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set025"
     },
     {
       "rarity": "set",
@@ -623,7 +668,8 @@
       "slot": "Ring",
       "baseName": "Ring",
       "baseType": "ring",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set029"
     },
     {
       "rarity": "set",
@@ -633,7 +679,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set028"
     },
     {
       "rarity": "set",
@@ -643,7 +690,8 @@
       "slot": "Armor",
       "baseName": "Chain Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set026"
     },
     {
       "kind": "header",
@@ -658,7 +706,8 @@
       "slot": "Weapon",
       "baseName": "Bill",
       "baseType": "pole",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set111"
     },
     {
       "rarity": "set",
@@ -668,7 +717,8 @@
       "slot": "Armor",
       "baseName": "Tigulated Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set109"
     },
     {
       "rarity": "set",
@@ -678,7 +728,8 @@
       "slot": "Helm",
       "baseName": "Grand Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set108"
     },
     {
       "rarity": "set",
@@ -688,7 +739,8 @@
       "slot": "Belt",
       "baseName": "Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set110"
     },
     {
       "kind": "header",
@@ -703,7 +755,8 @@
       "slot": "Weapon",
       "baseName": "Caduceus",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set083"
     },
     {
       "rarity": "set",
@@ -713,7 +766,8 @@
       "slot": "Helm",
       "baseName": "Corona",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set081"
     },
     {
       "rarity": "set",
@@ -723,7 +777,8 @@
       "slot": "Shield",
       "baseName": "Vortex Shield",
       "baseType": "ashd",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set084"
     },
     {
       "kind": "header",
@@ -738,7 +793,8 @@
       "slot": "Weapon",
       "baseName": "Grand Matron Bow",
       "baseType": "abow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set094"
     },
     {
       "rarity": "set",
@@ -748,7 +804,8 @@
       "slot": "Armor",
       "baseName": "Kraken Shell",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set091"
     },
     {
       "rarity": "set",
@@ -758,7 +815,8 @@
       "slot": "Helm",
       "baseName": "Diadem",
       "baseType": "circ",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set090"
     },
     {
       "rarity": "set",
@@ -768,7 +826,8 @@
       "slot": "Belt",
       "baseName": "Sharkskin Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set093"
     },
     {
       "rarity": "set",
@@ -778,7 +837,8 @@
       "slot": "Gloves",
       "baseName": "Battle Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set092"
     },
     {
       "kind": "header",
@@ -793,7 +853,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set077"
     },
     {
       "rarity": "set",
@@ -803,7 +864,8 @@
       "slot": "Weapon",
       "baseName": "Swirling Crystal",
       "baseType": "orb",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set078"
     },
     {
       "rarity": "set",
@@ -813,7 +875,8 @@
       "slot": "Armor",
       "baseName": "Lacquered Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set079"
     },
     {
       "rarity": "set",
@@ -823,7 +886,8 @@
       "slot": "Helm",
       "baseName": "Death Mask",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set080"
     },
     {
       "rarity": "set",
@@ -833,7 +897,8 @@
       "slot": "Belt",
       "baseName": "Mesh Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set076"
     },
     {
       "kind": "header",
@@ -848,7 +913,8 @@
       "slot": "Helm",
       "baseName": "Bone Visage",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set085"
     },
     {
       "rarity": "set",
@@ -858,7 +924,8 @@
       "slot": "Armor",
       "baseName": "Chaos Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set086"
     },
     {
       "rarity": "set",
@@ -868,7 +935,8 @@
       "slot": "Belt",
       "baseName": "Troll Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set089"
     },
     {
       "rarity": "set",
@@ -878,7 +946,8 @@
       "slot": "Gloves",
       "baseName": "Heavy Bracers",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set088"
     },
     {
       "rarity": "set",
@@ -888,7 +957,8 @@
       "slot": "Shield",
       "baseName": "Cantor Trophy",
       "baseType": "head",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set087"
     },
     {
       "kind": "header",
@@ -903,7 +973,8 @@
       "slot": "Belt",
       "baseName": "Heavy Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set043"
     },
     {
       "rarity": "set",
@@ -913,7 +984,8 @@
       "slot": "Weapon",
       "baseName": "Grim Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set042"
     },
     {
       "rarity": "set",
@@ -923,7 +995,8 @@
       "slot": "Helm",
       "baseName": "Cap",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set041"
     },
     {
       "kind": "header",
@@ -938,7 +1011,8 @@
       "slot": "Helm",
       "baseName": "Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set011"
     },
     {
       "rarity": "set",
@@ -948,7 +1022,8 @@
       "slot": "Gloves",
       "baseName": "Light Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set010"
     },
     {
       "rarity": "set",
@@ -958,7 +1033,8 @@
       "slot": "Belt",
       "baseName": "Heavy Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set012"
     },
     {
       "rarity": "set",
@@ -968,7 +1044,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set009"
     },
     {
       "kind": "header",
@@ -983,7 +1060,8 @@
       "slot": "Gloves",
       "baseName": "Light Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set057"
     },
     {
       "rarity": "set",
@@ -993,7 +1071,8 @@
       "slot": "Belt",
       "baseName": "Light Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set056"
     },
     {
       "rarity": "set",
@@ -1003,7 +1082,8 @@
       "slot": "Armor",
       "baseName": "Quilted Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set055"
     },
     {
       "rarity": "set",
@@ -1013,7 +1093,8 @@
       "slot": "Weapon",
       "baseName": "Short War Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set054"
     },
     {
       "kind": "header",
@@ -1028,7 +1109,8 @@
       "slot": "Weapon",
       "baseName": "Ogre Maul",
       "baseType": "hamm",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set075"
     },
     {
       "rarity": "set",
@@ -1038,7 +1120,8 @@
       "slot": "Belt",
       "baseName": "War Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set072"
     },
     {
       "rarity": "set",
@@ -1048,7 +1131,8 @@
       "slot": "Helm",
       "baseName": "Avenger Guard",
       "baseType": "phlm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set070"
     },
     {
       "rarity": "set",
@@ -1058,7 +1142,8 @@
       "slot": "Armor",
       "baseName": "Sacred Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set071"
     },
     {
       "rarity": "set",
@@ -1068,7 +1153,8 @@
       "slot": "Gloves",
       "baseName": "War Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set073"
     },
     {
       "rarity": "set",
@@ -1078,7 +1164,8 @@
       "slot": "Boots",
       "baseName": "War Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set074"
     },
     {
       "kind": "header",
@@ -1093,7 +1180,8 @@
       "slot": "Armor",
       "baseName": "Gothic Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set037"
     },
     {
       "rarity": "set",
@@ -1103,7 +1191,8 @@
       "slot": "Helm",
       "baseName": "Great Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set036"
     },
     {
       "rarity": "set",
@@ -1113,7 +1202,8 @@
       "slot": "Shield",
       "baseName": "Tower Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set040"
     },
     {
       "rarity": "set",
@@ -1123,7 +1213,8 @@
       "slot": "Gloves",
       "baseName": "Gauntlets",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set035"
     },
     {
       "rarity": "set",
@@ -1133,7 +1224,8 @@
       "slot": "Boots",
       "baseName": "Greaves",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set038"
     },
     {
       "rarity": "set",
@@ -1143,7 +1235,8 @@
       "slot": "Belt",
       "baseName": "Plated Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set039"
     },
     {
       "kind": "header",
@@ -1158,7 +1251,8 @@
       "slot": "Weapon",
       "baseName": "Grand Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set002"
     },
     {
       "rarity": "set",
@@ -1168,7 +1262,8 @@
       "slot": "Shield",
       "baseName": "Large Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set000"
     },
     {
       "rarity": "set",
@@ -1178,7 +1273,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set001"
     },
     {
       "kind": "header",
@@ -1193,7 +1289,8 @@
       "slot": "Helm",
       "baseName": "War Hat",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set117"
     },
     {
       "rarity": "set",
@@ -1203,7 +1300,8 @@
       "slot": "Armor",
       "baseName": "Studded Leather",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set118"
     },
     {
       "rarity": "set",
@@ -1213,7 +1311,8 @@
       "slot": "Boots",
       "baseName": "Heavy Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set119"
     },
     {
       "kind": "header",
@@ -1228,7 +1327,8 @@
       "slot": "Weapon",
       "baseName": "Scissors Suwayyah",
       "baseType": "h2h2",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set063"
     },
     {
       "rarity": "set",
@@ -1238,7 +1338,8 @@
       "slot": "Armor",
       "baseName": "Loricated Mail",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set064"
     },
     {
       "rarity": "set",
@@ -1248,7 +1349,8 @@
       "slot": "Helm",
       "baseName": "Grim Helm",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set062"
     },
     {
       "rarity": "set",
@@ -1258,7 +1360,8 @@
       "slot": "Boots",
       "baseName": "Mesh Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set065"
     },
     {
       "kind": "header",
@@ -1273,7 +1376,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set020"
     },
     {
       "rarity": "set",
@@ -1283,7 +1387,8 @@
       "slot": "Armor",
       "baseName": "Leather Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set019"
     },
     {
       "rarity": "set",
@@ -1293,7 +1398,8 @@
       "slot": "Boots",
       "baseName": "Light Plated Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set018"
     },
     {
       "rarity": "set",
@@ -1303,7 +1409,8 @@
       "slot": "Weapon",
       "baseName": "Long Battle Bow",
       "baseType": "bow",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set017"
     },
     {
       "kind": "header",
@@ -1318,7 +1425,8 @@
       "slot": "Weapon",
       "baseName": "War Scepter",
       "baseType": "scep",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set022"
     },
     {
       "rarity": "set",
@@ -1328,7 +1436,8 @@
       "slot": "Armor",
       "baseName": "Ancient Armor",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set024"
     },
     {
       "rarity": "set",
@@ -1338,7 +1447,8 @@
       "slot": "Helm",
       "baseName": "Crown",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set023"
     },
     {
       "rarity": "set",
@@ -1348,7 +1458,8 @@
       "slot": "Shield",
       "baseName": "Kite Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set021"
     },
     {
       "kind": "header",
@@ -1363,7 +1474,8 @@
       "slot": "Amulet",
       "baseName": "Amulet",
       "baseType": "amul",
-      "source": "misc"
+      "source": "misc",
+      "maxrollId": "set058"
     },
     {
       "rarity": "set",
@@ -1373,7 +1485,8 @@
       "slot": "Helm",
       "baseName": "Skull Cap",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set060"
     },
     {
       "rarity": "set",
@@ -1383,7 +1496,8 @@
       "slot": "Armor",
       "baseName": "Light Plate",
       "baseType": "tors",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set061"
     },
     {
       "rarity": "set",
@@ -1393,7 +1507,8 @@
       "slot": "Weapon",
       "baseName": "War Staff",
       "baseType": "staf",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set059"
     },
     {
       "kind": "header",
@@ -1408,7 +1523,8 @@
       "slot": "Weapon",
       "baseName": "Bone Wand",
       "baseType": "wand",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set126"
     },
     {
       "rarity": "set",
@@ -1418,7 +1534,8 @@
       "slot": "Helm",
       "baseName": "Cap",
       "baseType": "helm",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set123"
     },
     {
       "rarity": "set",
@@ -1428,7 +1545,8 @@
       "slot": "Gloves",
       "baseName": "Heavy Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set125"
     },
     {
       "rarity": "set",
@@ -1438,7 +1556,8 @@
       "slot": "Boots",
       "baseName": "Heavy Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set124"
     },
     {
       "kind": "header",
@@ -1453,7 +1572,8 @@
       "slot": "Belt",
       "baseName": "Belt",
       "baseType": "belt",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set005"
     },
     {
       "rarity": "set",
@@ -1463,7 +1583,8 @@
       "slot": "Shield",
       "baseName": "Buckler",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set004"
     },
     {
       "rarity": "set",
@@ -1473,7 +1594,8 @@
       "slot": "Boots",
       "baseName": "Chain Boots",
       "baseType": "boot",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set003"
     },
     {
       "kind": "header",
@@ -1488,7 +1610,8 @@
       "slot": "Weapon",
       "baseName": "Long Sword",
       "baseType": "swor",
-      "source": "weapons"
+      "source": "weapons",
+      "maxrollId": "set006"
     },
     {
       "rarity": "set",
@@ -1498,7 +1621,8 @@
       "slot": "Shield",
       "baseName": "Small Shield",
       "baseType": "shie",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set007"
     },
     {
       "rarity": "set",
@@ -1508,7 +1632,8 @@
       "slot": "Gloves",
       "baseName": "Chain Gloves",
       "baseType": "glov",
-      "source": "armor"
+      "source": "armor",
+      "maxrollId": "set008"
     }
   ],
   "missing": [

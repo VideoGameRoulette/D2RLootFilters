@@ -1,12 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Catalog, SelectableItem } from "@/lib/types";
 import { catalogToSelectableItems } from "@/lib/catalog";
 import {
   buildFilterFromSelection,
   serializeFilter,
 } from "@/lib/buildFilter";
+import { parseLoadedFilter } from "@/lib/parseFilter";
 import { RUNES } from "@/lib/runes";
 import { MISC_ITEMS } from "@/lib/misc";
 import { categorizeMisc } from "@/lib/miscCategories";
@@ -19,9 +20,11 @@ import { potionsToSelectableItems } from "@/lib/potionsCatalog";
 import { questToSelectableItems } from "@/lib/questCatalog";
 import { CatalogSection } from "@/components/CatalogSection";
 import { CatalogTabs } from "@/components/CatalogTabs";
-import type { BasesCatalog, EquipmentQuality, GemsCatalog, PotionsCatalog, QuestCatalog } from "@/lib/types";
+import type { BasesCatalog, EquipmentQuality, GemsCatalog, PotionsCatalog, QuestCatalog, FilterRule, LootFilter } from "@/lib/types";
 
 const QUALITIES: EquipmentQuality[] = ["normal", "exceptional", "elite"];
+
+const MAX_RULES = 32;
 
 const TAB_ORDER = [
   "normal",
@@ -37,6 +40,14 @@ const TAB_ORDER = [
   "misc",
   "gold",
 ] as const;
+
+/** Group potions into 4 rules (Health, Mana, Rejuvenation, Status) to save rule count. */
+const POTION_GROUPS: { name: string; codes: string[] }[] = [
+  { name: "Health Potions", codes: ["hp1", "hp2", "hp3", "hp4", "hp5"] },
+  { name: "Mana Potions", codes: ["mp1", "mp2", "mp3", "mp4", "mp5"] },
+  { name: "Rejuvenation Potions", codes: ["rvl", "rvs"] },
+  { name: "Status Potions", codes: ["yps", "vps", "wms"] },
+];
 
 export default function Home() {
   const [setsCatalog, setSetsCatalog] = useState<Catalog | null>(null);
@@ -85,6 +96,8 @@ export default function Home() {
   );
   const [activeTab, setActiveTab] = useState<string>(TAB_ORDER[0]);
   const [copyFeedback, setCopyFeedback] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -121,7 +134,7 @@ export default function Home() {
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
-  }, []);
+  }, [dataBase]);
 
   const setItems = useMemo<SelectableItem[]>(
     () => (setsCatalog ? catalogToSelectableItems(setsCatalog, "set") : []),
@@ -241,13 +254,30 @@ export default function Home() {
     () => questToSelectableItems(questCatalog),
     [questCatalog]
   );
+
+  const gemCodeSet = useMemo(
+    () => new Set(gemItems.flatMap((i) => i.codes)),
+    [gemItems]
+  );
+  const potionCodeSet = useMemo(
+    () => new Set(potionItems.flatMap((i) => i.codes)),
+    [potionItems]
+  );
+  const questCodeSet = useMemo(
+    () => new Set(questItems.flatMap((i) => i.codes)),
+    [questItems]
+  );
+
   const { other: miscOtherRaw } = useMemo(
     () => categorizeMisc(miscItemsRaw),
     [miscItemsRaw]
   );
 
   const miscOtherItems = useMemo(
-    () => miscOtherRaw.filter((item) => !jewelCodeSet.has(item.code)),
+    () =>
+      miscOtherRaw.filter(
+        (item) => !jewelCodeSet.has(item.code) && item.code !== "gld"
+      ),
     [miscOtherRaw, jewelCodeSet]
   );
 
@@ -429,15 +459,55 @@ export default function Home() {
     []
   );
 
-  const miscCodesMerged = useMemo(
-    () => [
-      ...Array.from(selectedGemCodes),
-      ...Array.from(selectedPotionCodes),
-      ...Array.from(selectedQuestCodes),
-      ...Array.from(selectedMiscOtherCodes),
-    ],
-    [selectedGemCodes, selectedPotionCodes, selectedQuestCodes, selectedMiscOtherCodes]
-  );
+  const miscItemRules = useMemo(() => {
+    const out: { name: string; codes: string[] }[] = [];
+    for (const group of POTION_GROUPS) {
+      const codes = group.codes.filter((c) => selectedPotionCodes.has(c));
+      if (codes.length > 0) out.push({ name: group.name, codes });
+    }
+    for (const item of miscOtherItems) {
+      const codes = item.codes.filter((c) => selectedMiscOtherCodes.has(c));
+      if (codes.length > 0) out.push({ name: item.label, codes });
+    }
+    return out;
+  }, [
+    miscOtherItems,
+    selectedPotionCodes,
+    selectedMiscOtherCodes,
+  ]);
+
+  const ruleCount = useMemo(() => {
+    const profile = profileName.replace(/\s/g, "") || "LootFilter";
+    const filter = buildFilterFromSelection(
+      profile,
+      Array.from(selectedSetCodes),
+      Array.from(selectedUniqueCodes),
+      Array.from(selectedRuneCodes),
+      Array.from(selectedNormalBaseCodes),
+      Array.from(selectedMagicBaseCodes),
+      Array.from(selectedRareBaseCodes),
+      Array.from(selectedQuestCodes),
+      Array.from(selectedGemCodes),
+      miscItemRules,
+      Array.from(selectedSocketedEtherealBaseCodes),
+      goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
+    );
+    return filter.rules.length;
+  }, [
+    profileName,
+    selectedSetCodes,
+    selectedUniqueCodes,
+    selectedRuneCodes,
+    selectedNormalBaseCodes,
+    selectedMagicBaseCodes,
+    selectedRareBaseCodes,
+    selectedQuestCodes,
+    selectedGemCodes,
+    miscItemRules,
+    selectedSocketedEtherealBaseCodes,
+    goldFilterEnabled,
+    goldFilterThreshold,
+  ]);
 
   const getExportJson = useCallback(() => {
     const profile = profileName.replace(/\s/g, "") || "LootFilter";
@@ -449,7 +519,9 @@ export default function Home() {
       Array.from(selectedNormalBaseCodes),
       Array.from(selectedMagicBaseCodes),
       Array.from(selectedRareBaseCodes),
-      miscCodesMerged,
+      Array.from(selectedQuestCodes),
+      Array.from(selectedGemCodes),
+      miscItemRules,
       Array.from(selectedSocketedEtherealBaseCodes),
       goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
     );
@@ -462,7 +534,9 @@ export default function Home() {
     selectedNormalBaseCodes,
     selectedMagicBaseCodes,
     selectedRareBaseCodes,
-    miscCodesMerged,
+    selectedQuestCodes,
+    selectedGemCodes,
+    miscItemRules,
     selectedSocketedEtherealBaseCodes,
     goldFilterEnabled,
     goldFilterThreshold,
@@ -491,6 +565,84 @@ export default function Home() {
     }
   }, [getExportJson]);
 
+  const handleLoadFilter = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLoadError(null);
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const text = typeof reader.result === "string" ? reader.result : "";
+          const filter = parseLoadedFilter(text);
+          const normal: string[] = [];
+          const socketedEthereal: string[] = [];
+          const magic: string[] = [];
+          const rare: string[] = [];
+          const unique: string[] = [];
+          const set: string[] = [];
+          const runes: string[] = [];
+          const gems: string[] = [];
+          const potions: string[] = [];
+          const quest: string[] = [];
+          const miscOther: string[] = [];
+          let goldEnabled = false;
+          let goldThreshold = 5000;
+
+          for (const rule of filter.rules) {
+            const eq = rule.equipmentItemCode;
+            const ic = rule.itemCode;
+            const rar = rule.equipmentRarity;
+
+            if (rar?.includes("normal") && !rule.filterEtherealSocketed && eq) normal.push(...eq);
+            else if (rar?.includes("normal") && rule.filterEtherealSocketed && eq) socketedEthereal.push(...eq);
+            else if (rar?.includes("magic") && eq) magic.push(...eq);
+            else if (rar?.includes("rare") && eq) rare.push(...eq);
+            else if (rar?.includes("unique") && eq) unique.push(...eq);
+            else if (rar?.includes("set") && eq) set.push(...eq);
+            else if (ic?.length) {
+              const allRunes = ic.every((c) => runeCodeSet.has(c));
+              if (allRunes) runes.push(...ic);
+              else {
+                for (const c of ic) {
+                  if (gemCodeSet.has(c)) gems.push(c);
+                  else if (potionCodeSet.has(c)) potions.push(c);
+                  else if (questCodeSet.has(c)) quest.push(c);
+                  else miscOther.push(c);
+                }
+              }
+            }
+            if (rule.goldFilterValue != null && rule.ruleType === "hide") {
+              goldEnabled = true;
+              goldThreshold = rule.goldFilterValue;
+            }
+          }
+
+          setProfileName(filter.name);
+          setSelectedNormalBaseCodes(new Set(normal));
+          setSelectedSocketedEtherealBaseCodes(new Set(socketedEthereal));
+          setSelectedMagicBaseCodes(new Set(magic));
+          setSelectedRareBaseCodes(new Set(rare));
+          setSelectedUniqueCodes(new Set(unique));
+          setSelectedSetCodes(new Set(set));
+          setSelectedRuneCodes(new Set(runes));
+          setSelectedGemCodes(new Set(gems));
+          setSelectedPotionCodes(new Set(potions));
+          setSelectedQuestCodes(new Set(quest));
+          setSelectedMiscOtherCodes(new Set(miscOther));
+          setGoldFilterEnabled(goldEnabled);
+          setGoldFilterThreshold(goldThreshold);
+        } catch (err) {
+          setLoadError(err instanceof Error ? err.message : "Failed to load filter");
+        }
+        e.target.value = "";
+      };
+      reader.onerror = () => setLoadError("Failed to read file");
+      reader.readAsText(file, "utf-8");
+    },
+    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet]
+  );
+
   const totalSelected =
     selectedSetCodes.size +
     selectedUniqueCodes.size +
@@ -503,7 +655,7 @@ export default function Home() {
     selectedPotionCodes.size +
     selectedQuestCodes.size +
     selectedMiscOtherCodes.size;
-  const canExport = totalSelected > 0 || goldFilterEnabled;
+  const canExport = (totalSelected > 0 || goldFilterEnabled) && ruleCount <= MAX_RULES;
 
   if (loading) {
     return (
@@ -529,33 +681,103 @@ export default function Home() {
 
   return (
     <main className="h-screen overflow-hidden flex flex-col">
-      <div className="flex-1 flex flex-col min-h-0 overflow-hidden p-4 md:p-6 lg:p-8 w-full">
-        <header className="mb-6 flex-shrink-0">
-          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-            D2R Loot Filter Builder - Last Update: 2026-02-14 - Game Version: v3.1.91636
-          </h1>
-          <p className="text-zinc-400 mt-1">
-            Select normal, magic, rare, unique, sets, runes, and misc. Export a single JSON filter for in-game Import from Clipboard.
-          </p>
+      <div className="flex-1 flex flex-col min-h-0 overflow-hidden w-full">
+        <header className="flex-shrink-0 border-b border-zinc-700/60 bg-zinc-900/70">
+          <div className="px-4 md:px-6 lg:px-8 py-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <img
+                  src={`${dataBase}/imgs/logo.png`}
+                  alt=""
+                  className="h-32 w-auto object-contain"
+                />
+                <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                  D2R Loot Filter Builder
+                </h1>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs text-zinc-500 font-medium mr-1">
+                  Game v3.1.91636 · Updated 2026-02-14
+                </span>
+                <input
+                  type="file"
+                  accept=".json"
+                  ref={fileInputRef}
+                  onChange={handleLoadFilter}
+                  className="hidden"
+                  aria-hidden
+                />
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  title="Load filter"
+                  className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleExportJson}
+                  disabled={!canExport}
+                  title="Export JSON"
+                  className="p-2 rounded-lg bg-d2-unique text-zinc-900 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-d2-unique focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCopyToClipboard}
+                  disabled={!canExport}
+                  title="Copy to clipboard — Then in game: Import from Clipboard"
+                  className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+                {loadError && (
+                  <span className="text-xs text-red-400" role="alert">
+                    {loadError}
+                  </span>
+                )}
+                {copyFeedback && (
+                  <span className="text-xs text-emerald-400">Copied!</span>
+                )}
+              </div>
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-4 gap-y-3">
+              <label className="flex items-center gap-2">
+                <span className="text-zinc-500 text-sm">Profile name</span>
+                <input
+                  type="text"
+                  value={profileName}
+                  onChange={(e) => setProfileName(e.target.value)}
+                  placeholder="MyFilter (no spaces)"
+                  className="bg-zinc-800/80 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent max-w-[200px]"
+                />
+              </label>
+              <span
+                className={`text-sm font-medium tabular-nums ${
+                  ruleCount > MAX_RULES
+                    ? "text-amber-400"
+                    : "text-zinc-400"
+                }`}
+                title={ruleCount > MAX_RULES ? `Game allows max ${MAX_RULES} rules. Reduce selections to export.` : undefined}
+              >
+                Rules: {ruleCount} / {MAX_RULES}
+              </span>
+              <div className="text-xs text-zinc-500 border-l border-zinc-600/80 pl-4 hidden sm:block">
+                Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+              </div>
+            </div>
+          </div>
         </header>
 
-        <div className="mb-4 flex flex-wrap items-center gap-4 flex-shrink-0">
-          <label className="flex items-center gap-2">
-            <span className="text-zinc-400 text-sm">Profile name (no spaces):</span>
-            <input
-              type="text"
-              value={profileName}
-              onChange={(e) => setProfileName(e.target.value)}
-              placeholder="MyFilter"
-              className="bg-zinc-800 border border-zinc-600 rounded px-3 py-2 text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 max-w-[200px]"
-            />
-          </label>
-          <div className="text-sm text-zinc-500">
-            Selected: N {selectedNormalBaseCodes.size} · S/E {selectedSocketedEtherealBaseCodes.size} · M {selectedMagicBaseCodes.size} · R {selectedRareBaseCodes.size} · U {selectedUniqueCodes.size} · S {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · G {selectedGemCodes.size} · Pot {selectedPotionCodes.size} · Q {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
+        <div className="flex-shrink-0 px-4 md:px-6 lg:px-8 py-3 bg-zinc-900/30 border-b border-zinc-800/50 sm:hidden">
+          <div className="text-xs text-zinc-500">
+            Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Misc {selectedMiscOtherCodes.size}
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col min-h-0 overflow-hidden mb-6">
+        <div className="flex-1 flex flex-col min-h-0 overflow-hidden px-4 md:px-6 lg:px-8 py-4">
           <CatalogTabs
             tabs={[
               {
@@ -663,6 +885,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="normal"
                   title="Normal"
                   items={baseItemsNormalFiltered}
                   selectedCodes={selectedNormalBaseCodes}
@@ -673,6 +896,7 @@ export default function Home() {
                   itemColorClass="text-d2-normal"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -693,6 +917,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="socketedEthereal"
                   title="Socketed / Ethereal"
                   items={baseItemsNormalFiltered}
                   selectedCodes={selectedSocketedEtherealBaseCodes}
@@ -703,6 +928,7 @@ export default function Home() {
                   itemColorClass="text-d2-normal"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -723,6 +949,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="magic"
                   title="Magic"
                   items={baseItemsFiltered}
                   selectedCodes={selectedMagicBaseCodes}
@@ -733,6 +960,7 @@ export default function Home() {
                   itemColorClass="text-d2-magic"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
@@ -753,6 +981,7 @@ export default function Home() {
                   ))}
                 </div>
                 <CatalogSection
+                  key="rare"
                   title="Rare"
                   items={baseItemsRareFiltered}
                   selectedCodes={selectedRareBaseCodes}
@@ -763,11 +992,13 @@ export default function Home() {
                   itemColorClass="text-d2-rare"
                   noContainer
                   fillPanel
+                  itemImageBasePath={`${dataBase}/item-images`}
                 />
               </>
             )}
             {activeTab === "unique" && (
               <CatalogSection
+                key="unique"
                 title="Unique"
                 items={uniqueItems}
                 selectedCodes={selectedUniqueCodes}
@@ -779,10 +1010,13 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortBySlotThenLabel
+                itemImageBasePath={`${dataBase}/item-images`}
+                maxrollImageBasePath={`${dataBase}/item-unique`}
               />
             )}
             {activeTab === "sets" && (
               <CatalogSection
+                key="sets"
                 title="Sets"
                 items={setItems}
                 selectedCodes={selectedSetCodes}
@@ -793,10 +1027,13 @@ export default function Home() {
                 itemColorClass="text-d2-set"
                 noContainer
                 fillPanel
+                itemImageBasePath={`${dataBase}/item-images`}
+                maxrollImageBasePath={`${dataBase}/item-set`}
               />
             )}
             {activeTab === "runes" && (
               <CatalogSection
+                key="runes"
                 title="Runes"
                 items={runeItems}
                 selectedCodes={selectedRuneCodes}
@@ -808,10 +1045,12 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "gems" && (
               <CatalogSection
+                key="gems"
                 title="Gems"
                 items={gemItems}
                 selectedCodes={selectedGemCodes}
@@ -823,10 +1062,12 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "potions" && (
               <CatalogSection
+                key="potions"
                 title="Potions"
                 items={potionItems}
                 selectedCodes={selectedPotionCodes}
@@ -838,10 +1079,12 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "quest" && (
               <CatalogSection
+                key="quest"
                 title="Quest"
                 items={questItems}
                 selectedCodes={selectedQuestCodes}
@@ -853,10 +1096,12 @@ export default function Home() {
                 noContainer
                 fillPanel
                 sortAlphabetically={false}
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "misc" && (
               <CatalogSection
+                key="misc"
                 title="Misc"
                 items={miscOtherItems}
                 selectedCodes={selectedMiscOtherCodes}
@@ -867,6 +1112,7 @@ export default function Home() {
                 itemColorClass="text-zinc-400"
                 noContainer
                 fillPanel
+                itemImageBasePath={`${dataBase}/item-images`}
               />
             )}
             {activeTab === "gold" && (
@@ -907,31 +1153,6 @@ export default function Home() {
               </div>
             )}
           </CatalogTabs>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-4 flex-shrink-0 pt-2">
-          <button
-            onClick={handleExportJson}
-            disabled={!canExport}
-            className="px-5 py-2.5 rounded-lg font-medium bg-d2-unique text-zinc-900 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-d2-unique focus:ring-offset-2 focus:ring-offset-zinc-900"
-          >
-            Export JSON
-          </button>
-          <button
-            onClick={handleCopyToClipboard}
-            disabled={!canExport}
-            className="px-5 py-2.5 rounded-lg font-medium bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
-          >
-            Copy to clipboard
-          </button>
-          {copyFeedback && (
-            <span className="text-sm text-emerald-400">Copied!</span>
-          )}
-          {canExport && !copyFeedback && (
-            <span className="text-sm text-zinc-500">
-              Then in game: Import from Clipboard
-            </span>
-          )}
         </div>
       </div>
     </main>

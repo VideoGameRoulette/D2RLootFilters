@@ -120,11 +120,16 @@ function buildCatalogEntries(uniqueItems, baseIdx) {
 
     const slot = slotFromType(base.source, base.type);
     const label = uniqueLabel(uniqueName);
+    const invfile = row.invfile && String(row.invfile).toLowerCase();
+    const imageCode = invfile && invfile.startsWith("inv")
+      ? invfile.slice(3)
+      : code;
 
     const entry = {
       rarity: "unique",
       label,
       code,
+      imageCode,
       enabled: false,
       slot,
       baseName: base.name,
@@ -157,6 +162,18 @@ function buildCatalogEntries(uniqueItems, baseIdx) {
   return { entries, missing };
 }
 
+/** Remove duplicate entries with same label and code (keep first). */
+function dedupeEntries(entries) {
+  const seen = new Set();
+  return entries.filter((e) => {
+    if (e.kind === "header") return true;
+    const key = `${e.label ?? ""}|${e.code ?? ""}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 async function main() {
   const outPath = process.argv[2] || null;
 
@@ -168,7 +185,8 @@ async function main() {
   ]);
 
   const baseIdx = buildBaseCodeIndex({ armor, weapons, misc });
-  const { entries, missing } = buildCatalogEntries(uniqueItems, baseIdx);
+  let { entries, missing } = buildCatalogEntries(uniqueItems, baseIdx);
+  entries = dedupeEntries(entries);
 
   const payload = {
     name: "Unique Catalog",

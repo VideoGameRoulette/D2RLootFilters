@@ -20,23 +20,8 @@
       "slot": "Other"
     },
     {
-      "code": "0sc",
-      "label": "Scroll of Knowledge",
-      "slot": "Other"
-    },
-    {
-      "code": "luv",
-      "label": "The Black Tower Key",
-      "slot": "Other"
-    },
-    {
       "kind": "header",
       "label": "Act 1 - The Forgotten Tower"
-    },
-    {
-      "code": "key",
-      "label": "Key",
-      "slot": "Other"
     },
     {
       "kind": "header",
@@ -62,6 +47,21 @@
       "slot": "Other"
     },
     {
+      "code": "msf",
+      "label": "Staff of Kings",
+      "slot": "Weapon"
+    },
+    {
+      "code": "vip",
+      "label": "Amulet of the Viper",
+      "slot": "Amulet"
+    },
+    {
+      "code": "hst",
+      "label": "Horadric Staff",
+      "slot": "Weapon"
+    },
+    {
       "kind": "header",
       "label": "Act 3 - Lam Esen's Tome"
     },
@@ -80,33 +80,18 @@
       "slot": "Other"
     },
     {
-      "code": "xyz",
-      "label": "Potion of Life",
-      "slot": "Other"
-    },
-    {
       "code": "g34",
       "label": "The Golden Bird",
       "slot": "Other"
     },
     {
+      "code": "xyz",
+      "label": "Potion of Life",
+      "slot": "Other"
+    },
+    {
       "kind": "header",
       "label": "Act 3 - Khalim's Will"
-    },
-    {
-      "code": "brz",
-      "label": "Brain",
-      "slot": "Other"
-    },
-    {
-      "code": "hrt",
-      "label": "Heart",
-      "slot": "Other"
-    },
-    {
-      "code": "jaw",
-      "label": "Jawbone",
-      "slot": "Other"
     },
     {
       "code": "qey",
@@ -119,13 +104,23 @@
       "slot": "Other"
     },
     {
-      "code": "qll",
-      "label": "Quill",
+      "code": "qbr",
+      "label": "Khalim's Brain",
       "slot": "Other"
     },
     {
+      "code": "qf1",
+      "label": "KhalimFlail",
+      "slot": "Weapon"
+    },
+    {
+      "code": "qf2",
+      "label": "SuperKhalimFlail",
+      "slot": "Weapon"
+    },
+    {
       "kind": "header",
-      "label": "Act 3 - The Guardian"
+      "label": "Act 4 - Hell's Forge"
     },
     {
       "code": "mss",
@@ -133,65 +128,18 @@
       "slot": "Other"
     },
     {
-      "kind": "header",
-      "label": "Act 4 - Terror's End"
-    },
-    {
-      "code": "bet",
-      "label": "Burning Essence of Terror",
-      "slot": "Other"
-    },
-    {
-      "code": "ceh",
-      "label": "Charged Essense of Hatred",
-      "slot": "Other"
-    },
-    {
-      "code": "fed",
-      "label": "Festering Essence of Destruction",
-      "slot": "Other"
-    },
-    {
-      "code": "tes",
-      "label": "Twisted Essence of Suffering",
-      "slot": "Other"
+      "code": "hfh",
+      "label": "Hell Forge Hammer",
+      "slot": "Weapon"
     },
     {
       "kind": "header",
-      "label": "Act 5 - Rescue on Mount Arreat"
+      "label": "Act 5 - Prison of Ice"
     },
     {
       "code": "ice",
       "label": "Malah's Potion",
       "slot": "Other"
-    },
-    {
-      "kind": "header",
-      "label": "Act 5 - Betrayal of Harrogath"
-    },
-    {
-      "code": "scz",
-      "label": "Scalp",
-      "slot": "Other"
-    },
-    {
-      "code": "sol",
-      "label": "Soul",
-      "slot": "Other"
-    },
-    {
-      "code": "spe",
-      "label": "Spleen",
-      "slot": "Other"
-    },
-    {
-      "code": "tal",
-      "label": "Tail",
-      "slot": "Other"
-    },
-    {
-      "kind": "header",
-      "label": "Act 5 - Prison of Ice"
     },
     {
       "code": "tr2",
@@ -200,32 +148,7 @@
     },
     {
       "kind": "header",
-      "label": "Act 5 - Eve of Destruction"
-    },
-    {
-      "code": "xa4",
-      "label": "Deep Worldstone Shard",
-      "slot": "Other"
-    },
-    {
-      "code": "xa2",
-      "label": "Eastern Worldstone Shard",
-      "slot": "Other"
-    },
-    {
-      "code": "xa5",
-      "label": "Northern Worldstone Shard",
-      "slot": "Other"
-    },
-    {
-      "code": "xa3",
-      "label": "Southern Worldstone Shard",
-      "slot": "Other"
-    },
-    {
-      "code": "std",
-      "label": "Standard of Heroes",
-      "slot": "Other"
+      "label": "Worldstone Shard"
     },
     {
       "code": "xa1",
@@ -233,27 +156,32 @@
       "slot": "Other"
     },
     {
+      "code": "xa2",
+      "label": "Eastern Worldstone Shard (Act 2)",
+      "slot": "Other"
+    },
+    {
+      "code": "xa3",
+      "label": "Southern Worldstone Shard (Act 3)",
+      "slot": "Other"
+    },
+    {
+      "code": "xa4",
+      "label": "Deep Worldstone Shard (Act 4)",
+      "slot": "Other"
+    },
+    {
+      "code": "xa5",
+      "label": "Northern Worldstone Shard (Act 5)",
+      "slot": "Other"
+    },
+    {
       "kind": "header",
-      "label": "Act 5 - Pandemonium Event"
+      "label": "Uber Tristram - Reward"
     },
     {
-      "code": "eyz",
-      "label": "Eye",
-      "slot": "Other"
-    },
-    {
-      "code": "fng",
-      "label": "Fang",
-      "slot": "Other"
-    },
-    {
-      "code": "hrn",
-      "label": "Horn",
-      "slot": "Other"
-    },
-    {
-      "code": "qbr",
-      "label": "Khalim's Brain",
+      "code": "std",
+      "label": "Standard of Heroes",
       "slot": "Other"
     },
     {
@@ -296,50 +224,26 @@
     },
     {
       "kind": "header",
-      "label": "General (Identify / Town Portal)"
-    },
-    {
-      "code": "flg",
-      "label": "Flag",
-      "slot": "Other"
-    },
-    {
-      "code": "isc",
-      "label": "Scroll of Identify",
-      "slot": "Other"
-    },
-    {
-      "code": "tsc",
-      "label": "Scroll of Town Portal",
-      "slot": "Other"
-    },
-    {
-      "code": "ibk",
-      "label": "Tome of Identify",
-      "slot": "Other"
-    },
-    {
-      "code": "tbk",
-      "label": "Tome of Town Portal",
-      "slot": "Other"
-    },
-    {
-      "kind": "header",
       "label": "Endgame & Crafted"
     },
     {
-      "code": "cs2",
-      "label": "Crafted Sunder Charm",
+      "code": "tes",
+      "label": "Twisted Essence of Suffering",
       "slot": "Other"
     },
     {
-      "code": "elx",
-      "label": "Elixir",
+      "code": "ceh",
+      "label": "Charged Essense of Hatred",
       "slot": "Other"
     },
     {
-      "code": "hrb",
-      "label": "Herb",
+      "code": "bet",
+      "label": "Burning Essence of Terror",
+      "slot": "Other"
+    },
+    {
+      "code": "fed",
+      "label": "Festering Essence of Destruction",
       "slot": "Other"
     },
     {
@@ -348,43 +252,52 @@
       "slot": "Other"
     },
     {
-      "code": "tch",
-      "label": "Torch",
-      "slot": "Other"
-    },
-    {
       "code": "ua1",
-      "label": "Uber Ancient Summon Material Act 1",
+      "label": "Talic's Anguish (Act 1)",
       "slot": "Other"
     },
     {
       "code": "ua2",
-      "label": "Uber Ancient Summon Material Act 2",
+      "label": "Korlic's Pain (Act 2)",
       "slot": "Other"
     },
     {
       "code": "ua3",
-      "label": "Uber Ancient Summon Material Act 3",
+      "label": "Madawc's Ire (Act 3)",
       "slot": "Other"
     },
     {
       "code": "ua4",
-      "label": "Uber Ancient Summon Material Act 4",
+      "label": "Bul-Kathos' Nightmare (Act 4)",
       "slot": "Other"
     },
     {
       "code": "ua5",
-      "label": "Uber Ancient Summon Material Act5",
+      "label": "Worusk's End (Act 5)",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Unknown"
+    },
+    {
+      "code": "um1",
+      "label": "Uber Ancient Upgrade Material Fire",
+      "slot": "Other"
+    },
+    {
+      "code": "um2",
+      "label": "Uber Ancient Upgrade Material Poison",
       "slot": "Other"
     },
     {
       "code": "um3",
-      "label": "Uber Ancient Upgrade Material  Cold",
+      "label": "Uber Ancient Upgrade Material Cold",
       "slot": "Other"
     },
     {
-      "code": "um1",
-      "label": "Uber Ancient Upgrade Material  Fire",
+      "code": "um4",
+      "label": "Uber Ancient Upgrade Material Physical",
       "slot": "Other"
     },
     {
@@ -398,13 +311,88 @@
       "slot": "Other"
     },
     {
-      "code": "um4",
-      "label": "Uber Ancient Upgrade Material Physical",
+      "code": "qll",
+      "label": "Quill",
       "slot": "Other"
     },
     {
-      "code": "um2",
-      "label": "Uber Ancient Upgrade Material Poison",
+      "code": "eyz",
+      "label": "Eye",
+      "slot": "Other"
+    },
+    {
+      "code": "fng",
+      "label": "Fang",
+      "slot": "Other"
+    },
+    {
+      "code": "hrn",
+      "label": "Horn",
+      "slot": "Other"
+    },
+    {
+      "code": "0sc",
+      "label": "Scroll of Knowledge",
+      "slot": "Other"
+    },
+    {
+      "code": "tch",
+      "label": "Torch",
+      "slot": "Other"
+    },
+    {
+      "code": "elx",
+      "label": "Elixir",
+      "slot": "Other"
+    },
+    {
+      "code": "hrb",
+      "label": "Herb",
+      "slot": "Other"
+    },
+    {
+      "code": "flg",
+      "label": "Flag",
+      "slot": "Other"
+    },
+    {
+      "code": "scz",
+      "label": "Scalp",
+      "slot": "Other"
+    },
+    {
+      "code": "sol",
+      "label": "Soul",
+      "slot": "Other"
+    },
+    {
+      "code": "spe",
+      "label": "Spleen",
+      "slot": "Other"
+    },
+    {
+      "code": "tal",
+      "label": "Tail",
+      "slot": "Other"
+    },
+    {
+      "code": "brz",
+      "label": "Brain",
+      "slot": "Other"
+    },
+    {
+      "code": "hrt",
+      "label": "Heart",
+      "slot": "Other"
+    },
+    {
+      "code": "jaw",
+      "label": "Jawbone",
+      "slot": "Other"
+    },
+    {
+      "code": "luv",
+      "label": "The Black Tower Key",
       "slot": "Other"
     }
   ]

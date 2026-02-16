@@ -1,0 +1,57 @@
+# Skipped codes: do they exist in game (d2data) and what gfx fallbacks do we have?
+# ItemScreenshot uses assets/gfx/{code}/0.png; many D2R/expansion items have no gfx there.
+
+code	label	catalog	in_d2data	invfile	gfx_from_inv	alternategfx	notes
+---	---	---	---	---	---	---	---
+brz	Brain	quest	yes	invbrnz	brnz	brz	in game data; no icon in ItemScreenshot
+cs2	Crafted Cold Rupture	uniques	yes	invsst	sst	rgd	D2R/expansion; in game data; no icon in ItemScreenshot
+elx	Elixir	quest	yes	invpot	pot	elx	in game data; no icon in ItemScreenshot
+eyz	Eye	quest	yes	inveye	eye	eyz	in game data; no icon in ItemScreenshot
+flg	Flag	quest	yes	invflag	flag	flg	in game data; no icon in ItemScreenshot
+fng	Fang	quest	yes	invfang	fang	fng	in game data; no icon in ItemScreenshot
+gld	Gold	bases	yes	invgld	gld	gld	in game data; no icon in ItemScreenshot
+hpo	(unknown)	?	yes	invrps	rps	hpo	in game data; no icon in ItemScreenshot
+hrb	Herb	quest	yes	invhrb	hrb	hrb	D2R/expansion; in game data; no icon in ItemScreenshot
+hrn	Horn	quest	yes	invhorn	horn	hrn	in game data; no icon in ItemScreenshot
+ice	Malah's Potion	quest	yes	invxyz	xyz	scr	D2R/expansion; in game data; no icon in ItemScreenshot
+jaw	Jawbone	quest	yes	invjaw	jaw	jaw	in game data; no icon in ItemScreenshot
+mpo	(unknown)	?	yes	invbps	bps	mpo	in game data; no icon in ItemScreenshot
+qll	Quill	quest	yes	invquil	quil	qll	in game data; no icon in ItemScreenshot
+scz	Scalp	quest	yes	invscp	scp	scz	in game data; no icon in ItemScreenshot
+sol	Soul	quest	yes	invsple	sple	sol	in game data; no icon in ItemScreenshot
+spe	Spleen	quest	yes	invsple	sple	spe	in game data; no icon in ItemScreenshot
+std	Standard of Heroes	quest	yes	invflag	flag	flg	D2R/expansion; in game data; no icon in ItemScreenshot
+tal	Tail	quest	yes	invtail	tail	tal	in game data; no icon in ItemScreenshot
+tr1	Horadric Scroll	quest	yes	invhscr	hscr	grg	in game data; no icon in ItemScreenshot
+tr2	Scroll of Resistance	quest	yes	invscb	scb	scr	D2R/expansion; in game data; no icon in ItemScreenshot
+ua1	Uber Ancient Summon Material Act 1	quest	yes	invjbi	jbi	ua1	D2R/expansion; in game data; no icon in ItemScreenshot
+ua2	Uber Ancient Summon Material Act 2	quest	yes	invjbi	jbi	ua2	D2R/expansion; in game data; no icon in ItemScreenshot
+ua3	Uber Ancient Summon Material Act 3	quest	yes	invjbi	jbi	ua3	D2R/expansion; in game data; no icon in ItemScreenshot
+ua4	Uber Ancient Summon Material Act 4	quest	yes	invjbi	jbi	ua4	D2R/expansion; in game data; no icon in ItemScreenshot
+ua5	Uber Ancient Summon Material Act 5	quest	yes	invjbi	jbi	ua5	D2R/expansion; in game data; no icon in ItemScreenshot
+um1	Uber Ancient Upgrade Material Fire	quest	yes	invflag	flag	um1	D2R/expansion; in game data; no icon in ItemScreenshot
+um2	Uber Ancient Upgrade Material Poison	quest	yes	invflag	flag	um2	D2R/expansion; in game data; no icon in ItemScreenshot
+um3	Uber Ancient Upgrade Material Cold	quest	yes	invflag	flag	um3	D2R/expansion; in game data; no icon in ItemScreenshot
+um4	Uber Ancient Upgrade Material Physical	quest	yes	invflag	flag	um4	D2R/expansion; in game data; no icon in ItemScreenshot
+um5	Uber Ancient Upgrade Material Lightning	quest	yes	invflag	flag	um5	D2R/expansion; in game data; no icon in ItemScreenshot
+um6	Uber Ancient Upgrade Material Magic	quest	yes	invflag	flag	um6	D2R/expansion; in game data; no icon in ItemScreenshot
+wa1	Old Book	bases	yes	invbbb	bbb	wa1	D2R/expansion; in game data; no icon in ItemScreenshot
+wa2	Tome	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+wa3	Codex	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+wa4	Compendium	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+wa5	Grimoire	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+wa6	Burnt Text	bases	yes	invbbb	bbb	wa1	D2R/expansion; in game data; no icon in ItemScreenshot
+wa7	Dark Tome	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+wa8	Dark Codex	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+wa9	Possessed Compendium	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+waa	Possessed Grimoire	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+wab	Forgotten Volume	bases	yes	invbbb	bbb	wa1	D2R/expansion; in game data; no icon in ItemScreenshot
+wac	Occult Tome	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+wad	Occult Codex	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+wae	Blasphemous Compendium	bases	yes	invbbb	bbb	wa3	D2R/expansion; in game data; no icon in ItemScreenshot
+waf	Blasphemous Grimoire	bases	yes	invbbb	bbb	wa2	D2R/expansion; in game data; no icon in ItemScreenshot
+xa1	Western Worldstone Shard	quest	yes	invtoa	toa	xa1	D2R/expansion; in game data; no icon in ItemScreenshot
+xa2	Eastern Worldstone Shard (Act 2)	quest	yes	invtoa	toa	xa2	D2R/expansion; in game data; no icon in ItemScreenshot
+xa3	Southern Worldstone Shard (Act 3)	quest	yes	invtoa	toa	xa3	D2R/expansion; in game data; no icon in ItemScreenshot
+xa4	Deep Worldstone Shard (Act 4)	quest	yes	invtoa	toa	xa4	D2R/expansion; in game data; no icon in ItemScreenshot
+xa5	Northern Worldstone Shard (Act 5)	quest	yes	invtoa	toa	xa5	D2R/expansion; in game data; no icon in ItemScreenshot

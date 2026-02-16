@@ -3,12 +3,12 @@ import type { SelectableItem } from "./types";
 /** Gem label patterns (in Other slot) – Sapphire, Emerald, Ruby, etc. Jewels excluded (go to Magic/Rare). */
 const GEM_LABELS = /Sapphire|Emerald|Ruby|Topaz|Amethyst|Diamond|Skull/i;
 
-/** Quest item codes. Misc keeps only: aqv (arrows), cqv (bolts), ear (ear), gld (gold). */
+/** Quest item codes. Identify/Town Portal scrolls and tomes (isc, tsc, ibk, tbk) are in Misc. */
 const QUEST_CODES = new Set([
-  "bks", "bkd", "bbb", "g33", "g34", "box", "key", "hst", "xyz", "j34",
+  "bks", "bkd", "bbb", "g33", "g34", "box", "hst", "xyz", "j34",
   "bet", "ceh", "fed", "tes", "dhn", "bey", "brz", "eyz", "fng", "mbr", "qbr", "qey", "hrn",
-  "0sc", "ass", "isc", "tsc", "tr1", "tr2", "tbk", "ibk", "pk1", "pk2", "pk3", "luv", "flg",
-  "mss", "ice", "cs2", "elx", "hrb", "hrt", "jaw", "qhr", "qll", "scz", "sol", "spe", "std", "tal", "tch", "toa",
+  "0sc", "ass", "tr1", "tr2", "pk1", "pk2", "pk3", "luv", "flg",
+  "mss", "ice", "elx", "hrb", "hrt", "jaw", "qhr", "qll", "scz", "sol", "spe", "std", "tal", "tch", "toa",
   "ua1", "ua2", "ua3", "ua4", "ua5", "um1", "um2", "um3", "um4", "um5", "um6",
   "xa1", "xa2", "xa3", "xa4", "xa5",
 ]);

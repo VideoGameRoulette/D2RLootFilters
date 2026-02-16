@@ -28,36 +28,27 @@ export function catalogToSelectableItems(
   let currentHeader = "";
 
   if (rarity === "unique") {
-    const byCode = new Map<string, { label: string; slot?: string; baseName?: string }[]>();
     for (const e of catalog.entries) {
       const entry = e as CatalogEntry;
       if (!("rarity" in entry) || entry.rarity !== "unique") continue;
       const rawCodes = Array.isArray(entry.code) ? entry.code : [entry.code];
-      const code = rawCodes.find((c): c is string => Boolean(c));
-      if (!code) continue;
+      const baseCode = rawCodes.find((c): c is string => Boolean(c));
+      if (!baseCode) continue;
       const rawLabel = entry.label ?? "";
       const label = displayLabel(rawLabel, "unique");
       const slot = "slot" in entry ? entry.slot : undefined;
       const baseName = "baseName" in entry ? entry.baseName : undefined;
-      if (!byCode.has(code)) byCode.set(code, []);
-      byCode.get(code)!.push({ label, slot, baseName });
-    }
-    for (const [code, entries] of Array.from(byCode.entries())) {
-      const slot = entries[0]?.slot;
-      const baseName = entries[0]?.baseName;
-      const label =
-        entries.length > 1
-          ? MERGED_CODE_LABELS[code]
-            ? MERGED_CODE_LABELS[code]
-            : entries.map((e) => e.label).join(" / ")
-          : entries[0]!.label;
+      const imageCode = "imageCode" in entry ? entry.imageCode : undefined;
+      const maxrollId = "maxrollId" in entry ? entry.maxrollId : undefined;
       items.push({
-        code,
-        codes: [code],
+        code: `${baseCode}|${label}`,
+        codes: [baseCode],
         label,
         rarity: "unique",
         slot,
         setLabel: baseName,
+        imageCode,
+        maxrollId,
       });
     }
     return items;
@@ -79,10 +70,11 @@ export function catalogToSelectableItems(
     const label = displayLabel(rawLabel, rarity);
     const slot = "slot" in entry ? entry.slot : undefined;
     const setLabel = currentHeader || undefined;
+    const maxrollId = "maxrollId" in entry ? entry.maxrollId : undefined;
 
     if (slot === "Set" || codes.length > 1) continue;
 
-    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel });
+    items.push({ code: codes[0], codes: [codes[0]], label, rarity, slot, setLabel, maxrollId });
   }
 
   return items;

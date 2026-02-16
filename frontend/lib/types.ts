@@ -6,6 +6,10 @@ export type CatalogEntry =
       rarity: "set" | "unique";
       label: string;
       code: string | string[];
+      /** Unique inventory graphic code (e.g. from invfile); used for unique item images. */
+      imageCode?: string;
+      /** Maxroll/D2Planner image id (e.g. unique381, set042); image at /item-unique/{id}.webp or /item-set/{id}.webp */
+      maxrollId?: string;
       enabled?: boolean;
       slot?: string;
       baseName?: string;
@@ -73,7 +77,7 @@ export interface QuestCatalog {
 
 /** Item for the list: single code or a bundle (whole set) with multiple codes */
 export interface SelectableItem {
-  /** Unique key (single code, or "bundle:code1,code2,..." for bundles) */
+  /** Unique key (single code, or "bundle:code1,code2,..." for bundles; for uniques "baseCode|label") */
   code: string;
   /** All game codes this row represents (one for single, multiple for "whole set" bundle) */
   codes: string[];
@@ -84,6 +88,10 @@ export interface SelectableItem {
   setLabel?: string;
   /** Base equipment quality (for filtering Normal/Exceptional/Elite). */
   quality?: EquipmentQuality;
+  /** Image asset code (e.g. unique invfile); when set, used instead of codes[0] for item image. */
+  imageCode?: string;
+  /** Maxroll/D2Planner image id (e.g. unique381, set042); when set, use /item-unique/{id}.webp or /item-set/{id}.webp. */
+  maxrollId?: string;
 }
 
 /** User selection state */

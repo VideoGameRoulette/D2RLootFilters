@@ -1,0 +1,54 @@
+code	label	catalog
+---	---	---
+brz	Brain	quest
+cs2	Crafted Cold Rupture	uniques
+elx	Elixir	quest
+eyz	Eye	quest
+flg	Flag	quest
+fng	Fang	quest
+gld	Gold	bases
+hpo	Healing Potion	potions
+hrb	Herb	quest
+hrn	Horn	quest
+ice	Malah's Potion	quest
+jaw	Jawbone	quest
+mpo	Mana Potion	potions
+qll	Quill	quest
+scz	Scalp	quest
+sol	Soul	quest
+spe	Spleen	quest
+std	Standard of Heroes	quest
+tal	Tail	quest
+tr1	Horadric Scroll	quest
+tr2	Scroll of Resistance	quest
+ua1	Uber Ancient Summon Material Act 1	quest
+ua2	Uber Ancient Summon Material Act 2	quest
+ua3	Uber Ancient Summon Material Act 3	quest
+ua4	Uber Ancient Summon Material Act 4	quest
+ua5	Uber Ancient Summon Material Act 5	quest
+um1	Uber Ancient Upgrade Material Fire	quest
+um2	Uber Ancient Upgrade Material Poison	quest
+um3	Uber Ancient Upgrade Material Cold	quest
+um4	Uber Ancient Upgrade Material Physical	quest
+um5	Uber Ancient Upgrade Material Lightning	quest
+um6	Uber Ancient Upgrade Material Magic	quest
+wa1	Old Book	bases
+wa2	Tome	bases
+wa3	Codex	bases
+wa4	Compendium	bases
+wa5	Grimoire	bases
+wa6	Burnt Text	bases
+wa7	Dark Tome	bases
+wa8	Dark Codex	bases
+wa9	Possessed Compendium	bases
+waa	Possessed Grimoire	bases
+wab	Forgotten Volume	bases
+wac	Occult Tome	bases
+wad	Occult Codex	bases
+wae	Blasphemous Compendium	bases
+waf	Blasphemous Grimoire	bases
+xa1	Western Worldstone Shard	quest
+xa2	Eastern Worldstone Shard (Act 2)	quest
+xa3	Southern Worldstone Shard (Act 3)	quest
+xa4	Deep Worldstone Shard (Act 4)	quest
+xa5	Northern Worldstone Shard (Act 5)	quest
