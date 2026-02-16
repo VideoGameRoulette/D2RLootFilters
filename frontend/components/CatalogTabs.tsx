@@ -26,9 +26,9 @@ export function CatalogTabs({
 }: CatalogTabsProps) {
   return (
     <div className="flex flex-col flex-1 min-h-0 overflow-hidden">
-      <div className="flex-shrink-0 border-b border-zinc-700/50 overflow-x-auto overflow-y-hidden">
+      <div className="flex-shrink-0 border-b border-zinc-700/50">
         <nav
-          className="flex gap-0.5 min-w-max items-center py-0.5"
+          className="flex flex-wrap gap-0.5 items-center py-0.5"
           role="tablist"
           aria-label="Item categories"
         >
