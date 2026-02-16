@@ -36,9 +36,15 @@ function buildHideRule(): FilterRule {
   };
 }
 
+/** One named item rule (e.g. "Arrows" with codes ["aqv"]). */
+export interface MiscItemRule {
+  name: string;
+  codes: string[];
+}
+
 /**
  * Build D2R loot filter JSON from selected codes per category.
- * Order: normal, socketedEthereal, magic, rare, unique, sets, runes, misc, gold.
+ * Order: normal, socketedEthereal, magic, rare, unique, sets, runes, quest, gems, misc (per-label), gold.
  */
 export function buildFilterFromSelection(
   profileNameInput: string,
@@ -48,7 +54,9 @@ export function buildFilterFromSelection(
   normalCodes: string[] = [],
   magicCodes: string[] = [],
   rareCodes: string[] = [],
-  miscCodes: string[] = [],
+  questCodes: string[] = [],
+  gemCodes: string[] = [],
+  miscItemRules: MiscItemRule[] = [],
   socketedEtherealCodes: string[] = [],
   goldFilter?: { enabled: boolean; threshold: number }
 ): LootFilter {
@@ -56,7 +64,7 @@ export function buildFilterFromSelection(
 
   if (normalCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Normal"),
+      name: gameSafeName("Normal"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
@@ -66,7 +74,7 @@ export function buildFilterFromSelection(
   }
   if (socketedEtherealCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Socketed / Ethereal"),
+      name: gameSafeName("Socketed Ethereal"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: true,
@@ -76,7 +84,7 @@ export function buildFilterFromSelection(
   }
   if (magicCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Magic"),
+      name: gameSafeName("Magic"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
@@ -86,7 +94,7 @@ export function buildFilterFromSelection(
   }
   if (rareCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Rare"),
+      name: gameSafeName("Rare"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
@@ -96,7 +104,7 @@ export function buildFilterFromSelection(
   }
   if (uniqueCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Selected Uniques"),
+      name: gameSafeName("Uniques"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
@@ -106,7 +114,7 @@ export function buildFilterFromSelection(
   }
   if (setCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Selected Sets"),
+      name: gameSafeName("Sets"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
@@ -123,27 +131,40 @@ export function buildFilterFromSelection(
       itemCode: [...runeCodes],
     });
   }
-  if (miscCodes.length > 0) {
+  if (questCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Show - Misc"),
+      name: gameSafeName("Quest Items"),
       enabled: true,
       ruleType: "show",
       filterEtherealSocketed: false,
-      itemCode: [...miscCodes],
+      itemCode: [...questCodes],
     });
+  }
+  if (gemCodes.length > 0) {
+    rules.push({
+      name: gameSafeName("Gems"),
+      enabled: true,
+      ruleType: "show",
+      filterEtherealSocketed: false,
+      itemCode: [...gemCodes],
+    });
+  }
+  for (const { name, codes } of miscItemRules) {
+    if (codes.length > 0) {
+      rules.push({
+        name: gameSafeName(name),
+        enabled: true,
+        ruleType: "show",
+        filterEtherealSocketed: false,
+        itemCode: [...codes],
+      });
+    }
   }
   if (goldFilter?.enabled && goldFilter.threshold > 0) {
     rules.push({
       name: gameSafeName(`Gold Less Than ${goldFilter.threshold}`),
       enabled: true,
       ruleType: "hide",
-      filterEtherealSocketed: false,
-      goldFilterValue: goldFilter.threshold,
-    });
-    rules.push({
-      name: gameSafeName(`Gold Greater Than ${goldFilter.threshold}`),
-      enabled: true,
-      ruleType: "show",
       filterEtherealSocketed: false,
       goldFilterValue: goldFilter.threshold,
     });

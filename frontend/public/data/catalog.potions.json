@@ -40,21 +40,6 @@
       "slot": "Other"
     },
     {
-      "code": "hpf",
-      "label": "Full Healing Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "rps",
-      "label": "Small Red Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "rpl",
-      "label": "Large Red Potion",
-      "slot": "Other"
-    },
-    {
       "kind": "header",
       "label": "Mana Potions"
     },
@@ -89,21 +74,6 @@
       "slot": "Other"
     },
     {
-      "code": "mpf",
-      "label": "Full Mana Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "bps",
-      "label": "Small Blue Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "bpl",
-      "label": "Large Blue Potion",
-      "slot": "Other"
-    },
-    {
       "kind": "header",
       "label": "Rejuvenation Potions"
     },
@@ -124,11 +94,6 @@
     {
       "code": "yps",
       "label": "Antidote Potion",
-      "slot": "Other"
-    },
-    {
-      "code": "xyz",
-      "label": "Potion of Life",
       "slot": "Other"
     },
     {

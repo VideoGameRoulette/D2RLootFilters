@@ -357,7 +357,7 @@
     },
     {
       "rarity": "unique",
-      "label": "Unique Warlock Helm",
+      "label": "Hellwarden's Will",
       "code": "xsk",
       "enabled": false,
       "slot": "Helm",
@@ -745,7 +745,7 @@
       "label": "Ars Al'Diablolos",
       "code": "waf",
       "enabled": false,
-      "slot": "Armor",
+      "slot": "Grimoire",
       "baseName": "Blasphemous Grimoire",
       "baseType": "grim",
       "source": "armor"
@@ -755,7 +755,7 @@
       "label": "Ars Tor'Baalos",
       "code": "wae",
       "enabled": false,
-      "slot": "Armor",
+      "slot": "Grimoire",
       "baseName": "Blasphemous Compendium",
       "baseType": "grim",
       "source": "armor"
@@ -765,7 +765,7 @@
       "label": "Ars Dul'Mephistos",
       "code": "wac",
       "enabled": false,
-      "slot": "Armor",
+      "slot": "Grimoire",
       "baseName": "Occult Tome",
       "baseType": "grim",
       "source": "armor"
@@ -775,7 +775,7 @@
       "label": "Measured Wrath",
       "code": "wa6",
       "enabled": false,
-      "slot": "Armor",
+      "slot": "Grimoire",
       "baseName": "Burnt Text",
       "baseType": "grim",
       "source": "armor"
@@ -1493,56 +1493,6 @@
       "slot": "Weapon",
       "baseName": "Repeating Crossbow",
       "baseType": "xbow",
-      "source": "weapons"
-    },
-    {
-      "rarity": "unique",
-      "label": "Staff of Kings",
-      "code": "msf",
-      "enabled": false,
-      "slot": "Weapon",
-      "baseName": "Staff of Kings",
-      "baseType": "staf",
-      "source": "weapons"
-    },
-    {
-      "rarity": "unique",
-      "label": "Horadric Staff",
-      "code": "hst",
-      "enabled": false,
-      "slot": "Weapon",
-      "baseName": "Horadric Staff",
-      "baseType": "staf",
-      "source": "weapons"
-    },
-    {
-      "rarity": "unique",
-      "label": "Hell Forge Hammer",
-      "code": "hfh",
-      "enabled": false,
-      "slot": "Weapon",
-      "baseName": "Hellforge Hammer",
-      "baseType": "hamm",
-      "source": "weapons"
-    },
-    {
-      "rarity": "unique",
-      "label": "KhalimFlail",
-      "code": "qf1",
-      "enabled": false,
-      "slot": "Weapon",
-      "baseName": "Khalim's Flail",
-      "baseType": "mace",
-      "source": "weapons"
-    },
-    {
-      "rarity": "unique",
-      "label": "SuperKhalimFlail",
-      "code": "qf2",
-      "enabled": false,
-      "slot": "Weapon",
-      "baseName": "Khalim's Will",
-      "baseType": "mace",
       "source": "weapons"
     },
     {
@@ -3832,16 +3782,6 @@
       "enabled": false,
       "slot": "Amulet",
       "baseName": "Amulet",
-      "baseType": "amul",
-      "source": "misc"
-    },
-    {
-      "rarity": "unique",
-      "label": "Amulet of the Viper",
-      "code": "vip",
-      "enabled": false,
-      "slot": "Amulet",
-      "baseName": "Amulet of the Viper",
       "baseType": "amul",
       "source": "misc"
     },

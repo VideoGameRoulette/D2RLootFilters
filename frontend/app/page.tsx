@@ -1,12 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Catalog, SelectableItem } from "@/lib/types";
 import { catalogToSelectableItems } from "@/lib/catalog";
 import {
   buildFilterFromSelection,
   serializeFilter,
 } from "@/lib/buildFilter";
+import { parseLoadedFilter } from "@/lib/parseFilter";
 import { RUNES } from "@/lib/runes";
 import { MISC_ITEMS } from "@/lib/misc";
 import { categorizeMisc } from "@/lib/miscCategories";
@@ -19,7 +20,7 @@ import { potionsToSelectableItems } from "@/lib/potionsCatalog";
 import { questToSelectableItems } from "@/lib/questCatalog";
 import { CatalogSection } from "@/components/CatalogSection";
 import { CatalogTabs } from "@/components/CatalogTabs";
-import type { BasesCatalog, EquipmentQuality, GemsCatalog, PotionsCatalog, QuestCatalog } from "@/lib/types";
+import type { BasesCatalog, EquipmentQuality, GemsCatalog, PotionsCatalog, QuestCatalog, FilterRule, LootFilter } from "@/lib/types";
 
 const QUALITIES: EquipmentQuality[] = ["normal", "exceptional", "elite"];
 
@@ -85,6 +86,8 @@ export default function Home() {
   );
   const [activeTab, setActiveTab] = useState<string>(TAB_ORDER[0]);
   const [copyFeedback, setCopyFeedback] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -121,7 +124,7 @@ export default function Home() {
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
-  }, []);
+  }, [dataBase]);
 
   const setItems = useMemo<SelectableItem[]>(
     () => (setsCatalog ? catalogToSelectableItems(setsCatalog, "set") : []),
@@ -241,13 +244,30 @@ export default function Home() {
     () => questToSelectableItems(questCatalog),
     [questCatalog]
   );
+
+  const gemCodeSet = useMemo(
+    () => new Set(gemItems.flatMap((i) => i.codes)),
+    [gemItems]
+  );
+  const potionCodeSet = useMemo(
+    () => new Set(potionItems.flatMap((i) => i.codes)),
+    [potionItems]
+  );
+  const questCodeSet = useMemo(
+    () => new Set(questItems.flatMap((i) => i.codes)),
+    [questItems]
+  );
+
   const { other: miscOtherRaw } = useMemo(
     () => categorizeMisc(miscItemsRaw),
     [miscItemsRaw]
   );
 
   const miscOtherItems = useMemo(
-    () => miscOtherRaw.filter((item) => !jewelCodeSet.has(item.code)),
+    () =>
+      miscOtherRaw.filter(
+        (item) => !jewelCodeSet.has(item.code) && item.code !== "gld"
+      ),
     [miscOtherRaw, jewelCodeSet]
   );
 
@@ -429,15 +449,23 @@ export default function Home() {
     []
   );
 
-  const miscCodesMerged = useMemo(
-    () => [
-      ...Array.from(selectedGemCodes),
-      ...Array.from(selectedPotionCodes),
-      ...Array.from(selectedQuestCodes),
-      ...Array.from(selectedMiscOtherCodes),
-    ],
-    [selectedGemCodes, selectedPotionCodes, selectedQuestCodes, selectedMiscOtherCodes]
-  );
+  const miscItemRules = useMemo(() => {
+    const out: { name: string; codes: string[] }[] = [];
+    const add = (items: SelectableItem[], selected: Set<string>) => {
+      for (const item of items) {
+        const codes = item.codes.filter((c) => selected.has(c));
+        if (codes.length > 0) out.push({ name: item.label, codes });
+      }
+    };
+    add(potionItems, selectedPotionCodes);
+    add(miscOtherItems, selectedMiscOtherCodes);
+    return out;
+  }, [
+    potionItems,
+    miscOtherItems,
+    selectedPotionCodes,
+    selectedMiscOtherCodes,
+  ]);
 
   const getExportJson = useCallback(() => {
     const profile = profileName.replace(/\s/g, "") || "LootFilter";
@@ -449,7 +477,9 @@ export default function Home() {
       Array.from(selectedNormalBaseCodes),
       Array.from(selectedMagicBaseCodes),
       Array.from(selectedRareBaseCodes),
-      miscCodesMerged,
+      Array.from(selectedQuestCodes),
+      Array.from(selectedGemCodes),
+      miscItemRules,
       Array.from(selectedSocketedEtherealBaseCodes),
       goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined
     );
@@ -462,7 +492,9 @@ export default function Home() {
     selectedNormalBaseCodes,
     selectedMagicBaseCodes,
     selectedRareBaseCodes,
-    miscCodesMerged,
+    selectedQuestCodes,
+    selectedGemCodes,
+    miscItemRules,
     selectedSocketedEtherealBaseCodes,
     goldFilterEnabled,
     goldFilterThreshold,
@@ -490,6 +522,84 @@ export default function Home() {
       setCopyFeedback(false);
     }
   }, [getExportJson]);
+
+  const handleLoadFilter = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLoadError(null);
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const text = typeof reader.result === "string" ? reader.result : "";
+          const filter = parseLoadedFilter(text);
+          const normal: string[] = [];
+          const socketedEthereal: string[] = [];
+          const magic: string[] = [];
+          const rare: string[] = [];
+          const unique: string[] = [];
+          const set: string[] = [];
+          const runes: string[] = [];
+          const gems: string[] = [];
+          const potions: string[] = [];
+          const quest: string[] = [];
+          const miscOther: string[] = [];
+          let goldEnabled = false;
+          let goldThreshold = 5000;
+
+          for (const rule of filter.rules) {
+            const eq = rule.equipmentItemCode;
+            const ic = rule.itemCode;
+            const rar = rule.equipmentRarity;
+
+            if (rar?.includes("normal") && !rule.filterEtherealSocketed && eq) normal.push(...eq);
+            else if (rar?.includes("normal") && rule.filterEtherealSocketed && eq) socketedEthereal.push(...eq);
+            else if (rar?.includes("magic") && eq) magic.push(...eq);
+            else if (rar?.includes("rare") && eq) rare.push(...eq);
+            else if (rar?.includes("unique") && eq) unique.push(...eq);
+            else if (rar?.includes("set") && eq) set.push(...eq);
+            else if (ic?.length) {
+              const allRunes = ic.every((c) => runeCodeSet.has(c));
+              if (allRunes) runes.push(...ic);
+              else {
+                for (const c of ic) {
+                  if (gemCodeSet.has(c)) gems.push(c);
+                  else if (potionCodeSet.has(c)) potions.push(c);
+                  else if (questCodeSet.has(c)) quest.push(c);
+                  else miscOther.push(c);
+                }
+              }
+            }
+            if (rule.goldFilterValue != null && rule.ruleType === "hide") {
+              goldEnabled = true;
+              goldThreshold = rule.goldFilterValue;
+            }
+          }
+
+          setProfileName(filter.name);
+          setSelectedNormalBaseCodes(new Set(normal));
+          setSelectedSocketedEtherealBaseCodes(new Set(socketedEthereal));
+          setSelectedMagicBaseCodes(new Set(magic));
+          setSelectedRareBaseCodes(new Set(rare));
+          setSelectedUniqueCodes(new Set(unique));
+          setSelectedSetCodes(new Set(set));
+          setSelectedRuneCodes(new Set(runes));
+          setSelectedGemCodes(new Set(gems));
+          setSelectedPotionCodes(new Set(potions));
+          setSelectedQuestCodes(new Set(quest));
+          setSelectedMiscOtherCodes(new Set(miscOther));
+          setGoldFilterEnabled(goldEnabled);
+          setGoldFilterThreshold(goldThreshold);
+        } catch (err) {
+          setLoadError(err instanceof Error ? err.message : "Failed to load filter");
+        }
+        e.target.value = "";
+      };
+      reader.onerror = () => setLoadError("Failed to read file");
+      reader.readAsText(file, "utf-8");
+    },
+    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet]
+  );
 
   const totalSelected =
     selectedSetCodes.size +
@@ -910,6 +1020,21 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap items-center gap-4 flex-shrink-0 pt-2">
+          <input
+            type="file"
+            accept=".json"
+            ref={fileInputRef}
+            onChange={handleLoadFilter}
+            className="hidden"
+            aria-hidden
+          />
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            className="px-5 py-2.5 rounded-lg font-medium bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+          >
+            Load filter
+          </button>
           <button
             onClick={handleExportJson}
             disabled={!canExport}
@@ -924,6 +1049,11 @@ export default function Home() {
           >
             Copy to clipboard
           </button>
+          {loadError && (
+            <span className="text-sm text-red-400" role="alert">
+              {loadError}
+            </span>
+          )}
           {copyFeedback && (
             <span className="text-sm text-emerald-400">Copied!</span>
           )}

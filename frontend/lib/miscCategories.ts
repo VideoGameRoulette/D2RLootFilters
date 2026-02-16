@@ -3,9 +3,9 @@ import type { SelectableItem } from "./types";
 /** Gem label patterns (in Other slot) – Sapphire, Emerald, Ruby, etc. Jewels excluded (go to Magic/Rare). */
 const GEM_LABELS = /Sapphire|Emerald|Ruby|Topaz|Amethyst|Diamond|Skull/i;
 
-/** Quest item codes. Misc keeps only: aqv (arrows), cqv (bolts), ear (ear), gld (gold). */
+/** Quest item codes. key is in bases "Other" and shown in Misc, not Quest. */
 const QUEST_CODES = new Set([
-  "bks", "bkd", "bbb", "g33", "g34", "box", "key", "hst", "xyz", "j34",
+  "bks", "bkd", "bbb", "g33", "g34", "box", "hst", "xyz", "j34",
   "bet", "ceh", "fed", "tes", "dhn", "bey", "brz", "eyz", "fng", "mbr", "qbr", "qey", "hrn",
   "0sc", "ass", "isc", "tsc", "tr1", "tr2", "tbk", "ibk", "pk1", "pk2", "pk3", "luv", "flg",
   "mss", "ice", "cs2", "elx", "hrb", "hrt", "jaw", "qhr", "qll", "scz", "sol", "spe", "std", "tal", "tch", "toa",
