@@ -114,6 +114,8 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<string>(TAB_ORDER[0]);
   const [copyFeedback, setCopyFeedback] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [showPastePanel, setShowPastePanel] = useState(false);
+  const [pasteInput, setPasteInput] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -703,17 +705,9 @@ export default function Home() {
     }
   }, [getExportJson]);
 
-  const handleLoadFilter = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      setLoadError(null);
-      const file = e.target.files?.[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        try {
-          const text = typeof reader.result === "string" ? reader.result : "";
-          const filter = parseLoadedFilter(text);
-          const normal: string[] = [];
+  const applyFilterToState = useCallback(
+    (filter: LootFilter) => {
+      const normal: string[] = [];
           const socketedEthereal: string[] = [];
           const normalSuperior: string[] = [];
           const socketedEtherealSuperior: string[] = [];
@@ -820,6 +814,21 @@ export default function Home() {
           setSelectedMiscOtherCodes(new Set(miscOther));
           setGoldFilterEnabled(goldEnabled);
           setGoldFilterThreshold(goldThreshold);
+    },
+    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet, endgameCodeSet]
+  );
+
+  const handleLoadFilter = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLoadError(null);
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const text = typeof reader.result === "string" ? reader.result : "";
+          const filter = parseLoadedFilter(text);
+          applyFilterToState(filter);
         } catch (err) {
           setLoadError(err instanceof Error ? err.message : "Failed to load filter");
         }
@@ -828,8 +837,25 @@ export default function Home() {
       reader.onerror = () => setLoadError("Failed to read file");
       reader.readAsText(file, "utf-8");
     },
-    [runeCodeSet, gemCodeSet, potionCodeSet, questCodeSet, endgameCodeSet]
+    [applyFilterToState]
   );
+
+  const handleLoadFromPaste = useCallback(() => {
+    setLoadError(null);
+    const text = pasteInput.trim();
+    if (!text) {
+      setLoadError("Paste filter JSON first");
+      return;
+    }
+    try {
+      const filter = parseLoadedFilter(text);
+      applyFilterToState(filter);
+      setPasteInput("");
+      setShowPastePanel(false);
+    } catch (err) {
+      setLoadError(err instanceof Error ? err.message : "Invalid filter JSON");
+    }
+  }, [pasteInput, applyFilterToState]);
 
   const totalSelected =
     selectedSetCodes.size +
@@ -901,10 +927,22 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  title="Load filter"
+                  title="Load filter from file"
                   className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setShowPastePanel((p) => !p); setLoadError(null); }}
+                  title="Import from clipboard"
+                  className={`p-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 ${
+                    showPastePanel
+                      ? "bg-violet-600 text-white border-violet-500 focus:ring-violet-500"
+                      : "bg-zinc-600 text-white border-zinc-500 hover:bg-zinc-500 focus:ring-zinc-500"
+                  }`}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
                 </button>
                 <button
                   type="button"
@@ -924,7 +962,7 @@ export default function Home() {
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 </button>
-                {loadError && (
+                {loadError && !showPastePanel && (
                   <span className="text-xs text-red-400" role="alert">
                     {loadError}
                   </span>
@@ -934,6 +972,43 @@ export default function Home() {
                 )}
               </div>
             </div>
+            {showPastePanel && (
+              <div className="mt-3 p-3 rounded-lg bg-zinc-800/80 border border-zinc-600">
+                <label htmlFor="paste-filter" className="block text-sm text-zinc-400 mb-2">
+                  Paste filter JSON
+                </label>
+                <textarea
+                  id="paste-filter"
+                  value={pasteInput}
+                  onChange={(e) => setPasteInput(e.target.value)}
+                  placeholder='{"name":"MyFilter","rules":[...]}'
+                  rows={6}
+                  className="w-full bg-zinc-900 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white font-mono placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent resize-y min-h-[120px]"
+                />
+                <div className="mt-2 flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={handleLoadFromPaste}
+                    disabled={!pasteInput.trim()}
+                    className="px-4 py-2 rounded-lg bg-violet-600 text-white text-sm font-medium hover:bg-violet-500 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                  >
+                    Load
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setShowPastePanel(false); setPasteInput(""); setLoadError(null); }}
+                    className="px-4 py-2 rounded-lg bg-zinc-600 text-zinc-300 text-sm font-medium hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+                  >
+                    Cancel
+                  </button>
+                  {loadError && showPastePanel && (
+                    <span className="text-xs text-red-400" role="alert">
+                      {loadError}
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
             <div className="mt-4 flex flex-wrap items-center gap-4 gap-y-3">
               <label className="flex items-center gap-2">
                 <span className="text-zinc-500 text-sm">Profile name</span>
