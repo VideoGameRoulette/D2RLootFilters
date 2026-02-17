@@ -897,6 +897,7 @@ export default function Home() {
   }
 
   return (
+    <>
     <main className="h-screen overflow-hidden flex flex-col">
       <div className="flex-1 flex flex-col min-h-0 overflow-hidden w-full">
         <header className="flex-shrink-0 border-b border-zinc-700/60 bg-zinc-900/70">
@@ -914,7 +915,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-xs text-zinc-500 font-medium mr-1">
-                  Game v3.1.91636 · Updated 2026-02-14
+                  Game v3.1.91636 · Updated 2026-02-17
                 </span>
                 <input
                   type="file"
@@ -934,13 +935,9 @@ export default function Home() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setShowPastePanel((p) => !p); setLoadError(null); }}
-                  title="Import from clipboard"
-                  className={`p-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 ${
-                    showPastePanel
-                      ? "bg-violet-600 text-white border-violet-500 focus:ring-violet-500"
-                      : "bg-zinc-600 text-white border-zinc-500 hover:bg-zinc-500 focus:ring-zinc-500"
-                  }`}
+                  onClick={() => { setShowPastePanel(true); setLoadError(null); setPasteInput(""); }}
+                  title="Import from paste"
+                  className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
                 </button>
@@ -962,7 +959,7 @@ export default function Home() {
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 </button>
-                {loadError && !showPastePanel && (
+                {loadError && (
                   <span className="text-xs text-red-400" role="alert">
                     {loadError}
                   </span>
@@ -972,43 +969,6 @@ export default function Home() {
                 )}
               </div>
             </div>
-            {showPastePanel && (
-              <div className="mt-3 p-3 rounded-lg bg-zinc-800/80 border border-zinc-600">
-                <label htmlFor="paste-filter" className="block text-sm text-zinc-400 mb-2">
-                  Paste filter JSON
-                </label>
-                <textarea
-                  id="paste-filter"
-                  value={pasteInput}
-                  onChange={(e) => setPasteInput(e.target.value)}
-                  placeholder='{"name":"MyFilter","rules":[...]}'
-                  rows={6}
-                  className="w-full bg-zinc-900 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white font-mono placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent resize-y min-h-[120px]"
-                />
-                <div className="mt-2 flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={handleLoadFromPaste}
-                    disabled={!pasteInput.trim()}
-                    className="px-4 py-2 rounded-lg bg-violet-600 text-white text-sm font-medium hover:bg-violet-500 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
-                  >
-                    Load
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => { setShowPastePanel(false); setPasteInput(""); setLoadError(null); }}
-                    className="px-4 py-2 rounded-lg bg-zinc-600 text-zinc-300 text-sm font-medium hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
-                  >
-                    Cancel
-                  </button>
-                  {loadError && showPastePanel && (
-                    <span className="text-xs text-red-400" role="alert">
-                      {loadError}
-                    </span>
-                  )}
-                </div>
-              </div>
-            )}
             <div className="mt-4 flex flex-wrap items-center gap-4 gap-y-3">
               <label className="flex items-center gap-2">
                 <span className="text-zinc-500 text-sm">Profile name</span>
@@ -1530,5 +1490,55 @@ export default function Home() {
         </div>
       </div>
     </main>
+    {showPastePanel && (
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="paste-dialog-title"
+        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      >
+        <div
+          className="absolute inset-0 bg-black/60"
+          onClick={() => { setShowPastePanel(false); setPasteInput(""); setLoadError(null); }}
+          aria-hidden
+        />
+        <div className="relative w-full max-w-lg rounded-xl bg-zinc-900 border border-zinc-600 shadow-xl p-4">
+          <h2 id="paste-dialog-title" className="text-lg font-semibold text-white mb-3">
+            Paste filter JSON
+          </h2>
+          <textarea
+            id="paste-filter"
+            value={pasteInput}
+            onChange={(e) => setPasteInput(e.target.value)}
+            placeholder='{"name":"MyFilter","rules":[...]}'
+            rows={8}
+            className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white font-mono placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent resize-y min-h-[160px]"
+          />
+          {loadError && (
+            <p className="mt-2 text-sm text-red-400" role="alert">
+              {loadError}
+            </p>
+          )}
+          <div className="mt-4 flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleLoadFromPaste}
+              disabled={!pasteInput.trim()}
+              className="px-4 py-2 rounded-lg bg-violet-600 text-white text-sm font-medium hover:bg-violet-500 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+            >
+              Load
+            </button>
+            <button
+              type="button"
+              onClick={() => { setShowPastePanel(false); setPasteInput(""); setLoadError(null); }}
+              className="px-4 py-2 rounded-lg bg-zinc-600 text-zinc-300 text-sm font-medium hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
+    </>
   );
 }

@@ -13,7 +13,14 @@ const frontendDir = path.resolve(__dirname);
 const rootDir = path.resolve(frontendDir, "..");
 const outDir = path.join(frontendDir, "public", "data");
 
-const files = ["catalog.sets.json", "catalog.uniques.json", "catalog.bases.json", "catalog.gems.json", "catalog.potions.json", "catalog.quest.json"];
+const files = [
+  "catalog.sets.json",
+  "catalog.uniques.json",
+  "catalog.bases.json",
+  "catalog.gems.json",
+  "catalog.potions.json",
+  "catalog.quest.json",
+];
 
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });

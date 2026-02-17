@@ -15,15 +15,26 @@ const ITEM_IMAGES = path.join(PUBLIC, "item-images");
 
 /** Potion filename (no .webp, lowercase, spaces -> _) -> code. */
 const POTION_NAME_TO_CODE = new Map([
-  ["minor_healing_potion", "hp1"], ["light_healing_potion", "hp2"], ["healing_potion", "hp3"],
-  ["greater_healing_potion", "hp4"], ["super_healing_potion", "hp5"],
-  ["minor_mana_potion", "mp1"], ["light_mana_potion", "mp2"], ["mana_potion", "mp3"],
-  ["greater_mana_potion", "mp4"], ["super_mana_potion", "mp5"],
-  ["full_rejuvenation_potion", "rvl"], ["rejuvenation_potion", "rvs"],
-  ["full_rejuv_potion", "rvl"], ["rejuv_potion", "rvs"],
-  ["antidote_potion", "yps"], ["stamina_potion", "vps"], ["thawing_potion", "wms"],
-  ["super_healing_mana", "mp5"],  // likely "Super Mana Potion"
-  ["strangling_gas_potion", "gpl"], ["fulminating_potion", "opl"],
+  ["minor_healing_potion", "hp1"],
+  ["light_healing_potion", "hp2"],
+  ["healing_potion", "hp3"],
+  ["greater_healing_potion", "hp4"],
+  ["super_healing_potion", "hp5"],
+  ["minor_mana_potion", "mp1"],
+  ["light_mana_potion", "mp2"],
+  ["mana_potion", "mp3"],
+  ["greater_mana_potion", "mp4"],
+  ["super_mana_potion", "mp5"],
+  ["full_rejuvenation_potion", "rvl"],
+  ["rejuvenation_potion", "rvs"],
+  ["full_rejuv_potion", "rvl"],
+  ["rejuv_potion", "rvs"],
+  ["antidote_potion", "yps"],
+  ["stamina_potion", "vps"],
+  ["thawing_potion", "wms"],
+  ["super_healing_mana", "mp5"], // likely "Super Mana Potion"
+  ["strangling_gas_potion", "gpl"],
+  ["fulminating_potion", "opl"],
 ]);
 
 function normalizeKey(name) {
@@ -31,7 +42,9 @@ function normalizeKey(name) {
 }
 
 async function findPotionWebps(dir, list = []) {
-  const entries = await fs.readdir(dir, { withFileTypes: true }).catch(() => []);
+  const entries = await fs
+    .readdir(dir, { withFileTypes: true })
+    .catch(() => []);
   for (const e of entries) {
     const full = path.join(dir, e.name);
     if (e.isFile() && e.name.endsWith(".webp")) {
