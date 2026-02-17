@@ -14,8 +14,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(__dirname, "public");
 const ITEM_IMAGES = path.join(PUBLIC, "item-images");
 
-const QUEST_CODES = ["ua1", "ua2", "ua3", "ua4", "ua5", "xa1", "xa2", "xa3", "xa4", "xa5"];
-const RUNE_CODES = Array.from({ length: 33 }, (_, i) => "r" + String(i + 1).padStart(2, "0"));
+const QUEST_CODES = [
+  "ua1",
+  "ua2",
+  "ua3",
+  "ua4",
+  "ua5",
+  "xa1",
+  "xa2",
+  "xa3",
+  "xa4",
+  "xa5",
+];
+const RUNE_CODES = Array.from(
+  { length: 33 },
+  (_, i) => `r${String(i + 1).padStart(2, "0")}`,
+);
 const CODES = [...QUEST_CODES, ...RUNE_CODES];
 
 async function findWebpRecursive(dir, code) {
@@ -55,7 +69,11 @@ async function main() {
         console.log("  removed", webpPath);
       } catch (unlinkErr) {
         if (unlinkErr.code === "EBUSY" || unlinkErr.code === "EPERM") {
-          console.warn("  (could not delete source – file in use; you can remove", webpPath, "manually)");
+          console.warn(
+            "  (could not delete source – file in use; you can remove",
+            webpPath,
+            "manually)",
+          );
         } else {
           throw unlinkErr;
         }
@@ -66,12 +84,14 @@ async function main() {
   }
 
   // Also convert any .webp in item-images to .png (overwrite existing)
-  const itemImagesEntries = await fs.readdir(ITEM_IMAGES, { withFileTypes: true }).catch(() => []);
+  const itemImagesEntries = await fs
+    .readdir(ITEM_IMAGES, { withFileTypes: true })
+    .catch(() => []);
   for (const e of itemImagesEntries) {
     if (!e.isFile() || !e.name.endsWith(".webp")) continue;
     const base = e.name.slice(0, -5);
     const webpPath = path.join(ITEM_IMAGES, e.name);
-    const pngPath = path.join(ITEM_IMAGES, base + ".png");
+    const pngPath = path.join(ITEM_IMAGES, `${base}.png`);
     try {
       await sharp(webpPath).png().toFile(pngPath);
       console.log(base, "(item-images) ->", pngPath);
@@ -80,7 +100,11 @@ async function main() {
         console.log("  removed", webpPath);
       } catch (unlinkErr) {
         if (unlinkErr.code === "EBUSY" || unlinkErr.code === "EPERM") {
-          console.warn("  (could not delete source – remove", webpPath, "manually if needed)");
+          console.warn(
+            "  (could not delete source – remove",
+            webpPath,
+            "manually if needed)",
+          );
         } else {
           throw unlinkErr;
         }
