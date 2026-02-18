@@ -1,0 +1,75 @@
+{
+  "name": "Bases Catalog",
+  "generatedAt": "2026-02-15T16:34:12.679Z",
+  "source": {
+    "armor": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/armor.json",
+    "weapons": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/weapons.json",
+    "misc": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/misc.json"
+  },
+  "entries": [
+    {
+      "kind": "header",
+      "label": "Scroll"
+    },
+    {
+      "code": "isc",
+      "label": "Scroll of Identify",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "tsc",
+      "label": "Scroll of Town Portal",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "kind": "header",
+      "label": "Tome"
+    },
+    {
+      "code": "ibk",
+      "label": "Tome of Identify",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "tbk",
+      "label": "Tome of Town Portal",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "kind": "header",
+      "label": "Ammo"
+    },
+    {
+      "code": "aqv",
+      "label": "Arrows",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "cqv",
+      "label": "Bolts",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "kind": "header",
+      "label": "Other"
+    },
+    {
+      "code": "key",
+      "label": "Key",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "ear",
+      "label": "Ear",
+      "slot": "Other",
+      "quality": "normal"
+    }
+  ]
+}

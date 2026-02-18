@@ -39,6 +39,15 @@ export function basesToSelectableItems(
 
     const label = entry.label ?? code;
     const quality = "quality" in entry ? entry.quality : undefined;
+    const minDefense = "minDefense" in entry ? entry.minDefense : undefined;
+    const maxDefense = "maxDefense" in entry ? entry.maxDefense : undefined;
+    const oneHandDamage = "oneHandDamage" in entry ? entry.oneHandDamage : undefined;
+    const twoHandDamage = "twoHandDamage" in entry ? entry.twoHandDamage : undefined;
+    const armorWeightClass = "armorWeightClass" in entry ? entry.armorWeightClass : undefined;
+    const maxSockets = "maxSockets" in entry ? entry.maxSockets : undefined;
+    const requiredStrength = "requiredStrength" in entry ? entry.requiredStrength : undefined;
+    const requiredDexterity = "requiredDexterity" in entry ? entry.requiredDexterity : undefined;
+    const requiredLevel = "requiredLevel" in entry ? entry.requiredLevel : undefined;
 
     items.push({
       code,
@@ -48,6 +57,15 @@ export function basesToSelectableItems(
       slot,
       setLabel: currentHeader || undefined,
       quality,
+      minDefense,
+      maxDefense,
+      oneHandDamage,
+      twoHandDamage,
+      armorWeightClass,
+      maxSockets,
+      requiredStrength,
+      requiredDexterity,
+      requiredLevel,
     });
   }
 
@@ -75,6 +93,15 @@ export function basesToSelectableItemsOther(
 
     const code = entry.code;
     const label = entry.label ?? code;
+    const minDefense = "minDefense" in entry ? entry.minDefense : undefined;
+    const maxDefense = "maxDefense" in entry ? entry.maxDefense : undefined;
+    const oneHandDamage = "oneHandDamage" in entry ? entry.oneHandDamage : undefined;
+    const twoHandDamage = "twoHandDamage" in entry ? entry.twoHandDamage : undefined;
+    const armorWeightClass = "armorWeightClass" in entry ? entry.armorWeightClass : undefined;
+    const maxSockets = "maxSockets" in entry ? entry.maxSockets : undefined;
+    const requiredStrength = "requiredStrength" in entry ? entry.requiredStrength : undefined;
+    const requiredDexterity = "requiredDexterity" in entry ? entry.requiredDexterity : undefined;
+    const requiredLevel = "requiredLevel" in entry ? entry.requiredLevel : undefined;
 
     items.push({
       code,
@@ -83,6 +110,15 @@ export function basesToSelectableItemsOther(
       rarity: "unique",
       slot,
       setLabel: currentHeader || undefined,
+      minDefense,
+      maxDefense,
+      oneHandDamage,
+      twoHandDamage,
+      armorWeightClass,
+      maxSockets,
+      requiredStrength,
+      requiredDexterity,
+      requiredLevel,
     });
   }
 

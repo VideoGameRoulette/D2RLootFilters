@@ -90,6 +90,76 @@ function equipmentQuality(row) {
   return "normal";
 }
 
+function toFiniteNumber(value) {
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value === "string" && value.trim() !== "") {
+    const n = Number(value);
+    if (Number.isFinite(n)) return n;
+  }
+  return null;
+}
+
+function damageRange(minRaw, maxRaw) {
+  const min = toFiniteNumber(minRaw);
+  const max = toFiniteNumber(maxRaw);
+  if (min == null || max == null) return undefined;
+  if (min <= 0 && max <= 0) return undefined;
+  return { min, max };
+}
+
+function armorWeightClass(row, slot) {
+  const armorSlots = new Set(["Helm", "Armor", "Shield", "Gloves", "Belt", "Boots"]);
+  if (!armorSlots.has(slot)) return undefined;
+  const speed = toFiniteNumber(row?.speed);
+  if (speed == null) return undefined;
+  if (speed >= 10) return "heavy";
+  if (speed >= 5) return "medium";
+  return "light";
+}
+
+function extractBaseStats(source, row, slot) {
+  const stats = {};
+
+  const minDefense = toFiniteNumber(row?.minac);
+  const maxDefense = toFiniteNumber(row?.maxac);
+  if (minDefense != null && maxDefense != null && (minDefense > 0 || maxDefense > 0)) {
+    stats.minDefense = minDefense;
+    stats.maxDefense = maxDefense;
+  }
+
+  if (source === "weapons") {
+    const oneHandDamage = damageRange(row?.mindam, row?.maxdam);
+    if (oneHandDamage) stats.oneHandDamage = oneHandDamage;
+    const twoHandDamage = damageRange(row?.["2handmindam"], row?.["2handmaxdam"]);
+    if (twoHandDamage) stats.twoHandDamage = twoHandDamage;
+  }
+
+  const maxSockets = toFiniteNumber(row?.gemsockets);
+  if (maxSockets != null && maxSockets > 0) {
+    stats.maxSockets = maxSockets;
+  }
+
+  if (source === "armor") {
+    const weightClass = armorWeightClass(row, slot);
+    if (weightClass) stats.armorWeightClass = weightClass;
+  }
+
+  const requiredStrength = toFiniteNumber(row?.reqstr);
+  if (requiredStrength != null && requiredStrength > 0) {
+    stats.requiredStrength = requiredStrength;
+  }
+  const requiredDexterity = toFiniteNumber(row?.reqdex);
+  if (requiredDexterity != null && requiredDexterity > 0) {
+    stats.requiredDexterity = requiredDexterity;
+  }
+  const requiredLevel = toFiniteNumber(row?.levelreq);
+  if (requiredLevel != null && requiredLevel > 0) {
+    stats.requiredLevel = requiredLevel;
+  }
+
+  return stats;
+}
+
 function buildEntries(armor, weapons, misc) {
   const bySlot = new Map();
   const add = (source, objMap) => {
@@ -102,7 +172,10 @@ function buildEntries(armor, weapons, misc) {
       const slot = slotFromType(source, row?.type);
       if (!bySlot.has(slot)) bySlot.set(slot, []);
       const quality = source === "misc" ? "normal" : equipmentQuality(row);
-      bySlot.get(slot).push({ code, label: (name ?? "").trim(), slot, quality });
+      const stats = extractBaseStats(source, row, slot);
+      bySlot
+        .get(slot)
+        .push({ code, label: (name ?? "").trim(), slot, quality, ...stats });
     }
   };
   add("armor", armor);
