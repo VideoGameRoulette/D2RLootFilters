@@ -26,11 +26,31 @@ export interface Catalog {
 
 /** Equipment quality tier for base filtering (normal / exceptional / elite). */
 export type EquipmentQuality = "normal" | "exceptional" | "elite";
+export type ArmorWeightClass = "light" | "medium" | "heavy";
+
+export interface DamageRange {
+  min: number;
+  max: number;
+}
 
 /** Bases catalog entry (catalog.bases.json): header or base item */
 export type BasesCatalogEntry =
   | { kind: "header"; label: string }
-  | { code: string; label: string; slot?: string; quality?: EquipmentQuality };
+  | {
+      code: string;
+      label: string;
+      slot?: string;
+      quality?: EquipmentQuality;
+      minDefense?: number;
+      maxDefense?: number;
+      oneHandDamage?: DamageRange;
+      twoHandDamage?: DamageRange;
+      armorWeightClass?: ArmorWeightClass;
+      maxSockets?: number;
+      requiredStrength?: number;
+      requiredDexterity?: number;
+      requiredLevel?: number;
+    };
 
 export interface BasesCatalog {
   name: string;
@@ -75,6 +95,18 @@ export interface QuestCatalog {
   source?: Record<string, unknown>;
 }
 
+/** Misc catalog entry (catalog.misc.json): header or misc item */
+export type MiscCatalogEntry =
+  | { kind: "header"; label: string }
+  | { code: string; label: string; slot?: string };
+
+export interface MiscCatalog {
+  name: string;
+  entries: MiscCatalogEntry[];
+  generatedAt?: string;
+  source?: Record<string, unknown>;
+}
+
 /** Item for the list: single code or a bundle (whole set) with multiple codes */
 export interface SelectableItem {
   /** Unique key (single code, or "bundle:code1,code2,..." for bundles; for uniques "baseCode|label") */
@@ -90,6 +122,20 @@ export interface SelectableItem {
   baseName?: string;
   /** Base equipment quality (for filtering Normal/Exceptional/Elite). */
   quality?: EquipmentQuality;
+  /** Base defense range for armor-like items. */
+  minDefense?: number;
+  maxDefense?: number;
+  /** Base weapon damage ranges. */
+  oneHandDamage?: DamageRange;
+  twoHandDamage?: DamageRange;
+  /** Armor movement class. */
+  armorWeightClass?: ArmorWeightClass;
+  /** Maximum sockets for the base item. */
+  maxSockets?: number;
+  /** Attribute/level requirements. */
+  requiredStrength?: number;
+  requiredDexterity?: number;
+  requiredLevel?: number;
   /** Image asset code (e.g. unique invfile); when set, used instead of codes[0] for item image. */
   imageCode?: string;
   /** Maxroll/D2Planner image id (e.g. unique381, set042); when set, use /item-unique/{id}.webp or /item-set/{id}.webp. */

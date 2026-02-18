@@ -1,6 +1,6 @@
 {
   "name": "Bases Catalog",
-  "generatedAt": "2026-02-15T16:34:12.679Z",
+  "generatedAt": "2026-02-18T17:40:51.036Z",
   "source": {
     "armor": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/armor.json",
     "weapons": "https://raw.githubusercontent.com/blizzhackers/d2data/master/json/weapons.json",
@@ -15,349 +15,684 @@
       "code": "ba1",
       "label": "Jawbone Cap",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 10,
+      "maxDefense": 15,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 25,
+      "requiredLevel": 3
     },
     {
       "code": "ba2",
       "label": "Fanged Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 15,
+      "maxDefense": 20,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 35,
+      "requiredLevel": 6
     },
     {
       "code": "ba3",
       "label": "Horned Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 25,
+      "maxDefense": 30,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 45,
+      "requiredLevel": 12
     },
     {
       "code": "ba4",
       "label": "Assault Helmet",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 30,
+      "maxDefense": 35,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 55,
+      "requiredLevel": 15
     },
     {
       "code": "ba5",
       "label": "Avenger Guard",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 35,
+      "maxDefense": 50,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 18
     },
     {
       "code": "ba6",
       "label": "Jawbone Visor",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 55,
+      "maxDefense": 68,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 25
     },
     {
       "code": "ba7",
       "label": "Lion Helm",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 63,
+      "maxDefense": 75,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 73,
+      "requiredLevel": 29
     },
     {
       "code": "ba8",
       "label": "Rage Mask",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 78,
+      "maxDefense": 90,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 88,
+      "requiredLevel": 29
     },
     {
       "code": "ba9",
       "label": "Savage Helmet",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 85,
+      "maxDefense": 98,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 103,
+      "requiredLevel": 32
     },
     {
       "code": "baa",
       "label": "Slayer Guard",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 93,
+      "maxDefense": 120,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 118,
+      "requiredLevel": 40
     },
     {
       "code": "bab",
       "label": "Carnage Helm",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 102,
+      "maxDefense": 147,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 45
     },
     {
       "code": "bac",
       "label": "Fury Visor",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 105,
+      "maxDefense": 150,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 129,
+      "requiredLevel": 49
     },
     {
       "code": "bad",
       "label": "Destroyer Helm",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 111,
+      "maxDefense": 156,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 151,
+      "requiredLevel": 54
     },
     {
       "code": "bae",
       "label": "Conqueror Crown",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 114,
+      "maxDefense": 159,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 174,
+      "requiredLevel": 60
     },
     {
       "code": "baf",
       "label": "Guardian Crown",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 117,
+      "maxDefense": 168,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 196,
+      "requiredLevel": 65
     },
     {
       "code": "bhm",
       "label": "Bone Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 33,
+      "maxDefense": 36,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 25
     },
     {
       "code": "cap",
       "label": "Cap",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 3,
+      "maxDefense": 5,
+      "maxSockets": 2,
+      "armorWeightClass": "light"
     },
     {
       "code": "ci0",
       "label": "Circlet",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 20,
+      "maxDefense": 30,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredLevel": 16
     },
     {
       "code": "ci1",
       "label": "Coronet",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 30,
+      "maxDefense": 40,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredLevel": 39
     },
     {
       "code": "ci2",
       "label": "Tiara",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 40,
+      "maxDefense": 50,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredLevel": 52
     },
     {
       "code": "ci3",
       "label": "Diadem",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 50,
+      "maxDefense": 60,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredLevel": 64
     },
     {
       "code": "crn",
       "label": "Crown",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 25,
+      "maxDefense": 45,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 55
     },
     {
       "code": "dr1",
       "label": "Wolf Head",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 11,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 16,
+      "requiredLevel": 3
     },
     {
       "code": "dr2",
       "label": "Hawk Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 4,
+      "maxDefense": 15,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 6
     },
     {
       "code": "dr3",
       "label": "Antlers",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 18,
+      "maxDefense": 24,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 24,
+      "requiredLevel": 12
     },
     {
       "code": "dr4",
       "label": "Falcon Mask",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 12,
+      "maxDefense": 28,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 28,
+      "requiredLevel": 15
     },
     {
       "code": "dr5",
       "label": "Spirit Mask",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 22,
+      "maxDefense": 35,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 30,
+      "requiredLevel": 18
     },
     {
       "code": "dr6",
       "label": "Alpha Helm",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 52,
+      "maxDefense": 62,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 44,
+      "requiredLevel": 26
     },
     {
       "code": "dr7",
       "label": "Griffon Headress",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 46,
+      "maxDefense": 68,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 30
     },
     {
       "code": "dr8",
       "label": "Hunter's Guise",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 67,
+      "maxDefense": 81,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 56,
+      "requiredLevel": 29
     },
     {
       "code": "dr9",
       "label": "Sacred Feathers",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 58,
+      "maxDefense": 87,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 62,
+      "requiredLevel": 32
     },
     {
       "code": "dra",
       "label": "Totemic Mask",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 73,
+      "maxDefense": 98,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 41
     },
     {
       "code": "drb",
       "label": "Blood Spirit",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 101,
+      "maxDefense": 145,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 86,
+      "requiredLevel": 46
     },
     {
       "code": "drc",
       "label": "Sun Spirit",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 98,
+      "maxDefense": 147,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 95,
+      "requiredLevel": 51
     },
     {
       "code": "drd",
       "label": "Earth Spirit",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 107,
+      "maxDefense": 152,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 104,
+      "requiredLevel": 57
     },
     {
       "code": "dre",
       "label": "Sky Spirit",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 103,
+      "maxDefense": 155,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 113,
+      "requiredLevel": 62
     },
     {
       "code": "drf",
       "label": "Dream Spirit",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 109,
+      "maxDefense": 159,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 118,
+      "requiredLevel": 66
     },
     {
       "code": "fhl",
       "label": "Full Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 23,
+      "maxDefense": 26,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 41
     },
     {
       "code": "ghm",
       "label": "Great Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 30,
+      "maxDefense": 35,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 63
     },
     {
       "code": "hlm",
       "label": "Helm",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 15,
+      "maxDefense": 18,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 26
     },
     {
       "code": "msk",
       "label": "Mask",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 9,
+      "maxDefense": 27,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 23
     },
     {
       "code": "skp",
       "label": "Skull Cap",
       "slot": "Helm",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 11,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 15
     },
     {
       "code": "uap",
       "label": "Shako",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 98,
+      "maxDefense": 141,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 43
     },
     {
       "code": "uh9",
       "label": "Bone Visage",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 100,
+      "maxDefense": 157,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 63
     },
     {
       "code": "uhl",
       "label": "Giant Conch",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 110,
+      "maxDefense": 154,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 142,
+      "requiredLevel": 40
     },
     {
       "code": "uhm",
       "label": "Spired Helm",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 114,
+      "maxDefense": 159,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 192,
+      "requiredLevel": 59
     },
     {
       "code": "ukp",
       "label": "Hydraskull",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 101,
+      "maxDefense": 145,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 84,
+      "requiredLevel": 47
     },
     {
       "code": "ulm",
       "label": "Armet",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 105,
+      "maxDefense": 149,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 109,
+      "requiredLevel": 51
     },
     {
       "code": "urn",
       "label": "Corona",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 111,
+      "maxDefense": 165,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 174,
+      "requiredLevel": 66
     },
     {
       "code": "usk",
       "label": "Demonhead",
       "slot": "Helm",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 101,
+      "maxDefense": 154,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 102,
+      "requiredLevel": 55
     },
     {
       "code": "xap",
       "label": "War Hat",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 45,
+      "maxDefense": 53,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 22
     },
     {
       "code": "xh9",
       "label": "Grim Helm",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 60,
+      "maxDefense": 125,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 25
     },
     {
       "code": "xhl",
       "label": "Basinet",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 75,
+      "maxDefense": 84,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 82,
+      "requiredLevel": 25
     },
     {
       "code": "xhm",
       "label": "Winged Helm",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 85,
+      "maxDefense": 98,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 115,
+      "requiredLevel": 25
     },
     {
       "code": "xkp",
       "label": "Sallet",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 52,
+      "maxDefense": 62,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 43,
+      "requiredLevel": 25
     },
     {
       "code": "xlm",
       "label": "Casque",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 63,
+      "maxDefense": 72,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 59,
+      "requiredLevel": 25
     },
     {
       "code": "xrn",
       "label": "Grand Crown",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 78,
+      "maxDefense": 113,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 103,
+      "requiredLevel": 25
     },
     {
       "code": "xsk",
       "label": "Death Mask",
       "slot": "Helm",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 54,
+      "maxDefense": 86,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 55,
+      "requiredLevel": 25
     },
     {
       "kind": "header",
@@ -367,361 +702,706 @@
       "code": "aar",
       "label": "Ancient Armor",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 218,
+      "maxDefense": 233,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 100
     },
     {
       "code": "brs",
       "label": "Breast Plate",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 65,
+      "maxDefense": 68,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 30
     },
     {
       "code": "chn",
       "label": "Chain Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 72,
+      "maxDefense": 75,
+      "maxSockets": 2,
+      "armorWeightClass": "medium",
+      "requiredStrength": 48
     },
     {
       "code": "fld",
       "label": "Field Plate",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 101,
+      "maxDefense": 105,
+      "maxSockets": 2,
+      "armorWeightClass": "medium",
+      "requiredStrength": 55
     },
     {
       "code": "ful",
       "label": "Full Plate Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 150,
+      "maxDefense": 161,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 80
     },
     {
       "code": "gth",
       "label": "Gothic Plate",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 128,
+      "maxDefense": 135,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 70
     },
     {
       "code": "hla",
       "label": "Hard Leather Armor",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 21,
+      "maxDefense": 24,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 20
     },
     {
       "code": "lea",
       "label": "Leather Armor",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 14,
+      "maxDefense": 17,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 15
     },
     {
       "code": "ltp",
       "label": "Light Plate",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 90,
+      "maxDefense": 107,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 41
     },
     {
       "code": "plt",
       "label": "Plate Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 108,
+      "maxDefense": 116,
+      "maxSockets": 2,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 65
     },
     {
       "code": "qui",
       "label": "Quilted Armor",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 11,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 12
     },
     {
       "code": "rng",
       "label": "Ring Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 45,
+      "maxDefense": 48,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 36
     },
     {
       "code": "scl",
       "label": "Scale Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 57,
+      "maxDefense": 60,
+      "maxSockets": 2,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 44
     },
     {
       "code": "spl",
       "label": "Splint Mail",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 90,
+      "maxDefense": 95,
+      "maxSockets": 2,
+      "armorWeightClass": "medium",
+      "requiredStrength": 51
     },
     {
       "code": "stu",
       "label": "Studded Leather",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 32,
+      "maxDefense": 35,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 27
     },
     {
       "code": "uar",
       "label": "Sacred Armor",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 487,
+      "maxDefense": 600,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 232,
+      "requiredLevel": 66
     },
     {
       "code": "ucl",
       "label": "Loricated Mail",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 390,
+      "maxDefense": 496,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 149,
+      "requiredLevel": 55
     },
     {
       "code": "uea",
       "label": "Wyrmhide",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 364,
+      "maxDefense": 470,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 84,
+      "requiredLevel": 50
     },
     {
       "code": "uhn",
       "label": "Boneweave",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 399,
+      "maxDefense": 505,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 158,
+      "requiredLevel": 47
     },
     {
       "code": "ula",
       "label": "Scarab Husk",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 369,
+      "maxDefense": 474,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 95,
+      "requiredLevel": 51
     },
     {
       "code": "uld",
       "label": "Kraken Shell",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 417,
+      "maxDefense": 523,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 174,
+      "requiredLevel": 61
     },
     {
       "code": "ult",
       "label": "Hellforge Plate",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 421,
+      "maxDefense": 530,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 196,
+      "requiredLevel": 59
     },
     {
       "code": "ung",
       "label": "Diamond Mail",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 383,
+      "maxDefense": 489,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 131,
+      "requiredLevel": 54
     },
     {
       "code": "upl",
       "label": "Balrog Skin",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 410,
+      "maxDefense": 517,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 165,
+      "requiredLevel": 57
     },
     {
       "code": "urs",
       "label": "Great Hauberk",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 395,
+      "maxDefense": 501,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 118,
+      "requiredLevel": 56
     },
     {
       "code": "uth",
       "label": "Lacquered Plate",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 433,
+      "maxDefense": 541,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 208,
+      "requiredLevel": 62
     },
     {
       "code": "utp",
       "label": "Archon Plate",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 410,
+      "maxDefense": 524,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 103,
+      "requiredLevel": 63
     },
     {
       "code": "utu",
       "label": "Wire Fleece",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 375,
+      "maxDefense": 481,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 111,
+      "requiredLevel": 53
     },
     {
       "code": "uui",
       "label": "Dusk Shroud",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 361,
+      "maxDefense": 467,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 77,
+      "requiredLevel": 49
     },
     {
       "code": "uul",
       "label": "Shadow Plate",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 446,
+      "maxDefense": 557,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 230,
+      "requiredLevel": 64
     },
     {
       "code": "wa1",
       "label": "Old Book",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 2,
+      "maxDefense": 5,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 12,
+      "requiredLevel": 3
     },
     {
       "code": "wa2",
       "label": "Tome",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 4,
+      "maxDefense": 8,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 14,
+      "requiredLevel": 6
     },
     {
       "code": "wa3",
       "label": "Codex",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 6,
+      "maxDefense": 10,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 18,
+      "requiredLevel": 12
     },
     {
       "code": "wa4",
       "label": "Compendium",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 10,
+      "maxDefense": 16,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 15
     },
     {
       "code": "wa5",
       "label": "Grimoire",
       "slot": "Armor",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 15,
+      "maxDefense": 20,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 25,
+      "requiredLevel": 18
     },
     {
       "code": "wa6",
       "label": "Burnt Text",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 38,
+      "maxDefense": 48,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 38,
+      "requiredLevel": 24
     },
     {
       "code": "wa7",
       "label": "Dark Tome",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 41,
+      "maxDefense": 52,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 41,
+      "requiredLevel": 29
     },
     {
       "code": "wa8",
       "label": "Dark Codex",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 44,
+      "maxDefense": 55,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 47,
+      "requiredLevel": 33
     },
     {
       "code": "wa9",
       "label": "Possessed Compendium",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 50,
+      "maxDefense": 64,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 36
     },
     {
       "code": "waa",
       "label": "Possessed Grimoire",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 58,
+      "maxDefense": 70,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 40
     },
     {
       "code": "wab",
       "label": "Forgotten Volume",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 95,
+      "maxDefense": 139,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 77,
+      "requiredLevel": 44
     },
     {
       "code": "wac",
       "label": "Occult Tome",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 96,
+      "maxDefense": 141,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 82,
+      "requiredLevel": 49
     },
     {
       "code": "wad",
       "label": "Occult Codex",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 98,
+      "maxDefense": 142,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 91,
+      "requiredLevel": 50
     },
     {
       "code": "wae",
       "label": "Blasphemous Compendium",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 100,
+      "maxDefense": 146,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 95,
+      "requiredLevel": 60
     },
     {
       "code": "waf",
       "label": "Blasphemous Grimoire",
       "slot": "Armor",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 103,
+      "maxDefense": 148,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 65
     },
     {
       "code": "xar",
       "label": "Ornate Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 417,
+      "maxDefense": 450,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 170,
+      "requiredLevel": 25
     },
     {
       "code": "xcl",
       "label": "Tigulated Mail",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 176,
+      "maxDefense": 190,
+      "maxSockets": 3,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 86,
+      "requiredLevel": 25
     },
     {
       "code": "xea",
       "label": "Serpentskin Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 111,
+      "maxDefense": 126,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 43,
+      "requiredLevel": 24
     },
     {
       "code": "xhn",
       "label": "Mesh Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 198,
+      "maxDefense": 213,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 92,
+      "requiredLevel": 25
     },
     {
       "code": "xla",
       "label": "Demonhide Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 122,
+      "maxDefense": 136,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 25
     },
     {
       "code": "xld",
       "label": "Sharktooth Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 242,
+      "maxDefense": 258,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 103,
+      "requiredLevel": 25
     },
     {
       "code": "xlt",
       "label": "Templar Coat",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 252,
+      "maxDefense": 274,
+      "maxSockets": 3,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 118,
+      "requiredLevel": 25
     },
     {
       "code": "xng",
       "label": "Linked Mail",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 158,
+      "maxDefense": 172,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 74,
+      "requiredLevel": 25
     },
     {
       "code": "xpl",
       "label": "Russet Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 225,
+      "maxDefense": 243,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 97,
+      "requiredLevel": 25
     },
     {
       "code": "xrs",
       "label": "Cuirass",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 188,
+      "maxDefense": 202,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 25
     },
     {
       "code": "xth",
       "label": "Embossed Plate",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 282,
+      "maxDefense": 303,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 125,
+      "requiredLevel": 25
     },
     {
       "code": "xtp",
       "label": "Mage Plate",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 225,
+      "maxDefense": 261,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 55,
+      "requiredLevel": 25
     },
     {
       "code": "xtu",
       "label": "Trellised Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 138,
+      "maxDefense": 153,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 61,
+      "requiredLevel": 25
     },
     {
       "code": "xui",
       "label": "Ghost Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 102,
+      "maxDefense": 117,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 38,
+      "requiredLevel": 22
     },
     {
       "code": "xul",
       "label": "Chaos Armor",
       "slot": "Armor",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 315,
+      "maxDefense": 342,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 140,
+      "requiredLevel": 25
     },
     {
       "kind": "header",
@@ -731,1837 +1411,4060 @@
       "code": "2ax",
       "label": "Double Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 13
+      },
+      "maxSockets": 5,
+      "requiredStrength": 43
     },
     {
       "code": "2hs",
       "label": "Two-Handed Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 9
+      },
+      "twoHandDamage": {
+        "min": 8,
+        "max": 17
+      },
+      "maxSockets": 3,
+      "requiredStrength": 35,
+      "requiredDexterity": 27
     },
     {
       "code": "6bs",
       "label": "Shillelagh",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 65,
+        "max": 108
+      },
+      "maxSockets": 4,
+      "requiredStrength": 52,
+      "requiredDexterity": 27,
+      "requiredLevel": 62
     },
     {
       "code": "6cb",
       "label": "Great Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 52
+      },
+      "maxSockets": 4,
+      "requiredStrength": 121,
+      "requiredDexterity": 107,
+      "requiredLevel": 51
     },
     {
       "code": "6cs",
       "label": "Elder Staff",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 80,
+        "max": 93
+      },
+      "maxSockets": 4,
+      "requiredStrength": 44,
+      "requiredDexterity": 37,
+      "requiredLevel": 55
     },
     {
       "code": "6hb",
       "label": "Blade Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 21,
+        "max": 41
+      },
+      "maxSockets": 4,
+      "requiredStrength": 76,
+      "requiredDexterity": 119,
+      "requiredLevel": 45
     },
     {
       "code": "6hx",
       "label": "Colossus Crossbow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 32,
+        "max": 91
+      },
+      "maxSockets": 6,
+      "requiredStrength": 163,
+      "requiredDexterity": 77,
+      "requiredLevel": 56
     },
     {
       "code": "6l7",
       "label": "Crusader Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 15,
+        "max": 63
+      },
+      "maxSockets": 6,
+      "requiredStrength": 97,
+      "requiredDexterity": 121,
+      "requiredLevel": 57
     },
     {
       "code": "6lb",
       "label": "Shadow Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 15,
+        "max": 59
+      },
+      "maxSockets": 5,
+      "requiredStrength": 52,
+      "requiredDexterity": 188,
+      "requiredLevel": 47
     },
     {
       "code": "6ls",
       "label": "Stalagmite",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 75,
+        "max": 107
+      },
+      "maxSockets": 3,
+      "requiredStrength": 63,
+      "requiredDexterity": 35,
+      "requiredLevel": 49
     },
     {
       "code": "6lw",
       "label": "Hydra Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 68
+      },
+      "maxSockets": 6,
+      "requiredStrength": 134,
+      "requiredDexterity": 167,
+      "requiredLevel": 63
     },
     {
       "code": "6lx",
       "label": "Pellet Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 28,
+        "max": 73
+      },
+      "maxSockets": 3,
+      "requiredStrength": 83,
+      "requiredDexterity": 155,
+      "requiredLevel": 42
     },
     {
       "code": "6mx",
       "label": "Gorgon Crossbow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 25,
+        "max": 87
+      },
+      "maxSockets": 4,
+      "requiredStrength": 117,
+      "requiredDexterity": 105,
+      "requiredLevel": 50
     },
     {
       "code": "6rx",
       "label": "Demon Crossbow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 26,
+        "max": 40
+      },
+      "maxSockets": 5,
+      "requiredStrength": 141,
+      "requiredDexterity": 98,
+      "requiredLevel": 63
     },
     {
       "code": "6s7",
       "label": "Diamond Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 33,
+        "max": 40
+      },
+      "maxSockets": 5,
+      "requiredStrength": 89,
+      "requiredDexterity": 132,
+      "requiredLevel": 54
     },
     {
       "code": "6sb",
       "label": "Spider Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 23,
+        "max": 50
+      },
+      "maxSockets": 3,
+      "requiredStrength": 64,
+      "requiredDexterity": 143,
+      "requiredLevel": 41
     },
     {
       "code": "6ss",
       "label": "Walking Stick",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 69,
+        "max": 85
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 43
     },
     {
       "code": "6sw",
       "label": "Ward Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 20,
+        "max": 53
+      },
+      "maxSockets": 5,
+      "requiredStrength": 72,
+      "requiredDexterity": 146,
+      "requiredLevel": 60
     },
     {
       "code": "6ws",
       "label": "Archon Staff",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 83,
+        "max": 99
+      },
+      "maxSockets": 6,
+      "requiredStrength": 34,
+      "requiredLevel": 66
     },
     {
       "code": "72a",
       "label": "Ettin Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 33,
+        "max": 66
+      },
+      "maxSockets": 5,
+      "requiredStrength": 145,
+      "requiredDexterity": 45,
+      "requiredLevel": 52
     },
     {
       "code": "72h",
       "label": "Legend Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 22,
+        "max": 56
+      },
+      "twoHandDamage": {
+        "min": 50,
+        "max": 94
+      },
+      "maxSockets": 3,
+      "requiredStrength": 175,
+      "requiredDexterity": 100,
+      "requiredLevel": 44
     },
     {
       "code": "7ar",
       "label": "Suwayyah",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 39,
+        "max": 52
+      },
+      "maxSockets": 3,
+      "requiredStrength": 99,
+      "requiredDexterity": 99,
+      "requiredLevel": 44
     },
     {
       "code": "7ax",
       "label": "Small Crescent",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 38,
+        "max": 60
+      },
+      "maxSockets": 4,
+      "requiredStrength": 115,
+      "requiredDexterity": 83,
+      "requiredLevel": 45
     },
     {
       "code": "7b7",
       "label": "Champion Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 24,
+        "max": 54
+      },
+      "twoHandDamage": {
+        "min": 71,
+        "max": 83
+      },
+      "maxSockets": 4,
+      "requiredStrength": 163,
+      "requiredDexterity": 103,
+      "requiredLevel": 57
     },
     {
       "code": "7b8",
       "label": "Winged Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 11,
+        "max": 56
+      },
+      "requiredStrength": 96,
+      "requiredDexterity": 122,
+      "requiredLevel": 60
     },
     {
       "code": "7ba",
       "label": "Silver-edged Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 62,
+        "max": 110
+      },
+      "maxSockets": 5,
+      "requiredStrength": 166,
+      "requiredDexterity": 65,
+      "requiredLevel": 48
     },
     {
       "code": "7bk",
       "label": "Winged Knife",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 27,
+        "max": 35
+      },
+      "requiredStrength": 45,
+      "requiredDexterity": 142,
+      "requiredLevel": 57
     },
     {
       "code": "7bl",
       "label": "Legend Spike",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 31,
+        "max": 47
+      },
+      "maxSockets": 3,
+      "requiredStrength": 65,
+      "requiredDexterity": 67,
+      "requiredLevel": 66
     },
     {
       "code": "7br",
       "label": "Mancatcher",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 42,
+        "max": 92
+      },
+      "maxSockets": 5,
+      "requiredStrength": 132,
+      "requiredDexterity": 134,
+      "requiredLevel": 55
     },
     {
       "code": "7bs",
       "label": "Conquest Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 37,
+        "max": 53
+      },
+      "maxSockets": 4,
+      "requiredStrength": 142,
+      "requiredDexterity": 112,
+      "requiredLevel": 58
     },
     {
       "code": "7bt",
       "label": "Decapitator",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 49,
+        "max": 137
+      },
+      "maxSockets": 5,
+      "requiredStrength": 189,
+      "requiredDexterity": 33,
+      "requiredLevel": 54
     },
     {
       "code": "7bw",
       "label": "Lich Wand",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 31
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 56
     },
     {
       "code": "7cl",
       "label": "Truncheon",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 35,
+        "max": 43
+      },
+      "maxSockets": 2,
+      "requiredStrength": 88,
+      "requiredDexterity": 43,
+      "requiredLevel": 39
     },
     {
       "code": "7cm",
       "label": "Highland Blade",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 22,
+        "max": 62
+      },
+      "twoHandDamage": {
+        "min": 67,
+        "max": 96
+      },
+      "maxSockets": 4,
+      "requiredStrength": 171,
+      "requiredDexterity": 104,
+      "requiredLevel": 49
     },
     {
       "code": "7cr",
       "label": "Phase Blade",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 31,
+        "max": 35
+      },
+      "maxSockets": 6,
+      "requiredStrength": 25,
+      "requiredDexterity": 136,
+      "requiredLevel": 54
     },
     {
       "code": "7cs",
       "label": "Battle Cestus",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 36,
+        "max": 42
+      },
+      "maxSockets": 2,
+      "requiredStrength": 110,
+      "requiredDexterity": 110,
+      "requiredLevel": 54
     },
     {
       "code": "7dg",
       "label": "Bone Knife",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 23,
+        "max": 49
+      },
+      "maxSockets": 1,
+      "requiredStrength": 38,
+      "requiredDexterity": 75,
+      "requiredLevel": 43
     },
     {
       "code": "7di",
       "label": "Mithral Point",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 37,
+        "max": 53
+      },
+      "maxSockets": 1,
+      "requiredStrength": 55,
+      "requiredDexterity": 98,
+      "requiredLevel": 52
     },
     {
       "code": "7fb",
       "label": "Colossal Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 26,
+        "max": 70
+      },
+      "twoHandDamage": {
+        "min": 61,
+        "max": 121
+      },
+      "maxSockets": 5,
+      "requiredStrength": 182,
+      "requiredDexterity": 95,
+      "requiredLevel": 60
     },
     {
       "code": "7fc",
       "label": "Hydra Edge",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 28,
+        "max": 68
+      },
+      "maxSockets": 2,
+      "requiredStrength": 142,
+      "requiredDexterity": 105,
+      "requiredLevel": 51
     },
     {
       "code": "7fl",
       "label": "Scourge",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 80
+      },
+      "maxSockets": 5,
+      "requiredStrength": 125,
+      "requiredDexterity": 77,
+      "requiredLevel": 57
     },
     {
       "code": "7ga",
       "label": "Champion Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 59,
+        "max": 94
+      },
+      "maxSockets": 6,
+      "requiredStrength": 167,
+      "requiredDexterity": 59,
+      "requiredLevel": 61
     },
     {
       "code": "7gd",
       "label": "Colossus Blade",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 25,
+        "max": 65
+      },
+      "twoHandDamage": {
+        "min": 58,
+        "max": 115
+      },
+      "maxSockets": 6,
+      "requiredStrength": 189,
+      "requiredDexterity": 110,
+      "requiredLevel": 63
     },
     {
       "code": "7gi",
       "label": "Glorious Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 60,
+        "max": 124
+      },
+      "maxSockets": 6,
+      "requiredStrength": 164,
+      "requiredDexterity": 55,
+      "requiredLevel": 66
     },
     {
       "code": "7gl",
       "label": "Ghost Glaive",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 19,
+        "max": 60
+      },
+      "requiredStrength": 89,
+      "requiredDexterity": 137,
+      "requiredLevel": 59
     },
     {
       "code": "7gm",
       "label": "Thunder Maul",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 33,
+        "max": 180
+      },
+      "maxSockets": 6,
+      "requiredStrength": 253,
+      "requiredLevel": 65
     },
     {
       "code": "7gs",
       "label": "Balrog Blade",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 15,
+        "max": 75
+      },
+      "twoHandDamage": {
+        "min": 55,
+        "max": 118
+      },
+      "maxSockets": 4,
+      "requiredStrength": 185,
+      "requiredDexterity": 87,
+      "requiredLevel": 53
     },
     {
       "code": "7gw",
       "label": "Unearthed Wand",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 22,
+        "max": 28
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 64
     },
     {
       "code": "7h7",
       "label": "Great Poleaxe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 46,
+        "max": 127
+      },
+      "maxSockets": 6,
+      "requiredStrength": 179,
+      "requiredDexterity": 99,
+      "requiredLevel": 63
     },
     {
       "code": "7ha",
       "label": "Tomahawk",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 33,
+        "max": 58
+      },
+      "maxSockets": 2,
+      "requiredStrength": 125,
+      "requiredDexterity": 67,
+      "requiredLevel": 40
     },
     {
       "code": "7ja",
       "label": "Hyperion Javelin",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 21,
+        "max": 57
+      },
+      "requiredStrength": 98,
+      "requiredDexterity": 123,
+      "requiredLevel": 40
     },
     {
       "code": "7kr",
       "label": "Fanged Knife",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 15,
+        "max": 57
+      },
+      "maxSockets": 3,
+      "requiredStrength": 42,
+      "requiredDexterity": 86,
+      "requiredLevel": 62
     },
     {
       "code": "7la",
       "label": "Feral Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 25,
+        "max": 123
+      },
+      "maxSockets": 4,
+      "requiredStrength": 196,
+      "requiredLevel": 42
     },
     {
       "code": "7ls",
       "label": "Cryptic Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 77
+      },
+      "maxSockets": 4,
+      "requiredStrength": 99,
+      "requiredDexterity": 109,
+      "requiredLevel": 61
     },
     {
       "code": "7lw",
       "label": "Feral Claws",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 22,
+        "max": 53
+      },
+      "maxSockets": 3,
+      "requiredStrength": 113,
+      "requiredDexterity": 113,
+      "requiredLevel": 58
     },
     {
       "code": "7m7",
       "label": "Ogre Maul",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 77,
+        "max": 106
+      },
+      "maxSockets": 6,
+      "requiredStrength": 225,
+      "requiredLevel": 51
     },
     {
       "code": "7ma",
       "label": "Reinforced Mace",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 41,
+        "max": 49
+      },
+      "maxSockets": 2,
+      "requiredStrength": 145,
+      "requiredDexterity": 46,
+      "requiredLevel": 47
     },
     {
       "code": "7mp",
       "label": "War Spike",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 30,
+        "max": 48
+      },
+      "maxSockets": 6,
+      "requiredStrength": 133,
+      "requiredDexterity": 54,
+      "requiredLevel": 59
     },
     {
       "code": "7mt",
       "label": "Devil Star",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 43,
+        "max": 53
+      },
+      "maxSockets": 3,
+      "requiredStrength": 153,
+      "requiredDexterity": 44,
+      "requiredLevel": 52
     },
     {
       "code": "7o7",
       "label": "Ogre Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 28,
+        "max": 145
+      },
+      "maxSockets": 3,
+      "requiredStrength": 195,
+      "requiredDexterity": 75,
+      "requiredLevel": 45
     },
     {
       "code": "7p7",
       "label": "War Pike",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 33,
+        "max": 178
+      },
+      "maxSockets": 6,
+      "requiredStrength": 165,
+      "requiredDexterity": 106,
+      "requiredLevel": 66
     },
     {
       "code": "7pa",
       "label": "Cryptic Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 33,
+        "max": 150
+      },
+      "maxSockets": 5,
+      "requiredStrength": 165,
+      "requiredDexterity": 103,
+      "requiredLevel": 59
     },
     {
       "code": "7pi",
       "label": "Stygian Pilum",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 14,
+        "max": 64
+      },
+      "requiredStrength": 118,
+      "requiredDexterity": 112,
+      "requiredLevel": 46
     },
     {
       "code": "7qr",
       "label": "Scissors Suwayyah",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 40,
+        "max": 51
+      },
+      "maxSockets": 3,
+      "requiredStrength": 118,
+      "requiredDexterity": 118,
+      "requiredLevel": 64
     },
     {
       "code": "7qs",
       "label": "Seraph Rod",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 45,
+        "max": 54
+      },
+      "maxSockets": 3,
+      "requiredStrength": 108,
+      "requiredDexterity": 69,
+      "requiredLevel": 57
     },
     {
       "code": "7s7",
       "label": "Balrog Spear",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 33,
+        "max": 63
+      },
+      "requiredStrength": 127,
+      "requiredDexterity": 95,
+      "requiredLevel": 53
     },
     {
       "code": "7s8",
       "label": "Thresher",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 141
+      },
+      "maxSockets": 5,
+      "requiredStrength": 152,
+      "requiredDexterity": 118,
+      "requiredLevel": 53
     },
     {
       "code": "7sb",
       "label": "Elegant Blade",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 33,
+        "max": 45
+      },
+      "maxSockets": 2,
+      "requiredStrength": 109,
+      "requiredDexterity": 122,
+      "requiredLevel": 47
     },
     {
       "code": "7sc",
       "label": "Mighty Scepter",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 40,
+        "max": 52
+      },
+      "maxSockets": 2,
+      "requiredStrength": 125,
+      "requiredDexterity": 65,
+      "requiredLevel": 46
     },
     {
       "code": "7sm",
       "label": "Ataghan",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 26,
+        "max": 46
+      },
+      "maxSockets": 2,
+      "requiredStrength": 138,
+      "requiredDexterity": 95,
+      "requiredLevel": 45
     },
     {
       "code": "7sp",
       "label": "Tyrant Club",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 32,
+        "max": 58
+      },
+      "maxSockets": 3,
+      "requiredStrength": 133,
+      "requiredLevel": 42
     },
     {
       "code": "7sr",
       "label": "Hyperion Spear",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 35,
+        "max": 119
+      },
+      "maxSockets": 3,
+      "requiredStrength": 155,
+      "requiredDexterity": 120,
+      "requiredLevel": 43
     },
     {
       "code": "7ss",
       "label": "Falcata",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 31,
+        "max": 59
+      },
+      "maxSockets": 2,
+      "requiredStrength": 150,
+      "requiredDexterity": 88,
+      "requiredLevel": 42
     },
     {
       "code": "7st",
       "label": "Ghost Spear",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 18,
+        "max": 155
+      },
+      "maxSockets": 6,
+      "requiredStrength": 122,
+      "requiredDexterity": 163,
+      "requiredLevel": 62
     },
     {
       "code": "7ta",
       "label": "Flying Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 17,
+        "max": 65
+      },
+      "requiredStrength": 88,
+      "requiredDexterity": 108,
+      "requiredLevel": 42
     },
     {
       "code": "7tk",
       "label": "Flying Knife",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 23,
+        "max": 54
+      },
+      "requiredStrength": 48,
+      "requiredDexterity": 141,
+      "requiredLevel": 48
     },
     {
       "code": "7tr",
       "label": "Stygian Pike",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 29,
+        "max": 144
+      },
+      "maxSockets": 4,
+      "requiredStrength": 168,
+      "requiredDexterity": 97,
+      "requiredLevel": 49
     },
     {
       "code": "7ts",
       "label": "Winged Harpoon",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 27,
+        "max": 35
+      },
+      "requiredStrength": 76,
+      "requiredDexterity": 145,
+      "requiredLevel": 65
     },
     {
       "code": "7tw",
       "label": "Runic Talons",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 24,
+        "max": 44
+      },
+      "maxSockets": 3,
+      "requiredStrength": 115,
+      "requiredDexterity": 115,
+      "requiredLevel": 60
     },
     {
       "code": "7vo",
       "label": "Colossus Voulge",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 17,
+        "max": 165
+      },
+      "maxSockets": 4,
+      "requiredStrength": 210,
+      "requiredDexterity": 55,
+      "requiredLevel": 48
     },
     {
       "code": "7wa",
       "label": "Berserker Axe",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 24,
+        "max": 71
+      },
+      "maxSockets": 6,
+      "requiredStrength": 138,
+      "requiredDexterity": 59,
+      "requiredLevel": 64
     },
     {
       "code": "7wb",
       "label": "Wrist Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 34,
+        "max": 45
+      },
+      "maxSockets": 3,
+      "requiredStrength": 105,
+      "requiredDexterity": 105,
+      "requiredLevel": 46
     },
     {
       "code": "7wc",
       "label": "Giant Thresher",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 40,
+        "max": 114
+      },
+      "maxSockets": 6,
+      "requiredStrength": 188,
+      "requiredDexterity": 140,
+      "requiredLevel": 66
     },
     {
       "code": "7wd",
       "label": "Mythical Sword",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 40,
+        "max": 50
+      },
+      "maxSockets": 3,
+      "requiredStrength": 147,
+      "requiredDexterity": 124,
+      "requiredLevel": 66
     },
     {
       "code": "7wh",
       "label": "Legendary Mallet",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 50,
+        "max": 61
+      },
+      "maxSockets": 4,
+      "requiredStrength": 189,
+      "requiredLevel": 61
     },
     {
       "code": "7wn",
       "label": "Polished Wand",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 33
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 41
     },
     {
       "code": "7ws",
       "label": "Caduceus",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 37,
+        "max": 43
+      },
+      "maxSockets": 5,
+      "requiredStrength": 97,
+      "requiredDexterity": 70,
+      "requiredLevel": 66
     },
     {
       "code": "7xf",
       "label": "War Fist",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 44,
+        "max": 53
+      },
+      "maxSockets": 2,
+      "requiredStrength": 108,
+      "requiredDexterity": 108,
+      "requiredLevel": 51
     },
     {
       "code": "7yw",
       "label": "Ghost Wand",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 20,
+        "max": 40
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 48
     },
     {
       "code": "8bs",
       "label": "Gothic Staff",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 34
+      },
+      "maxSockets": 4,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "8cb",
       "label": "Double Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 11,
+        "max": 26
+      },
+      "maxSockets": 4,
+      "requiredStrength": 58,
+      "requiredDexterity": 73,
+      "requiredLevel": 25
     },
     {
       "code": "8cs",
       "label": "Cedar Staff",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 11,
+        "max": 32
+      },
+      "maxSockets": 4,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "8hb",
       "label": "Razor Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 8,
+        "max": 22
+      },
+      "maxSockets": 4,
+      "requiredStrength": 25,
+      "requiredDexterity": 62,
+      "requiredLevel": 21
     },
     {
       "code": "8hx",
       "label": "Ballista",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 33,
+        "max": 55
+      },
+      "maxSockets": 6,
+      "requiredStrength": 110,
+      "requiredDexterity": 80,
+      "requiredLevel": 25
     },
     {
       "code": "8l8",
       "label": "Long Siege Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 42
+      },
+      "maxSockets": 6,
+      "requiredStrength": 80,
+      "requiredDexterity": 95,
+      "requiredLevel": 25
     },
     {
       "code": "8lb",
       "label": "Cedar Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 29
+      },
+      "maxSockets": 5,
+      "requiredStrength": 53,
+      "requiredDexterity": 49,
+      "requiredLevel": 23
     },
     {
       "code": "8ls",
       "label": "Quarterstaff",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 8,
+        "max": 26
+      },
+      "maxSockets": 3,
+      "requiredStrength": 25,
+      "requiredLevel": 23
     },
     {
       "code": "8lw",
       "label": "Gothic Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 50
+      },
+      "maxSockets": 6,
+      "requiredStrength": 95,
+      "requiredDexterity": 118,
+      "requiredLevel": 25
     },
     {
       "code": "8lx",
       "label": "Arbalest",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 27
+      },
+      "maxSockets": 3,
+      "requiredStrength": 52,
+      "requiredDexterity": 61,
+      "requiredLevel": 22
     },
     {
       "code": "8mx",
       "label": "Siege Crossbow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 20,
+        "max": 42
+      },
+      "maxSockets": 4,
+      "requiredStrength": 80,
+      "requiredDexterity": 70,
+      "requiredLevel": 25
     },
     {
       "code": "8rx",
       "label": "Chu-Ko-Nu",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 32
+      },
+      "maxSockets": 5,
+      "requiredStrength": 80,
+      "requiredDexterity": 95,
+      "requiredLevel": 25
     },
     {
       "code": "8s8",
       "label": "Short Siege Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 13,
+        "max": 30
+      },
+      "maxSockets": 5,
+      "requiredStrength": 65,
+      "requiredDexterity": 80,
+      "requiredLevel": 25
     },
     {
       "code": "8sb",
       "label": "Edge Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 19
+      },
+      "maxSockets": 3,
+      "requiredStrength": 25,
+      "requiredDexterity": 43,
+      "requiredLevel": 18
     },
     {
       "code": "8ss",
       "label": "Jo Staff",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 21
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 18
     },
     {
       "code": "8sw",
       "label": "Rune Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 35
+      },
+      "maxSockets": 5,
+      "requiredStrength": 73,
+      "requiredDexterity": 103,
+      "requiredLevel": 25
     },
     {
       "code": "8ws",
       "label": "Rune Staff",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 24,
+        "max": 58
+      },
+      "maxSockets": 6,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "92a",
       "label": "Twin Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 38
+      },
+      "maxSockets": 5,
+      "requiredStrength": 85,
+      "requiredLevel": 25
     },
     {
       "code": "92h",
       "label": "Espandon",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 26
+      },
+      "twoHandDamage": {
+        "min": 18,
+        "max": 40
+      },
+      "maxSockets": 3,
+      "requiredStrength": 73,
+      "requiredDexterity": 61,
+      "requiredLevel": 25
     },
     {
       "code": "9ar",
       "label": "Quhab",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 11,
+        "max": 24
+      },
+      "maxSockets": 3,
+      "requiredStrength": 57,
+      "requiredDexterity": 57,
+      "requiredLevel": 21
     },
     {
       "code": "9ax",
       "label": "Cleaver",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 33
+      },
+      "maxSockets": 4,
+      "requiredStrength": 68,
+      "requiredLevel": 22
     },
     {
       "code": "9b7",
       "label": "Lochaber Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 58
+      },
+      "maxSockets": 3,
+      "requiredStrength": 80,
+      "requiredLevel": 21
     },
     {
       "code": "9b8",
       "label": "Hurlbat",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 27
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 106,
+      "requiredLevel": 25
     },
     {
       "code": "9b9",
       "label": "Gothic Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 14,
+        "max": 40
+      },
+      "twoHandDamage": {
+        "min": 39,
+        "max": 60
+      },
+      "maxSockets": 4,
+      "requiredStrength": 113,
+      "requiredDexterity": 20,
+      "requiredLevel": 25
     },
     {
       "code": "9ba",
       "label": "Bearded Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 21,
+        "max": 49
+      },
+      "maxSockets": 5,
+      "requiredStrength": 92,
+      "requiredLevel": 25
     },
     {
       "code": "9bk",
       "label": "War Dart",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 24
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 97,
+      "requiredLevel": 25
     },
     {
       "code": "9bl",
       "label": "Stilleto",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 19,
+        "max": 36
+      },
+      "maxSockets": 3,
+      "requiredStrength": 47,
+      "requiredDexterity": 97,
+      "requiredLevel": 25
     },
     {
       "code": "9br",
       "label": "War Fork",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 16,
+        "max": 40
+      },
+      "maxSockets": 5,
+      "requiredStrength": 80,
+      "requiredDexterity": 95,
+      "requiredLevel": 25
     },
     {
       "code": "9bs",
       "label": "Battle Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 16,
+        "max": 34
+      },
+      "maxSockets": 4,
+      "requiredStrength": 92,
+      "requiredDexterity": 43,
+      "requiredLevel": 25
     },
     {
       "code": "9bt",
       "label": "Tabar",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 24,
+        "max": 77
+      },
+      "maxSockets": 5,
+      "requiredStrength": 101,
+      "requiredLevel": 25
     },
     {
       "code": "9bw",
       "label": "Tomb Wand",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 22
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "9cl",
       "label": "Cudgel",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 21
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 18
     },
     {
       "code": "9cm",
       "label": "Dacian Falx",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 30
+      },
+      "twoHandDamage": {
+        "min": 26,
+        "max": 61
+      },
+      "maxSockets": 4,
+      "requiredStrength": 91,
+      "requiredDexterity": 20,
+      "requiredLevel": 25
     },
     {
       "code": "9cr",
       "label": "Dimensional Blade",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 35
+      },
+      "maxSockets": 6,
+      "requiredStrength": 85,
+      "requiredDexterity": 60,
+      "requiredLevel": 25
     },
     {
       "code": "9cs",
       "label": "Hand Scythe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 16,
+        "max": 37
+      },
+      "maxSockets": 2,
+      "requiredStrength": 73,
+      "requiredDexterity": 73,
+      "requiredLevel": 30
     },
     {
       "code": "9dg",
       "label": "Poignard",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 18
+      },
+      "maxSockets": 1,
+      "requiredStrength": 25,
+      "requiredLevel": 19
     },
     {
       "code": "9di",
       "label": "Rondel",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 26
+      },
+      "maxSockets": 1,
+      "requiredStrength": 25,
+      "requiredDexterity": 58,
+      "requiredLevel": 24
     },
     {
       "code": "9fb",
       "label": "Zweihander",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 19,
+        "max": 35
+      },
+      "twoHandDamage": {
+        "min": 29,
+        "max": 54
+      },
+      "maxSockets": 5,
+      "requiredStrength": 125,
+      "requiredDexterity": 94,
+      "requiredLevel": 25
     },
     {
       "code": "9fc",
       "label": "Tulwar",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 16,
+        "max": 35
+      },
+      "maxSockets": 2,
+      "requiredStrength": 70,
+      "requiredDexterity": 42,
+      "requiredLevel": 25
     },
     {
       "code": "9fl",
       "label": "Knout",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 35
+      },
+      "maxSockets": 5,
+      "requiredStrength": 82,
+      "requiredDexterity": 73,
+      "requiredLevel": 25
     },
     {
       "code": "9ga",
       "label": "Gothic Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 18,
+        "max": 70
+      },
+      "maxSockets": 6,
+      "requiredStrength": 115,
+      "requiredDexterity": 79,
+      "requiredLevel": 25
     },
     {
       "code": "9gd",
       "label": "Executioner Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 24,
+        "max": 40
+      },
+      "twoHandDamage": {
+        "min": 47,
+        "max": 80
+      },
+      "maxSockets": 6,
+      "requiredStrength": 170,
+      "requiredDexterity": 110,
+      "requiredLevel": 25
     },
     {
       "code": "9gi",
       "label": "Ancient Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 43,
+        "max": 85
+      },
+      "maxSockets": 6,
+      "requiredStrength": 125,
+      "requiredLevel": 25
     },
     {
       "code": "9gl",
       "label": "Spiculum",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 38
+      },
+      "requiredStrength": 98,
+      "requiredDexterity": 73,
+      "requiredLevel": 25
     },
     {
       "code": "9gm",
       "label": "Martel de Fer",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 61,
+        "max": 99
+      },
+      "maxSockets": 6,
+      "requiredStrength": 169,
+      "requiredLevel": 25
     },
     {
       "code": "9gs",
       "label": "Tusk Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 37
+      },
+      "twoHandDamage": {
+        "min": 19,
+        "max": 58
+      },
+      "maxSockets": 4,
+      "requiredStrength": 104,
+      "requiredDexterity": 71,
+      "requiredLevel": 25
     },
     {
       "code": "9gw",
       "label": "Grave Wand",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 29
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "9h9",
       "label": "Bec-de-Corbin",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 13,
+        "max": 85
+      },
+      "maxSockets": 6,
+      "requiredStrength": 133,
+      "requiredDexterity": 91,
+      "requiredLevel": 25
     },
     {
       "code": "9ha",
       "label": "Hatchet",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 21
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredDexterity": 25,
+      "requiredLevel": 19
     },
     {
       "code": "9ja",
       "label": "War Javelin",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 19
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 25,
+      "requiredLevel": 18
     },
     {
       "code": "9kr",
       "label": "Cinquedeas",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 15,
+        "max": 31
+      },
+      "maxSockets": 3,
+      "requiredStrength": 25,
+      "requiredDexterity": 88,
+      "requiredLevel": 25
     },
     {
       "code": "9la",
       "label": "Military Axe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 34
+      },
+      "maxSockets": 4,
+      "requiredStrength": 73,
+      "requiredLevel": 22
     },
     {
       "code": "9ls",
       "label": "Rune Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 42
+      },
+      "maxSockets": 4,
+      "requiredStrength": 103,
+      "requiredDexterity": 79,
+      "requiredLevel": 25
     },
     {
       "code": "9lw",
       "label": "Greater Claws",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 37
+      },
+      "maxSockets": 3,
+      "requiredStrength": 76,
+      "requiredDexterity": 76,
+      "requiredLevel": 33
     },
     {
       "code": "9m9",
       "label": "War Club",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 53,
+        "max": 78
+      },
+      "maxSockets": 6,
+      "requiredStrength": 124,
+      "requiredLevel": 25
     },
     {
       "code": "9ma",
       "label": "Flanged Mace",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 15,
+        "max": 23
+      },
+      "maxSockets": 2,
+      "requiredStrength": 61,
+      "requiredLevel": 23
     },
     {
       "code": "9mp",
       "label": "Crowbill",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 14,
+        "max": 34
+      },
+      "maxSockets": 6,
+      "requiredStrength": 94,
+      "requiredDexterity": 70,
+      "requiredLevel": 25
     },
     {
       "code": "9mt",
       "label": "Jagged Star",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 20,
+        "max": 31
+      },
+      "maxSockets": 3,
+      "requiredStrength": 74,
+      "requiredLevel": 25
     },
     {
       "code": "9p9",
       "label": "Lance",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 27,
+        "max": 114
+      },
+      "maxSockets": 6,
+      "requiredStrength": 110,
+      "requiredDexterity": 88,
+      "requiredLevel": 25
     },
     {
       "code": "9pa",
       "label": "Partizan",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 34,
+        "max": 75
+      },
+      "maxSockets": 5,
+      "requiredStrength": 113,
+      "requiredDexterity": 67,
+      "requiredLevel": 23
     },
     {
       "code": "9pi",
       "label": "Great Pilum",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 11,
+        "max": 26
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 88,
+      "requiredLevel": 25
     },
     {
       "code": "9qr",
       "label": "Scissors Quhab",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 19,
+        "max": 40
+      },
+      "maxSockets": 3,
+      "requiredStrength": 82,
+      "requiredDexterity": 82,
+      "requiredLevel": 40
     },
     {
       "code": "9qs",
       "label": "Holy Water Sprinkler",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 14,
+        "max": 36
+      },
+      "maxSockets": 3,
+      "requiredStrength": 76,
+      "requiredLevel": 25
     },
     {
       "code": "9s8",
       "label": "Battle Scythe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 18,
+        "max": 45
+      },
+      "maxSockets": 5,
+      "requiredStrength": 82,
+      "requiredDexterity": 82,
+      "requiredLevel": 25
     },
     {
       "code": "9s9",
       "label": "Simbilan",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 32
+      },
+      "requiredStrength": 80,
+      "requiredDexterity": 80,
+      "requiredLevel": 25
     },
     {
       "code": "9sb",
       "label": "Shamshir",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 24
+      },
+      "maxSockets": 2,
+      "requiredStrength": 58,
+      "requiredDexterity": 58,
+      "requiredLevel": 23
     },
     {
       "code": "9sc",
       "label": "Rune Scepter",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 24
+      },
+      "maxSockets": 2,
+      "requiredStrength": 58,
+      "requiredLevel": 19
     },
     {
       "code": "9sm",
       "label": "Cutlass",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 21
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredDexterity": 52,
+      "requiredLevel": 25
     },
     {
       "code": "9sp",
       "label": "Barbed Club",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 25
+      },
+      "maxSockets": 3,
+      "requiredStrength": 30,
+      "requiredLevel": 20
     },
     {
       "code": "9sr",
       "label": "War Spear",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 37
+      },
+      "maxSockets": 3,
+      "requiredStrength": 25,
+      "requiredDexterity": 25,
+      "requiredLevel": 21
     },
     {
       "code": "9ss",
       "label": "Gladius",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 22
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 18
     },
     {
       "code": "9st",
       "label": "Yari",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 29,
+        "max": 59
+      },
+      "maxSockets": 6,
+      "requiredStrength": 101,
+      "requiredLevel": 25
     },
     {
       "code": "9ta",
       "label": "Francisca",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 11,
+        "max": 22
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 80,
+      "requiredLevel": 22
     },
     {
       "code": "9tk",
       "label": "Battle Dart",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 16
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 52,
+      "requiredLevel": 19
     },
     {
       "code": "9tr",
       "label": "Fuscina",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 19,
+        "max": 37
+      },
+      "maxSockets": 4,
+      "requiredStrength": 77,
+      "requiredDexterity": 25,
+      "requiredLevel": 24
     },
     {
       "code": "9ts",
       "label": "Harpoon",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 35
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 118,
+      "requiredLevel": 25
     },
     {
       "code": "9tw",
       "label": "Greater Talons",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 21,
+        "max": 35
+      },
+      "maxSockets": 3,
+      "requiredStrength": 79,
+      "requiredDexterity": 79,
+      "requiredLevel": 37
     },
     {
       "code": "9vo",
       "label": "Bill",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 53
+      },
+      "maxSockets": 4,
+      "requiredStrength": 95,
+      "requiredLevel": 25
     },
     {
       "code": "9wa",
       "label": "Naga",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 16,
+        "max": 45
+      },
+      "maxSockets": 6,
+      "requiredStrength": 121,
+      "requiredLevel": 25
     },
     {
       "code": "9wb",
       "label": "Wrist Spike",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 27
+      },
+      "maxSockets": 2,
+      "requiredStrength": 66,
+      "requiredDexterity": 66,
+      "requiredLevel": 24
     },
     {
       "code": "9wc",
       "label": "Grim Scythe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 30,
+        "max": 70
+      },
+      "maxSockets": 6,
+      "requiredStrength": 140,
+      "requiredDexterity": 140,
+      "requiredLevel": 25
     },
     {
       "code": "9wd",
       "label": "Ancient Sword",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 43
+      },
+      "maxSockets": 3,
+      "requiredStrength": 127,
+      "requiredDexterity": 88,
+      "requiredLevel": 25
     },
     {
       "code": "9wh",
       "label": "Battle Hammer",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 35,
+        "max": 58
+      },
+      "maxSockets": 4,
+      "requiredStrength": 100,
+      "requiredLevel": 25
     },
     {
       "code": "9wn",
       "label": "Burnt Wand",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 18
+      },
+      "maxSockets": 1,
+      "requiredStrength": 25,
+      "requiredLevel": 19
     },
     {
       "code": "9ws",
       "label": "Divine Scepter",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 16,
+        "max": 38
+      },
+      "maxSockets": 5,
+      "requiredStrength": 103,
+      "requiredLevel": 25
     },
     {
       "code": "9xf",
       "label": "Fascia",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 37
+      },
+      "maxSockets": 2,
+      "requiredStrength": 69,
+      "requiredDexterity": 69,
+      "requiredLevel": 27
     },
     {
       "code": "9yw",
       "label": "Petrified Wand",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 24
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredLevel": 25
     },
     {
       "code": "am1",
       "label": "Stag Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 7,
+        "max": 12
+      },
+      "maxSockets": 5,
+      "requiredStrength": 30,
+      "requiredDexterity": 45,
+      "requiredLevel": 14
     },
     {
       "code": "am2",
       "label": "Reflex Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 9,
+        "max": 19
+      },
+      "maxSockets": 5,
+      "requiredStrength": 35,
+      "requiredDexterity": 60,
+      "requiredLevel": 20
     },
     {
       "code": "am3",
       "label": "Maiden Spear",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 18,
+        "max": 24
+      },
+      "maxSockets": 6,
+      "requiredStrength": 54,
+      "requiredDexterity": 40,
+      "requiredLevel": 14
     },
     {
       "code": "am4",
       "label": "Maiden Pike",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 23,
+        "max": 55
+      },
+      "maxSockets": 6,
+      "requiredStrength": 63,
+      "requiredDexterity": 52,
+      "requiredLevel": 20
     },
     {
       "code": "am5",
       "label": "Maiden Javelin",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 14
+      },
+      "requiredStrength": 33,
+      "requiredDexterity": 47,
+      "requiredLevel": 17
     },
     {
       "code": "am6",
       "label": "Ashwood Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 16,
+        "max": 29
+      },
+      "maxSockets": 5,
+      "requiredStrength": 56,
+      "requiredDexterity": 77,
+      "requiredLevel": 29
     },
     {
       "code": "am7",
       "label": "Ceremonial Bow",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 19,
+        "max": 41
+      },
+      "maxSockets": 5,
+      "requiredStrength": 73,
+      "requiredDexterity": 110,
+      "requiredLevel": 35
     },
     {
       "code": "am8",
       "label": "Ceremonial Spear",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 34,
+        "max": 51
+      },
+      "maxSockets": 6,
+      "requiredStrength": 101,
+      "requiredDexterity": 80,
+      "requiredLevel": 32
     },
     {
       "code": "am9",
       "label": "Ceremonial Pike",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "twoHandDamage": {
+        "min": 42,
+        "max": 101
+      },
+      "maxSockets": 6,
+      "requiredStrength": 115,
+      "requiredDexterity": 98,
+      "requiredLevel": 38
     },
     {
       "code": "ama",
       "label": "Ceremonial Javelin",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 35
+      },
+      "requiredStrength": 25,
+      "requiredDexterity": 109,
+      "requiredLevel": 26
     },
     {
       "code": "amb",
       "label": "Matriarchal Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 20,
+        "max": 47
+      },
+      "maxSockets": 5,
+      "requiredStrength": 87,
+      "requiredDexterity": 187,
+      "requiredLevel": 39
     },
     {
       "code": "amc",
       "label": "Grand Matron Bow",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 72
+      },
+      "maxSockets": 5,
+      "requiredStrength": 108,
+      "requiredDexterity": 152,
+      "requiredLevel": 58
     },
     {
       "code": "amd",
       "label": "Matriarchal Spear",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 65,
+        "max": 95
+      },
+      "maxSockets": 6,
+      "requiredStrength": 114,
+      "requiredDexterity": 142,
+      "requiredLevel": 45
     },
     {
       "code": "ame",
       "label": "Matriarchal Pike",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "twoHandDamage": {
+        "min": 37,
+        "max": 153
+      },
+      "maxSockets": 6,
+      "requiredStrength": 132,
+      "requiredDexterity": 149,
+      "requiredLevel": 60
     },
     {
       "code": "amf",
       "label": "Matriarchal Javelin",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 30,
+        "max": 54
+      },
+      "requiredStrength": 107,
+      "requiredDexterity": 151,
+      "requiredLevel": 48
     },
     {
       "code": "axe",
       "label": "Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 11
+      },
+      "maxSockets": 4,
+      "requiredStrength": 32
     },
     {
       "code": "axf",
       "label": "Hatchet Hands",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 15
+      },
+      "maxSockets": 2,
+      "requiredStrength": 37,
+      "requiredDexterity": 37
     },
     {
       "code": "bal",
       "label": "Balanced Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 10
+      },
+      "requiredDexterity": 57
     },
     {
       "code": "bar",
       "label": "Bardiche",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 1,
+        "max": 27
+      },
+      "maxSockets": 3,
+      "requiredStrength": 40
     },
     {
       "code": "bax",
       "label": "Broad Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 18
+      },
+      "maxSockets": 5,
+      "requiredStrength": 48
     },
     {
       "code": "bkf",
       "label": "Balanced Knife",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 8
+      },
+      "requiredDexterity": 51
     },
     {
       "code": "bld",
       "label": "Blade",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 15
+      },
+      "maxSockets": 3,
+      "requiredStrength": 35,
+      "requiredDexterity": 51
     },
     {
       "code": "brn",
       "label": "Brandistock",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 7,
+        "max": 17
+      },
+      "maxSockets": 5,
+      "requiredStrength": 40,
+      "requiredDexterity": 50
     },
     {
       "code": "bsd",
       "label": "Broad Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 7,
+        "max": 14
+      },
+      "maxSockets": 4,
+      "requiredStrength": 48
     },
     {
       "code": "bst",
       "label": "Battle Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 13
+      },
+      "maxSockets": 4
     },
     {
       "code": "bsw",
       "label": "Bastard Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 7,
+        "max": 19
+      },
+      "twoHandDamage": {
+        "min": 20,
+        "max": 28
+      },
+      "maxSockets": 4,
+      "requiredStrength": 62
     },
     {
       "code": "btl",
       "label": "Blade Talons",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 14
+      },
+      "maxSockets": 3,
+      "requiredStrength": 50,
+      "requiredDexterity": 50
     },
     {
       "code": "btx",
       "label": "Battle Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 32
+      },
+      "maxSockets": 5,
+      "requiredStrength": 54
     },
     {
       "code": "bwn",
       "label": "Bone Wand",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 7
+      },
+      "maxSockets": 2
     },
     {
       "code": "cbw",
       "label": "Composite Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 4,
+        "max": 8
+      },
+      "maxSockets": 4,
+      "requiredStrength": 25,
+      "requiredDexterity": 35
     },
     {
       "code": "ces",
       "label": "Cestus",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 7,
+        "max": 15
+      },
+      "maxSockets": 2,
+      "requiredStrength": 42,
+      "requiredDexterity": 42
     },
     {
       "code": "clb",
       "label": "Club",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 6
+      },
+      "maxSockets": 2
     },
     {
       "code": "clm",
       "label": "Claymore",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 12
+      },
+      "twoHandDamage": {
+        "min": 13,
+        "max": 30
+      },
+      "maxSockets": 4,
+      "requiredStrength": 47
     },
     {
       "code": "clw",
       "label": "Claws",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 15
+      },
+      "maxSockets": 3,
+      "requiredStrength": 46,
+      "requiredDexterity": 46
     },
     {
       "code": "crs",
       "label": "Crystal Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 15
+      },
+      "maxSockets": 6,
+      "requiredStrength": 43
     },
     {
       "code": "cst",
       "label": "Gnarled Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 4,
+        "max": 12
+      },
+      "maxSockets": 4
     },
     {
       "code": "d33",
       "label": "Decoy Gidbinn",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 2
+      },
+      "requiredStrength": 15,
+      "requiredDexterity": 20
     },
     {
       "code": "dgr",
       "label": "Dagger",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 4
+      },
+      "maxSockets": 1
     },
     {
       "code": "dir",
       "label": "Dirk",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 9
+      },
+      "maxSockets": 1,
+      "requiredDexterity": 25
     },
     {
       "code": "fla",
       "label": "Flail",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 24
+      },
+      "maxSockets": 5,
+      "requiredStrength": 41,
+      "requiredDexterity": 35
     },
     {
       "code": "flb",
       "label": "Flamberge",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 9,
+        "max": 15
+      },
+      "twoHandDamage": {
+        "min": 13,
+        "max": 26
+      },
+      "maxSockets": 5,
+      "requiredStrength": 70,
+      "requiredDexterity": 49
     },
     {
       "code": "flc",
       "label": "Falchion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 9,
+        "max": 17
+      },
+      "maxSockets": 2,
+      "requiredStrength": 33
     },
     {
       "code": "g33",
       "label": "The Gidbinn",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 7
+      },
+      "requiredStrength": 15,
+      "requiredDexterity": 25
     },
     {
       "code": "gax",
       "label": "Great Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 9,
+        "max": 30
+      },
+      "maxSockets": 6,
+      "requiredStrength": 63,
+      "requiredDexterity": 39
     },
     {
       "code": "gis",
       "label": "Giant Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 16
+      },
+      "twoHandDamage": {
+        "min": 9,
+        "max": 28
+      },
+      "maxSockets": 4,
+      "requiredStrength": 56,
+      "requiredDexterity": 34
     },
     {
       "code": "gix",
       "label": "Giant Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 22,
+        "max": 45
+      },
+      "maxSockets": 6,
+      "requiredStrength": 70
     },
     {
       "code": "glv",
       "label": "Glaive",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 17
+      },
+      "requiredStrength": 52,
+      "requiredDexterity": 35
     },
     {
       "code": "gma",
       "label": "Great Maul",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 38,
+        "max": 58
+      },
+      "maxSockets": 6,
+      "requiredStrength": 99
     },
     {
       "code": "gpl",
       "label": "Strangling Gas Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      },
+      "requiredLevel": 6
     },
     {
       "code": "gpm",
       "label": "Choking Gas Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      },
+      "requiredLevel": 16
     },
     {
       "code": "gps",
       "label": "Rancid Gas Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      },
+      "requiredLevel": 24
     },
     {
       "code": "gsc",
       "label": "Grand Scepter",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 18
+      },
+      "maxSockets": 3,
+      "requiredStrength": 37
     },
     {
       "code": "gsd",
       "label": "Great Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 12,
+        "max": 20
+      },
+      "twoHandDamage": {
+        "min": 25,
+        "max": 42
+      },
+      "maxSockets": 6,
+      "requiredStrength": 100,
+      "requiredDexterity": 60
     },
     {
       "code": "gwn",
       "label": "Grim Wand",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 11
+      },
+      "maxSockets": 2
     },
     {
       "code": "hal",
       "label": "Halberd",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 45
+      },
+      "maxSockets": 6,
+      "requiredStrength": 75,
+      "requiredDexterity": 47
     },
     {
       "code": "hax",
       "label": "Hand Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 6
+      },
+      "maxSockets": 2
     },
     {
       "code": "hbw",
       "label": "Hunter's Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 2,
+        "max": 6
+      },
+      "maxSockets": 4,
+      "requiredDexterity": 28
     },
     {
       "code": "hdm",
       "label": "Horadric Malus",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 15
+      },
+      "requiredStrength": 15,
+      "requiredDexterity": 15
     },
     {
       "code": "hfh",
       "label": "Hellforge Hammer",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 15
+      },
+      "maxSockets": 5
     },
     {
       "code": "hst",
       "label": "Horadric Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 20
+      },
+      "requiredStrength": 30
     },
     {
       "code": "hxb",
       "label": "Heavy Crossbow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 26
+      },
+      "maxSockets": 6,
+      "requiredStrength": 60,
+      "requiredDexterity": 40
     },
     {
       "code": "jav",
       "label": "Javelin",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 5
+      }
     },
     {
       "code": "kri",
       "label": "Kriss",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 11
+      },
+      "maxSockets": 3,
+      "requiredDexterity": 45
     },
     {
       "code": "ktr",
       "label": "Katar",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 7
+      },
+      "maxSockets": 2,
+      "requiredStrength": 20,
+      "requiredDexterity": 20
     },
     {
       "code": "lax",
       "label": "Large Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 13
+      },
+      "maxSockets": 4,
+      "requiredStrength": 35
     },
     {
       "code": "lbb",
       "label": "Long Battle Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 3,
+        "max": 18
+      },
+      "maxSockets": 6,
+      "requiredStrength": 40,
+      "requiredDexterity": 50
     },
     {
       "code": "lbw",
       "label": "Long Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 3,
+        "max": 10
+      },
+      "maxSockets": 5,
+      "requiredStrength": 22,
+      "requiredDexterity": 19
     },
     {
       "code": "leg",
       "label": "Wirt's Leg",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 8
+      },
+      "maxSockets": 3
     },
     {
       "code": "lsd",
       "label": "Long Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 19
+      },
+      "maxSockets": 4,
+      "requiredStrength": 55,
+      "requiredDexterity": 39
     },
     {
       "code": "lst",
       "label": "Long Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 2,
+        "max": 8
+      },
+      "maxSockets": 3
     },
     {
       "code": "lwb",
       "label": "Long War Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 3,
+        "max": 23
+      },
+      "maxSockets": 6,
+      "requiredStrength": 50,
+      "requiredDexterity": 65
     },
     {
       "code": "lxb",
       "label": "Light Crossbow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 9
+      },
+      "maxSockets": 3,
+      "requiredStrength": 21,
+      "requiredDexterity": 27
     },
     {
       "code": "mac",
       "label": "Mace",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 10
+      },
+      "maxSockets": 2,
+      "requiredStrength": 27
     },
     {
       "code": "mau",
       "label": "Maul",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 30,
+        "max": 43
+      },
+      "maxSockets": 6,
+      "requiredStrength": 69
     },
     {
       "code": "mpi",
       "label": "Military Pick",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 7,
+        "max": 11
+      },
+      "maxSockets": 6,
+      "requiredStrength": 49,
+      "requiredDexterity": 33
     },
     {
       "code": "msf",
       "label": "Staff of Kings",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 10,
+        "max": 15
+      },
+      "requiredStrength": 25
     },
     {
       "code": "mst",
       "label": "Morning Star",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 7,
+        "max": 16
+      },
+      "maxSockets": 3,
+      "requiredStrength": 36
     },
     {
       "code": "mxb",
       "label": "Crossbow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 9,
+        "max": 16
+      },
+      "maxSockets": 4,
+      "requiredStrength": 40,
+      "requiredDexterity": 33
     },
     {
       "code": "ob1",
       "label": "Eagle Orb",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 5
+      },
+      "maxSockets": 4
     },
     {
       "code": "ob2",
       "label": "Sacred Globe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 8
+      },
+      "maxSockets": 4
     },
     {
       "code": "ob3",
       "label": "Smoked Sphere",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 10
+      },
+      "maxSockets": 4,
+      "requiredLevel": 8
     },
     {
       "code": "ob4",
       "label": "Clasped Orb",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 12
+      },
+      "maxSockets": 4,
+      "requiredLevel": 13
     },
     {
       "code": "ob5",
       "label": "Jared's Stone",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 18
+      },
+      "maxSockets": 4,
+      "requiredLevel": 18
     },
     {
       "code": "ob6",
       "label": "Glowing Orb",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 21
+      },
+      "maxSockets": 4,
+      "requiredLevel": 24
     },
     {
       "code": "ob7",
       "label": "Crystalline Globe",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 26
+      },
+      "maxSockets": 4,
+      "requiredLevel": 27
     },
     {
       "code": "ob8",
       "label": "Cloudy Sphere",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 11,
+        "max": 29
+      },
+      "maxSockets": 4,
+      "requiredLevel": 30
     },
     {
       "code": "ob9",
       "label": "Sparkling Ball",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 13,
+        "max": 32
+      },
+      "maxSockets": 4,
+      "requiredLevel": 34
     },
     {
       "code": "oba",
       "label": "Swirling Crystal",
       "slot": "Weapon",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 42
+      },
+      "maxSockets": 4,
+      "requiredLevel": 37
     },
     {
       "code": "obb",
       "label": "Heavenly Stone",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 21,
+        "max": 46
+      },
+      "maxSockets": 4,
+      "requiredLevel": 44
     },
     {
       "code": "obc",
       "label": "Eldritch Orb",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 18,
+        "max": 50
+      },
+      "maxSockets": 4,
+      "requiredLevel": 50
     },
     {
       "code": "obd",
       "label": "Demon Heart",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 23,
+        "max": 55
+      },
+      "maxSockets": 4,
+      "requiredLevel": 56
     },
     {
       "code": "obe",
       "label": "Vortex Orb",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 12,
+        "max": 66
+      },
+      "maxSockets": 4,
+      "requiredLevel": 63
     },
     {
       "code": "obf",
       "label": "Dimensional Shard",
       "slot": "Weapon",
-      "quality": "elite"
+      "quality": "elite",
+      "oneHandDamage": {
+        "min": 30,
+        "max": 53
+      },
+      "maxSockets": 4,
+      "requiredLevel": 66
     },
     {
       "code": "opl",
       "label": "Fulminating Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      }
     },
     {
       "code": "opm",
       "label": "Exploding Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      },
+      "requiredLevel": 12
     },
     {
       "code": "ops",
       "label": "Oil Potion",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 0,
+        "max": 1
+      },
+      "requiredLevel": 20
     },
     {
       "code": "pax",
       "label": "Poleaxe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 18,
+        "max": 39
+      },
+      "maxSockets": 5,
+      "requiredStrength": 62
     },
     {
       "code": "pik",
       "label": "Pike",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 14,
+        "max": 63
+      },
+      "maxSockets": 6,
+      "requiredStrength": 60,
+      "requiredDexterity": 45
     },
     {
       "code": "pil",
       "label": "Pilum",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 9
+      },
+      "requiredDexterity": 45
     },
     {
       "code": "qf1",
       "label": "Khalim's Flail",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 15
+      },
+      "maxSockets": 3,
+      "requiredStrength": 41,
+      "requiredDexterity": 35
     },
     {
       "code": "qf2",
       "label": "Khalim's Will",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 1,
+        "max": 15
+      },
+      "maxSockets": 3
     },
     {
       "code": "rxb",
       "label": "Repeating Crossbow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 12
+      },
+      "maxSockets": 5,
+      "requiredStrength": 40,
+      "requiredDexterity": 50
     },
     {
       "code": "sbb",
       "label": "Short Battle Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 5,
+        "max": 11
+      },
+      "maxSockets": 5,
+      "requiredStrength": 30,
+      "requiredDexterity": 40
     },
     {
       "code": "sbr",
       "label": "Saber",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 3,
+        "max": 8
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25,
+      "requiredDexterity": 25
     },
     {
       "code": "sbw",
       "label": "Short Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 1,
+        "max": 4
+      },
+      "maxSockets": 3,
+      "requiredDexterity": 15
     },
     {
       "code": "scm",
       "label": "Scimitar",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 6
+      },
+      "maxSockets": 2,
+      "requiredDexterity": 21
     },
     {
       "code": "scp",
       "label": "Scepter",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 6,
+        "max": 11
+      },
+      "maxSockets": 2,
+      "requiredStrength": 25
     },
     {
       "code": "scy",
       "label": "Scythe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 8,
+        "max": 20
+      },
+      "maxSockets": 5,
+      "requiredStrength": 41,
+      "requiredDexterity": 41
     },
     {
       "code": "skr",
       "label": "Scissors Katar",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 9,
+        "max": 17
+      },
+      "maxSockets": 3,
+      "requiredStrength": 55,
+      "requiredDexterity": 55
     },
     {
       "code": "spc",
       "label": "Spiked Club",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 8
+      },
+      "maxSockets": 2
     },
     {
       "code": "spr",
       "label": "Spear",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 3,
+        "max": 15
+      },
+      "maxSockets": 3,
+      "requiredDexterity": 20
     },
     {
       "code": "spt",
       "label": "Spetum",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 15,
+        "max": 23
+      },
+      "maxSockets": 6,
+      "requiredStrength": 54,
+      "requiredDexterity": 35
     },
     {
       "code": "ssd",
       "label": "Short Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 7
+      },
+      "maxSockets": 2
     },
     {
       "code": "ssp",
       "label": "Short Spear",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 13
+      },
+      "requiredStrength": 40,
+      "requiredDexterity": 40
     },
     {
       "code": "sst",
       "label": "Short Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 1,
+        "max": 5
+      },
+      "maxSockets": 2
     },
     {
       "code": "swb",
       "label": "Short War Bow",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 14
+      },
+      "maxSockets": 5,
+      "requiredStrength": 35,
+      "requiredDexterity": 55
     },
     {
       "code": "tax",
       "label": "Throwing Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 4,
+        "max": 7
+      },
+      "requiredDexterity": 40
     },
     {
       "code": "tkf",
       "label": "Throwing Knife",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 3
+      },
+      "requiredDexterity": 21
     },
     {
       "code": "tri",
       "label": "Trident",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 9,
+        "max": 15
+      },
+      "maxSockets": 4,
+      "requiredStrength": 38,
+      "requiredDexterity": 24
     },
     {
       "code": "tsp",
       "label": "Throwing Spear",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 15
+      },
+      "requiredDexterity": 65
     },
     {
       "code": "vou",
       "label": "Voulge",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 6,
+        "max": 21
+      },
+      "maxSockets": 4,
+      "requiredStrength": 50
     },
     {
       "code": "wax",
       "label": "War Axe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 18
+      },
+      "maxSockets": 6,
+      "requiredStrength": 67
     },
     {
       "code": "whm",
       "label": "War Hammer",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 19,
+        "max": 29
+      },
+      "maxSockets": 4,
+      "requiredStrength": 53
     },
     {
       "code": "wnd",
       "label": "Wand",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 4
+      },
+      "maxSockets": 1
     },
     {
       "code": "wrb",
       "label": "Wrist Blade",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 5,
+        "max": 9
+      },
+      "maxSockets": 2,
+      "requiredStrength": 33,
+      "requiredDexterity": 33
     },
     {
       "code": "wsc",
       "label": "War Scythe",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 15,
+        "max": 36
+      },
+      "maxSockets": 6,
+      "requiredStrength": 80,
+      "requiredDexterity": 80
     },
     {
       "code": "wsd",
       "label": "War Sword",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 8,
+        "max": 20
+      },
+      "maxSockets": 3,
+      "requiredStrength": 71,
+      "requiredDexterity": 45
     },
     {
       "code": "wsp",
       "label": "War Scepter",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 10,
+        "max": 17
+      },
+      "maxSockets": 5,
+      "requiredStrength": 55
     },
     {
       "code": "wst",
       "label": "War Staff",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "twoHandDamage": {
+        "min": 12,
+        "max": 28
+      },
+      "maxSockets": 6
     },
     {
       "code": "ywn",
       "label": "Yew Wand",
       "slot": "Weapon",
-      "quality": "normal"
+      "quality": "normal",
+      "oneHandDamage": {
+        "min": 2,
+        "max": 8
+      },
+      "maxSockets": 1
     },
     {
       "kind": "header",
@@ -2571,325 +5474,641 @@
       "code": "bsh",
       "label": "Bone Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 10,
+      "maxDefense": 30,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 25
     },
     {
       "code": "buc",
       "label": "Buckler",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 4,
+      "maxDefense": 6,
+      "maxSockets": 1,
+      "armorWeightClass": "light",
+      "requiredStrength": 12
     },
     {
       "code": "gts",
       "label": "Gothic Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 30,
+      "maxDefense": 35,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 60
     },
     {
       "code": "kit",
       "label": "Kite Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 16,
+      "maxDefense": 18,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 47
     },
     {
       "code": "lrg",
       "label": "Large Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 12,
+      "maxDefense": 14,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 34
     },
     {
       "code": "ne1",
       "label": "Preserved Head",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 2,
+      "maxDefense": 5,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 12,
+      "requiredLevel": 3
     },
     {
       "code": "ne2",
       "label": "Zombie Head",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 4,
+      "maxDefense": 8,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 14,
+      "requiredLevel": 6
     },
     {
       "code": "ne3",
       "label": "Unraveller Head",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 6,
+      "maxDefense": 10,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 18,
+      "requiredLevel": 12
     },
     {
       "code": "ne4",
       "label": "Gargoyle Head",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 10,
+      "maxDefense": 16,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 15
     },
     {
       "code": "ne5",
       "label": "Demon Head",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 15,
+      "maxDefense": 20,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 25,
+      "requiredLevel": 18
     },
     {
       "code": "ne6",
       "label": "Mummified Trophy",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 38,
+      "maxDefense": 48,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 38,
+      "requiredLevel": 24
     },
     {
       "code": "ne7",
       "label": "Fetish Trophy",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 41,
+      "maxDefense": 52,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 41,
+      "requiredLevel": 29
     },
     {
       "code": "ne8",
       "label": "Sexton Trophy",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 44,
+      "maxDefense": 55,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 47,
+      "requiredLevel": 33
     },
     {
       "code": "ne9",
       "label": "Cantor Trophy",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 50,
+      "maxDefense": 64,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 36
     },
     {
       "code": "nea",
       "label": "Heirophant Trophy",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 58,
+      "maxDefense": 70,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 40
     },
     {
       "code": "neb",
       "label": "Minion Skull",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 95,
+      "maxDefense": 139,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 77,
+      "requiredLevel": 44
     },
     {
       "code": "ned",
       "label": "Overseer Skull",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 98,
+      "maxDefense": 142,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 91,
+      "requiredLevel": 49
     },
     {
       "code": "nee",
       "label": "Succubus Skull",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 100,
+      "maxDefense": 146,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 95,
+      "requiredLevel": 60
     },
     {
       "code": "nef",
       "label": "Bloodlord Skull",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 103,
+      "maxDefense": 148,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 65
     },
     {
       "code": "neg",
       "label": "Hellspawn Skull",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 96,
+      "maxDefense": 141,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 82,
+      "requiredLevel": 50
     },
     {
       "code": "pa1",
       "label": "Targe",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 12,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 16,
+      "requiredLevel": 3
     },
     {
       "code": "pa2",
       "label": "Rondache",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 10,
+      "maxDefense": 18,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 26,
+      "requiredLevel": 6
     },
     {
       "code": "pa3",
       "label": "Heraldic Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 16,
+      "maxDefense": 26,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 40,
+      "requiredLevel": 12
     },
     {
       "code": "pa4",
       "label": "Aerin Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 26,
+      "maxDefense": 36,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 15
     },
     {
       "code": "pa5",
       "label": "Crown Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 30,
+      "maxDefense": 40,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 18
     },
     {
       "code": "pa6",
       "label": "Akaran Targe",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 101,
+      "maxDefense": 125,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 44,
+      "requiredLevel": 26
     },
     {
       "code": "pa7",
       "label": "Akaran Rondache",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 113,
+      "maxDefense": 137,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 59,
+      "requiredLevel": 30
     },
     {
       "code": "pa8",
       "label": "Protector Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 129,
+      "maxDefense": 153,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 69,
+      "requiredLevel": 34
     },
     {
       "code": "pa9",
       "label": "Gilded Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 144,
+      "maxDefense": 168,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 89,
+      "requiredLevel": 38
     },
     {
       "code": "paa",
       "label": "Royal Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 156,
+      "maxDefense": 181,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 114,
+      "requiredLevel": 41
     },
     {
       "code": "pab",
       "label": "Sacred Targe",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 126,
+      "maxDefense": 158,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 86,
+      "requiredLevel": 47
     },
     {
       "code": "pac",
       "label": "Sacred Rondache",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 138,
+      "maxDefense": 164,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 109,
+      "requiredLevel": 52
     },
     {
       "code": "pad",
       "label": "Ancient Shield",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 154,
+      "maxDefense": 172,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 124,
+      "requiredLevel": 55
     },
     {
       "code": "pae",
       "label": "Zakarum Shield",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 169,
+      "maxDefense": 193,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 142,
+      "requiredLevel": 61
     },
     {
       "code": "paf",
       "label": "Vortex Shield",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 182,
+      "maxDefense": 225,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 148,
+      "requiredLevel": 66
     },
     {
       "code": "sml",
       "label": "Small Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 10,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 22
     },
     {
       "code": "spk",
       "label": "Spiked Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 15,
+      "maxDefense": 25,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 30
     },
     {
       "code": "tow",
       "label": "Tower Shield",
       "slot": "Shield",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 22,
+      "maxDefense": 25,
+      "maxSockets": 3,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 75
     },
     {
       "code": "uit",
       "label": "Monarch",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 133,
+      "maxDefense": 148,
+      "maxSockets": 4,
+      "armorWeightClass": "light",
+      "requiredStrength": 156,
+      "requiredLevel": 54
     },
     {
       "code": "uml",
       "label": "Luna",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 108,
+      "maxDefense": 123,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 100,
+      "requiredLevel": 45
     },
     {
       "code": "uow",
       "label": "Aegis",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 145,
+      "maxDefense": 161,
+      "maxSockets": 4,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 219,
+      "requiredLevel": 59
     },
     {
       "code": "upk",
       "label": "Blade Barrier",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 147,
+      "maxDefense": 163,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 118,
+      "requiredLevel": 51
     },
     {
       "code": "urg",
       "label": "Hyperion",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 119,
+      "maxDefense": 135,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 127,
+      "requiredLevel": 48
     },
     {
       "code": "ush",
       "label": "Troll Nest",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 158,
+      "maxDefense": 173,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 57
     },
     {
       "code": "uts",
       "label": "Ward",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 153,
+      "maxDefense": 170,
+      "maxSockets": 4,
+      "armorWeightClass": "medium",
+      "requiredStrength": 185,
+      "requiredLevel": 63
     },
     {
       "code": "uuc",
       "label": "Heater",
       "slot": "Shield",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 95,
+      "maxDefense": 110,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 77,
+      "requiredLevel": 43
     },
     {
       "code": "xit",
       "label": "Dragon Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 59,
+      "maxDefense": 67,
+      "maxSockets": 3,
+      "armorWeightClass": "light",
+      "requiredStrength": 91,
+      "requiredLevel": 25
     },
     {
       "code": "xml",
       "label": "Round Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 47,
+      "maxDefense": 55,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 53,
+      "requiredLevel": 25
     },
     {
       "code": "xow",
       "label": "Pavise",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 68,
+      "maxDefense": 78,
+      "maxSockets": 3,
+      "armorWeightClass": "heavy",
+      "requiredStrength": 133,
+      "requiredLevel": 25
     },
     {
       "code": "xpk",
       "label": "Barbed Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 58,
+      "maxDefense": 78,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 25
     },
     {
       "code": "xrg",
       "label": "Scutum",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 53,
+      "maxDefense": 61,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 71,
+      "requiredLevel": 25
     },
     {
       "code": "xsh",
       "label": "Grim Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 50,
+      "maxDefense": 150,
+      "maxSockets": 2,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 25
     },
     {
       "code": "xts",
       "label": "Ancient Shield",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 80,
+      "maxDefense": 93,
+      "maxSockets": 3,
+      "armorWeightClass": "medium",
+      "requiredStrength": 110,
+      "requiredLevel": 25
     },
     {
       "code": "xuc",
       "label": "Defender",
       "slot": "Shield",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 41,
+      "maxDefense": 49,
+      "maxSockets": 1,
+      "armorWeightClass": "light",
+      "requiredStrength": 38,
+      "requiredLevel": 22
     },
     {
       "kind": "header",
@@ -2899,91 +6118,159 @@
       "code": "hgl",
       "label": "Gauntlets",
       "slot": "Gloves",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 12,
+      "maxDefense": 15,
+      "armorWeightClass": "light",
+      "requiredStrength": 60
     },
     {
       "code": "lgl",
       "label": "Leather Gloves",
       "slot": "Gloves",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 2,
+      "maxDefense": 3,
+      "armorWeightClass": "light"
     },
     {
       "code": "mgl",
       "label": "Chain Gloves",
       "slot": "Gloves",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 9,
+      "armorWeightClass": "light",
+      "requiredStrength": 25
     },
     {
       "code": "tgl",
       "label": "Light Gauntlets",
       "slot": "Gloves",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 9,
+      "maxDefense": 11,
+      "armorWeightClass": "light",
+      "requiredStrength": 45
     },
     {
       "code": "uhg",
       "label": "Ogre Gauntlets",
       "slot": "Gloves",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 62,
+      "maxDefense": 71,
+      "armorWeightClass": "light",
+      "requiredStrength": 185,
+      "requiredLevel": 64
     },
     {
       "code": "ulg",
       "label": "Bramble Mitts",
       "slot": "Gloves",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 54,
+      "maxDefense": 62,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 42
     },
     {
       "code": "umg",
       "label": "Vambraces",
       "slot": "Gloves",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 59,
+      "maxDefense": 67,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 51
     },
     {
       "code": "utg",
       "label": "Crusader Gauntlets",
       "slot": "Gloves",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 59,
+      "maxDefense": 68,
+      "armorWeightClass": "light",
+      "requiredStrength": 151,
+      "requiredLevel": 57
     },
     {
       "code": "uvg",
       "label": "Vampirebone Gloves",
       "slot": "Gloves",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 56,
+      "maxDefense": 65,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 47
     },
     {
       "code": "vgl",
       "label": "Heavy Gloves",
       "slot": "Gloves",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 5,
+      "maxDefense": 6,
+      "armorWeightClass": "light"
     },
     {
       "code": "xhg",
       "label": "War Gauntlets",
       "slot": "Gloves",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 43,
+      "maxDefense": 53,
+      "armorWeightClass": "light",
+      "requiredStrength": 110,
+      "requiredLevel": 25
     },
     {
       "code": "xlg",
       "label": "Demonhide Gloves",
       "slot": "Gloves",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 28,
+      "maxDefense": 35,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 21
     },
     {
       "code": "xmg",
       "label": "Heavy Bracers",
       "slot": "Gloves",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 37,
+      "maxDefense": 44,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 25
     },
     {
       "code": "xtg",
       "label": "Battle Gauntlets",
       "slot": "Gloves",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 39,
+      "maxDefense": 47,
+      "armorWeightClass": "light",
+      "requiredStrength": 88,
+      "requiredLevel": 25
     },
     {
       "code": "xvg",
       "label": "Sharkskin Gloves",
       "slot": "Gloves",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 33,
+      "maxDefense": 39,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 25
     },
     {
       "kind": "header",
@@ -2993,91 +6280,159 @@
       "code": "hbl",
       "label": "Plated Belt",
       "slot": "Belt",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 11,
+      "armorWeightClass": "light",
+      "requiredStrength": 60
     },
     {
       "code": "lbl",
       "label": "Sash",
       "slot": "Belt",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 2,
+      "maxDefense": 2,
+      "armorWeightClass": "light"
     },
     {
       "code": "mbl",
       "label": "Belt",
       "slot": "Belt",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 5,
+      "maxDefense": 5,
+      "armorWeightClass": "light",
+      "requiredStrength": 25
     },
     {
       "code": "tbl",
       "label": "Heavy Belt",
       "slot": "Belt",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 6,
+      "maxDefense": 6,
+      "armorWeightClass": "light",
+      "requiredStrength": 45
     },
     {
       "code": "uhc",
       "label": "Colossus Girdle",
       "slot": "Belt",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 61,
+      "maxDefense": 71,
+      "armorWeightClass": "light",
+      "requiredStrength": 185,
+      "requiredLevel": 67
     },
     {
       "code": "ulc",
       "label": "Spiderweb Sash",
       "slot": "Belt",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 55,
+      "maxDefense": 62,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 46
     },
     {
       "code": "umc",
       "label": "Mithril Coil",
       "slot": "Belt",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 58,
+      "maxDefense": 65,
+      "armorWeightClass": "light",
+      "requiredStrength": 106,
+      "requiredLevel": 56
     },
     {
       "code": "utc",
       "label": "Troll Belt",
       "slot": "Belt",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 59,
+      "maxDefense": 66,
+      "armorWeightClass": "light",
+      "requiredStrength": 151,
+      "requiredLevel": 62
     },
     {
       "code": "uvc",
       "label": "Vampirefang Belt",
       "slot": "Belt",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 56,
+      "maxDefense": 63,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 51
     },
     {
       "code": "vbl",
       "label": "Light Belt",
       "slot": "Belt",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 3,
+      "maxDefense": 3,
+      "armorWeightClass": "light"
     },
     {
       "code": "zhb",
       "label": "War Belt",
       "slot": "Belt",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 41,
+      "maxDefense": 52,
+      "armorWeightClass": "light",
+      "requiredStrength": 110,
+      "requiredLevel": 25
     },
     {
       "code": "zlb",
       "label": "Demonhide Sash",
       "slot": "Belt",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 29,
+      "maxDefense": 34,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 24
     },
     {
       "code": "zmb",
       "label": "Mesh Belt",
       "slot": "Belt",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 35,
+      "maxDefense": 40,
+      "armorWeightClass": "light",
+      "requiredStrength": 58,
+      "requiredLevel": 25
     },
     {
       "code": "ztb",
       "label": "Battle Belt",
       "slot": "Belt",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 37,
+      "maxDefense": 42,
+      "armorWeightClass": "light",
+      "requiredStrength": 88,
+      "requiredLevel": 25
     },
     {
       "code": "zvb",
       "label": "Sharkskin Belt",
       "slot": "Belt",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 31,
+      "maxDefense": 36,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 25
     },
     {
       "kind": "header",
@@ -3087,91 +6442,160 @@
       "code": "hbt",
       "label": "Greaves",
       "slot": "Boots",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 12,
+      "maxDefense": 15,
+      "armorWeightClass": "light",
+      "requiredStrength": 70
     },
     {
       "code": "lbt",
       "label": "Boots",
       "slot": "Boots",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 2,
+      "maxDefense": 3,
+      "armorWeightClass": "light"
     },
     {
       "code": "mbt",
       "label": "Chain Boots",
       "slot": "Boots",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 8,
+      "maxDefense": 9,
+      "armorWeightClass": "light",
+      "requiredStrength": 30
     },
     {
       "code": "tbt",
       "label": "Light Plated Boots",
       "slot": "Boots",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 9,
+      "maxDefense": 11,
+      "armorWeightClass": "light",
+      "requiredStrength": 50
     },
     {
       "code": "uhb",
       "label": "Myrmidon Greaves",
       "slot": "Boots",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 62,
+      "maxDefense": 71,
+      "armorWeightClass": "light",
+      "requiredStrength": 208,
+      "requiredLevel": 65
     },
     {
       "code": "ulb",
       "label": "Wyrmhide Boots",
       "slot": "Boots",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 54,
+      "maxDefense": 62,
+      "armorWeightClass": "light",
+      "requiredStrength": 50,
+      "requiredLevel": 45
     },
     {
       "code": "umb",
       "label": "Boneweave Boots",
       "slot": "Boots",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 59,
+      "maxDefense": 67,
+      "armorWeightClass": "light",
+      "requiredStrength": 118,
+      "requiredLevel": 54
     },
     {
       "code": "utb",
       "label": "Mirrored Boots",
       "slot": "Boots",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 59,
+      "maxDefense": 68,
+      "armorWeightClass": "light",
+      "requiredStrength": 163,
+      "requiredLevel": 60
     },
     {
       "code": "uvb",
       "label": "Scarabshell Boots",
       "slot": "Boots",
-      "quality": "elite"
+      "quality": "elite",
+      "minDefense": 56,
+      "maxDefense": 65,
+      "armorWeightClass": "light",
+      "requiredStrength": 91,
+      "requiredLevel": 49
     },
     {
       "code": "vbt",
       "label": "Heavy Boots",
       "slot": "Boots",
-      "quality": "normal"
+      "quality": "normal",
+      "minDefense": 5,
+      "maxDefense": 6,
+      "armorWeightClass": "light",
+      "requiredStrength": 18
     },
     {
       "code": "xhb",
       "label": "War Boots",
       "slot": "Boots",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 43,
+      "maxDefense": 53,
+      "armorWeightClass": "light",
+      "requiredStrength": 125,
+      "requiredLevel": 25
     },
     {
       "code": "xlb",
       "label": "Demonhide Boots",
       "slot": "Boots",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 28,
+      "maxDefense": 35,
+      "armorWeightClass": "light",
+      "requiredStrength": 20,
+      "requiredLevel": 24
     },
     {
       "code": "xmb",
       "label": "Mesh Boots",
       "slot": "Boots",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 37,
+      "maxDefense": 44,
+      "armorWeightClass": "light",
+      "requiredStrength": 65,
+      "requiredLevel": 25
     },
     {
       "code": "xtb",
       "label": "Battle Boots",
       "slot": "Boots",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 39,
+      "maxDefense": 47,
+      "armorWeightClass": "light",
+      "requiredStrength": 95,
+      "requiredLevel": 25
     },
     {
       "code": "xvb",
       "label": "Sharkskin Boots",
       "slot": "Boots",
-      "quality": "exceptional"
+      "quality": "exceptional",
+      "minDefense": 33,
+      "maxDefense": 39,
+      "armorWeightClass": "light",
+      "requiredStrength": 47,
+      "requiredLevel": 25
     },
     {
       "kind": "header",
@@ -3181,7 +6605,8 @@
       "code": "rin",
       "label": "Ring",
       "slot": "Ring",
-      "quality": "normal"
+      "quality": "normal",
+      "maxSockets": 1
     },
     {
       "kind": "header",
@@ -3191,7 +6616,8 @@
       "code": "amu",
       "label": "Amulet",
       "slot": "Amulet",
-      "quality": "normal"
+      "quality": "normal",
+      "maxSockets": 1
     },
     {
       "code": "vip",
@@ -3204,38 +6630,8 @@
       "label": "Other"
     },
     {
-      "code": "isc",
-      "label": "Scroll of Identify",
-      "slot": "Other",
-      "quality": "normal"
-    },
-    {
-      "code": "tsc",
-      "label": "Scroll of Town Portal",
-      "slot": "Other",
-      "quality": "normal"
-    },
-    {
-      "code": "ibk",
-      "label": "Tome of Identify",
-      "slot": "Other",
-      "quality": "normal"
-    },
-    {
-      "code": "tbk",
-      "label": "Tome of Town Portal",
-      "slot": "Other",
-      "quality": "normal"
-    },
-    {
       "code": "aqv",
       "label": "Arrows",
-      "slot": "Other",
-      "quality": "normal"
-    },
-    {
-      "code": "key",
-      "label": "Key",
       "slot": "Other",
       "quality": "normal"
     },
@@ -3276,6 +6672,18 @@
       "quality": "normal"
     },
     {
+      "code": "ibk",
+      "label": "Tome of Identify",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "isc",
+      "label": "Scroll of Identify",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
       "code": "jew",
       "label": "Jewel",
       "slot": "Other",
@@ -3285,85 +6693,99 @@
       "code": "r01",
       "label": "El Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 11
     },
     {
       "code": "r02",
       "label": "Eld Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 11
     },
     {
       "code": "r03",
       "label": "Tir Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 13
     },
     {
       "code": "r04",
       "label": "Nef Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 13
     },
     {
       "code": "r05",
       "label": "Eth Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 15
     },
     {
       "code": "r06",
       "label": "Ith Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 15
     },
     {
       "code": "r07",
       "label": "Tal Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 17
     },
     {
       "code": "r08",
       "label": "Ral Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 19
     },
     {
       "code": "r09",
       "label": "Ort Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 21
     },
     {
       "code": "r10",
       "label": "Thul Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 23
     },
     {
       "code": "r11",
       "label": "Amn Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 25
     },
     {
       "code": "r12",
       "label": "Sol Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 27
     },
     {
       "code": "r13",
       "label": "Shael Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 29
     },
     {
       "code": "r14",
       "label": "Dol Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 31
     },
     {
       "code": "r15",
@@ -3375,107 +6797,137 @@
       "code": "r16",
       "label": "Io Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 35
     },
     {
       "code": "r17",
       "label": "Lum Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 37
     },
     {
       "code": "r18",
       "label": "Ko Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 39
     },
     {
       "code": "r19",
       "label": "Fal Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 41
     },
     {
       "code": "r20",
       "label": "Lem Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 43
     },
     {
       "code": "r21",
       "label": "Pul Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 45
     },
     {
       "code": "r22",
       "label": "Um Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 47
     },
     {
       "code": "r23",
       "label": "Mal Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 49
     },
     {
       "code": "r24",
       "label": "Ist Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 51
     },
     {
       "code": "r25",
       "label": "Gul Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 53
     },
     {
       "code": "r26",
       "label": "Vex Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 55
     },
     {
       "code": "r27",
       "label": "Ohm Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 57
     },
     {
       "code": "r28",
       "label": "Lo Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 59
     },
     {
       "code": "r29",
       "label": "Sur Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 61
     },
     {
       "code": "r30",
       "label": "Ber Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 63
     },
     {
       "code": "r31",
       "label": "Jah Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 65
     },
     {
       "code": "r32",
       "label": "Cham Rune",
       "slot": "Other",
-      "quality": "normal"
+      "quality": "normal",
+      "requiredLevel": 67
     },
     {
       "code": "r33",
       "label": "Zod Rune",
+      "slot": "Other",
+      "quality": "normal",
+      "requiredLevel": 69
+    },
+    {
+      "code": "tbk",
+      "label": "Tome of Town Portal",
+      "slot": "Other",
+      "quality": "normal"
+    },
+    {
+      "code": "tsc",
+      "label": "Scroll of Town Portal",
       "slot": "Other",
       "quality": "normal"
     }

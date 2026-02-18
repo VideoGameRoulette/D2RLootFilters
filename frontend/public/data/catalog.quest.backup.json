@@ -7,11 +7,34 @@
   "entries": [
     {
       "kind": "header",
+      "label": "Act 1 - The Search for Cain"
+    },
+    {
+      "code": "bkd",
+      "label": "Key to the Cairn Stones",
+      "slot": "Other"
+    },
+    {
+      "code": "bks",
+      "label": "Scroll of Inifuss",
+      "slot": "Other"
+    },
+    {
+      "kind": "header",
+      "label": "Act 1 - The Forgotten Tower"
+    },
+    {
+      "kind": "header",
       "label": "Act 2 - Radament's Lair"
     },
     {
       "code": "ass",
       "label": "Book of Skill",
+      "slot": "Other"
+    },
+    {
+      "code": "tr1",
+      "label": "Horadric Scroll",
       "slot": "Other"
     },
     {
@@ -258,6 +281,66 @@
       "label": "Unknown"
     },
     {
+      "code": "um1",
+      "label": "Uber Ancient Upgrade Material Fire",
+      "slot": "Other"
+    },
+    {
+      "code": "um2",
+      "label": "Uber Ancient Upgrade Material Poison",
+      "slot": "Other"
+    },
+    {
+      "code": "um3",
+      "label": "Uber Ancient Upgrade Material Cold",
+      "slot": "Other"
+    },
+    {
+      "code": "um4",
+      "label": "Uber Ancient Upgrade Material Physical",
+      "slot": "Other"
+    },
+    {
+      "code": "um5",
+      "label": "Uber Ancient Upgrade Material Lightning",
+      "slot": "Other"
+    },
+    {
+      "code": "um6",
+      "label": "Uber Ancient Upgrade Material Magic",
+      "slot": "Other"
+    },
+    {
+      "code": "qll",
+      "label": "Quill",
+      "slot": "Other"
+    },
+    {
+      "code": "eyz",
+      "label": "Eye",
+      "slot": "Other"
+    },
+    {
+      "code": "fng",
+      "label": "Fang",
+      "slot": "Other"
+    },
+    {
+      "code": "hrn",
+      "label": "Horn",
+      "slot": "Other"
+    },
+    {
+      "code": "0sc",
+      "label": "Scroll of Knowledge",
+      "slot": "Other"
+    },
+    {
+      "code": "tch",
+      "label": "Torch",
+      "slot": "Other"
+    },
+    {
       "code": "elx",
       "label": "Elixir",
       "slot": "Other"
@@ -265,6 +348,46 @@
     {
       "code": "hrb",
       "label": "Herb",
+      "slot": "Other"
+    },
+    {
+      "code": "flg",
+      "label": "Flag",
+      "slot": "Other"
+    },
+    {
+      "code": "scz",
+      "label": "Scalp",
+      "slot": "Other"
+    },
+    {
+      "code": "sol",
+      "label": "Soul",
+      "slot": "Other"
+    },
+    {
+      "code": "spe",
+      "label": "Spleen",
+      "slot": "Other"
+    },
+    {
+      "code": "tal",
+      "label": "Tail",
+      "slot": "Other"
+    },
+    {
+      "code": "brz",
+      "label": "Brain",
+      "slot": "Other"
+    },
+    {
+      "code": "hrt",
+      "label": "Heart",
+      "slot": "Other"
+    },
+    {
+      "code": "jaw",
+      "label": "Jawbone",
       "slot": "Other"
     },
     {
