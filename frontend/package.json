@@ -14,7 +14,7 @@
     "prettier": "prettier",
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "lint": "eslint .",
+    "lint": "eslint . && echo Lint passed with no errors.",
     "lint:fix": "eslint . --fix",
     "copy-catalogs": "node copy-catalogs.mjs",
     "convert-quest-images": "node convert-quest-webp-to-png.mjs",
