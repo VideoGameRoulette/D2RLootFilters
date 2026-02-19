@@ -2,6 +2,6 @@
 
 import { FilterBuilder } from "@/components/FilterBuilder";
 
-export default function Home() {
-  return <FilterBuilder />;
+export default function MobilePage() {
+  return <FilterBuilder mobile />;
 }
