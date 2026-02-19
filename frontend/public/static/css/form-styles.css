@@ -1,0 +1,82 @@
+.form-control,
+.btn {
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn {
+  width: 100%;
+}
+
+.text-indigo-600 {
+  color: #4f46e5;
+}
+
+.text-indigo-600:hover {
+  color: #4338ca;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.social-button svg {
+  margin-right: 8px;
+}
+
+/* Layout adjustments */
+.split-container {
+  display: flex;
+  min-height: 100dvh;
+}
+
+.form-side {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.image-side {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 1201px) {
+  /* Large devices and above */
+  .form-side {
+    max-width: 600px;
+  }
+  .image-side {
+    display: block;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Small and Medium devices */
+  .form-side {
+    width: 100%; /* Full width on smaller screens */
+  }
+  .image-side {
+    display: none; /* Hide image-side on smaller screens */
+  }
+}
