@@ -1,21 +1,36 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  useMemo,
-} from "react";
-import PropTypes from "prop-types";
+"use client";
+
+import { createContext, useContext, useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
-const AuthContext = createContext();
+interface User {
+  id: number;
+  username: string;
+  email?: string;
+}
 
-export const useAuth = () => useContext(AuthContext);
+interface AuthContextValue {
+  user: User | null;
+  groups: string[];
+  permissions: string[];
+  loading: boolean;
+  csrfToken: string;
+}
 
-export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
-  const [groups, setGroups] = useState([]);
-  const [permissions, setPerms] = useState([]);
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
+
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error("useAuth must be used within an AuthProvider");
+  }
+  return context;
+};
+
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
+  const [user, setUser] = useState<User | null>(null);
+  const [groups, setGroups] = useState<string[]>([]);
+  const [permissions, setPerms] = useState<string[]>([]);
   const [csrfToken, setToken] = useState("");
   const [loading, setLoading] = useState(true);
 
@@ -48,12 +63,8 @@ export const AuthProvider = ({ children }) => {
 
   const value = useMemo(
     () => ({ user, groups, permissions, loading, csrfToken }),
-    [user, groups, permissions, loading, csrfToken],
+    [user, groups, permissions, loading, csrfToken]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
-
-AuthProvider.propTypes = {
-  children: PropTypes.node.isRequired,
 };
