@@ -8,6 +8,8 @@ const HELP_LINKS = [
   { label: "GitHub Issues", href: "https://github.com/VideoGameRoulette/D2RLootFilters/issues" },
 ];
 
+const isStaticBuild = process.env.NEXT_PUBLIC_STATIC_BUILD === "true";
+
 export interface SavedFilter {
   id: string;
   name: string;
@@ -49,7 +51,7 @@ export function Toolbar({
   dataBase = "",
   logoUrl,
 }: ToolbarProps) {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const [openDropdown, setOpenDropdown] = useState<DropdownId>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -226,7 +228,11 @@ export function Toolbar({
             className="absolute left-0 top-full mt-0.5 min-w-[220px] max-h-[320px] overflow-y-auto py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50"
             role="menu"
           >
-            {!user ? (
+            {isStaticBuild ? (
+              <div className="px-3 py-4 text-zinc-500 text-sm text-center">
+                Saved filters not available in static build.
+              </div>
+            ) : !user ? (
               <div className="px-3 py-4 text-zinc-500 text-sm text-center">
                 <Link
                   href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`}
@@ -313,44 +319,46 @@ export function Toolbar({
         </button>
       )}
 
-      {/* Login / Welcome */}
-      <div className={`relative ${onMobileView ? "" : "ml-auto"}`}>
-        <button
-          type="button"
-          onClick={() => toggle("auth")}
-          className="px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white rounded transition-colors"
-          aria-haspopup="true"
-          aria-expanded={openDropdown === "auth"}
-        >
-          {user ? `Welcome, ${user.username}` : "Login"}
-        </button>
-        {openDropdown === "auth" && (
-          <div
-            className="absolute right-0 top-full mt-0.5 min-w-[160px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50"
-            role="menu"
+      {/* Login / Welcome - hidden on static GitHub Pages build */}
+      {!isStaticBuild && (
+        <div className={`relative ${onMobileView ? "" : "ml-auto"}`}>
+          <button
+            type="button"
+            onClick={() => toggle("auth")}
+            className="px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white rounded transition-colors"
+            aria-haspopup="true"
+            aria-expanded={openDropdown === "auth"}
           >
-            {user ? (
-              <Link
-                href="/auth/logout/"
-                className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white"
-                role="menuitem"
-                onClick={closeDropdown}
-              >
-                Logout
-              </Link>
-            ) : (
-              <Link
-                href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`}
-                className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white"
-                role="menuitem"
-                onClick={closeDropdown}
-              >
-                Login
-              </Link>
-            )}
-          </div>
-        )}
-      </div>
+            {user ? `Welcome, ${user.username}` : "Login"}
+          </button>
+          {openDropdown === "auth" && (
+            <div
+              className="absolute right-0 top-full mt-0.5 min-w-[160px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50"
+              role="menu"
+            >
+              {user ? (
+                <button
+                  type="button"
+                  className="block w-full text-left px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white"
+                  role="menuitem"
+                  onClick={() => { closeDropdown(); logout(); }}
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`}
+                  className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 hover:text-white"
+                  role="menuitem"
+                  onClick={closeDropdown}
+                >
+                  Login
+                </Link>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
