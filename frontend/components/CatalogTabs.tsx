@@ -18,130 +18,110 @@ interface CatalogTabsProps {
   children: ReactNode;
 }
 
-const SCROLL_STEP = 160;
-
 export function CatalogTabs({
   tabs,
   activeTabId,
   onTabChange,
   children,
 }: CatalogTabsProps) {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
   const [hasOverflow, setHasOverflow] = useState(false);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
 
-  const updateScrollState = useCallback(() => {
-    const el = scrollContainerRef.current;
-    if (!el) return;
-    const overflow = el.scrollWidth > el.clientWidth + 1;
+  const updateOverflow = useCallback(() => {
+    const container = containerRef.current;
+    const nav = navRef.current;
+    if (!container || !nav) return;
+    const overflow = nav.scrollWidth > container.clientWidth;
     setHasOverflow(overflow);
-    setCanScrollLeft(overflow && el.scrollLeft > 0);
-    setCanScrollRight(overflow && el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
   }, []);
 
   useEffect(() => {
-    updateScrollState();
-    const el = scrollContainerRef.current;
+    updateOverflow();
+    const el = containerRef.current;
     if (!el) return;
-    const ro = new ResizeObserver(updateScrollState);
+    const ro = new ResizeObserver(updateOverflow);
     ro.observe(el);
     return () => ro.disconnect();
-  }, [updateScrollState, tabs.length]);
-
-  const scroll = useCallback(
-    (direction: "left" | "right") => {
-      const el = scrollContainerRef.current;
-      if (!el) return;
-      const step = direction === "left" ? -SCROLL_STEP : SCROLL_STEP;
-      el.scrollBy({ left: step, behavior: "smooth" });
-    },
-    []
-  );
+  }, [updateOverflow, tabs.length]);
 
   return (
     <div className="flex flex-col flex-1 min-h-0 overflow-hidden">
-      <div className="flex-shrink-0 border-b border-zinc-700/50 flex items-stretch">
-        {hasOverflow && (
-          <button
-            type="button"
-            onClick={() => scroll("left")}
-            onFocus={updateScrollState}
-            aria-label="Scroll tabs left"
-            className={`
-              flex-shrink-0 px-2 border-r border-zinc-700/50
-              text-zinc-400 hover:text-white hover:bg-zinc-700/50
-              focus:outline-none focus:ring-1 focus:ring-zinc-500 focus:ring-inset
-              transition-colors
-              ${!canScrollLeft ? "opacity-40 pointer-events-none" : ""}
-            `}
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-        )}
-        <div
-          ref={scrollContainerRef}
-          className="flex-1 min-w-0 overflow-x-auto overflow-y-hidden scrollbar-hide"
-          onScroll={updateScrollState}
+      <div ref={containerRef} className="flex-shrink-0 border-b border-zinc-700/50 flex items-stretch relative">
+        {/* Hidden measuring nav - always rendered to detect overflow */}
+        <nav
+          ref={navRef}
+          className="flex gap-0.5 items-center py-0.5 min-w-max absolute invisible pointer-events-none"
+          aria-hidden="true"
         >
-          <nav
-            className="flex gap-0.5 items-center py-0.5 min-w-max"
-            role="tablist"
-            aria-label="Item categories"
-          >
-            {tabs.map((tab) => {
-              const isActive = activeTabId === tab.id;
-              const accent = tab.accentClass ?? "text-zinc-400";
-              return (
-                <button
-                  key={tab.id}
-                  role="tab"
-                  aria-selected={isActive}
-                  aria-controls={`panel-${tab.id}`}
-                  id={`tab-${tab.id}`}
-                  onClick={() => onTabChange(tab.id)}
-                  className={`
-                    px-3 py-2 text-sm font-medium whitespace-nowrap
-                    border-b-2 -mb-px transition-colors
-                    focus:outline-none
-                    ${
-                      isActive
-                        ? `${accent} border-current`
-                        : "text-zinc-500 border-transparent hover:text-zinc-300 hover:border-zinc-600"
-                    }
-                  `}
-                >
-                  <span>{tab.label}</span>
-                  {(tab.selectedCount !== undefined && tab.selectedCount > 0) && (
-                    <span className="ml-2 text-xs opacity-80">
-                      ({tab.selectedCount})
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </nav>
-        </div>
-        {hasOverflow && (
-          <button
-            type="button"
-            onClick={() => scroll("right")}
-            onFocus={updateScrollState}
-            aria-label="Scroll tabs right"
-            className={`
-              flex-shrink-0 px-2 border-l border-zinc-700/50
-              text-zinc-400 hover:text-white hover:bg-zinc-700/50
-              focus:outline-none focus:ring-1 focus:ring-zinc-500 focus:ring-inset
-              transition-colors
-              ${!canScrollRight ? "opacity-40 pointer-events-none" : ""}
-            `}
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          {tabs.map((tab) => (
+            <span key={tab.id} className="px-3 py-2 text-sm font-medium whitespace-nowrap">
+              {tab.label}
+              {tab.selectedCount !== undefined && tab.selectedCount > 0 && (
+                <span className="ml-2 text-xs">({tab.selectedCount})</span>
+              )}
+            </span>
+          ))}
+        </nav>
+
+        {hasOverflow ? (
+          <div className="flex-1 py-1 px-1">
+            <select
+              value={activeTabId}
+              onChange={(e) => onTabChange(e.target.value)}
+              className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white font-medium focus:outline-none focus:ring-2 focus:ring-violet-500 appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2371717a%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25rem] bg-[right_0.5rem_center] bg-no-repeat pr-8"
+              aria-label="Select category"
+            >
+              {tabs.map((tab) => (
+                <option key={tab.id} value={tab.id}>
+                  {tab.label}
+                  {tab.selectedCount !== undefined && tab.selectedCount > 0
+                    ? ` (${tab.selectedCount})`
+                    : ""}
+                </option>
+              ))}
+            </select>
+          </div>
+        ) : (
+          <div className="flex-1 min-w-0 overflow-x-auto overflow-y-hidden scrollbar-hide">
+            <nav
+              className="flex gap-0.5 items-center py-0.5 min-w-max"
+              role="tablist"
+              aria-label="Item categories"
+            >
+              {tabs.map((tab) => {
+                const isActive = activeTabId === tab.id;
+                const accent = tab.accentClass ?? "text-zinc-400";
+                return (
+                  <button
+                    key={tab.id}
+                    role="tab"
+                    aria-selected={isActive}
+                    aria-controls={`panel-${tab.id}`}
+                    id={`tab-${tab.id}`}
+                    onClick={() => onTabChange(tab.id)}
+                    className={`
+                      px-3 py-2 text-sm font-medium whitespace-nowrap
+                      border-b-2 -mb-px transition-colors
+                      focus:outline-none
+                      ${
+                        isActive
+                          ? `${accent} border-current`
+                          : "text-zinc-500 border-transparent hover:text-zinc-300 hover:border-zinc-600"
+                      }
+                    `}
+                  >
+                    <span>{tab.label}</span>
+                    {tab.selectedCount !== undefined && tab.selectedCount > 0 && (
+                      <span className="ml-2 text-xs opacity-80">
+                        ({tab.selectedCount})
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </nav>
+          </div>
         )}
       </div>
       <div

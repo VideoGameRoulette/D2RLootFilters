@@ -43,40 +43,100 @@
 .split-container {
   display: flex;
   min-height: 100dvh;
+  position: relative;
 }
 
+/* Full-bleed fantasy background */
+.mobile-bg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Hide the old split image side – we use mobile-bg everywhere now */
+.image-side {
+  display: none;
+}
+
+/* Form card – dark frosted glass on all screen sizes */
 .form-side {
   width: 100%;
+  max-width: 440px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.image-side {
-  background-size: cover;
-  background-position: center;
+.form-container {
+  background: transparent;
 }
 
-/* Media Queries for responsiveness */
-@media (min-width: 1201px) {
-  /* Large devices and above */
+/* Light text on dark – universal */
+.form-side .form-label {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+.form-side h4 {
+  color: #ffffff;
+  font-weight: 700;
+}
+.form-side .text-muted {
+  color: #94a3b8 !important;
+}
+.form-side .text-indigo-600 {
+  color: #a5b4fc;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.form-side .text-indigo-600:hover {
+  color: #c7d2fe;
+}
+.form-side .form-control {
+  background: rgba(30, 41, 59, 0.7);
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+.form-side .form-control::placeholder {
+  color: #94a3b8;
+}
+.form-side .form-control:focus {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: #818cf8;
+  color: #f8fafc;
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.3);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  /* Center on tablet and mobile */
+  .split-container {
+    justify-content: center;
+  }
   .form-side {
-    max-width: 600px;
-  }
-  .image-side {
-    display: block;
-    flex-grow: 1;
+    margin: 20px auto;
   }
 }
 
-@media (max-width: 1200px) {
-  /* Small and Medium devices */
+@media (max-width: 480px) {
   .form-side {
-    width: 100%; /* Full width on smaller screens */
-  }
-  .image-side {
-    display: none; /* Hide image-side on smaller screens */
+    margin: 12px auto;
+    padding: 28px 20px;
+    max-width: calc(100% - 24px);
+    border-radius: 16px;
   }
 }
