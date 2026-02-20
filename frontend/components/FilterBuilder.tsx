@@ -38,6 +38,8 @@ import type {
   LootFilter,
 } from "@/lib/types";
 
+const isStaticBuild = process.env.NEXT_PUBLIC_STATIC_BUILD === "true";
+
 const WEAPON_HANDLING_OPTIONS = ["1H", "2H"] as const;
 type WeaponHandling = (typeof WEAPON_HANDLING_OPTIONS)[number];
 
@@ -107,7 +109,7 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
   const [error, setError] = useState<string | null>(null);
 
   const dataBase = typeof process.env.NEXT_PUBLIC_BASE_PATH === "string" ? process.env.NEXT_PUBLIC_BASE_PATH : "";
-  const { csrfToken, user } = useAuth();
+  const { csrfToken, user, logout } = useAuth();
   const router = useRouter();
   const [presets, setPresets] = useState<SavedFilter[]>([]);
   const [userFilters, setUserFilters] = useState<SavedFilter[]>([]);
@@ -595,7 +597,9 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
                 </button>
                 {mobileDropdown === "filters" && (
                   <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1 min-w-[220px] max-h-[50vh] overflow-y-auto py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
-                    {!user ? (
+                    {isStaticBuild ? (
+                      <div className="px-3 py-4 text-zinc-500 text-sm text-center">Saved filters not available in static build.</div>
+                    ) : !user ? (
                       <div className="px-3 py-4 text-zinc-500 text-sm text-center"><Link href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`} className="text-violet-400">Log in</Link> to see your saved filters.</div>
                     ) : userFilters.length === 0 ? (
                       <div className="px-3 py-4 text-zinc-500 text-sm text-center">No saved filters. (Max 16)</div>
@@ -622,27 +626,29 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
                   </div>
                 )}
               </div>
-              {/* Auth */}
-              <div className="relative flex-1 min-w-0">
-                {user ? (
-                  <>
-                    <button type="button" onClick={() => setMobileDropdown((p) => (p === "auth" ? null : "auth"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "auth"}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                      <span className="text-[9px] font-medium truncate max-w-[48px]">{user.username}</span>
-                    </button>
-                    {mobileDropdown === "auth" && (
-                      <div className="absolute right-0 bottom-full mb-1 min-w-[140px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
-                        <Link href="/auth/logout/" className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem" onClick={() => setMobileDropdown(null)}>Logout</Link>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <Link href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-                    <span className="text-[9px] font-medium">Login</span>
-                  </Link>
-                )}
-              </div>
+              {/* Auth - hidden on static build */}
+              {!isStaticBuild && (
+                <div className="relative flex-1 min-w-0">
+                  {user ? (
+                    <>
+                      <button type="button" onClick={() => setMobileDropdown((p) => (p === "auth" ? null : "auth"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "auth"}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span className="text-[9px] font-medium truncate max-w-[48px]">{user.username}</span>
+                      </button>
+                      {mobileDropdown === "auth" && (
+                        <div className="absolute right-0 bottom-full mb-1 min-w-[140px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                          <button type="button" className="block w-full text-left px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem" onClick={() => { setMobileDropdown(null); logout(); }}>Logout</button>
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                      <span className="text-[9px] font-medium">Login</span>
+                    </Link>
+                  )}
+                </div>
+              )}
             </nav>
             <footer className="flex-shrink-0 px-2 py-0.5 border-t border-zinc-800/50">
               <p className="text-center text-[8px] text-zinc-600 truncate">v3.1.91735 · © In-House Cloud Solutions · Blizzard · Vicarious Visions</p>

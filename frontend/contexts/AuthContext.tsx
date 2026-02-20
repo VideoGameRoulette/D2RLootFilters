@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, useMemo } from "react";
+import { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
 import axios from "axios";
 
 interface User {
@@ -15,6 +15,7 @@ interface AuthContextValue {
   permissions: string[];
   loading: boolean;
   csrfToken: string;
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextValue | undefined>(undefined);
@@ -61,9 +62,20 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     fetchAuthData();
   }, []);
 
+  const logout = useCallback(async () => {
+    try {
+      await axios.post("/auth/logout/", {}, {
+        headers: { "X-CSRFToken": csrfToken },
+      });
+    } catch {
+      // Logout may redirect, which can cause a network error - that's fine
+    }
+    window.location.reload();
+  }, [csrfToken]);
+
   const value = useMemo(
-    () => ({ user, groups, permissions, loading, csrfToken }),
-    [user, groups, permissions, loading, csrfToken]
+    () => ({ user, groups, permissions, loading, csrfToken, logout }),
+    [user, groups, permissions, loading, csrfToken, logout]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
