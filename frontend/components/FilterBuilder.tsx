@@ -2,6 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import axios from "axios";
+import { useAuth } from "@/contexts/AuthContext";
 import type { Catalog, SelectableItem } from "@/lib/types";
 import { catalogToSelectableItems } from "@/lib/catalog";
 import { buildFilterFromSelection, serializeFilter } from "@/lib/buildFilter";
@@ -14,6 +17,7 @@ import { questToSelectableItems } from "@/lib/questCatalog";
 import { miscToSelectableItems } from "@/lib/miscCatalog";
 import { CatalogSection } from "@/components/CatalogSection";
 import { CatalogTabs } from "@/components/CatalogTabs";
+import { Toolbar, type SavedFilter } from "@/components/Toolbar";
 import {
   QUALITIES,
   ARMOR_WEIGHTS,
@@ -93,6 +97,7 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
   const [weaponHandlingFilter, setWeaponHandlingFilter] = useState<Set<WeaponHandling>>(() => new Set());
   const [activeTab, setActiveTab] = useState<string>(TAB_ORDER[0]);
   const [copyFeedback, setCopyFeedback] = useState(false);
+  const [saveFeedback, setSaveFeedback] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [showPastePanel, setShowPastePanel] = useState(false);
   const [pasteInput, setPasteInput] = useState("");
@@ -102,6 +107,13 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
   const [error, setError] = useState<string | null>(null);
 
   const dataBase = typeof process.env.NEXT_PUBLIC_BASE_PATH === "string" ? process.env.NEXT_PUBLIC_BASE_PATH : "";
+  const { csrfToken, user } = useAuth();
+  const router = useRouter();
+  const [presets, setPresets] = useState<SavedFilter[]>([]);
+  const [userFilters, setUserFilters] = useState<SavedFilter[]>([]);
+  const [filtersRefresh, setFiltersRefresh] = useState(0);
+  const [mobileDropdown, setMobileDropdown] = useState<"actions" | "presets" | "filters" | "help" | "auth" | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     Promise.all([
@@ -125,6 +137,42 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   }, [dataBase]);
+
+  useEffect(() => {
+    const norm = (d: unknown): SavedFilter[] => {
+      const list = Array.isArray(d) ? d : (d && typeof d === "object" && "results" in d && Array.isArray((d as { results: unknown }).results) ? (d as { results: unknown[] }).results : []);
+      return list.map((f: { id: string; name: string; payload?: unknown }) => ({ id: String(f.id), name: f.name, payload: (f.payload && typeof f.payload === "object" && "rules" in (f.payload as object)) ? (f.payload as { name: string; rules: unknown[] }) : { name: f.name, rules: [] } }));
+    };
+    fetch("/api/v2/loot-filters/presets/", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : { results: [] }))
+      .then((data) => setPresets(norm(data)))
+      .catch(() => setPresets([]));
+  }, []);
+
+  useEffect(() => {
+    if (!user) {
+      setUserFilters([]);
+      return;
+    }
+    const norm = (d: unknown): SavedFilter[] => {
+      const list = Array.isArray(d) ? d : (d && typeof d === "object" && "results" in d && Array.isArray((d as { results: unknown }).results) ? (d as { results: unknown[] }).results : []);
+      return list.map((f: { id: string; name: string; payload?: unknown }) => ({ id: String(f.id), name: f.name, payload: (f.payload && typeof f.payload === "object" && "rules" in (f.payload as object)) ? (f.payload as { name: string; rules: unknown[] }) : { name: f.name, rules: [] } }));
+    };
+    fetch("/api/v2/loot-filters/mine/", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : { results: [] }))
+      .then((data) => setUserFilters(norm(data)))
+      .catch(() => setUserFilters([]));
+  }, [user, filtersRefresh]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target as Node)) {
+        setMobileDropdown(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const baseStatsByCode = useMemo(() => {
     const map = new Map<string, Partial<SelectableItem>>();
@@ -341,6 +389,58 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
 
   const handleLoadFromPaste = useCallback(() => { setLoadError(null); const text = pasteInput.trim(); if (!text) { setLoadError("Paste filter JSON first"); return; } try { const filter = parseLoadedFilter(text); applyFilterToState(filter); setPasteInput(""); setShowPastePanel(false); } catch (err) { setLoadError(err instanceof Error ? err.message : "Invalid filter JSON"); } }, [pasteInput, applyFilterToState]);
 
+  const handleLoadFilterPayload = useCallback((payload: { name: string; rules: unknown[] }) => {
+    applyFilterToState(payload as LootFilter);
+  }, [applyFilterToState]);
+
+  const getFilterPayload = useCallback(() => {
+    const profile = profileName.replace(/\s/g, "") || "LootFilter";
+    return buildFilterFromSelection(profile, Array.from(selectedSetCodes), Array.from(selectedUniqueCodes), Array.from(selectedRuneCodes), Array.from(selectedNormalBaseCodes), Array.from(selectedMagicBaseCodes), Array.from(selectedRareBaseCodes), Array.from(selectedQuestCodes), Array.from(selectedGemCodes), miscItemRules, Array.from(selectedSocketedEtherealBaseCodes), Array.from(selectedNormalSuperiorBaseCodes), Array.from(selectedSocketedEtherealSuperiorBaseCodes), Array.from(selectedEndgameCodes), goldFilterEnabled ? { enabled: true, threshold: goldFilterThreshold } : undefined);
+  }, [profileName, selectedSetCodes, selectedUniqueCodes, selectedRuneCodes, selectedNormalBaseCodes, selectedMagicBaseCodes, selectedRareBaseCodes, selectedQuestCodes, selectedGemCodes, miscItemRules, selectedSocketedEtherealBaseCodes, selectedNormalSuperiorBaseCodes, selectedSocketedEtherealSuperiorBaseCodes, selectedEndgameCodes, goldFilterEnabled, goldFilterThreshold]);
+
+  const getCsrfToken = useCallback(() => {
+    if (csrfToken) return csrfToken;
+    const match = document.cookie.match(/csrftoken=([^;]+)/);
+    return match ? match[1] : "";
+  }, [csrfToken]);
+
+  const handleSaveFilter = useCallback(async () => {
+    setLoadError(null);
+    const filter = getFilterPayload();
+    const payload = { name: filter.name, rules: filter.rules };
+    const token = getCsrfToken();
+    if (!token) {
+      setLoadError("Save failed: CSRF token missing. Refresh the page and try again.");
+      return;
+    }
+    try {
+      await axios.post("/api/v2/loot-filters/", {
+        name: filter.name,
+        description: "",
+        payload,
+        visibility: "private",
+        game_version: "3.1.91636",
+        tags: [],
+      }, {
+        withCredentials: true,
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": token,
+        },
+      });
+      setSaveFeedback(true);
+      setFiltersRefresh((n) => n + 1);
+      setTimeout(() => setSaveFeedback(false), 2000);
+    } catch (err) {
+      const msg = axios.isAxiosError(err) && err.response?.data
+        ? (typeof err.response.data === "object" && err.response.data !== null && "detail" in err.response.data
+          ? String((err.response.data as { detail: unknown }).detail)
+          : JSON.stringify(err.response.data))
+        : err instanceof Error ? err.message : "Failed to save filter";
+      setLoadError(`Save failed: ${msg}`);
+    }
+  }, [getFilterPayload, getCsrfToken]);
+
   const totalSelected = selectedSetCodes.size + selectedUniqueCodes.size + selectedRuneCodes.size + selectedNormalBaseCodes.size + selectedSocketedEtherealBaseCodes.size + selectedNormalSuperiorBaseCodes.size + selectedSocketedEtherealSuperiorBaseCodes.size + selectedMagicBaseCodes.size + selectedRareBaseCodes.size + selectedGemCodes.size + selectedPotionCodes.size + selectedQuestCodes.size + selectedEndgameCodes.size + selectedMiscOtherCodes.size;
   const canExport = (totalSelected > 0 || goldFilterEnabled) && ruleCount <= MAX_RULES;
 
@@ -449,25 +549,105 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
             </div>
           </div>
 
-          <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around py-2 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] bg-zinc-900/95 border-t border-zinc-700/60 backdrop-blur-sm" role="navigation" aria-label="Actions">
+          <div ref={mobileMenuRef} className="fixed bottom-0 left-0 right-0 z-40 flex flex-col bg-zinc-900/95 backdrop-blur-sm border-t border-zinc-700/60 pb-[env(safe-area-inset-bottom)]">
             <input type="file" accept=".json" ref={fileInputRef} onChange={handleLoadFilter} className="hidden" aria-hidden />
-            <button type="button" onClick={() => fileInputRef.current?.click()} className="flex flex-col items-center justify-center gap-1 flex-1 min-w-0 py-2 px-1 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-label="Load filter">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></svg>
-              <span className="text-[10px] font-medium">Load</span>
-            </button>
-            <button type="button" onClick={() => { setShowPastePanel(true); setLoadError(null); setPasteInput(""); }} className="flex flex-col items-center justify-center gap-1 flex-1 min-w-0 py-2 px-1 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-label="Import from paste">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-              <span className="text-[10px] font-medium">Import</span>
-            </button>
-            <button type="button" onClick={handleExportJson} disabled={!canExport} className={`flex flex-col items-center justify-center gap-1 flex-1 min-w-0 py-2 px-1 touch-manipulation transition-colors ${canExport ? "text-d2-unique hover:opacity-90 active:opacity-90" : "text-zinc-600 cursor-not-allowed"}`} aria-label="Export">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
-              <span className="text-[10px] font-medium">Export</span>
-            </button>
-            <button type="button" onClick={handleCopyToClipboard} disabled={!canExport} className={`flex flex-col items-center justify-center gap-1 flex-1 min-w-0 py-2 px-1 touch-manipulation transition-colors ${canExport ? "text-zinc-400 hover:text-white active:text-white" : "text-zinc-600 cursor-not-allowed"}`} aria-label="Copy to clipboard">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg>
-              <span className="text-[10px] font-medium">Copy</span>
-            </button>
-          </nav>
+            <nav className="flex items-center justify-around py-1 px-1" role="menubar" aria-label="Mobile menu">
+              {/* Actions */}
+              <div className="relative flex-1 min-w-0">
+                <button type="button" onClick={() => setMobileDropdown((p) => (p === "actions" ? null : "actions"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "actions"}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                  <span className="text-[9px] font-medium">Actions</span>
+                </button>
+                {mobileDropdown === "actions" && (
+                  <div className="absolute left-0 bottom-full mb-1 min-w-[200px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                    <button type="button" onClick={() => { fileInputRef.current?.click(); setMobileDropdown(null); }} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem">Load File</button>
+                    <button type="button" onClick={() => { setShowPastePanel(true); setLoadError(null); setPasteInput(""); setMobileDropdown(null); }} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem">Load From Clipboard</button>
+                    <button type="button" onClick={() => { handleSaveFilter(); setMobileDropdown(null); }} disabled={!user || !canExport} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed" role="menuitem">Save filter to profile</button>
+                    <hr className="my-1 border-zinc-600" />
+                    <button type="button" onClick={() => { handleExportJson(); setMobileDropdown(null); }} disabled={!canExport} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed" role="menuitem">Download File</button>
+                    <button type="button" onClick={() => { handleCopyToClipboard(); setMobileDropdown(null); }} disabled={!canExport} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed" role="menuitem">Copy To Clipboard</button>
+                  </div>
+                )}
+              </div>
+              {/* Presets */}
+              <div className="relative flex-1 min-w-0">
+                <button type="button" onClick={() => setMobileDropdown((p) => (p === "presets" ? null : "presets"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "presets"}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                  <span className="text-[9px] font-medium">Presets</span>
+                </button>
+                {mobileDropdown === "presets" && (
+                  <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1 min-w-[220px] max-h-[50vh] overflow-y-auto py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                    {presets.length === 0 ? (
+                      <div className="px-3 py-4 text-zinc-500 text-sm text-center">No curated presets yet.</div>
+                    ) : (
+                      presets.map((p) => (
+                        <button key={p.id} type="button" onClick={() => { handleLoadFilterPayload(p.payload); setMobileDropdown(null); }} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600 truncate" role="menuitem">{p.name}</button>
+                      ))
+                    )}
+                  </div>
+                )}
+              </div>
+              {/* Filters */}
+              <div className="relative flex-1 min-w-0">
+                <button type="button" onClick={() => setMobileDropdown((p) => (p === "filters" ? null : "filters"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "filters"}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  <span className="text-[9px] font-medium">Filters</span>
+                </button>
+                {mobileDropdown === "filters" && (
+                  <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1 min-w-[220px] max-h-[50vh] overflow-y-auto py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                    {!user ? (
+                      <div className="px-3 py-4 text-zinc-500 text-sm text-center"><Link href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`} className="text-violet-400">Log in</Link> to see your saved filters.</div>
+                    ) : userFilters.length === 0 ? (
+                      <div className="px-3 py-4 text-zinc-500 text-sm text-center">No saved filters. (Max 16)</div>
+                    ) : (
+                      <>
+                        <div className="px-3 py-2 text-xs text-zinc-500 border-b border-zinc-600/50">{userFilters.length} / 16 filters</div>
+                        {userFilters.map((f) => (
+                          <button key={f.id} type="button" onClick={() => { handleLoadFilterPayload(f.payload); setMobileDropdown(null); }} className="w-full px-3 py-2 text-left text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600 truncate" role="menuitem">{f.name}</button>
+                        ))}
+                      </>
+                    )}
+                  </div>
+                )}
+              </div>
+              {/* Help */}
+              <div className="relative flex-1 min-w-0">
+                <button type="button" onClick={() => setMobileDropdown((p) => (p === "help" ? null : "help"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "help"}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  <span className="text-[9px] font-medium">Help</span>
+                </button>
+                {mobileDropdown === "help" && (
+                  <div className="absolute right-0 bottom-full mb-1 min-w-[200px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                    <a href="https://github.com/VideoGameRoulette/D2RLootFilters/issues" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem" onClick={() => setMobileDropdown(null)}>GitHub Issues</a>
+                  </div>
+                )}
+              </div>
+              {/* Auth */}
+              <div className="relative flex-1 min-w-0">
+                {user ? (
+                  <>
+                    <button type="button" onClick={() => setMobileDropdown((p) => (p === "auth" ? null : "auth"))} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors" aria-haspopup="true" aria-expanded={mobileDropdown === "auth"}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                      <span className="text-[9px] font-medium truncate max-w-[48px]">{user.username}</span>
+                    </button>
+                    {mobileDropdown === "auth" && (
+                      <div className="absolute right-0 bottom-full mb-1 min-w-[140px] py-1 bg-zinc-800 border border-zinc-600 rounded-lg shadow-xl z-50" role="menu">
+                        <Link href="/auth/logout/" className="block px-3 py-2 text-zinc-200 hover:bg-zinc-600/50 active:bg-zinc-600" role="menuitem" onClick={() => setMobileDropdown(null)}>Logout</Link>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link href={`/auth/login/?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname : "/")}`} className="flex flex-col items-center justify-center gap-0.5 w-full py-1 px-0.5 text-zinc-400 hover:text-white active:text-white touch-manipulation transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                    <span className="text-[9px] font-medium">Login</span>
+                  </Link>
+                )}
+              </div>
+            </nav>
+            <footer className="flex-shrink-0 px-2 py-0.5 border-t border-zinc-800/50">
+              <p className="text-center text-[8px] text-zinc-600 truncate">v3.1.91735 · © In-House Cloud Solutions · Blizzard · Vicarious Visions</p>
+            </footer>
+          </div>
         </main>
 
         {showFiltersModal && (<div role="dialog" aria-modal="true" className="fixed inset-0 z-50 flex flex-col bg-zinc-900"><div className="flex items-center justify-between p-4 border-b border-zinc-700"><h2 className="text-lg font-semibold text-white">Filters</h2><div className="flex items-center gap-2 ml-auto"><button type="button" onClick={() => { setTierFilter(new Set()); setWeightFilter(new Set()); setSocketFilterEnabled(false); setCategoryFilter(new Set()); setWeaponHandlingFilter(new Set()); }} title="Reset filters" className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-lg bg-zinc-700 text-zinc-300 hover:bg-zinc-600 hover:text-white active:bg-zinc-500 touch-manipulation" aria-label="Reset filters"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></button><button type="button" onClick={() => setShowFiltersModal(false)} title="Close filter menu" className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-lg bg-red-600 text-white hover:bg-red-500 active:bg-red-700 touch-manipulation" aria-label="Close filter menu"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg></button></div></div><div className="flex-1 overflow-y-auto p-4"><FilterDrawer /></div></div>)}
@@ -481,30 +661,33 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
     <>
       <main className="h-screen overflow-hidden flex flex-col">
         <div className="flex-1 flex flex-col min-h-0 overflow-hidden w-full">
+          <input type="file" accept=".json" ref={fileInputRef} onChange={handleLoadFilter} className="hidden" aria-hidden />
+          <Toolbar
+            onLoadFile={() => fileInputRef.current?.click()}
+            onLoadFromClipboard={() => { setShowPastePanel(true); setLoadError(null); setPasteInput(""); }}
+            onExportFile={handleExportJson}
+            onCopyToClipboard={handleCopyToClipboard}
+            onSaveFilter={handleSaveFilter}
+            onLoadFilter={handleLoadFilterPayload}
+            onMobileView={() => router.push("/mobile")}
+            canExport={canExport}
+            presets={presets}
+            userFilters={userFilters}
+            userFilterCount={userFilters.length}
+            maxUserFilters={16}
+            dataBase={dataBase}
+            logoUrl={`${dataBase}/imgs/logo.png`}
+          />
           <header className="flex-shrink-0 border-b border-zinc-700/60 bg-zinc-900/70">
-            <div className="px-4 md:px-6 lg:px-8 py-4">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                <div className="flex items-center gap-3">
-                  <img src={`${dataBase}/imgs/logo.png`} alt="" className="h-32 w-auto object-contain" />
-                  <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">D2R Loot Filter Builder</h1>
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs text-zinc-500 font-medium mr-1">Game v3.1.91636 · Updated 2026-02-17</span>
-                  <input type="file" accept=".json" ref={fileInputRef} onChange={handleLoadFilter} className="hidden" aria-hidden />
-                  <button type="button" onClick={() => fileInputRef.current?.click()} title="Load filter from file" className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></svg></button>
-                  <button type="button" onClick={() => { setShowPastePanel(true); setLoadError(null); setPasteInput(""); }} title="Import from paste" className="p-2 rounded-lg bg-zinc-600 text-white border border-zinc-500 hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg></button>
-                  <button type="button" onClick={handleExportJson} disabled={!canExport} title="Export JSON" className="p-2 rounded-lg bg-d2-unique text-zinc-900 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-d2-unique focus:ring-offset-2 focus:ring-offset-zinc-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg></button>
-                  <button type="button" onClick={handleCopyToClipboard} disabled={!canExport} title="Copy to clipboard" className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg></button>
-                  <Link href="/mobile" className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900" title="Mobile view"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2" /><line x1="12" y1="18" x2="12.01" y2="18" /></svg></Link>
-                  {!showFilterDrawer && (<button type="button" onClick={() => setShowFilterDrawer(true)} aria-label="Open filters" className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg></button>)}
-                  {loadError && <span className="text-xs text-red-400" role="alert">{loadError}</span>}
-                  {copyFeedback && <span className="text-xs text-emerald-400">Copied!</span>}
-                </div>
-              </div>
-              <div className="mt-4 flex flex-wrap items-center gap-4 gap-y-3">
+            <div className="px-4 md:px-6 lg:px-8 py-3">
+              <div className="flex flex-wrap items-center gap-4 gap-y-3">
+                {!showFilterDrawer && (<button type="button" onClick={() => setShowFilterDrawer(true)} aria-label="Open filters" className="p-2 rounded-lg bg-zinc-700 text-white border border-zinc-600 hover:bg-zinc-600"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg></button>)}
                 <label className="flex items-center gap-2"><span className="text-zinc-500 text-sm">Profile name</span><input type="text" value={profileName} onChange={(e) => setProfileName(e.target.value)} placeholder="MyFilter (no spaces)" className="bg-zinc-800/80 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent max-w-[200px]" /></label>
                 <span className={`text-sm font-medium tabular-nums ${ruleCount > MAX_RULES ? "text-amber-400" : "text-zinc-400"}`} title={ruleCount > MAX_RULES ? `Game allows max ${MAX_RULES} rules.` : undefined}>Rules: {ruleCount} / {MAX_RULES}</span>
                 <div className="text-xs text-zinc-500 border-l border-zinc-600/80 pl-4 hidden sm:block">Selected: Normal {selectedNormalBaseCodes.size} · Socketed / Ethereal {selectedSocketedEtherealBaseCodes.size} · Normal Superior {selectedNormalSuperiorBaseCodes.size} · Socketed / Ethereal Superior {selectedSocketedEtherealSuperiorBaseCodes.size} · Magic {selectedMagicBaseCodes.size} · Rare {selectedRareBaseCodes.size} · Unique {selectedUniqueCodes.size} · Sets {selectedSetCodes.size} · Runes {selectedRuneCodes.size} · Gems {selectedGemCodes.size} · Potions {selectedPotionCodes.size} · Quest {selectedQuestCodes.size} · Endgame {selectedEndgameCodes.size} · Misc {selectedMiscOtherCodes.size}</div>
+                {loadError && <span className="text-xs text-red-400 ml-auto" role="alert">{loadError}</span>}
+                {copyFeedback && <span className="text-xs text-emerald-400 ml-auto">Copied!</span>}
+                {saveFeedback && <span className="text-xs text-emerald-400 ml-auto">Saved!</span>}
               </div>
             </div>
           </header>
@@ -522,6 +705,12 @@ export function FilterBuilder({ mobile = false }: FilterBuilderProps) {
               </div>
             </div>
           </div>
+
+          <footer className="flex-shrink-0 border-t border-zinc-700/60 bg-zinc-900/50 px-4 md:px-6 lg:px-8 py-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-zinc-500">
+              v3.1.91735 · © In-House Cloud Solutions · Blizzard · Vicarious Visions
+            </div>
+          </footer>
         </div>
       </main>
 

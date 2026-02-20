@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Providers from "@/contexts/ProviderContent";
 import "./globals.css";
 
 const basePath =
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen font-sans antialiased bg-[var(--bg)] text-[var(--text)]">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

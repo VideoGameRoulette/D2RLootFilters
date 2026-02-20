@@ -23,6 +23,7 @@
     "rename-potion-webp": "node rename-potion-webp.mjs"
   },
   "dependencies": {
+    "axios": "^1.13.5",
     "next": "^15.5.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
