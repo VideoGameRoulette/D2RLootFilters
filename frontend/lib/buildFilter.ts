@@ -63,7 +63,7 @@ const ENDGAME_CATEGORIES: Record<
 
 /**
  * Build D2R loot filter JSON from selected codes per category.
- * Order: normal, socketedEthereal, normalSuperior, socketedEtherealSuperior, magic, rare, unique, sets, runes, quest, endgame, gems, misc (per-label), gold.
+ * Order: normalInferior, socketedEthereal, socketedEtherealSuperior, magic, rare, unique, sets, runes, quest, endgame, gems, misc (per-label), gold.
  */
 export function buildFilterFromSelection(
   profileNameInput: string,
@@ -77,7 +77,6 @@ export function buildFilterFromSelection(
   gemCodes: string[] = [],
   miscItemRules: MiscItemRule[] = [],
   socketedEtherealCodes: string[] = [],
-  normalSuperiorCodes: string[] = [],
   socketedEtherealSuperiorCodes: string[] = [],
   endgameCodes: string[] = [],
   goldFilter?: { enabled: boolean; threshold: number }
@@ -86,11 +85,11 @@ export function buildFilterFromSelection(
 
   if (normalCodes.length > 0) {
     rules.push({
-      name: gameSafeName("Normal"),
+      name: gameSafeName("Normal Inferior"),
       enabled: true,
       ruleType: "show",
-      filterEtherealSocketed: false,
-      equipmentRarity: ["normal"],
+      filterEtherealSocketed: true,
+      equipmentRarity: ["lowQuality", "normal"],
       equipmentItemCode: [...normalCodes],
     });
   }
@@ -102,16 +101,6 @@ export function buildFilterFromSelection(
       filterEtherealSocketed: true,
       equipmentRarity: ["normal"],
       equipmentItemCode: [...socketedEtherealCodes],
-    });
-  }
-  if (normalSuperiorCodes.length > 0) {
-    rules.push({
-      name: gameSafeName("Superior Items(White)"),
-      enabled: true,
-      ruleType: "show",
-      filterEtherealSocketed: false,
-      equipmentRarity: ["hiQuality"],
-      equipmentItemCode: [...normalSuperiorCodes],
     });
   }
   if (socketedEtherealSuperiorCodes.length > 0) {

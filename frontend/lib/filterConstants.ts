@@ -27,7 +27,6 @@ export const MAX_RULES = 32;
 export const TAB_ORDER = [
   "normal",
   "socketedEthereal",
-  "normalSuperior",
   "socketedEtherealSuperior",
   "magic",
   "rare",
